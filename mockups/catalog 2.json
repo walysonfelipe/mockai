@@ -1,0 +1,482 @@
+[
+  {
+    "name": "iPhone 18 Pro",
+    "source": "img/devices/apple/iphone_18-pro/device.avif",
+    "image": "mockups/apple-iphone-18-pro.avif",
+    "thumbnail": "mockups/apple-iphone-18-pro-preview.avif"
+  },
+  {
+    "name": "iPhone 18 Pro Max",
+    "source": "img/devices/apple/iphone_18-pro-max/device.avif",
+    "image": "mockups/apple-iphone-18-pro-max.avif",
+    "thumbnail": "mockups/apple-iphone-18-pro-max-preview.avif"
+  },
+  {
+    "name": "iPhone Duo",
+    "source": "img/devices/apple/iphone_duo_front/device.avif",
+    "image": "mockups/apple-iphone-duo-front.avif",
+    "thumbnail": "mockups/apple-iphone-duo-front-preview.avif"
+  },
+  {
+    "name": "iPhone 17",
+    "source": "img/devices/apple/iphone_17/device.avif",
+    "image": "mockups/apple-iphone-17.avif",
+    "thumbnail": "mockups/apple-iphone-17-preview.avif"
+  },
+  {
+    "name": "iPhone 17 Pro",
+    "source": "img/devices/apple/iphone_17-pro/device.avif",
+    "image": "mockups/apple-iphone-17-pro.avif",
+    "thumbnail": "mockups/apple-iphone-17-pro-preview.avif"
+  },
+  {
+    "name": "iPhone 17 Pro Max",
+    "source": "img/devices/apple/iphone_17-pro-max/device.avif",
+    "image": "mockups/apple-iphone-17-pro-max.avif",
+    "thumbnail": "mockups/apple-iphone-17-pro-max-preview.avif"
+  },
+  {
+    "name": "iPhone Air",
+    "source": "img/devices/apple/iphone_air/device.avif",
+    "image": "mockups/apple-iphone-air.avif",
+    "thumbnail": "mockups/apple-iphone-air-preview.avif"
+  },
+  {
+    "name": "iPhone 17e",
+    "source": "img/devices/apple/iphone_17e/device.avif",
+    "image": "mockups/apple-iphone-17e.avif",
+    "thumbnail": "mockups/apple-iphone-17e-preview.avif"
+  },
+  {
+    "name": "iPhone 16",
+    "source": "img/devices/apple/iphone_16/device.avif",
+    "image": "mockups/apple-iphone-16.avif",
+    "thumbnail": "mockups/apple-iphone-16-preview.avif"
+  },
+  {
+    "name": "iPhone 16 Plus",
+    "source": "img/devices/apple/iphone_16-plus/device.avif",
+    "image": "mockups/apple-iphone-16-plus.avif",
+    "thumbnail": "mockups/apple-iphone-16-plus-preview.avif"
+  },
+  {
+    "name": "iPhone 16 Pro",
+    "source": "img/devices/apple/iphone_16-pro/device.avif",
+    "image": "mockups/apple-iphone-16-pro.avif",
+    "thumbnail": "mockups/apple-iphone-16-pro-preview.avif"
+  },
+  {
+    "name": "iPhone 16 Pro Max",
+    "source": "img/devices/apple/iphone_16-pro-max/device.avif",
+    "image": "mockups/apple-iphone-16-pro-max.avif",
+    "thumbnail": "mockups/apple-iphone-16-pro-max-preview.avif"
+  },
+  {
+    "name": "iPhone 15",
+    "source": "img/devices/apple/iphone_15/device.avif",
+    "image": "mockups/apple-iphone-15.avif",
+    "thumbnail": "mockups/apple-iphone-15-preview.avif"
+  },
+  {
+    "name": "iPhone 14 & 15 Pro",
+    "source": "img/devices/apple/iphone_14_15-pro/device.avif",
+    "image": "mockups/apple-iphone-14-15-pro.avif",
+    "thumbnail": "mockups/apple-iphone-14-15-pro-preview.avif"
+  },
+  {
+    "name": "iPhone 13 & 14",
+    "source": "img/devices/apple/iphone_13_14/device.avif",
+    "image": "mockups/apple-iphone-13-14.avif",
+    "thumbnail": "mockups/apple-iphone-13-14-preview.avif"
+  },
+  {
+    "name": "iPhone 13 Mini",
+    "source": "img/devices/apple/iphone_13-mini/device.avif",
+    "image": "mockups/apple-iphone-13-mini.avif",
+    "thumbnail": "mockups/apple-iphone-13-mini-preview.avif"
+  },
+  {
+    "name": "iPhone SE 2022",
+    "source": "img/devices/apple/iphone_se-3/device.avif",
+    "image": "mockups/apple-iphone-se-3.avif",
+    "thumbnail": "mockups/apple-iphone-se-3-preview.avif"
+  },
+  {
+    "name": "iPhone X",
+    "source": "img/devices/apple/iphone_x/device.avif",
+    "image": "mockups/apple-iphone-x.avif",
+    "thumbnail": "mockups/apple-iphone-x-preview.avif"
+  },
+  {
+    "name": "iPhone 6 & 6s",
+    "source": "img/devices/apple/iphone_6/device.avif",
+    "image": "mockups/apple-iphone-6.avif",
+    "thumbnail": "mockups/apple-iphone-6-preview.avif"
+  },
+  {
+    "name": "iPhone 5 & 5s",
+    "source": "img/devices/apple/iphone_5/device.avif",
+    "image": "mockups/apple-iphone-5.avif",
+    "thumbnail": "mockups/apple-iphone-5-preview.avif"
+  },
+  {
+    "name": "iPhone Duo (Unfolded)",
+    "source": "img/devices/apple/iphone_duo_unfolded/device.avif",
+    "image": "mockups/apple-iphone-duo-unfolded.avif",
+    "thumbnail": "mockups/apple-iphone-duo-unfolded-preview.avif"
+  },
+  {
+    "name": "Samsung Galaxy Z Fold8 (Unfolded)",
+    "source": "img/devices/android/samsung/galaxy-z-fold8/device.avif",
+    "image": "mockups/android-samsung-galaxy-z-fold8.avif",
+    "thumbnail": "mockups/android-samsung-galaxy-z-fold8.avif"
+  },
+  {
+    "name": "Samsung Galaxy Z Fold8 Ultra (Unfolded)",
+    "source": "img/devices/android/samsung/galaxy-z-fold8-ultra/device.avif",
+    "image": "mockups/android-samsung-galaxy-z-fold8-ultra.avif",
+    "thumbnail": "mockups/android-samsung-galaxy-z-fold8-ultra.avif"
+  },
+  {
+    "name": "Samsung Galaxy Z Flip8 (Unfolded)",
+    "source": "img/devices/android/samsung/galaxy-z-flip8/device.avif",
+    "image": "mockups/android-samsung-galaxy-z-flip8.avif",
+    "thumbnail": "mockups/android-samsung-galaxy-z-flip8.avif"
+  },
+  {
+    "name": "Samsung Galaxy S26",
+    "source": "img/devices/android/samsung/galaxy-s26/device.avif",
+    "image": "mockups/android-samsung-galaxy-s26.avif",
+    "thumbnail": "mockups/android-samsung-galaxy-s26.avif"
+  },
+  {
+    "name": "Samsung Galaxy S26+",
+    "source": "img/devices/android/samsung/galaxy-s26-plus/device.avif",
+    "image": "mockups/android-samsung-galaxy-s26-plus.avif",
+    "thumbnail": "mockups/android-samsung-galaxy-s26-plus.avif"
+  },
+  {
+    "name": "Samsung Galaxy S26 Ultra",
+    "source": "img/devices/android/samsung/galaxy-s26-ultra/device.avif",
+    "image": "mockups/android-samsung-galaxy-s26-ultra.avif",
+    "thumbnail": "mockups/android-samsung-galaxy-s26-ultra.avif"
+  },
+  {
+    "name": "Samsung Galaxy Z Flip8",
+    "source": "img/devices/android/samsung/galaxy-z-flip8-front/device.avif",
+    "image": "mockups/android-samsung-galaxy-z-flip8-front.avif",
+    "thumbnail": "mockups/android-samsung-galaxy-z-flip8-front.avif"
+  },
+  {
+    "name": "Samsung Galaxy Z Fold8",
+    "source": "img/devices/android/samsung/galaxy-z-fold8-front/device.avif",
+    "image": "mockups/android-samsung-galaxy-z-fold8-front.avif",
+    "thumbnail": "mockups/android-samsung-galaxy-z-fold8-front.avif"
+  },
+  {
+    "name": "Samsung Galaxy Z Fold8 Ultra",
+    "source": "img/devices/android/samsung/galaxy-z-fold8-ultra-front/device.avif",
+    "image": "mockups/android-samsung-galaxy-z-fold8-ultra-front.avif",
+    "thumbnail": "mockups/android-samsung-galaxy-z-fold8-ultra-front.avif"
+  },
+  {
+    "name": "Samsung Galaxy Z Flip6",
+    "source": "img/devices/android/samsung/galaxy-z-flip6/device.avif",
+    "image": "mockups/android-samsung-galaxy-z-flip6.avif",
+    "thumbnail": "mockups/android-samsung-galaxy-z-flip6.avif"
+  },
+  {
+    "name": "Samsung Galaxy Z Fold6",
+    "source": "img/devices/android/samsung/galaxy-z-fold6/device.avif",
+    "image": "mockups/android-samsung-galaxy-z-fold6.avif",
+    "thumbnail": "mockups/android-samsung-galaxy-z-fold6.avif"
+  },
+  {
+    "name": "Samsung Galaxy S25",
+    "source": "img/devices/android/samsung/galaxy-s25/device.avif",
+    "image": "mockups/android-samsung-galaxy-s25.avif",
+    "thumbnail": "mockups/android-samsung-galaxy-s25.avif"
+  },
+  {
+    "name": "Samsung Galaxy S25+",
+    "source": "img/devices/android/samsung/galaxy-s25-plus/device.avif",
+    "image": "mockups/android-samsung-galaxy-s25-plus.avif",
+    "thumbnail": "mockups/android-samsung-galaxy-s25-plus.avif"
+  },
+  {
+    "name": "Samsung Galaxy S25 Ultra",
+    "source": "img/devices/android/samsung/galaxy-s25-ultra/device.avif",
+    "image": "mockups/android-samsung-galaxy-s25-ultra.avif",
+    "thumbnail": "mockups/android-samsung-galaxy-s25-ultra.avif"
+  },
+  {
+    "name": "Google Pixel 9",
+    "source": "img/devices/android/google/pixel-9/device.avif",
+    "image": "mockups/android-google-pixel-9.avif",
+    "thumbnail": "mockups/android-google-pixel-9.avif"
+  },
+  {
+    "name": "Google Pixel 9 Pro",
+    "source": "img/devices/android/google/pixel-9-pro/device.avif",
+    "image": "mockups/android-google-pixel-9-pro.avif",
+    "thumbnail": "mockups/android-google-pixel-9-pro.avif"
+  },
+  {
+    "name": "Google Pixel 9 Pro XL",
+    "source": "img/devices/android/google/pixel-9-pro-xl/device.avif",
+    "image": "mockups/android-google-pixel-9-pro-xl.avif",
+    "thumbnail": "mockups/android-google-pixel-9-pro-xl.avif"
+  },
+  {
+    "name": "Xiaomi 17",
+    "source": "img/devices/android/xiaomi/17/device.avif",
+    "image": "mockups/android-xiaomi-17.avif",
+    "thumbnail": "mockups/android-xiaomi-17.avif"
+  },
+  {
+    "name": "Xiaomi 17 Pro",
+    "source": "img/devices/android/xiaomi/17-pro/device.avif",
+    "image": "mockups/android-xiaomi-17-pro.avif",
+    "thumbnail": "mockups/android-xiaomi-17-pro.avif"
+  },
+  {
+    "name": "Xiaomi 17 Pro Max",
+    "source": "img/devices/android/xiaomi/17-pro-max/device.avif",
+    "image": "mockups/android-xiaomi-17-pro-max.avif",
+    "thumbnail": "mockups/android-xiaomi-17-pro-max.avif"
+  },
+  {
+    "name": "Xiaomi 17 Ultra",
+    "source": "img/devices/android/xiaomi/17-ultra/device.avif",
+    "image": "mockups/android-xiaomi-17-ultra.avif",
+    "thumbnail": "mockups/android-xiaomi-17-ultra.avif"
+  },
+  {
+    "name": "POCO X8 Pro",
+    "source": "img/devices/android/xiaomi/poco-x8-pro/device.avif",
+    "image": "mockups/android-xiaomi-poco-x8-pro.avif",
+    "thumbnail": "mockups/android-xiaomi-poco-x8-pro.avif"
+  },
+  {
+    "name": "POCO X7 Pro",
+    "source": "img/devices/android/xiaomi/poco-x7-pro/device.avif",
+    "image": "mockups/android-xiaomi-poco-x7-pro.avif",
+    "thumbnail": "mockups/android-xiaomi-poco-x7-pro.avif"
+  },
+  {
+    "name": "POCO X7",
+    "source": "img/devices/android/xiaomi/poco-x7/device.avif",
+    "image": "mockups/android-xiaomi-poco-x7.avif",
+    "thumbnail": "mockups/android-xiaomi-poco-x7.avif"
+  },
+  {
+    "name": "Redmi Note 15 Pro",
+    "source": "img/devices/android/xiaomi/redmi-note-15-pro/device.avif",
+    "image": "mockups/android-xiaomi-redmi-note-15-pro.avif",
+    "thumbnail": "mockups/android-xiaomi-redmi-note-15-pro.avif"
+  },
+  {
+    "name": "OnePlus 15",
+    "source": "img/devices/android/oneplus/15/device.avif",
+    "image": "mockups/android-oneplus-15.avif",
+    "thumbnail": "mockups/android-oneplus-15.avif"
+  },
+  {
+    "name": "OnePlus 13",
+    "source": "img/devices/android/oneplus/13/device.avif",
+    "image": "mockups/android-oneplus-13.avif",
+    "thumbnail": "mockups/android-oneplus-13.avif"
+  },
+  {
+    "name": "OnePlus Nord CE5",
+    "source": "img/devices/android/oneplus/nord-ce5/device.avif",
+    "image": "mockups/android-oneplus-nord-ce5.avif",
+    "thumbnail": "mockups/android-oneplus-nord-ce5.avif"
+  },
+  {
+    "name": "Motorola Edge 60 Fusion",
+    "source": "img/devices/android/motorola/edge-60-fusion/device.avif",
+    "image": "mockups/android-motorola-edge-60-fusion.avif",
+    "thumbnail": "mockups/android-motorola-edge-60-fusion.avif"
+  },
+  {
+    "name": "Infinix Note 60 Pro",
+    "source": "img/devices/android/infinix/note-60-pro/device.avif",
+    "image": "mockups/android-infinix-note-60-pro.avif",
+    "thumbnail": "mockups/android-infinix-note-60-pro.avif"
+  },
+  {
+    "name": "Infinix Hot 50 Pro",
+    "source": "img/devices/android/infinix/hot-50-pro/device.avif",
+    "image": "mockups/android-infinix-hot-50-pro.avif",
+    "thumbnail": "mockups/android-infinix-hot-50-pro.avif"
+  },
+  {
+    "name": "Google Pixel 8",
+    "source": "img/devices/android/google/pixel-8/device.avif",
+    "image": "mockups/android-google-pixel-8.avif",
+    "thumbnail": "mockups/android-google-pixel-8.avif"
+  },
+  {
+    "name": "Samsung Galaxy S22",
+    "source": "img/devices/android/samsung/galaxy-s22/device.avif",
+    "image": "mockups/android-samsung-galaxy-s22.avif",
+    "thumbnail": "mockups/android-samsung-galaxy-s22.avif"
+  },
+  {
+    "name": "Samsung Galaxy A56",
+    "source": "img/devices/android/samsung/galaxy-a56/device.avif",
+    "image": "mockups/android-samsung-galaxy-a56.avif",
+    "thumbnail": "mockups/android-samsung-galaxy-a56.avif"
+  },
+  {
+    "name": "Huawei Mate X6",
+    "source": "img/devices/android/huawei/mate-x6/device.avif",
+    "image": "mockups/android-huawei-mate-x6.avif",
+    "thumbnail": "mockups/android-huawei-mate-x6.avif"
+  },
+  {
+    "name": "Huawei Mate XT Ultimate",
+    "source": "img/devices/android/huawei/mate-xt-ultimate/device.avif",
+    "image": "mockups/android-huawei-mate-xt-ultimate.avif",
+    "thumbnail": "mockups/android-huawei-mate-xt-ultimate.avif"
+  },
+  {
+    "name": "Apple iPad Pro 12.9",
+    "source": "img/devices/apple/ipad-pro-129/device.avif",
+    "image": "mockups/apple-ipad-pro-129.avif",
+    "thumbnail": "mockups/apple-ipad-pro-129.avif"
+  },
+  {
+    "name": "Apple iPad Pro 11",
+    "source": "img/devices/apple/ipad-pro-11/device.avif",
+    "image": "mockups/apple-ipad-pro-11.avif",
+    "thumbnail": "mockups/apple-ipad-pro-11.avif"
+  },
+  {
+    "name": "Apple iPad Mini 6",
+    "source": "img/devices/apple/ipad-mini-6/device.avif",
+    "image": "mockups/apple-ipad-mini-6.avif",
+    "thumbnail": "mockups/apple-ipad-mini-6.avif"
+  },
+  {
+    "name": "Apple iPad Mini 5",
+    "source": "img/devices/apple/ipad-mini-5/device.avif",
+    "image": "mockups/apple-ipad-mini-5.avif",
+    "thumbnail": "mockups/apple-ipad-mini-5.avif"
+  },
+  {
+    "name": "Apple iPad Air",
+    "source": "img/devices/apple/ipad-air/device.avif",
+    "image": "mockups/apple-ipad-air.avif",
+    "thumbnail": "mockups/apple-ipad-air.avif"
+  },
+  {
+    "name": "Apple iPad 10.2 (9th gen)",
+    "source": "img/devices/apple/ipad-10-2/device.avif",
+    "image": "mockups/apple-ipad-10-2.avif",
+    "thumbnail": "mockups/apple-ipad-10-2.avif"
+  },
+  {
+    "name": "Samsung Galaxy Tab S10",
+    "source": "img/devices/android/samsung/galaxy-tab-s10/device.avif",
+    "image": "mockups/android-samsung-galaxy-tab-s10.avif",
+    "thumbnail": "mockups/android-samsung-galaxy-tab-s10.avif"
+  },
+  {
+    "name": "Xiaomi Pad 8",
+    "source": "img/devices/android/xiaomi/pad-8/device.avif",
+    "image": "mockups/android-xiaomi-pad-8.avif",
+    "thumbnail": "mockups/android-xiaomi-pad-8.avif"
+  },
+  {
+    "name": "Redmi Pad 2",
+    "source": "img/devices/android/xiaomi/redmi-pad-2/device.avif",
+    "image": "mockups/android-xiaomi-redmi-pad-2.avif",
+    "thumbnail": "mockups/android-xiaomi-redmi-pad-2.avif"
+  },
+  {
+    "name": "OnePlus Pad Go 2",
+    "source": "img/devices/android/oneplus/pad-go-2/device.avif",
+    "image": "mockups/android-oneplus-pad-go-2.avif",
+    "thumbnail": "mockups/android-oneplus-pad-go-2.avif"
+  },
+  {
+    "name": "MacBook Air 13\" M5",
+    "source": "img/devices/laptops/apple/macbook_air-m5-13/device.avif",
+    "image": "mockups/laptops-apple-macbook-air-m5-13.avif",
+    "thumbnail": "mockups/laptops-apple-macbook-air-m5-13-preview.avif"
+  },
+  {
+    "name": "MacBook Pro 14\" M5",
+    "source": "img/devices/laptops/apple/macbook_pro-m5-14/device.avif",
+    "image": "mockups/laptops-apple-macbook-pro-m5-14.avif",
+    "thumbnail": "mockups/laptops-apple-macbook-pro-m5-14-preview.avif"
+  },
+  {
+    "name": "MacBook Pro 16\" M5 (2025)",
+    "source": "img/devices/laptops/apple/macbook_pro-m5-16/device.avif",
+    "image": "mockups/laptops-apple-macbook-pro-m5-16.avif",
+    "thumbnail": "mockups/laptops-apple-macbook-pro-m5-16-preview.avif"
+  },
+  {
+    "name": "MacBook Neo",
+    "source": "img/devices/laptops/apple/macbook_neo-13/device.avif",
+    "image": "mockups/laptops-apple-macbook-neo-13.avif",
+    "thumbnail": "mockups/laptops-apple-macbook-neo-13-preview.avif"
+  },
+  {
+    "name": "Microsoft Surface Go 12.4\"",
+    "source": "img/devices/laptops/microsoft/surface-go/device.avif",
+    "image": "mockups/laptops-microsoft-surface-go.avif",
+    "thumbnail": "mockups/laptops-microsoft-surface-go.avif"
+  },
+  {
+    "name": "Dell Latitude 3450 14\"",
+    "source": "img/devices/laptops/dell/latitude-3450-14/device.avif",
+    "image": "mockups/laptops-dell-latitude-3450-14.avif",
+    "thumbnail": "mockups/laptops-dell-latitude-3450-14.avif"
+  },
+  {
+    "name": "Huawei MateBook D 14 (2024)",
+    "source": "img/devices/laptops/huawei/matebook-d-14/device.avif",
+    "image": "mockups/laptops-huawei-matebook-d-14.avif",
+    "thumbnail": "mockups/laptops-huawei-matebook-d-14.avif"
+  },
+  {
+    "name": "MacBook Air 13\" M1 (2020)",
+    "source": "img/devices/laptops/apple/macbook_air-m1/device.avif",
+    "image": "mockups/laptops-apple-macbook-air-m1.avif",
+    "thumbnail": "mockups/laptops-apple-macbook-air-m1-preview.avif"
+  },
+  {
+    "name": "MacBook Pro 13\" M1 (2020)",
+    "source": "img/devices/laptops/apple/macbook_pro-m1-13/device.avif",
+    "image": "mockups/laptops-apple-macbook-pro-m1-13.avif",
+    "thumbnail": "mockups/laptops-apple-macbook-pro-m1-13-preview.avif"
+  },
+  {
+    "name": "Sony 4K TV 55\"",
+    "source": "img/devices/others/sony/4k-tv-55/device.avif",
+    "image": "mockups/others-sony-4k-tv-55.avif",
+    "thumbnail": "mockups/others-sony-4k-tv-55.avif"
+  },
+  {
+    "name": "Nintendo Switch 2",
+    "source": "img/devices/others/nintendo/switch-2/device.avif",
+    "image": "mockups/others-nintendo-switch-2.avif",
+    "thumbnail": "mockups/others-nintendo-switch-2.avif"
+  },
+  {
+    "name": "Nintendo Switch OLED",
+    "source": "img/devices/others/nintendo/switch-oled/device.avif",
+    "image": "mockups/others-nintendo-switch-oled.avif",
+    "thumbnail": "mockups/others-nintendo-switch-oled.avif"
+  },
+  {
+    "name": "Steam Deck OLED",
+    "source": "img/devices/others/valve/steam-deck/device.avif",
+    "image": "mockups/others-valve-steam-deck.avif",
+    "thumbnail": "mockups/others-valve-steam-deck.avif"
+  }
+]

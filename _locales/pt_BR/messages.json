@@ -1,0 +1,614 @@
+{
+  "app_name": {
+    "message": "Mockaí"
+  },
+  "app_description": {
+    "message": "Teste seus sites em celulares, tablets e notebooks lado a lado, com rolagem sincronizada, capturas de tela e gravação de vídeo."
+  },
+  "app_open": {
+    "message": "Abrir Mockaí"
+  },
+  "app_workspace": {
+    "message": "ÁREA DE TESTE"
+  },
+  "app_dialog": {
+    "message": "Simulador Mockaí"
+  },
+  "common_close": {
+    "message": "Fechar"
+  },
+  "common_name": {
+    "message": "Nome"
+  },
+  "common_delete": {
+    "message": "Excluir"
+  },
+  "common_add": {
+    "message": "Adicionar"
+  },
+  "common_remove": {
+    "message": "Remover"
+  },
+  "common_open": {
+    "message": "Abrir"
+  },
+  "common_language": {
+    "message": "Idioma"
+  },
+  "common_auto": {
+    "message": "Automático"
+  },
+  "common_wait": {
+    "message": "Aguarde…"
+  },
+  "workspace_library": {
+    "message": "Dispositivos e conjuntos"
+  },
+  "workspace_light": {
+    "message": "Tema claro"
+  },
+  "workspace_screen": {
+    "message": "Tela"
+  },
+  "workspace_selected": {
+    "message": "Dispositivo selecionado"
+  },
+  "workspace_width": {
+    "message": "Largura"
+  },
+  "workspace_height": {
+    "message": "Altura"
+  },
+  "workspace_rotate": {
+    "message": "Girar selecionado"
+  },
+  "workspace_zoom": {
+    "message": "Zoom"
+  },
+  "workspace_reload": {
+    "message": "Recarregar selecionado"
+  },
+  "workspace_notice": {
+    "message": "Prévia responsiva · alguns sites bloqueiam quadros. O navegador e o agente de usuário continuam sendo os do computador."
+  },
+  "workspace_screens": {
+    "message": "Telas em teste"
+  },
+  "workspace_hint": {
+    "message": "Selecione uma tela pelo título para ajustar suas dimensões."
+  },
+  "workspace_count": {
+    "message": "{count}/{limit} telas · {zoom}%"
+  },
+  "workspace_removeName": {
+    "message": "Remover {name}"
+  },
+  "workspace_frameTitle": {
+    "message": "{name} — página em teste"
+  },
+  "library_title": {
+    "message": "Suas telas"
+  },
+  "library_search": {
+    "message": "Buscar perfil"
+  },
+  "library_searchHint": {
+    "message": "Nome ou dimensão"
+  },
+  "library_favorites": {
+    "message": "Favoritos ({count})"
+  },
+  "library_favorite": {
+    "message": "Favoritar {name}"
+  },
+  "library_unfavorite": {
+    "message": "Desfavoritar {name}"
+  },
+  "library_addName": {
+    "message": "Adicionar {name}"
+  },
+  "library_deleteProfile": {
+    "message": "Excluir perfil {name}"
+  },
+  "library_empty": {
+    "message": "Nenhum perfil encontrado."
+  },
+  "library_emptyFavorites": {
+    "message": "Nenhum favorito encontrado."
+  },
+  "library_custom": {
+    "message": "Perfil personalizado"
+  },
+  "library_customHint": {
+    "message": "Salva as dimensões da tela selecionada."
+  },
+  "library_saveProfile": {
+    "message": "Salvar perfil"
+  },
+  "library_sets": {
+    "message": "Conjuntos salvos"
+  },
+  "library_setName": {
+    "message": "Nome do conjunto"
+  },
+  "library_saveSet": {
+    "message": "Salvar telas atuais"
+  },
+  "library_emptySets": {
+    "message": "Salve as telas atuais para abrir depois."
+  },
+  "library_setCount": {
+    "message": "{count} dispositivo(s)"
+  },
+  "library_openSet": {
+    "message": "Abrir conjunto {name}"
+  },
+  "library_deleteSet": {
+    "message": "Excluir conjunto {name}"
+  },
+  "library_updated": {
+    "message": "Biblioteca atualizada."
+  },
+  "library_opened": {
+    "message": "Conjunto “{name}” aberto."
+  },
+  "profile_compact": {
+    "message": "Compacto"
+  },
+  "profile_wide": {
+    "message": "Amplo"
+  },
+  "profile_tablet": {
+    "message": "Tablet"
+  },
+  "sync_label": {
+    "message": "Sincronizar rolagem"
+  },
+  "sync_off": {
+    "message": "Rolagem independente"
+  },
+  "sync_status": {
+    "message": "Rolagem vinculada: {linked}/{total} telas"
+  },
+  "sync_unavailable": {
+    "message": "Sincronização exige duas telas acessíveis na mesma origem."
+  },
+  "sync_hint": {
+    "message": "Sincroniza o progresso de rolagem do documento. Quadros de outra origem e painéis internos não são vinculados."
+  },
+  "options_saved": {
+    "message": "Preferências salvas."
+  },
+  "media_png": {
+    "message": "Capturar PNG"
+  },
+  "media_video": {
+    "message": "Vídeo"
+  },
+  "media_record": {
+    "message": "Gravar selecionado"
+  },
+  "media_stop": {
+    "message": "Parar e exportar"
+  },
+  "media_cancel": {
+    "message": "Cancelar captura"
+  },
+  "media_recording": {
+    "message": "Gravando · sem áudio · até 2 min"
+  },
+  "media_preparing": {
+    "message": "Preparando captura…"
+  },
+  "media_stopping": {
+    "message": "Finalizando…"
+  },
+  "media_finished": {
+    "message": "Gravação finalizada."
+  },
+  "media_cancelled": {
+    "message": "Captura cancelada."
+  },
+  "media_revoked": {
+    "message": "A permissão de gravação foi removida."
+  },
+  "media_interrupted": {
+    "message": "O navegador interrompeu a captura. Os dados disponíveis foram preservados."
+  },
+  "media_duration": {
+    "message": "A gravação atingiu o limite de dois minutos."
+  },
+  "popup_intro": {
+    "message": "Experimente sua página em uma tela com as dimensões que você escolher."
+  },
+  "popup_open": {
+    "message": "Abrir simulador"
+  },
+  "popup_close": {
+    "message": "Fechar simulador"
+  },
+  "popup_format": {
+    "message": "Formato de vídeo"
+  },
+  "popup_record": {
+    "message": "Gravar tela selecionada"
+  },
+  "popup_note": {
+    "message": "Prévia independente · até quatro dispositivos"
+  },
+  "popup_blocked": {
+    "message": "Alguns sites impedem abertura em quadros."
+  },
+  "popup_opened": {
+    "message": "Simulador aberto nesta aba."
+  },
+  "popup_closed": {
+    "message": "Simulador encerrado."
+  },
+  "popup_preparing": {
+    "message": "Preparando gravação…"
+  },
+  "popup_recording": {
+    "message": "Gravação em andamento. Você também pode parar ou cancelar na página."
+  },
+  "popup_unavailable": {
+    "message": "Página indisponível"
+  },
+  "export_title": {
+    "message": "Exportar · Mockaí"
+  },
+  "export_heading": {
+    "message": "Sua captura está pronta."
+  },
+  "export_preparing": {
+    "message": "Preparando arquivo local…"
+  },
+  "export_nav": {
+    "message": "Exportar"
+  },
+  "export_download": {
+    "message": "Baixar {format}"
+  },
+  "export_convert": {
+    "message": "Converter para MP4"
+  },
+  "export_cancel": {
+    "message": "Cancelar conversão"
+  },
+  "export_progress": {
+    "message": "Progresso da conversão"
+  },
+  "export_note": {
+    "message": "O arquivo é preparado neste computador. Ao fechar esta página, os arquivos temporários são liberados."
+  },
+  "export_alt": {
+    "message": "Captura da tela selecionada"
+  },
+  "export_ready": {
+    "message": "Arquivo pronto para baixar."
+  },
+  "export_noMP4": {
+    "message": "Conversão MP4 indisponível neste navegador; o WebM permanece disponível."
+  },
+  "export_converting": {
+    "message": "Convertendo neste computador. A conversão acompanha a duração do vídeo."
+  },
+  "export_converted": {
+    "message": "MP4 pronto. O WebM original continua disponível."
+  },
+  "export_original": {
+    "message": "O WebM original continua disponível."
+  },
+  "error_native": {
+    "message": "Não foi possível concluir: {detail}"
+  },
+  "error_options": {
+    "message": "Preferências inválidas."
+  },
+  "error_settings": {
+    "message": "Ajustes inválidos."
+  },
+  "error_dimensions": {
+    "message": "Dimensões ou aparência inválidas."
+  },
+  "error_name": {
+    "message": "Use um nome de 1 a 48 caracteres, sem caracteres de controle."
+  },
+  "error_id": {
+    "message": "Identificador inválido."
+  },
+  "error_deviceCount": {
+    "message": "Mantenha entre 1 e 4 dispositivos abertos."
+  },
+  "error_device": {
+    "message": "Dispositivo inválido."
+  },
+  "error_selection": {
+    "message": "Seleção ou identificadores de dispositivos inválidos."
+  },
+  "error_deviceMissing": {
+    "message": "Dispositivo não encontrado."
+  },
+  "error_library": {
+    "message": "Biblioteca inválida."
+  },
+  "error_profile": {
+    "message": "Perfil personalizado inválido."
+  },
+  "error_favorites": {
+    "message": "Favoritos ou perfis inválidos."
+  },
+  "error_duplicateSets": {
+    "message": "Conjuntos duplicados."
+  },
+  "error_http": {
+    "message": "Abra uma página HTTP ou HTTPS para simular."
+  },
+  "error_protected": {
+    "message": "O Chrome não permite simular esta página protegida."
+  },
+  "error_visible": {
+    "message": "A tela precisa estar inteira visível. Reduza o zoom e tente novamente."
+  },
+  "error_noImage": {
+    "message": "A captura não contém imagem."
+  },
+  "error_resized": {
+    "message": "O tamanho da aba mudou durante a captura. Tente novamente."
+  },
+  "error_mp4": {
+    "message": "MP4 indisponível neste navegador. Escolha WebM."
+  },
+  "error_codec": {
+    "message": "Não há codificador disponível para o formato escolhido."
+  },
+  "error_service": {
+    "message": "O serviço de mídia não respondeu."
+  },
+  "error_focus": {
+    "message": "Volte à aba do simulador antes de capturar."
+  },
+  "error_mode": {
+    "message": "Tipo de captura inválido."
+  },
+  "error_format": {
+    "message": "Formato de vídeo inválido."
+  },
+  "error_previous": {
+    "message": "Finalize ou descarte a captura anterior antes de iniciar outra."
+  },
+  "error_permissionHint": {
+    "message": "Abra o popup do Mockaí e clique em “Gravar tela selecionada” para permitir a gravação."
+  },
+  "error_prepare": {
+    "message": "Não foi possível preparar a tela."
+  },
+  "error_moved": {
+    "message": "A posição da tela mudou. Tente capturar novamente."
+  },
+  "error_noRecording": {
+    "message": "Esta aba não possui gravação em andamento."
+  },
+  "error_event": {
+    "message": "Evento de mídia não autorizado."
+  },
+  "error_export": {
+    "message": "Exportação não autorizada ou expirada."
+  },
+  "error_exportOperation": {
+    "message": "Operação de exportação desconhecida."
+  },
+  "error_sessionVersion": {
+    "message": "Versão de sessão inválida."
+  },
+  "error_message": {
+    "message": "Mensagem não autorizada."
+  },
+  "error_origin": {
+    "message": "Origem da mensagem inválida."
+  },
+  "error_tab": {
+    "message": "Aba inválida."
+  },
+  "error_session": {
+    "message": "Sessão encerrada."
+  },
+  "error_preview": {
+    "message": "Captura disponível somente na extensão carregada no Chrome."
+  },
+  "error_mediaOperation": {
+    "message": "Operação de mídia desconhecida."
+  },
+  "error_context": {
+    "message": "Operação indisponível neste contexto."
+  },
+  "error_openFirst": {
+    "message": "Abra o simulador antes de gravar."
+  },
+  "error_operation": {
+    "message": "Operação desconhecida."
+  },
+  "error_mount": {
+    "message": "A interface não confirmou a abertura."
+  },
+  "error_customLimit": {
+    "message": "O limite é de 20 perfis personalizados."
+  },
+  "error_customMissing": {
+    "message": "Perfil personalizado não encontrado."
+  },
+  "error_profileMissing": {
+    "message": "Perfil não encontrado."
+  },
+  "error_profileRefresh": {
+    "message": "Perfil não encontrado. Atualize a biblioteca."
+  },
+  "error_setLimit": {
+    "message": "O limite é de 16 conjuntos."
+  },
+  "error_setMissing": {
+    "message": "Conjunto não encontrado."
+  },
+  "error_libraryOperation": {
+    "message": "Operação de biblioteca desconhecida."
+  },
+  "error_noData": {
+    "message": "A gravação terminou sem dados."
+  },
+  "error_size": {
+    "message": "O arquivo excedeu o limite de 64 MiB."
+  },
+  "error_notRecording": {
+    "message": "Não há gravação em andamento."
+  },
+  "error_stopTimeout": {
+    "message": "O navegador não finalizou a gravação."
+  },
+  "error_prepareTimeout": {
+    "message": "A preparação da captura excedeu o tempo permitido."
+  },
+  "error_image": {
+    "message": "Imagem de captura inválida."
+  },
+  "error_recordingSize": {
+    "message": "A gravação excedeu o limite de 64 MiB e foi descartada."
+  },
+  "error_encoder": {
+    "message": "O codificador falhou."
+  },
+  "error_artifact": {
+    "message": "A captura não está mais disponível."
+  },
+  "error_canvas": {
+    "message": "Canvas indisponível."
+  },
+  "error_png": {
+    "message": "Falha ao gerar PNG."
+  },
+  "error_videoTimeout": {
+    "message": "A aba não forneceu imagem para a gravação."
+  },
+  "error_video": {
+    "message": "Não foi possível ler o vídeo da aba."
+  },
+  "error_cancelConversion": {
+    "message": "Conversão cancelada."
+  },
+  "error_openVideo": {
+    "message": "Não foi possível abrir o vídeo para conversão."
+  },
+  "error_decode": {
+    "message": "Este vídeo não pode ser convertido pelo navegador."
+  },
+  "error_convertSize": {
+    "message": "Dimensões indisponíveis ou grandes demais para conversão."
+  },
+  "error_convertCanvas": {
+    "message": "Canvas indisponível para conversão."
+  },
+  "error_mp4Size": {
+    "message": "O MP4 excedeu o limite de 64 MiB."
+  },
+  "error_mp4Encoder": {
+    "message": "O codificador MP4 falhou."
+  },
+  "error_convertEmpty": {
+    "message": "A conversão terminou sem dados."
+  },
+  "error_playback": {
+    "message": "A reprodução foi interrompida durante a conversão."
+  },
+  "error_convertTimeout": {
+    "message": "A conversão excedeu o tempo permitido."
+  },
+  "error_expired": {
+    "message": "A captura expirou."
+  },
+  "error_file": {
+    "message": "Não foi possível recuperar o arquivo local."
+  },
+  "error_emptyFile": {
+    "message": "O arquivo está vazio ou excede o limite de tamanho."
+  },
+  "error_extension": {
+    "message": "A extensão não respondeu. Recarregue esta página."
+  },
+  "error_popupExtension": {
+    "message": "Não foi possível falar com a extensão. Recarregue a página."
+  },
+  "error_permission": {
+    "message": "Permissão de gravação não concedida."
+  },
+  "error_prepareFocus": {
+    "message": "Volte à aba do simulador para preparar a captura."
+  },
+  "error_inputDimensions": {
+    "message": "Use as dimensões indicadas nos campos."
+  },
+  "header_devices": {
+    "message": "Dispositivos"
+  },
+  "header_capture": {
+    "message": "Capturar"
+  },
+  "header_settings": {
+    "message": "Ajustes"
+  },
+  "header_stop": {
+    "message": "Parar"
+  },
+  "header_cancel": {
+    "message": "Cancelar"
+  },
+  "header_recording": {
+    "message": "Gravando"
+  },
+  "settings_device": {
+    "message": "Tela selecionada"
+  },
+  "settings_dimensions": {
+    "message": "Dimensões"
+  },
+  "settings_rotate": {
+    "message": "Girar"
+  },
+  "settings_reload": {
+    "message": "Recarregar"
+  },
+  "settings_appearance": {
+    "message": "Preferências"
+  },
+  "settings_scale": {
+    "message": "Escala de visualização"
+  },
+  "settings_record": {
+    "message": "Gravar esta tela"
+  },
+  "settings_videoHint": {
+    "message": "Sem áudio · até 2 minutos"
+  },
+  "settings_about": {
+    "message": "Sobre esta prévia"
+  },
+  "screen_mode": {
+    "message": "Modo da tela"
+  },
+  "screen_browser": {
+    "message": "Navegador"
+  },
+  "screen_pwa": {
+    "message": "PWA"
+  },
+  "screen_fullscreen": {
+    "message": "Tela cheia"
+  },
+  "screen_hint": {
+    "message": "Navegador mostra as barras de navegação. PWA mantém a barra de status. Tela cheia usa toda a tela para o conteúdo."
+  },
+  "error_screenMode": {
+    "message": "Modo da tela inválido."
+  },
+  "action_title": {
+    "message": "Abrir Mockaí"
+  }
+}

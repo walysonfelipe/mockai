@@ -1,0 +1,614 @@
+{
+  "app_name": {
+    "message": "Mockaí · Rewrite"
+  },
+  "app_description": {
+    "message": "An independently implemented responsive testing workspace. Development preview."
+  },
+  "app_open": {
+    "message": "Open Mockaí"
+  },
+  "app_workspace": {
+    "message": "TEST WORKSPACE"
+  },
+  "app_dialog": {
+    "message": "Mockaí simulator"
+  },
+  "common_close": {
+    "message": "Close"
+  },
+  "common_name": {
+    "message": "Name"
+  },
+  "common_delete": {
+    "message": "Delete"
+  },
+  "common_add": {
+    "message": "Add"
+  },
+  "common_remove": {
+    "message": "Remove"
+  },
+  "common_open": {
+    "message": "Open"
+  },
+  "common_language": {
+    "message": "Language"
+  },
+  "common_auto": {
+    "message": "Automatic"
+  },
+  "common_wait": {
+    "message": "Please wait…"
+  },
+  "workspace_library": {
+    "message": "Devices and sets"
+  },
+  "workspace_light": {
+    "message": "Light theme"
+  },
+  "workspace_screen": {
+    "message": "Screen"
+  },
+  "workspace_selected": {
+    "message": "Selected device"
+  },
+  "workspace_width": {
+    "message": "Width"
+  },
+  "workspace_height": {
+    "message": "Height"
+  },
+  "workspace_rotate": {
+    "message": "Rotate selected"
+  },
+  "workspace_zoom": {
+    "message": "Zoom"
+  },
+  "workspace_reload": {
+    "message": "Reload selected"
+  },
+  "workspace_notice": {
+    "message": "Responsive preview · some sites block frames. The browser and user agent remain those of your computer."
+  },
+  "workspace_screens": {
+    "message": "Test screens"
+  },
+  "workspace_hint": {
+    "message": "Select a screen by its title to adjust its dimensions."
+  },
+  "workspace_count": {
+    "message": "{count}/{limit} screens · {zoom}%"
+  },
+  "workspace_removeName": {
+    "message": "Remove {name}"
+  },
+  "workspace_frameTitle": {
+    "message": "{name} — test page"
+  },
+  "library_title": {
+    "message": "Your screens"
+  },
+  "library_search": {
+    "message": "Search profiles"
+  },
+  "library_searchHint": {
+    "message": "Name or size"
+  },
+  "library_favorites": {
+    "message": "Favorites ({count})"
+  },
+  "library_favorite": {
+    "message": "Favorite {name}"
+  },
+  "library_unfavorite": {
+    "message": "Unfavorite {name}"
+  },
+  "library_addName": {
+    "message": "Add {name}"
+  },
+  "library_deleteProfile": {
+    "message": "Delete profile {name}"
+  },
+  "library_empty": {
+    "message": "No profiles found."
+  },
+  "library_emptyFavorites": {
+    "message": "No favorites found."
+  },
+  "library_custom": {
+    "message": "Custom profile"
+  },
+  "library_customHint": {
+    "message": "Saves the dimensions of the selected screen."
+  },
+  "library_saveProfile": {
+    "message": "Save profile"
+  },
+  "library_sets": {
+    "message": "Saved sets"
+  },
+  "library_setName": {
+    "message": "Set name"
+  },
+  "library_saveSet": {
+    "message": "Save current screens"
+  },
+  "library_emptySets": {
+    "message": "Save the current screens to open them later."
+  },
+  "library_setCount": {
+    "message": "{count} device(s)"
+  },
+  "library_openSet": {
+    "message": "Open set {name}"
+  },
+  "library_deleteSet": {
+    "message": "Delete set {name}"
+  },
+  "library_updated": {
+    "message": "Library updated."
+  },
+  "library_opened": {
+    "message": "Set “{name}” opened."
+  },
+  "profile_compact": {
+    "message": "Compact"
+  },
+  "profile_wide": {
+    "message": "Wide"
+  },
+  "profile_tablet": {
+    "message": "Tablet"
+  },
+  "sync_label": {
+    "message": "Sync scrolling"
+  },
+  "sync_off": {
+    "message": "Independent scrolling"
+  },
+  "sync_status": {
+    "message": "Linked scrolling: {linked}/{total} screens"
+  },
+  "sync_unavailable": {
+    "message": "Sync requires two accessible screens on the same origin."
+  },
+  "sync_hint": {
+    "message": "Syncs document scroll progress. Cross-origin frames and nested scroll areas are not linked."
+  },
+  "options_saved": {
+    "message": "Preferences saved."
+  },
+  "media_png": {
+    "message": "Capture PNG"
+  },
+  "media_video": {
+    "message": "Video"
+  },
+  "media_record": {
+    "message": "Record selected"
+  },
+  "media_stop": {
+    "message": "Stop and export"
+  },
+  "media_cancel": {
+    "message": "Cancel capture"
+  },
+  "media_recording": {
+    "message": "Recording · no audio · up to 2 min"
+  },
+  "media_preparing": {
+    "message": "Preparing capture…"
+  },
+  "media_stopping": {
+    "message": "Finishing…"
+  },
+  "media_finished": {
+    "message": "Recording finished."
+  },
+  "media_cancelled": {
+    "message": "Capture cancelled."
+  },
+  "media_revoked": {
+    "message": "Recording permission was removed."
+  },
+  "media_interrupted": {
+    "message": "The browser interrupted capture. Available data was preserved."
+  },
+  "media_duration": {
+    "message": "Recording reached the two-minute limit."
+  },
+  "popup_intro": {
+    "message": "Try your page on a screen with the dimensions you choose."
+  },
+  "popup_open": {
+    "message": "Open simulator"
+  },
+  "popup_close": {
+    "message": "Close simulator"
+  },
+  "popup_format": {
+    "message": "Video format"
+  },
+  "popup_record": {
+    "message": "Record selected screen"
+  },
+  "popup_note": {
+    "message": "Independent preview · up to four devices"
+  },
+  "popup_blocked": {
+    "message": "Some sites prevent loading in frames."
+  },
+  "popup_opened": {
+    "message": "Simulator opened in this tab."
+  },
+  "popup_closed": {
+    "message": "Simulator closed."
+  },
+  "popup_preparing": {
+    "message": "Preparing recording…"
+  },
+  "popup_recording": {
+    "message": "Recording in progress. You can also stop or cancel on the page."
+  },
+  "popup_unavailable": {
+    "message": "Page unavailable"
+  },
+  "export_title": {
+    "message": "Export · Mockaí"
+  },
+  "export_heading": {
+    "message": "Your capture is ready."
+  },
+  "export_preparing": {
+    "message": "Preparing local file…"
+  },
+  "export_nav": {
+    "message": "Export"
+  },
+  "export_download": {
+    "message": "Download {format}"
+  },
+  "export_convert": {
+    "message": "Convert to MP4"
+  },
+  "export_cancel": {
+    "message": "Cancel conversion"
+  },
+  "export_progress": {
+    "message": "Conversion progress"
+  },
+  "export_note": {
+    "message": "The file is prepared on this computer. Closing this page releases temporary files."
+  },
+  "export_alt": {
+    "message": "Capture of the selected screen"
+  },
+  "export_ready": {
+    "message": "File ready to download."
+  },
+  "export_noMP4": {
+    "message": "MP4 conversion is unavailable in this browser; WebM remains available."
+  },
+  "export_converting": {
+    "message": "Converting on this computer. Conversion takes about as long as the video."
+  },
+  "export_converted": {
+    "message": "MP4 ready. The original WebM remains available."
+  },
+  "export_original": {
+    "message": "The original WebM remains available."
+  },
+  "error_native": {
+    "message": "Could not complete: {detail}"
+  },
+  "error_options": {
+    "message": "Invalid preferences."
+  },
+  "error_settings": {
+    "message": "Invalid settings."
+  },
+  "error_dimensions": {
+    "message": "Invalid dimensions or appearance."
+  },
+  "error_name": {
+    "message": "Use a name of 1 to 48 characters without control characters."
+  },
+  "error_id": {
+    "message": "Invalid identifier."
+  },
+  "error_deviceCount": {
+    "message": "Keep between 1 and 4 devices open."
+  },
+  "error_device": {
+    "message": "Invalid device."
+  },
+  "error_selection": {
+    "message": "Invalid device selection or identifiers."
+  },
+  "error_deviceMissing": {
+    "message": "Device not found."
+  },
+  "error_library": {
+    "message": "Invalid library."
+  },
+  "error_profile": {
+    "message": "Invalid custom profile."
+  },
+  "error_favorites": {
+    "message": "Invalid favorites or profiles."
+  },
+  "error_duplicateSets": {
+    "message": "Duplicate sets."
+  },
+  "error_http": {
+    "message": "Open an HTTP or HTTPS page to simulate."
+  },
+  "error_protected": {
+    "message": "Chrome does not allow simulating this protected page."
+  },
+  "error_visible": {
+    "message": "The entire screen must be visible. Reduce the zoom and try again."
+  },
+  "error_noImage": {
+    "message": "The capture contains no image."
+  },
+  "error_resized": {
+    "message": "The tab size changed during capture. Try again."
+  },
+  "error_mp4": {
+    "message": "MP4 is unavailable in this browser. Choose WebM."
+  },
+  "error_codec": {
+    "message": "No encoder is available for the selected format."
+  },
+  "error_service": {
+    "message": "The media service did not respond."
+  },
+  "error_focus": {
+    "message": "Return to the simulator tab before capturing."
+  },
+  "error_mode": {
+    "message": "Invalid capture type."
+  },
+  "error_format": {
+    "message": "Invalid video format."
+  },
+  "error_previous": {
+    "message": "Finish or discard the previous capture before starting another."
+  },
+  "error_permissionHint": {
+    "message": "Open the Mockaí popup and click “Record selected screen” to allow recording."
+  },
+  "error_prepare": {
+    "message": "Could not prepare the screen."
+  },
+  "error_moved": {
+    "message": "The screen position changed. Try capturing again."
+  },
+  "error_noRecording": {
+    "message": "This tab has no recording in progress."
+  },
+  "error_event": {
+    "message": "Unauthorized media event."
+  },
+  "error_export": {
+    "message": "Export is unauthorized or expired."
+  },
+  "error_exportOperation": {
+    "message": "Unknown export operation."
+  },
+  "error_sessionVersion": {
+    "message": "Invalid session version."
+  },
+  "error_message": {
+    "message": "Unauthorized message."
+  },
+  "error_origin": {
+    "message": "Invalid message origin."
+  },
+  "error_tab": {
+    "message": "Invalid tab."
+  },
+  "error_session": {
+    "message": "Session ended."
+  },
+  "error_preview": {
+    "message": "Capture is only available in the extension loaded in Chrome."
+  },
+  "error_mediaOperation": {
+    "message": "Unknown media operation."
+  },
+  "error_context": {
+    "message": "Operation unavailable in this context."
+  },
+  "error_openFirst": {
+    "message": "Open the simulator before recording."
+  },
+  "error_operation": {
+    "message": "Unknown operation."
+  },
+  "error_mount": {
+    "message": "The interface did not confirm opening."
+  },
+  "error_customLimit": {
+    "message": "The limit is 20 custom profiles."
+  },
+  "error_customMissing": {
+    "message": "Custom profile not found."
+  },
+  "error_profileMissing": {
+    "message": "Profile not found."
+  },
+  "error_profileRefresh": {
+    "message": "Profile not found. Refresh the library."
+  },
+  "error_setLimit": {
+    "message": "The limit is 16 sets."
+  },
+  "error_setMissing": {
+    "message": "Set not found."
+  },
+  "error_libraryOperation": {
+    "message": "Unknown library operation."
+  },
+  "error_noData": {
+    "message": "Recording ended without data."
+  },
+  "error_size": {
+    "message": "The file exceeded the 64 MiB limit."
+  },
+  "error_notRecording": {
+    "message": "There is no recording in progress."
+  },
+  "error_stopTimeout": {
+    "message": "The browser did not finalize the recording."
+  },
+  "error_prepareTimeout": {
+    "message": "Capture preparation timed out."
+  },
+  "error_image": {
+    "message": "Invalid capture image."
+  },
+  "error_recordingSize": {
+    "message": "Recording exceeded the 64 MiB limit and was discarded."
+  },
+  "error_encoder": {
+    "message": "The encoder failed."
+  },
+  "error_artifact": {
+    "message": "The capture is no longer available."
+  },
+  "error_canvas": {
+    "message": "Canvas is unavailable."
+  },
+  "error_png": {
+    "message": "Failed to generate PNG."
+  },
+  "error_videoTimeout": {
+    "message": "The tab did not provide an image for recording."
+  },
+  "error_video": {
+    "message": "Could not read the tab video."
+  },
+  "error_cancelConversion": {
+    "message": "Conversion cancelled."
+  },
+  "error_openVideo": {
+    "message": "Could not open the video for conversion."
+  },
+  "error_decode": {
+    "message": "This video cannot be converted by the browser."
+  },
+  "error_convertSize": {
+    "message": "Dimensions unavailable or too large for conversion."
+  },
+  "error_convertCanvas": {
+    "message": "Canvas unavailable for conversion."
+  },
+  "error_mp4Size": {
+    "message": "The MP4 exceeded the 64 MiB limit."
+  },
+  "error_mp4Encoder": {
+    "message": "The MP4 encoder failed."
+  },
+  "error_convertEmpty": {
+    "message": "Conversion ended without data."
+  },
+  "error_playback": {
+    "message": "Playback was interrupted during conversion."
+  },
+  "error_convertTimeout": {
+    "message": "Conversion timed out."
+  },
+  "error_expired": {
+    "message": "The capture expired."
+  },
+  "error_file": {
+    "message": "Could not retrieve the local file."
+  },
+  "error_emptyFile": {
+    "message": "The file is empty or exceeds the size limit."
+  },
+  "error_extension": {
+    "message": "The extension did not respond. Reload this page."
+  },
+  "error_popupExtension": {
+    "message": "Could not reach the extension. Reload the page."
+  },
+  "error_permission": {
+    "message": "Recording permission was not granted."
+  },
+  "error_prepareFocus": {
+    "message": "Return to the simulator tab to prepare capture."
+  },
+  "error_inputDimensions": {
+    "message": "Use the dimensions indicated in the fields."
+  },
+  "header_devices": {
+    "message": "Devices"
+  },
+  "header_capture": {
+    "message": "Capture"
+  },
+  "header_settings": {
+    "message": "Settings"
+  },
+  "header_stop": {
+    "message": "Stop"
+  },
+  "header_cancel": {
+    "message": "Cancel"
+  },
+  "header_recording": {
+    "message": "Recording"
+  },
+  "settings_device": {
+    "message": "Selected screen"
+  },
+  "settings_dimensions": {
+    "message": "Dimensions"
+  },
+  "settings_rotate": {
+    "message": "Rotate"
+  },
+  "settings_reload": {
+    "message": "Reload"
+  },
+  "settings_appearance": {
+    "message": "Preferences"
+  },
+  "settings_scale": {
+    "message": "Preview scale"
+  },
+  "settings_record": {
+    "message": "Record this screen"
+  },
+  "settings_videoHint": {
+    "message": "No audio · up to 2 minutes"
+  },
+  "settings_about": {
+    "message": "About this preview"
+  },
+  "screen_mode": {
+    "message": "Screen mode"
+  },
+  "screen_browser": {
+    "message": "Browser"
+  },
+  "screen_pwa": {
+    "message": "PWA"
+  },
+  "screen_fullscreen": {
+    "message": "Fullscreen"
+  },
+  "screen_hint": {
+    "message": "Browser shows navigation bars. PWA keeps the status bar. Fullscreen uses the entire screen for content."
+  },
+  "error_screenMode": {
+    "message": "Invalid screen mode."
+  },
+  "action_title": {
+    "message": "Open Mockaí"
+  }
+}

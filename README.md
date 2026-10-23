@@ -4,7 +4,7 @@
 
 O Mockaí é uma extensão para Chrome que permite visualizar seus sites em celulares, tablets e notebooks lado a lado, diretamente na página que você está acessando. Compare layouts responsivos, sincronize a rolagem e registre o resultado em imagens ou vídeos.
 
-![Mockaí: prévias responsivas em celulares e notebook, com rolagem sincronizada, capturas de tela e gravação de vídeo](img/mockai-promocional-1280x800.png)
+![Mockaí: prévias responsivas em celulares e notebook, com rolagem sincronizada, capturas de tela e gravação de vídeo](img/og-image.png)
 
 ## Recursos
 

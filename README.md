@@ -18,11 +18,15 @@ O Mockaí é uma extensão para Chrome que permite visualizar seus sites em celu
 - **Modos Navegador, PWA e Tela cheia** para ajustar a apresentação da prévia.
 - **Tema claro e escuro** e interface em português, inglês e espanhol.
 
+## Baixar a release
+
+Acesse a [release v1 do Mockaí](https://github.com/walysonfelipe/mockai/releases/tag/v1) e baixe o ZIP da extensão na seção **Assets**. Extraia o arquivo e siga as instruções abaixo para instalar no Chrome.
+
 ## Instalação local
 
 Requer **Google Chrome 116 ou superior**. Esta pasta contém a extensão pronta para carregar, sem instalar dependências ou executar um build.
 
-1. Clone este repositório ou baixe e extraia o ZIP.
+1. Baixe e extraia o ZIP da [release v1](https://github.com/walysonfelipe/mockai/releases/tag/v1) ou clone este repositório.
 2. Abra `chrome://extensions` no Chrome.
 3. Ative o **Modo do desenvolvedor**.
 4. Clique em **Carregar sem compactação**.

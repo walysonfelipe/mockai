@@ -7,7 +7,7 @@ export const MOCKUPS = Object.freeze([
     "height": 874,
     "mockup": {
       "image": "mockups/apple-iphone-18-pro.avif",
-      "thumbnail": "mockups/apple-iphone-18-pro-preview.avif",
+      "thumbnail": "mockups/apple-iphone-18-pro.avif",
       "frameWidth": 440,
       "frameHeight": 906,
       "offset": 0,
@@ -21,7 +21,7 @@ export const MOCKUPS = Object.freeze([
     "height": 956,
     "mockup": {
       "image": "mockups/apple-iphone-18-pro-max.avif",
-      "thumbnail": "mockups/apple-iphone-18-pro-max-preview.avif",
+      "thumbnail": "mockups/apple-iphone-18-pro-max.avif",
       "frameWidth": 482,
       "frameHeight": 992,
       "offset": 0,
@@ -35,7 +35,7 @@ export const MOCKUPS = Object.freeze([
     "height": 678,
     "mockup": {
       "image": "mockups/apple-iphone-duo-front.avif",
-      "thumbnail": "mockups/apple-iphone-duo-front-preview.avif",
+      "thumbnail": "mockups/apple-iphone-duo-front.avif",
       "frameWidth": 518,
       "frameHeight": 716,
       "offset": 0,
@@ -49,7 +49,7 @@ export const MOCKUPS = Object.freeze([
     "height": 874,
     "mockup": {
       "image": "mockups/apple-iphone-17.avif",
-      "thumbnail": "mockups/apple-iphone-17-preview.avif",
+      "thumbnail": "mockups/apple-iphone-17.avif",
       "frameWidth": 436,
       "frameHeight": 904,
       "offset": 0,
@@ -63,7 +63,7 @@ export const MOCKUPS = Object.freeze([
     "height": 874,
     "mockup": {
       "image": "mockups/apple-iphone-17-pro.avif",
-      "thumbnail": "mockups/apple-iphone-17-pro-preview.avif",
+      "thumbnail": "mockups/apple-iphone-17-pro.avif",
       "frameWidth": 436,
       "frameHeight": 904,
       "offset": 0,
@@ -77,7 +77,7 @@ export const MOCKUPS = Object.freeze([
     "height": 956,
     "mockup": {
       "image": "mockups/apple-iphone-17-pro-max.avif",
-      "thumbnail": "mockups/apple-iphone-17-pro-max-preview.avif",
+      "thumbnail": "mockups/apple-iphone-17-pro-max.avif",
       "frameWidth": 476,
       "frameHeight": 988,
       "offset": 0,
@@ -91,7 +91,7 @@ export const MOCKUPS = Object.freeze([
     "height": 912,
     "mockup": {
       "image": "mockups/apple-iphone-air.avif",
-      "thumbnail": "mockups/apple-iphone-air-preview.avif",
+      "thumbnail": "mockups/apple-iphone-air.avif",
       "frameWidth": 460,
       "frameHeight": 946,
       "offset": 0,
@@ -105,7 +105,7 @@ export const MOCKUPS = Object.freeze([
     "height": 844,
     "mockup": {
       "image": "mockups/apple-iphone-17e.avif",
-      "thumbnail": "mockups/apple-iphone-17e-preview.avif",
+      "thumbnail": "mockups/apple-iphone-17e.avif",
       "frameWidth": 440,
       "frameHeight": 886,
       "offset": 0,
@@ -119,7 +119,7 @@ export const MOCKUPS = Object.freeze([
     "height": 852,
     "mockup": {
       "image": "mockups/apple-iphone-16.avif",
-      "thumbnail": "mockups/apple-iphone-16-preview.avif",
+      "thumbnail": "mockups/apple-iphone-16.avif",
       "frameWidth": 438,
       "frameHeight": 892,
       "offset": 0,
@@ -133,7 +133,7 @@ export const MOCKUPS = Object.freeze([
     "height": 932,
     "mockup": {
       "image": "mockups/apple-iphone-16-plus.avif",
-      "thumbnail": "mockups/apple-iphone-16-plus-preview.avif",
+      "thumbnail": "mockups/apple-iphone-16-plus.avif",
       "frameWidth": 479,
       "frameHeight": 976,
       "offset": 0,
@@ -147,7 +147,7 @@ export const MOCKUPS = Object.freeze([
     "height": 874,
     "mockup": {
       "image": "mockups/apple-iphone-16-pro.avif",
-      "thumbnail": "mockups/apple-iphone-16-pro-preview.avif",
+      "thumbnail": "mockups/apple-iphone-16-pro.avif",
       "frameWidth": 444,
       "frameHeight": 910,
       "offset": 0,
@@ -161,7 +161,7 @@ export const MOCKUPS = Object.freeze([
     "height": 956,
     "mockup": {
       "image": "mockups/apple-iphone-16-pro-max.avif",
-      "thumbnail": "mockups/apple-iphone-16-pro-max-preview.avif",
+      "thumbnail": "mockups/apple-iphone-16-pro-max.avif",
       "frameWidth": 485,
       "frameHeight": 994,
       "offset": 0,
@@ -175,7 +175,7 @@ export const MOCKUPS = Object.freeze([
     "height": 852,
     "mockup": {
       "image": "mockups/apple-iphone-15.avif",
-      "thumbnail": "mockups/apple-iphone-15-preview.avif",
+      "thumbnail": "mockups/apple-iphone-15.avif",
       "frameWidth": 438,
       "frameHeight": 892,
       "offset": 0,
@@ -189,7 +189,7 @@ export const MOCKUPS = Object.freeze([
     "height": 852,
     "mockup": {
       "image": "mockups/apple-iphone-14-15-pro.avif",
-      "thumbnail": "mockups/apple-iphone-14-15-pro-preview.avif",
+      "thumbnail": "mockups/apple-iphone-14-15-pro.avif",
       "frameWidth": 440,
       "frameHeight": 892,
       "offset": 0,
@@ -203,7 +203,7 @@ export const MOCKUPS = Object.freeze([
     "height": 844,
     "mockup": {
       "image": "mockups/apple-iphone-13-14.avif",
-      "thumbnail": "mockups/apple-iphone-13-14-preview.avif",
+      "thumbnail": "mockups/apple-iphone-13-14.avif",
       "frameWidth": 440,
       "frameHeight": 884,
       "offset": 0,
@@ -217,7 +217,7 @@ export const MOCKUPS = Object.freeze([
     "height": 812,
     "mockup": {
       "image": "mockups/apple-iphone-13-mini.avif",
-      "thumbnail": "mockups/apple-iphone-13-mini-preview.avif",
+      "thumbnail": "mockups/apple-iphone-13-mini.avif",
       "frameWidth": 424,
       "frameHeight": 854,
       "offset": 0,
@@ -231,7 +231,7 @@ export const MOCKUPS = Object.freeze([
     "height": 667,
     "mockup": {
       "image": "mockups/apple-iphone-se-3.avif",
-      "thumbnail": "mockups/apple-iphone-se-3-preview.avif",
+      "thumbnail": "mockups/apple-iphone-se-3.avif",
       "frameWidth": 431,
       "frameHeight": 862,
       "offset": 0,
@@ -245,7 +245,7 @@ export const MOCKUPS = Object.freeze([
     "height": 812,
     "mockup": {
       "image": "mockups/apple-iphone-x.avif",
-      "thumbnail": "mockups/apple-iphone-x-preview.avif",
+      "thumbnail": "mockups/apple-iphone-x.avif",
       "frameWidth": 432,
       "frameHeight": 864,
       "offset": 0,
@@ -259,7 +259,7 @@ export const MOCKUPS = Object.freeze([
     "height": 667,
     "mockup": {
       "image": "mockups/apple-iphone-6.avif",
-      "thumbnail": "mockups/apple-iphone-6-preview.avif",
+      "thumbnail": "mockups/apple-iphone-6.avif",
       "frameWidth": 434,
       "frameHeight": 878,
       "offset": 0,
@@ -273,7 +273,7 @@ export const MOCKUPS = Object.freeze([
     "height": 568,
     "mockup": {
       "image": "mockups/apple-iphone-5.avif",
-      "thumbnail": "mockups/apple-iphone-5-preview.avif",
+      "thumbnail": "mockups/apple-iphone-5.avif",
       "frameWidth": 377,
       "frameHeight": 788,
       "offset": 0,
@@ -287,7 +287,7 @@ export const MOCKUPS = Object.freeze([
     "height": 626,
     "mockup": {
       "image": "mockups/apple-iphone-duo-unfolded.avif",
-      "thumbnail": "mockups/apple-iphone-duo-unfolded-preview.avif",
+      "thumbnail": "mockups/apple-iphone-duo-unfolded.avif",
       "frameWidth": 934,
       "frameHeight": 670,
       "offset": 0,
@@ -945,10 +945,11 @@ export const MOCKUPS = Object.freeze([
     "height": 832,
     "mockup": {
       "image": "mockups/laptops-apple-macbook-air-m5-13.avif",
-      "thumbnail": "mockups/laptops-apple-macbook-air-m5-13-preview.avif",
+      "thumbnail": "mockups/laptops-apple-macbook-air-m5-13.avif",
       "frameWidth": 1604,
       "frameHeight": 1058,
-      "offset": 86,
+      "offset": 0,
+      "screenBounds": {"left": 144.0, "top": 115.0, "width": 1317.0, "height": 853.0},
       "mask": "M1263.12 0c9.32 0 16.88 7.557 16.88 16.879V832H0V16.879C0 7.557 7.557 0 16.879 0H558.21a4.22 4.22 0 0 1 4.192 4.22v15.472a8.44 8.44 0 0 0 8.439 8.44h139.021a8.44 8.44 0 0 0 8.439-8.44V4.219A4.22 4.22 0 0 1 722.494 0h540.626Z"
     }
   },
@@ -959,10 +960,11 @@ export const MOCKUPS = Object.freeze([
     "height": 982,
     "mockup": {
       "image": "mockups/laptops-apple-macbook-pro-m5-14.avif",
-      "thumbnail": "mockups/laptops-apple-macbook-pro-m5-14-preview.avif",
+      "thumbnail": "mockups/laptops-apple-macbook-pro-m5-14.avif",
       "frameWidth": 1902,
       "frameHeight": 1258,
-      "offset": 110,
+      "offset": 0,
+      "screenBounds": {"left": 179.0, "top": 137.0, "width": 1544.0, "height": 996.0},
       "mask": "M1490.11 0C1502.2 0 1512 9.80154 1512 21.892V982H0V21.892C0 9.80154 9.80107 0 21.8908 0H656.708C659.053 0 663.744 0 663.745 3.90904V18.7646C663.745 25.6733 669.345 31.2743 676.253 31.2743H835.74C842.648 31.2742 848.248 25.6733 848.249 18.7646V3.90904C848.249 0 852.94 0 855.285 0H1490.11Z"
     }
   },
@@ -973,10 +975,11 @@ export const MOCKUPS = Object.freeze([
     "height": 1117,
     "mockup": {
       "image": "mockups/laptops-apple-macbook-pro-m5-16.avif",
-      "thumbnail": "mockups/laptops-apple-macbook-pro-m5-16-preview.avif",
+      "thumbnail": "mockups/laptops-apple-macbook-pro-m5-16.avif",
       "frameWidth": 2110,
       "frameHeight": 1403,
-      "offset": 117,
+      "offset": 0,
+      "screenBounds": {"left": 176.5, "top": 145.5, "width": 1757.0, "height": 1128.5},
       "mask": "M1706.44 0C1718.35 2.13972e-05 1728 9.6569 1728 21.5693V1115.46C1728 1116.31 1727.31 1117 1726.46 1117H1.54004C0.689495 1117 0 1116.31 0 1115.46V21.5693C0.000179212 9.6569 9.65355 0 21.5615 0H768.51C771.061 0 773.13 2.06847 773.13 4.62012V21.5615C773.13 26.665 777.268 30.8027 782.371 30.8027H947.167C951.42 30.8026 954.867 27.3544 954.867 23.1016V4.62012C954.867 2.06847 956.937 0 959.488 0H1706.44Z"
     }
   },
@@ -987,10 +990,11 @@ export const MOCKUPS = Object.freeze([
     "height": 753,
     "mockup": {
       "image": "mockups/laptops-apple-macbook-neo-13.avif",
-      "thumbnail": "mockups/laptops-apple-macbook-neo-13-preview.avif",
+      "thumbnail": "mockups/laptops-apple-macbook-neo-13.avif",
       "frameWidth": 1492,
       "frameHeight": 997,
-      "offset": 81,
+      "offset": 0,
+      "screenBounds": {"left": 116.5, "top": 110.5, "width": 1259.5, "height": 787.5},
       "mask": "M0 17.4778C0 7.82505 7.83122 0 17.4915 0H1186.51C1196.17 0 1204 7.82506 1204 17.4778V753H0V17.4778Z"
     }
   },
@@ -1005,6 +1009,7 @@ export const MOCKUPS = Object.freeze([
       "frameWidth": 2022,
       "frameHeight": 1722,
       "offset": 307,
+      "screenBounds": {"left": 212.5, "top": 334.0, "width": 1596.0, "height": 1120.5},
       "mask": "M0 13.3059C0 5.95726 5.95833 0 13.3083 0H1522.69C1530.04 0 1536 5.95726 1536 13.3059V1010.69C1536 1018.04 1530.04 1024 1522.69 1024H13.3083C5.95832 1024 0 1018.04 0 1010.69V13.3059Z"
     }
   },
@@ -1019,6 +1024,7 @@ export const MOCKUPS = Object.freeze([
       "frameWidth": 2314,
       "frameHeight": 1854,
       "offset": 294,
+      "screenBounds": {"left": 197.0, "top": 403.0, "width": 1921.0, "height": 1065.0},
       "mask": "M0 2.00001C0 0.895436 0.895431 0 2 0H1918C1919.1 0 1920 0.895431 1920 2V1078C1920 1079.1 1919.1 1080 1918 1080H1.99997C0.8954 1080 0 1079.1 0 1078V2.00001Z"
     }
   },
@@ -1033,6 +1039,7 @@ export const MOCKUPS = Object.freeze([
       "frameWidth": 1944,
       "frameHeight": 1134,
       "offset": 90,
+      "screenBounds": {"left": 335.5, "top": 186.0, "width": 1271.0, "height": 776.0},
       "mask": "M0 0H1280V800H0V0Z"
     }
   },
@@ -1043,10 +1050,11 @@ export const MOCKUPS = Object.freeze([
     "height": 900,
     "mockup": {
       "image": "mockups/laptops-apple-macbook-air-m1.avif",
-      "thumbnail": "mockups/laptops-apple-macbook-air-m1-preview.avif",
+      "thumbnail": "mockups/laptops-apple-macbook-air-m1.avif",
       "frameWidth": 2002,
       "frameHeight": 1180,
-      "offset": 40,
+      "offset": 0,
+      "screenBounds": {"left": 231.0, "top": 84.5, "width": 1540.0, "height": 982.5},
       "mask": "M0 0H1440V900H0V0Z"
     }
   },
@@ -1057,10 +1065,11 @@ export const MOCKUPS = Object.freeze([
     "height": 1050,
     "mockup": {
       "image": "mockups/laptops-apple-macbook-pro-m1-13.avif",
-      "thumbnail": "mockups/laptops-apple-macbook-pro-m1-13-preview.avif",
+      "thumbnail": "mockups/laptops-apple-macbook-pro-m1-13.avif",
       "frameWidth": 2200,
       "frameHeight": 1326,
-      "offset": 54,
+      "offset": 0,
+      "screenBounds": {"left": 221.0, "top": 86.0, "width": 1758.0, "height": 1126.5},
       "mask": "M0 0H1680V1050H0V0Z"
     }
   },
@@ -1074,7 +1083,7 @@ export const MOCKUPS = Object.freeze([
       "thumbnail": "mockups/others-sony-4k-tv-55.avif",
       "frameWidth": 1958,
       "frameHeight": 1342,
-      "offset": 112,
+      "offset": 0,
       "mask": "M0 2a2 2 0 0 1 2-2h1916c1.1 0 2 .895 2 2v1076c0 1.1-.9 2-2 2H2c-1.105 0-2-.9-2-2V2Z"
     }
   },
@@ -1154,15 +1163,27 @@ export function mockupLayout(device) {
   const { mockup } = profile;
   const sx = device.width / profile.width, sy = device.height / profile.height;
   const frameWidth = mockup.frameWidth * sx, frameHeight = mockup.frameHeight * sy;
-  const left = (frameWidth - device.width) / 2;
-  const top = (frameHeight - device.height) / 2 - mockup.offset * sy;
+  // Notebook artwork has its own screen opening; keep the iframe's logical resolution.
+  const bounds = mockup.screenBounds;
+  const left = bounds ? bounds.left * sx : (frameWidth - device.width) / 2;
+  const top = bounds ? bounds.top * sy : (frameHeight - device.height) / 2 - mockup.offset * sy;
+  const screenWidth = bounds ? bounds.width * sx : device.width;
+  const screenHeight = bounds ? bounds.height * sy : device.height;
+  const scaleX = screenWidth / device.width, scaleY = screenHeight / device.height;
   return {
     image: mockup.image, mask: mockup.mask,
     width: device.rotated ? frameHeight : frameWidth,
     height: device.rotated ? frameWidth : frameHeight,
     imageWidth: frameWidth, imageHeight: frameHeight,
-    left: device.rotated ? frameHeight - top - device.height : left,
+    left: device.rotated ? frameHeight - top - screenHeight : left,
     top: device.rotated ? left : top,
+    screenWidth: device.rotated ? screenHeight : screenWidth,
+    screenHeight: device.rotated ? screenWidth : screenHeight,
+    screenScaleX: device.rotated ? scaleY : scaleX,
+    screenScaleY: device.rotated ? scaleX : scaleY,
+    captureMaskTransform: device.rotated
+      ? `matrix(0 ${sx * scaleX} ${-sy * scaleY} 0 ${screenHeight} 0)`
+      : `scale(${sx * scaleX} ${sy * scaleY})`,
     imageTransform: device.rotated ? `translateX(${frameHeight}px) rotate(90deg)` : 'none',
     maskTransform: device.rotated ? `matrix(0 ${sx} ${-sy} 0 ${device.height} 0)` : `scale(${sx} ${sy})`
   };

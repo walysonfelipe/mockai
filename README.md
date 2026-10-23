@@ -82,3 +82,9 @@ Esta distribuição usa HTML, CSS e JavaScript com módulos nativos. Após edita
 ## Contribuições
 
 Para relatar um problema, abra uma issue com a versão do Chrome, os passos para reproduzir, o dispositivo selecionado e o resultado esperado. Quando possível, inclua uma captura de tela e uma URL pública que permita reproduzir o comportamento.
+
+Contribuições por pull request são bem-vindas. Ao enviar uma contribuição, você concorda em disponibilizá-la sob a [licença MIT](LICENSE) do projeto.
+
+## Licença
+
+Este projeto é distribuído sob a [licença MIT](LICENSE), que permite usar, copiar, modificar e distribuir o código, inclusive para fins comerciais, desde que o aviso de direitos autorais e o texto da licença sejam mantidos. Consulte o arquivo [LICENSE](LICENSE) para os termos completos.

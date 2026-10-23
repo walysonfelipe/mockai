@@ -6,9 +6,12 @@
   "minimum_chrome_version": "116",
   "permissions": [
     "activeTab",
+    "contextMenus",
+    "declarativeNetRequestWithHostAccess",
     "scripting",
     "storage",
-    "offscreen"
+    "offscreen",
+    "tabCapture"
   ],
   "action": {
     "default_title": "__MSG_action_title__",
@@ -27,9 +30,6 @@
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'none'; connect-src 'self' data: blob:"
   },
-  "optional_permissions": [
-    "tabCapture"
-  ],
   "default_locale": "pt_BR",
   "icons": {
     "16": "img/icons/app/icon-16.png",

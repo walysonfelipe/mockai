@@ -1,7 +1,10 @@
 import { createController } from './controller.js';
 import { PROTOCOL } from '../shared/model.js';
 import { createMediaCoordinator } from './media.js';
-const controller = createController(chrome, createMediaCoordinator(chrome));
+import { createCompatibility } from './compatibility.js';
+import { registerContextMenu } from './context-menu.js';
+const controller = createController(chrome, createMediaCoordinator(chrome), createCompatibility(chrome));
+registerContextMenu(chrome, controller);
 chrome.runtime.onMessage.addListener((message, sender, respond) => {
   if (message?.protocol !== PROTOCOL || message.target === 'offscreen') return false;
   controller.handle(message, sender).then(
@@ -11,9 +14,10 @@ chrome.runtime.onMessage.addListener((message, sender, respond) => {
   return true;
 });
 chrome.tabs.onRemoved.addListener(id => { void controller.forget(id).catch(console.error); });
-// Navegação principal encerra a sessão. Abertura posterior exige um novo clique.
+// Carregamentos de subquadros também podem alterar o status da aba.
+// Só reconciliamos a sessão quando há uma URL nova ou o carregamento termina.
 chrome.tabs.onUpdated.addListener((id, change) => {
-  if (change.status === 'loading' || change.url) void controller.navigate(id, change).catch(console.error);
+  if (change.status === 'complete' || change.url) void controller.navigate(id, change).catch(console.error);
 });
 
 chrome.permissions.onRemoved.addListener(permissions => {

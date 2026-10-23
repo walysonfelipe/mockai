@@ -2,7 +2,7 @@ import { PROTOCOL, defaultWorkspace, migrateView, validateWorkspace, pageURL } f
 import { readOptions, updateOptions } from '../shared/options.js';
 import { changeLibrary, readLibrary } from './library.js';
 
-export function createController(api, media = null) {
+export function createController(api, media = null, compatibility = null) {
   // Serialização também protege biblioteca e conjuntos usados por abas diferentes.
   let pending = Promise.resolve();
   function serial(task) {
@@ -23,11 +23,16 @@ export function createController(api, media = null) {
     }
   }
   async function stop(id) {
+    let cleanupError;
+    if (compatibility) {
+      try { await compatibility.stop(id); } catch (error) { cleanupError = error; }
+    }
     if (media) { try { await media.cancel(id); } catch { /* O fechamento da interface deve continuar. */ } }
     try { await api.tabs.sendMessage(id, { protocol: PROTOCOL, type: 'view.unmount' }); }
     catch { /* Documento fechado, navegado ou nunca injetado. */ }
     await api.storage.session.remove(sessionKey(id));
     await api.storage.session.remove(`mockai.session.v1.${id}`);
+    if (cleanupError) throw cleanupError;
   }
   async function preferences() {
     const saved = (await api.storage.local.get('mockai.workspace.v2'))['mockai.workspace.v2'];
@@ -65,6 +70,8 @@ export function createController(api, media = null) {
         if (message.type === 'media.stop') return media.stop(id);
         if (message.type === 'media.cancel') return media.cancel(id);
         if (message.type === 'media.status') return media.status(id);
+        if (message.type === 'media.preview') return media.preview(id, message.jobId);
+        if (message.type === 'media.release') return media.release(id, message.jobId);
         throw new Error('Operação de mídia desconhecida.');
       }
       if (message.type === 'workspace.save') {
@@ -91,9 +98,10 @@ export function createController(api, media = null) {
     const tab = await api.tabs.get(id);
     const url = pageURL(tab.url);
     const workspace = current?.url === url ? current.workspace : await preferences();
-    await api.scripting.executeScript({ target: { tabId: id }, files: ['content/simulator.js'] });
     const next = { version: 2, url, workspace };
     try {
+      if (compatibility) await compatibility.start(id, url);
+      await api.scripting.executeScript({ target: { tabId: id }, files: ['content/simulator.js'] });
       await api.storage.session.set({ [sessionKey(id)]: next });
       const result = await api.tabs.sendMessage(id, { protocol: PROTOCOL, type: 'view.mount', session: next, options: await readOptions(api.storage.local) });
       if (!result?.ok) throw new Error(result?.error ?? 'A interface não confirmou a abertura.');
@@ -103,15 +111,60 @@ export function createController(api, media = null) {
     return { active: true, session: next };
   }
   return {
+    contextMenu: id => serial(async () => {
+      if (await session(id)) {
+        const result = await api.tabs.sendMessage(id, { protocol: PROTOCOL, type: 'view.capture' });
+        if (!result?.ok) throw new Error(result?.error ?? 'A interface não confirmou a abertura.');
+        return { active: true };
+      }
+      return dispatch({ protocol: PROTOCOL, type: 'session.start', tabId: id }, {
+        id: api.runtime.id, url: api.runtime.getURL('popup/index.html')
+      });
+    }),
+    // Entrada interna para gestos do navegador; não amplia as origens de mensagens aceitas.
+    open: id => serial(() => dispatch({ protocol: PROTOCOL, type: 'session.start', tabId: id }, {
+      id: api.runtime.id, url: api.runtime.getURL('popup/index.html')
+    })),
     navigate: (id, change) => serial(async () => {
-      if (media) await media.navigate(id, change);
-      await stop(id);
+      const current = await session(id);
+      if (!current) {
+        if (media && change.url) await media.navigate(id, change);
+        return;
+      }
+      if (!change.url && change.status !== 'complete') return;
+      const tab = await api.tabs.get(id);
+      let url;
+      try {
+        url = pageURL(tab.url);
+        // activeTab continua autorizado nas páginas da mesma origem.
+        if (new URL(url).origin !== new URL(current.url).origin) {
+          await stop(id);
+          return;
+        }
+      } catch { await stop(id); return; }
+      const next = { ...current, url };
+      await api.storage.session.set({ [sessionKey(id)]: next });
+      if (change.status === 'loading') return;
+      try {
+        const result = await api.tabs.sendMessage(id, { protocol: PROTOCOL, type: 'view.resume', session: next });
+        // Um iframe navegou ou a página mudou via History API: mantém os quadros atuais.
+        if (result?.ok && result.mounted) return;
+      } catch { /* Documento novo: a interface precisa ser reinjetada. */ }
+      try {
+        if (media) await media.navigate(id, change);
+        if (compatibility) await compatibility.start(id, url);
+        await api.scripting.executeScript({ target: { tabId: id }, files: ['content/simulator.js'] });
+        const result = await api.tabs.sendMessage(id, {
+          protocol: PROTOCOL, type: 'view.mount', session: next, options: await readOptions(api.storage.local)
+        });
+        if (!result?.ok) throw new Error(result?.error ?? 'A interface não confirmou a abertura.');
+      } catch (error) { await stop(id); throw error; }
     }),
     revokeMedia: () => serial(() => media?.revoke()),
     handle: (message, sender) => serial(() => dispatch(message, sender)),
     forget: id => serial(async () => {
-      if (media) await media.forget(id);
-      await stop(id);
+      try { if (media) await media.forget(id); }
+      finally { await stop(id); }
     })
   };
 }

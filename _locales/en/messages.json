@@ -75,7 +75,7 @@
     "message": "Test screens"
   },
   "workspace_hint": {
-    "message": "Select a screen by its title to adjust its dimensions."
+    "message": "Click a mockup to select it and adjust its dimensions."
   },
   "workspace_count": {
     "message": "{count}/{limit} screens · {zoom}%"
@@ -378,7 +378,7 @@
     "message": "Finish or discard the previous capture before starting another."
   },
   "error_permissionHint": {
-    "message": "Open the Mockaí popup and click “Record selected screen” to allow recording."
+    "message": "The recording permission is outdated. Reload the extension at chrome://extensions and refresh this page."
   },
   "error_prepare": {
     "message": "Could not prepare the screen."
@@ -610,5 +610,44 @@
   },
   "action_title": {
     "message": "Open Mockaí"
+  },
+  "context_menu_open": {
+    "message": "Open in Mockaí"
+  },
+  "capture_description": {
+    "message": "Take a screenshot or record a video of the selected device."
+  },
+  "capture_image": {
+    "message": "Capture screen"
+  },
+  "capture_imageShort": {
+    "message": "Capture screen"
+  },
+  "capture_imageHint": {
+    "message": "Save an image as PNG."
+  },
+  "capture_video": {
+    "message": "Video"
+  },
+  "capture_format": {
+    "message": "Format"
+  },
+  "capture_videoShort": {
+    "message": "Record video"
+  },
+  "capture_videoHint": {
+    "message": "No audio · up to 2 minutes"
+  },
+  "capture_fullPage": {
+    "message": "Capture full page"
+  },
+  "capture_fullPageHint": {
+    "message": "From top to bottom, in a single PNG."
+  },
+  "capture_scrolling": {
+    "message": "Capturing page · {progress}%"
+  },
+  "capture_fullPageReady": {
+    "message": "PNG · Full page"
   }
 }

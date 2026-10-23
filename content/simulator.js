@@ -1,6 +1,6 @@
 (() => {
 const MODEL = (() => {
-const MESSAGES = {"pt-BR":{"app.name":"Mockaí","app.description":"Teste seus sites em celulares, tablets e notebooks lado a lado, com rolagem sincronizada, capturas de tela e gravação de vídeo.","app.open":"Abrir Mockaí","app.workspace":"ÁREA DE TESTE","app.dialog":"Simulador Mockaí","common.close":"Fechar","common.name":"Nome","common.delete":"Excluir","common.add":"Adicionar","common.remove":"Remover","common.open":"Abrir","common.language":"Idioma","common.auto":"Automático","common.wait":"Aguarde…","workspace.library":"Dispositivos e conjuntos","workspace.light":"Tema claro","workspace.screen":"Tela","workspace.selected":"Dispositivo selecionado","workspace.width":"Largura","workspace.height":"Altura","workspace.rotate":"Girar selecionado","workspace.zoom":"Zoom","workspace.reload":"Recarregar selecionado","workspace.notice":"Prévia responsiva · alguns sites bloqueiam quadros. O navegador e o agente de usuário continuam sendo os do computador.","workspace.screens":"Telas em teste","workspace.hint":"Selecione uma tela pelo título para ajustar suas dimensões.","workspace.count":"{count}/{limit} telas · {zoom}%","workspace.removeName":"Remover {name}","workspace.frameTitle":"{name} — página em teste","library.title":"Suas telas","library.search":"Buscar perfil","library.searchHint":"Nome ou dimensão","library.favorites":"Favoritos ({count})","library.favorite":"Favoritar {name}","library.unfavorite":"Desfavoritar {name}","library.addName":"Adicionar {name}","library.deleteProfile":"Excluir perfil {name}","library.empty":"Nenhum perfil encontrado.","library.emptyFavorites":"Nenhum favorito encontrado.","library.custom":"Perfil personalizado","library.customHint":"Salva as dimensões da tela selecionada.","library.saveProfile":"Salvar perfil","library.sets":"Conjuntos salvos","library.setName":"Nome do conjunto","library.saveSet":"Salvar telas atuais","library.emptySets":"Salve as telas atuais para abrir depois.","library.setCount":"{count} dispositivo(s)","library.openSet":"Abrir conjunto {name}","library.deleteSet":"Excluir conjunto {name}","library.updated":"Biblioteca atualizada.","library.opened":"Conjunto “{name}” aberto.","profile.compact":"Compacto","profile.wide":"Amplo","profile.tablet":"Tablet","sync.label":"Sincronizar rolagem","sync.off":"Rolagem independente","sync.status":"Rolagem vinculada: {linked}/{total} telas","sync.unavailable":"Sincronização exige duas telas acessíveis na mesma origem.","sync.hint":"Sincroniza o progresso de rolagem do documento. Quadros de outra origem e painéis internos não são vinculados.","options.saved":"Preferências salvas.","media.png":"Capturar PNG","media.video":"Vídeo","media.record":"Gravar selecionado","media.stop":"Parar e exportar","media.cancel":"Cancelar captura","media.recording":"Gravando · sem áudio · até 2 min","media.preparing":"Preparando captura…","media.stopping":"Finalizando…","media.finished":"Gravação finalizada.","media.cancelled":"Captura cancelada.","media.revoked":"A permissão de gravação foi removida.","media.interrupted":"O navegador interrompeu a captura. Os dados disponíveis foram preservados.","media.duration":"A gravação atingiu o limite de dois minutos.","popup.intro":"Experimente sua página em uma tela com as dimensões que você escolher.","popup.open":"Abrir simulador","popup.close":"Fechar simulador","popup.format":"Formato de vídeo","popup.record":"Gravar tela selecionada","popup.note":"Prévia independente · até quatro dispositivos","popup.blocked":"Alguns sites impedem abertura em quadros.","popup.opened":"Simulador aberto nesta aba.","popup.closed":"Simulador encerrado.","popup.preparing":"Preparando gravação…","popup.recording":"Gravação em andamento. Você também pode parar ou cancelar na página.","popup.unavailable":"Página indisponível","export.title":"Exportar · Mockaí","export.heading":"Sua captura está pronta.","export.preparing":"Preparando arquivo local…","export.nav":"Exportar","export.download":"Baixar {format}","export.convert":"Converter para MP4","export.cancel":"Cancelar conversão","export.progress":"Progresso da conversão","export.note":"O arquivo é preparado neste computador. Ao fechar esta página, os arquivos temporários são liberados.","export.alt":"Captura da tela selecionada","export.ready":"Arquivo pronto para baixar.","export.noMP4":"Conversão MP4 indisponível neste navegador; o WebM permanece disponível.","export.converting":"Convertendo neste computador. A conversão acompanha a duração do vídeo.","export.converted":"MP4 pronto. O WebM original continua disponível.","export.original":"O WebM original continua disponível.","error.native":"Não foi possível concluir: {detail}","error.options":"Preferências inválidas.","error.settings":"Ajustes inválidos.","error.dimensions":"Dimensões ou aparência inválidas.","error.name":"Use um nome de 1 a 48 caracteres, sem caracteres de controle.","error.id":"Identificador inválido.","error.deviceCount":"Mantenha entre 1 e 4 dispositivos abertos.","error.device":"Dispositivo inválido.","error.selection":"Seleção ou identificadores de dispositivos inválidos.","error.deviceMissing":"Dispositivo não encontrado.","error.library":"Biblioteca inválida.","error.profile":"Perfil personalizado inválido.","error.favorites":"Favoritos ou perfis inválidos.","error.duplicateSets":"Conjuntos duplicados.","error.http":"Abra uma página HTTP ou HTTPS para simular.","error.protected":"O Chrome não permite simular esta página protegida.","error.visible":"A tela precisa estar inteira visível. Reduza o zoom e tente novamente.","error.noImage":"A captura não contém imagem.","error.resized":"O tamanho da aba mudou durante a captura. Tente novamente.","error.mp4":"MP4 indisponível neste navegador. Escolha WebM.","error.codec":"Não há codificador disponível para o formato escolhido.","error.service":"O serviço de mídia não respondeu.","error.focus":"Volte à aba do simulador antes de capturar.","error.mode":"Tipo de captura inválido.","error.format":"Formato de vídeo inválido.","error.previous":"Finalize ou descarte a captura anterior antes de iniciar outra.","error.permissionHint":"Abra o popup do Mockaí e clique em “Gravar tela selecionada” para permitir a gravação.","error.prepare":"Não foi possível preparar a tela.","error.moved":"A posição da tela mudou. Tente capturar novamente.","error.noRecording":"Esta aba não possui gravação em andamento.","error.event":"Evento de mídia não autorizado.","error.export":"Exportação não autorizada ou expirada.","error.exportOperation":"Operação de exportação desconhecida.","error.sessionVersion":"Versão de sessão inválida.","error.message":"Mensagem não autorizada.","error.origin":"Origem da mensagem inválida.","error.tab":"Aba inválida.","error.session":"Sessão encerrada.","error.preview":"Captura disponível somente na extensão carregada no Chrome.","error.mediaOperation":"Operação de mídia desconhecida.","error.context":"Operação indisponível neste contexto.","error.openFirst":"Abra o simulador antes de gravar.","error.operation":"Operação desconhecida.","error.mount":"A interface não confirmou a abertura.","error.customLimit":"O limite é de 20 perfis personalizados.","error.customMissing":"Perfil personalizado não encontrado.","error.profileMissing":"Perfil não encontrado.","error.profileRefresh":"Perfil não encontrado. Atualize a biblioteca.","error.setLimit":"O limite é de 16 conjuntos.","error.setMissing":"Conjunto não encontrado.","error.libraryOperation":"Operação de biblioteca desconhecida.","error.noData":"A gravação terminou sem dados.","error.size":"O arquivo excedeu o limite de 64 MiB.","error.notRecording":"Não há gravação em andamento.","error.stopTimeout":"O navegador não finalizou a gravação.","error.prepareTimeout":"A preparação da captura excedeu o tempo permitido.","error.image":"Imagem de captura inválida.","error.recordingSize":"A gravação excedeu o limite de 64 MiB e foi descartada.","error.encoder":"O codificador falhou.","error.artifact":"A captura não está mais disponível.","error.canvas":"Canvas indisponível.","error.png":"Falha ao gerar PNG.","error.videoTimeout":"A aba não forneceu imagem para a gravação.","error.video":"Não foi possível ler o vídeo da aba.","error.cancelConversion":"Conversão cancelada.","error.openVideo":"Não foi possível abrir o vídeo para conversão.","error.decode":"Este vídeo não pode ser convertido pelo navegador.","error.convertSize":"Dimensões indisponíveis ou grandes demais para conversão.","error.convertCanvas":"Canvas indisponível para conversão.","error.mp4Size":"O MP4 excedeu o limite de 64 MiB.","error.mp4Encoder":"O codificador MP4 falhou.","error.convertEmpty":"A conversão terminou sem dados.","error.playback":"A reprodução foi interrompida durante a conversão.","error.convertTimeout":"A conversão excedeu o tempo permitido.","error.expired":"A captura expirou.","error.file":"Não foi possível recuperar o arquivo local.","error.emptyFile":"O arquivo está vazio ou excede o limite de tamanho.","error.extension":"A extensão não respondeu. Recarregue esta página.","error.popupExtension":"Não foi possível falar com a extensão. Recarregue a página.","error.permission":"Permissão de gravação não concedida.","error.prepareFocus":"Volte à aba do simulador para preparar a captura.","error.inputDimensions":"Use as dimensões indicadas nos campos.","header.devices":"Dispositivos","header.capture":"Capturar","header.settings":"Ajustes","header.stop":"Parar","header.cancel":"Cancelar","header.recording":"Gravando","settings.device":"Tela selecionada","settings.dimensions":"Dimensões","settings.rotate":"Girar","settings.reload":"Recarregar","settings.appearance":"Preferências","settings.scale":"Escala de visualização","settings.record":"Gravar esta tela","settings.videoHint":"Sem áudio · até 2 minutos","settings.about":"Sobre esta prévia","screen.mode":"Modo da tela","screen.browser":"Navegador","screen.pwa":"PWA","screen.fullscreen":"Tela cheia","screen.hint":"Navegador mostra as barras de navegação. PWA mantém a barra de status. Tela cheia usa toda a tela para o conteúdo.","error.screenMode":"Modo da tela inválido."},"en":{"app.name":"Mockaí","app.description":"Test your sites on phones, tablets and laptops side by side, with synced scrolling, screenshots and video recording.","app.open":"Open Mockaí","app.workspace":"TEST WORKSPACE","app.dialog":"Mockaí simulator","common.close":"Close","common.name":"Name","common.delete":"Delete","common.add":"Add","common.remove":"Remove","common.open":"Open","common.language":"Language","common.auto":"Automatic","common.wait":"Please wait…","workspace.library":"Devices and sets","workspace.light":"Light theme","workspace.screen":"Screen","workspace.selected":"Selected device","workspace.width":"Width","workspace.height":"Height","workspace.rotate":"Rotate selected","workspace.zoom":"Zoom","workspace.reload":"Reload selected","workspace.notice":"Responsive preview · some sites block frames. The browser and user agent remain those of your computer.","workspace.screens":"Test screens","workspace.hint":"Select a screen by its title to adjust its dimensions.","workspace.count":"{count}/{limit} screens · {zoom}%","workspace.removeName":"Remove {name}","workspace.frameTitle":"{name} — test page","library.title":"Your screens","library.search":"Search profiles","library.searchHint":"Name or size","library.favorites":"Favorites ({count})","library.favorite":"Favorite {name}","library.unfavorite":"Unfavorite {name}","library.addName":"Add {name}","library.deleteProfile":"Delete profile {name}","library.empty":"No profiles found.","library.emptyFavorites":"No favorites found.","library.custom":"Custom profile","library.customHint":"Saves the dimensions of the selected screen.","library.saveProfile":"Save profile","library.sets":"Saved sets","library.setName":"Set name","library.saveSet":"Save current screens","library.emptySets":"Save the current screens to open them later.","library.setCount":"{count} device(s)","library.openSet":"Open set {name}","library.deleteSet":"Delete set {name}","library.updated":"Library updated.","library.opened":"Set “{name}” opened.","profile.compact":"Compact","profile.wide":"Wide","profile.tablet":"Tablet","sync.label":"Sync scrolling","sync.off":"Independent scrolling","sync.status":"Linked scrolling: {linked}/{total} screens","sync.unavailable":"Sync requires two accessible screens on the same origin.","sync.hint":"Syncs document scroll progress. Cross-origin frames and nested scroll areas are not linked.","options.saved":"Preferences saved.","media.png":"Capture PNG","media.video":"Video","media.record":"Record selected","media.stop":"Stop and export","media.cancel":"Cancel capture","media.recording":"Recording · no audio · up to 2 min","media.preparing":"Preparing capture…","media.stopping":"Finishing…","media.finished":"Recording finished.","media.cancelled":"Capture cancelled.","media.revoked":"Recording permission was removed.","media.interrupted":"The browser interrupted capture. Available data was preserved.","media.duration":"Recording reached the two-minute limit.","popup.intro":"Try your page on a screen with the dimensions you choose.","popup.open":"Open simulator","popup.close":"Close simulator","popup.format":"Video format","popup.record":"Record selected screen","popup.note":"Independent preview · up to four devices","popup.blocked":"Some sites prevent loading in frames.","popup.opened":"Simulator opened in this tab.","popup.closed":"Simulator closed.","popup.preparing":"Preparing recording…","popup.recording":"Recording in progress. You can also stop or cancel on the page.","popup.unavailable":"Page unavailable","export.title":"Export · Mockaí","export.heading":"Your capture is ready.","export.preparing":"Preparing local file…","export.nav":"Export","export.download":"Download {format}","export.convert":"Convert to MP4","export.cancel":"Cancel conversion","export.progress":"Conversion progress","export.note":"The file is prepared on this computer. Closing this page releases temporary files.","export.alt":"Capture of the selected screen","export.ready":"File ready to download.","export.noMP4":"MP4 conversion is unavailable in this browser; WebM remains available.","export.converting":"Converting on this computer. Conversion takes about as long as the video.","export.converted":"MP4 ready. The original WebM remains available.","export.original":"The original WebM remains available.","error.native":"Could not complete: {detail}","error.options":"Invalid preferences.","error.settings":"Invalid settings.","error.dimensions":"Invalid dimensions or appearance.","error.name":"Use a name of 1 to 48 characters without control characters.","error.id":"Invalid identifier.","error.deviceCount":"Keep between 1 and 4 devices open.","error.device":"Invalid device.","error.selection":"Invalid device selection or identifiers.","error.deviceMissing":"Device not found.","error.library":"Invalid library.","error.profile":"Invalid custom profile.","error.favorites":"Invalid favorites or profiles.","error.duplicateSets":"Duplicate sets.","error.http":"Open an HTTP or HTTPS page to simulate.","error.protected":"Chrome does not allow simulating this protected page.","error.visible":"The entire screen must be visible. Reduce the zoom and try again.","error.noImage":"The capture contains no image.","error.resized":"The tab size changed during capture. Try again.","error.mp4":"MP4 is unavailable in this browser. Choose WebM.","error.codec":"No encoder is available for the selected format.","error.service":"The media service did not respond.","error.focus":"Return to the simulator tab before capturing.","error.mode":"Invalid capture type.","error.format":"Invalid video format.","error.previous":"Finish or discard the previous capture before starting another.","error.permissionHint":"Open the Mockaí popup and click “Record selected screen” to allow recording.","error.prepare":"Could not prepare the screen.","error.moved":"The screen position changed. Try capturing again.","error.noRecording":"This tab has no recording in progress.","error.event":"Unauthorized media event.","error.export":"Export is unauthorized or expired.","error.exportOperation":"Unknown export operation.","error.sessionVersion":"Invalid session version.","error.message":"Unauthorized message.","error.origin":"Invalid message origin.","error.tab":"Invalid tab.","error.session":"Session ended.","error.preview":"Capture is only available in the extension loaded in Chrome.","error.mediaOperation":"Unknown media operation.","error.context":"Operation unavailable in this context.","error.openFirst":"Open the simulator before recording.","error.operation":"Unknown operation.","error.mount":"The interface did not confirm opening.","error.customLimit":"The limit is 20 custom profiles.","error.customMissing":"Custom profile not found.","error.profileMissing":"Profile not found.","error.profileRefresh":"Profile not found. Refresh the library.","error.setLimit":"The limit is 16 sets.","error.setMissing":"Set not found.","error.libraryOperation":"Unknown library operation.","error.noData":"Recording ended without data.","error.size":"The file exceeded the 64 MiB limit.","error.notRecording":"There is no recording in progress.","error.stopTimeout":"The browser did not finalize the recording.","error.prepareTimeout":"Capture preparation timed out.","error.image":"Invalid capture image.","error.recordingSize":"Recording exceeded the 64 MiB limit and was discarded.","error.encoder":"The encoder failed.","error.artifact":"The capture is no longer available.","error.canvas":"Canvas is unavailable.","error.png":"Failed to generate PNG.","error.videoTimeout":"The tab did not provide an image for recording.","error.video":"Could not read the tab video.","error.cancelConversion":"Conversion cancelled.","error.openVideo":"Could not open the video for conversion.","error.decode":"This video cannot be converted by the browser.","error.convertSize":"Dimensions unavailable or too large for conversion.","error.convertCanvas":"Canvas unavailable for conversion.","error.mp4Size":"The MP4 exceeded the 64 MiB limit.","error.mp4Encoder":"The MP4 encoder failed.","error.convertEmpty":"Conversion ended without data.","error.playback":"Playback was interrupted during conversion.","error.convertTimeout":"Conversion timed out.","error.expired":"The capture expired.","error.file":"Could not retrieve the local file.","error.emptyFile":"The file is empty or exceeds the size limit.","error.extension":"The extension did not respond. Reload this page.","error.popupExtension":"Could not reach the extension. Reload the page.","error.permission":"Recording permission was not granted.","error.prepareFocus":"Return to the simulator tab to prepare capture.","error.inputDimensions":"Use the dimensions indicated in the fields.","header.devices":"Devices","header.capture":"Capture","header.settings":"Settings","header.stop":"Stop","header.cancel":"Cancel","header.recording":"Recording","settings.device":"Selected screen","settings.dimensions":"Dimensions","settings.rotate":"Rotate","settings.reload":"Reload","settings.appearance":"Preferences","settings.scale":"Preview scale","settings.record":"Record this screen","settings.videoHint":"No audio · up to 2 minutes","settings.about":"About this preview","screen.mode":"Screen mode","screen.browser":"Browser","screen.pwa":"PWA","screen.fullscreen":"Fullscreen","screen.hint":"Browser shows navigation bars. PWA keeps the status bar. Fullscreen uses the entire screen for content.","error.screenMode":"Invalid screen mode."},"es":{"app.name":"Mockaí","app.description":"Prueba tus sitios en móviles, tablets y portátiles lado a lado, con scroll sincronizado, capturas de pantalla y grabación de video.","app.open":"Abrir Mockaí","app.workspace":"ÁREA DE PRUEBAS","app.dialog":"Simulador Mockaí","common.close":"Cerrar","common.name":"Nombre","common.delete":"Eliminar","common.add":"Añadir","common.remove":"Quitar","common.open":"Abrir","common.language":"Idioma","common.auto":"Automático","common.wait":"Espera…","workspace.library":"Dispositivos y conjuntos","workspace.light":"Tema claro","workspace.screen":"Pantalla","workspace.selected":"Dispositivo seleccionado","workspace.width":"Ancho","workspace.height":"Alto","workspace.rotate":"Girar seleccionado","workspace.zoom":"Zoom","workspace.reload":"Recargar seleccionado","workspace.notice":"Vista previa adaptable · algunos sitios bloquean marcos. El navegador y el agente de usuario siguen siendo los del ordenador.","workspace.screens":"Pantallas en prueba","workspace.hint":"Selecciona una pantalla por su título para ajustar sus dimensiones.","workspace.count":"{count}/{limit} pantallas · {zoom}%","workspace.removeName":"Quitar {name}","workspace.frameTitle":"{name} — página en prueba","library.title":"Tus pantallas","library.search":"Buscar perfiles","library.searchHint":"Nombre o tamaño","library.favorites":"Favoritos ({count})","library.favorite":"Añadir {name} a favoritos","library.unfavorite":"Quitar {name} de favoritos","library.addName":"Añadir {name}","library.deleteProfile":"Eliminar perfil {name}","library.empty":"No se encontraron perfiles.","library.emptyFavorites":"No se encontraron favoritos.","library.custom":"Perfil personalizado","library.customHint":"Guarda las dimensiones de la pantalla seleccionada.","library.saveProfile":"Guardar perfil","library.sets":"Conjuntos guardados","library.setName":"Nombre del conjunto","library.saveSet":"Guardar pantallas actuales","library.emptySets":"Guarda las pantallas actuales para abrirlas después.","library.setCount":"{count} dispositivo(s)","library.openSet":"Abrir conjunto {name}","library.deleteSet":"Eliminar conjunto {name}","library.updated":"Biblioteca actualizada.","library.opened":"Conjunto «{name}» abierto.","profile.compact":"Compacto","profile.wide":"Amplio","profile.tablet":"Tableta","sync.label":"Sincronizar desplazamiento","sync.off":"Desplazamiento independiente","sync.status":"Desplazamiento vinculado: {linked}/{total} pantallas","sync.unavailable":"La sincronización requiere dos pantallas accesibles del mismo origen.","sync.hint":"Sincroniza el progreso de desplazamiento del documento. Los marcos de otro origen y los paneles internos no se vinculan.","options.saved":"Preferencias guardadas.","media.png":"Capturar PNG","media.video":"Vídeo","media.record":"Grabar seleccionado","media.stop":"Detener y exportar","media.cancel":"Cancelar captura","media.recording":"Grabando · sin audio · hasta 2 min","media.preparing":"Preparando captura…","media.stopping":"Finalizando…","media.finished":"Grabación finalizada.","media.cancelled":"Captura cancelada.","media.revoked":"Se retiró el permiso de grabación.","media.interrupted":"El navegador interrumpió la captura. Se conservaron los datos disponibles.","media.duration":"La grabación alcanzó el límite de dos minutos.","popup.intro":"Prueba tu página en una pantalla con las dimensiones que elijas.","popup.open":"Abrir simulador","popup.close":"Cerrar simulador","popup.format":"Formato de vídeo","popup.record":"Grabar pantalla seleccionada","popup.note":"Vista previa independiente · hasta cuatro dispositivos","popup.blocked":"Algunos sitios impiden la carga en marcos.","popup.opened":"Simulador abierto en esta pestaña.","popup.closed":"Simulador cerrado.","popup.preparing":"Preparando grabación…","popup.recording":"Grabación en curso. También puedes detenerla o cancelarla en la página.","popup.unavailable":"Página no disponible","export.title":"Exportar · Mockaí","export.heading":"Tu captura está lista.","export.preparing":"Preparando archivo local…","export.nav":"Exportar","export.download":"Descargar {format}","export.convert":"Convertir a MP4","export.cancel":"Cancelar conversión","export.progress":"Progreso de conversión","export.note":"El archivo se prepara en este ordenador. Al cerrar esta página se liberan los archivos temporales.","export.alt":"Captura de la pantalla seleccionada","export.ready":"Archivo listo para descargar.","export.noMP4":"La conversión a MP4 no está disponible en este navegador; el WebM sigue disponible.","export.converting":"Convirtiendo en este ordenador. La conversión tarda aproximadamente lo que dura el vídeo.","export.converted":"MP4 listo. El WebM original sigue disponible.","export.original":"El WebM original sigue disponible.","error.native":"No se pudo completar: {detail}","error.options":"Preferencias no válidas.","error.settings":"Ajustes no válidos.","error.dimensions":"Dimensiones o apariencia no válidas.","error.name":"Usa un nombre de 1 a 48 caracteres sin caracteres de control.","error.id":"Identificador no válido.","error.deviceCount":"Mantén entre 1 y 4 dispositivos abiertos.","error.device":"Dispositivo no válido.","error.selection":"Selección o identificadores de dispositivos no válidos.","error.deviceMissing":"Dispositivo no encontrado.","error.library":"Biblioteca no válida.","error.profile":"Perfil personalizado no válido.","error.favorites":"Favoritos o perfiles no válidos.","error.duplicateSets":"Conjuntos duplicados.","error.http":"Abre una página HTTP o HTTPS para simular.","error.protected":"Chrome no permite simular esta página protegida.","error.visible":"La pantalla debe estar completamente visible. Reduce el zoom e inténtalo de nuevo.","error.noImage":"La captura no contiene imagen.","error.resized":"El tamaño de la pestaña cambió durante la captura. Inténtalo de nuevo.","error.mp4":"MP4 no está disponible en este navegador. Elige WebM.","error.codec":"No hay un codificador disponible para el formato elegido.","error.service":"El servicio de medios no respondió.","error.focus":"Vuelve a la pestaña del simulador antes de capturar.","error.mode":"Tipo de captura no válido.","error.format":"Formato de vídeo no válido.","error.previous":"Finaliza o descarta la captura anterior antes de iniciar otra.","error.permissionHint":"Abre el popup de Mockaí y pulsa «Grabar pantalla seleccionada» para permitir la grabación.","error.prepare":"No se pudo preparar la pantalla.","error.moved":"La posición de la pantalla cambió. Intenta capturar de nuevo.","error.noRecording":"Esta pestaña no tiene una grabación en curso.","error.event":"Evento de medios no autorizado.","error.export":"La exportación no está autorizada o ha caducado.","error.exportOperation":"Operación de exportación desconocida.","error.sessionVersion":"Versión de sesión no válida.","error.message":"Mensaje no autorizado.","error.origin":"Origen del mensaje no válido.","error.tab":"Pestaña no válida.","error.session":"Sesión finalizada.","error.preview":"La captura solo está disponible en la extensión cargada en Chrome.","error.mediaOperation":"Operación de medios desconocida.","error.context":"Operación no disponible en este contexto.","error.openFirst":"Abre el simulador antes de grabar.","error.operation":"Operación desconocida.","error.mount":"La interfaz no confirmó la apertura.","error.customLimit":"El límite es de 20 perfiles personalizados.","error.customMissing":"Perfil personalizado no encontrado.","error.profileMissing":"Perfil no encontrado.","error.profileRefresh":"Perfil no encontrado. Actualiza la biblioteca.","error.setLimit":"El límite es de 16 conjuntos.","error.setMissing":"Conjunto no encontrado.","error.libraryOperation":"Operación de biblioteca desconocida.","error.noData":"La grabación terminó sin datos.","error.size":"El archivo superó el límite de 64 MiB.","error.notRecording":"No hay una grabación en curso.","error.stopTimeout":"El navegador no finalizó la grabación.","error.prepareTimeout":"La preparación de la captura excedió el tiempo permitido.","error.image":"Imagen de captura no válida.","error.recordingSize":"La grabación superó el límite de 64 MiB y se descartó.","error.encoder":"El codificador falló.","error.artifact":"La captura ya no está disponible.","error.canvas":"Canvas no está disponible.","error.png":"Error al generar el PNG.","error.videoTimeout":"La pestaña no proporcionó imagen para grabar.","error.video":"No se pudo leer el vídeo de la pestaña.","error.cancelConversion":"Conversión cancelada.","error.openVideo":"No se pudo abrir el vídeo para convertirlo.","error.decode":"El navegador no puede convertir este vídeo.","error.convertSize":"Dimensiones no disponibles o demasiado grandes para la conversión.","error.convertCanvas":"Canvas no disponible para la conversión.","error.mp4Size":"El MP4 superó el límite de 64 MiB.","error.mp4Encoder":"El codificador MP4 falló.","error.convertEmpty":"La conversión terminó sin datos.","error.playback":"La reproducción se interrumpió durante la conversión.","error.convertTimeout":"La conversión excedió el tiempo permitido.","error.expired":"La captura ha caducado.","error.file":"No se pudo recuperar el archivo local.","error.emptyFile":"El archivo está vacío o supera el límite de tamaño.","error.extension":"La extensión no respondió. Recarga esta página.","error.popupExtension":"No se pudo contactar con la extensión. Recarga la página.","error.permission":"No se concedió el permiso de grabación.","error.prepareFocus":"Vuelve a la pestaña del simulador para preparar la captura.","error.inputDimensions":"Usa las dimensiones indicadas en los campos.","header.devices":"Dispositivos","header.capture":"Capturar","header.settings":"Ajustes","header.stop":"Detener","header.cancel":"Cancelar","header.recording":"Grabando","settings.device":"Pantalla seleccionada","settings.dimensions":"Dimensiones","settings.rotate":"Girar","settings.reload":"Recargar","settings.appearance":"Preferencias","settings.scale":"Escala de visualización","settings.record":"Grabar esta pantalla","settings.videoHint":"Sin audio · hasta 2 minutos","settings.about":"Acerca de esta vista previa","screen.mode":"Modo de pantalla","screen.browser":"Navegador","screen.pwa":"PWA","screen.fullscreen":"Pantalla completa","screen.hint":"Navegador muestra las barras de navegación. PWA mantiene la barra de estado. Pantalla completa usa toda la pantalla para el contenido.","error.screenMode":"Modo de pantalla no válido."}};
+const MESSAGES = {"pt-BR":{"app.name":"Mockaí","app.description":"Teste seus sites em celulares, tablets e notebooks lado a lado, com rolagem sincronizada, capturas de tela e gravação de vídeo.","app.open":"Abrir Mockaí","app.workspace":"ÁREA DE TESTE","app.dialog":"Simulador Mockaí","common.close":"Fechar","common.name":"Nome","common.delete":"Excluir","common.add":"Adicionar","common.remove":"Remover","common.open":"Abrir","common.language":"Idioma","common.auto":"Automático","common.wait":"Aguarde…","workspace.library":"Dispositivos e conjuntos","workspace.light":"Tema claro","workspace.screen":"Tela","workspace.selected":"Dispositivo selecionado","workspace.width":"Largura","workspace.height":"Altura","workspace.rotate":"Girar selecionado","workspace.zoom":"Zoom","workspace.reload":"Recarregar selecionado","workspace.notice":"Prévia responsiva · alguns sites bloqueiam quadros. O navegador e o agente de usuário continuam sendo os do computador.","workspace.screens":"Telas em teste","workspace.hint":"Clique em um mockup para selecioná-lo e ajustar suas dimensões.","workspace.count":"{count}/{limit} telas · {zoom}%","workspace.removeName":"Remover {name}","workspace.frameTitle":"{name} — página em teste","library.title":"Suas telas","library.search":"Buscar perfil","library.searchHint":"Nome ou dimensão","library.favorites":"Favoritos ({count})","library.favorite":"Favoritar {name}","library.unfavorite":"Desfavoritar {name}","library.addName":"Adicionar {name}","library.deleteProfile":"Excluir perfil {name}","library.empty":"Nenhum perfil encontrado.","library.emptyFavorites":"Nenhum favorito encontrado.","library.custom":"Perfil personalizado","library.customHint":"Salva as dimensões da tela selecionada.","library.saveProfile":"Salvar perfil","library.sets":"Conjuntos salvos","library.setName":"Nome do conjunto","library.saveSet":"Salvar telas atuais","library.emptySets":"Salve as telas atuais para abrir depois.","library.setCount":"{count} dispositivo(s)","library.openSet":"Abrir conjunto {name}","library.deleteSet":"Excluir conjunto {name}","library.updated":"Biblioteca atualizada.","library.opened":"Conjunto “{name}” aberto.","profile.compact":"Compacto","profile.wide":"Amplo","profile.tablet":"Tablet","sync.label":"Sincronizar rolagem","sync.off":"Rolagem independente","sync.status":"Rolagem vinculada: {linked}/{total} telas","sync.unavailable":"Sincronização exige duas telas acessíveis na mesma origem.","sync.hint":"Sincroniza o progresso de rolagem do documento. Quadros de outra origem e painéis internos não são vinculados.","options.saved":"Preferências salvas.","media.png":"Capturar PNG","media.video":"Vídeo","media.record":"Gravar selecionado","media.stop":"Parar e exportar","media.cancel":"Cancelar captura","media.recording":"Gravando · sem áudio · até 2 min","media.preparing":"Preparando captura…","media.stopping":"Finalizando…","media.finished":"Gravação finalizada.","media.cancelled":"Captura cancelada.","media.revoked":"A permissão de gravação foi removida.","media.interrupted":"O navegador interrompeu a captura. Os dados disponíveis foram preservados.","media.duration":"A gravação atingiu o limite de dois minutos.","popup.intro":"Experimente sua página em uma tela com as dimensões que você escolher.","popup.open":"Abrir simulador","popup.close":"Fechar simulador","popup.format":"Formato de vídeo","popup.record":"Gravar tela selecionada","popup.note":"Prévia independente · até quatro dispositivos","popup.blocked":"Alguns sites impedem abertura em quadros.","popup.opened":"Simulador aberto nesta aba.","popup.closed":"Simulador encerrado.","popup.preparing":"Preparando gravação…","popup.recording":"Gravação em andamento. Você também pode parar ou cancelar na página.","popup.unavailable":"Página indisponível","export.title":"Exportar · Mockaí","export.heading":"Sua captura está pronta.","export.preparing":"Preparando arquivo local…","export.nav":"Exportar","export.download":"Baixar {format}","export.convert":"Converter para MP4","export.cancel":"Cancelar conversão","export.progress":"Progresso da conversão","export.note":"O arquivo é preparado neste computador. Ao fechar esta página, os arquivos temporários são liberados.","export.alt":"Captura da tela selecionada","export.ready":"Arquivo pronto para baixar.","export.noMP4":"Conversão MP4 indisponível neste navegador; o WebM permanece disponível.","export.converting":"Convertendo neste computador. A conversão acompanha a duração do vídeo.","export.converted":"MP4 pronto. O WebM original continua disponível.","export.original":"O WebM original continua disponível.","error.native":"Não foi possível concluir: {detail}","error.options":"Preferências inválidas.","error.settings":"Ajustes inválidos.","error.dimensions":"Dimensões ou aparência inválidas.","error.name":"Use um nome de 1 a 48 caracteres, sem caracteres de controle.","error.id":"Identificador inválido.","error.deviceCount":"Mantenha entre 1 e 4 dispositivos abertos.","error.device":"Dispositivo inválido.","error.selection":"Seleção ou identificadores de dispositivos inválidos.","error.deviceMissing":"Dispositivo não encontrado.","error.library":"Biblioteca inválida.","error.profile":"Perfil personalizado inválido.","error.favorites":"Favoritos ou perfis inválidos.","error.duplicateSets":"Conjuntos duplicados.","error.http":"Abra uma página HTTP ou HTTPS para simular.","error.protected":"O Chrome não permite simular esta página protegida.","error.visible":"A tela precisa estar inteira visível. Reduza o zoom e tente novamente.","error.noImage":"A captura não contém imagem.","error.resized":"O tamanho da aba mudou durante a captura. Tente novamente.","error.mp4":"MP4 indisponível neste navegador. Escolha WebM.","error.codec":"Não há codificador disponível para o formato escolhido.","error.service":"O serviço de mídia não respondeu.","error.focus":"Volte à aba do simulador antes de capturar.","error.mode":"Tipo de captura inválido.","error.format":"Formato de vídeo inválido.","error.previous":"Finalize ou descarte a captura anterior antes de iniciar outra.","error.permissionHint":"A permissão de gravação está desatualizada. Recarregue a extensão em chrome://extensions e atualize esta página.","error.prepare":"Não foi possível preparar a tela.","error.moved":"A posição da tela mudou. Tente capturar novamente.","error.noRecording":"Esta aba não possui gravação em andamento.","error.event":"Evento de mídia não autorizado.","error.export":"Exportação não autorizada ou expirada.","error.exportOperation":"Operação de exportação desconhecida.","error.sessionVersion":"Versão de sessão inválida.","error.message":"Mensagem não autorizada.","error.origin":"Origem da mensagem inválida.","error.tab":"Aba inválida.","error.session":"Sessão encerrada.","error.preview":"Captura disponível somente na extensão carregada no Chrome.","error.mediaOperation":"Operação de mídia desconhecida.","error.context":"Operação indisponível neste contexto.","error.openFirst":"Abra o simulador antes de gravar.","error.operation":"Operação desconhecida.","error.mount":"A interface não confirmou a abertura.","error.customLimit":"O limite é de 20 perfis personalizados.","error.customMissing":"Perfil personalizado não encontrado.","error.profileMissing":"Perfil não encontrado.","error.profileRefresh":"Perfil não encontrado. Atualize a biblioteca.","error.setLimit":"O limite é de 16 conjuntos.","error.setMissing":"Conjunto não encontrado.","error.libraryOperation":"Operação de biblioteca desconhecida.","error.noData":"A gravação terminou sem dados.","error.size":"O arquivo excedeu o limite de 64 MiB.","error.notRecording":"Não há gravação em andamento.","error.stopTimeout":"O navegador não finalizou a gravação.","error.prepareTimeout":"A preparação da captura excedeu o tempo permitido.","error.image":"Imagem de captura inválida.","error.recordingSize":"A gravação excedeu o limite de 64 MiB e foi descartada.","error.encoder":"O codificador falhou.","error.artifact":"A captura não está mais disponível.","error.canvas":"Canvas indisponível.","error.png":"Falha ao gerar PNG.","error.videoTimeout":"A aba não forneceu imagem para a gravação.","error.video":"Não foi possível ler o vídeo da aba.","error.cancelConversion":"Conversão cancelada.","error.openVideo":"Não foi possível abrir o vídeo para conversão.","error.decode":"Este vídeo não pode ser convertido pelo navegador.","error.convertSize":"Dimensões indisponíveis ou grandes demais para conversão.","error.convertCanvas":"Canvas indisponível para conversão.","error.mp4Size":"O MP4 excedeu o limite de 64 MiB.","error.mp4Encoder":"O codificador MP4 falhou.","error.convertEmpty":"A conversão terminou sem dados.","error.playback":"A reprodução foi interrompida durante a conversão.","error.convertTimeout":"A conversão excedeu o tempo permitido.","error.expired":"A captura expirou.","error.file":"Não foi possível recuperar o arquivo local.","error.emptyFile":"O arquivo está vazio ou excede o limite de tamanho.","error.extension":"A extensão não respondeu. Recarregue esta página.","error.popupExtension":"Não foi possível falar com a extensão. Recarregue a página.","error.permission":"Permissão de gravação não concedida.","error.prepareFocus":"Volte à aba do simulador para preparar a captura.","error.inputDimensions":"Use as dimensões indicadas nos campos.","header.devices":"Dispositivos","header.capture":"Capturar","header.settings":"Ajustes","header.stop":"Parar","header.cancel":"Cancelar","header.recording":"Gravando","settings.device":"Tela selecionada","settings.dimensions":"Dimensões","settings.rotate":"Girar","settings.reload":"Recarregar","settings.appearance":"Preferências","settings.scale":"Escala de visualização","settings.record":"Gravar esta tela","settings.videoHint":"Sem áudio · até 2 minutos","settings.about":"Sobre esta prévia","screen.mode":"Modo da tela","screen.browser":"Navegador","screen.pwa":"PWA","screen.fullscreen":"Tela cheia","screen.hint":"Navegador mostra as barras de navegação. PWA mantém a barra de status. Tela cheia usa toda a tela para o conteúdo.","error.screenMode":"Modo da tela inválido.","capture.description":"Capture uma imagem ou grave um vídeo da tela selecionada.","capture.image":"Capturar tela","capture.imageHint":"Salvar imagem em PNG.","capture.videoHint":"Sem áudio · até 2 minutos","capture.ready":"Captura pronta","capture.transparent":"PNG · Fundo transparente","capture.videoShort":"Gravar vídeo","capture.imageShort":"Capturar tela","capture.video":"Vídeo","capture.format":"Formato","capture.fullPage":"Capturar página inteira","capture.fullPageHint":"Do início ao fim, em um único PNG.","capture.scrolling":"Capturando página · {progress}%","capture.fullPageReady":"PNG · Página inteira"},"en":{"app.name":"Mockaí","app.description":"Test your sites on phones, tablets and laptops side by side, with synced scrolling, screenshots and video recording.","app.open":"Open Mockaí","app.workspace":"TEST WORKSPACE","app.dialog":"Mockaí simulator","common.close":"Close","common.name":"Name","common.delete":"Delete","common.add":"Add","common.remove":"Remove","common.open":"Open","common.language":"Language","common.auto":"Automatic","common.wait":"Please wait…","workspace.library":"Devices and sets","workspace.light":"Light theme","workspace.screen":"Screen","workspace.selected":"Selected device","workspace.width":"Width","workspace.height":"Height","workspace.rotate":"Rotate selected","workspace.zoom":"Zoom","workspace.reload":"Reload selected","workspace.notice":"Responsive preview · some sites block frames. The browser and user agent remain those of your computer.","workspace.screens":"Test screens","workspace.hint":"Click a mockup to select it and adjust its dimensions.","workspace.count":"{count}/{limit} screens · {zoom}%","workspace.removeName":"Remove {name}","workspace.frameTitle":"{name} — test page","library.title":"Your screens","library.search":"Search profiles","library.searchHint":"Name or size","library.favorites":"Favorites ({count})","library.favorite":"Favorite {name}","library.unfavorite":"Unfavorite {name}","library.addName":"Add {name}","library.deleteProfile":"Delete profile {name}","library.empty":"No profiles found.","library.emptyFavorites":"No favorites found.","library.custom":"Custom profile","library.customHint":"Saves the dimensions of the selected screen.","library.saveProfile":"Save profile","library.sets":"Saved sets","library.setName":"Set name","library.saveSet":"Save current screens","library.emptySets":"Save the current screens to open them later.","library.setCount":"{count} device(s)","library.openSet":"Open set {name}","library.deleteSet":"Delete set {name}","library.updated":"Library updated.","library.opened":"Set “{name}” opened.","profile.compact":"Compact","profile.wide":"Wide","profile.tablet":"Tablet","sync.label":"Sync scrolling","sync.off":"Independent scrolling","sync.status":"Linked scrolling: {linked}/{total} screens","sync.unavailable":"Sync requires two accessible screens on the same origin.","sync.hint":"Syncs document scroll progress. Cross-origin frames and nested scroll areas are not linked.","options.saved":"Preferences saved.","media.png":"Capture PNG","media.video":"Video","media.record":"Record selected","media.stop":"Stop and export","media.cancel":"Cancel capture","media.recording":"Recording · no audio · up to 2 min","media.preparing":"Preparing capture…","media.stopping":"Finishing…","media.finished":"Recording finished.","media.cancelled":"Capture cancelled.","media.revoked":"Recording permission was removed.","media.interrupted":"The browser interrupted capture. Available data was preserved.","media.duration":"Recording reached the two-minute limit.","popup.intro":"Try your page on a screen with the dimensions you choose.","popup.open":"Open simulator","popup.close":"Close simulator","popup.format":"Video format","popup.record":"Record selected screen","popup.note":"Independent preview · up to four devices","popup.blocked":"Some sites prevent loading in frames.","popup.opened":"Simulator opened in this tab.","popup.closed":"Simulator closed.","popup.preparing":"Preparing recording…","popup.recording":"Recording in progress. You can also stop or cancel on the page.","popup.unavailable":"Page unavailable","export.title":"Export · Mockaí","export.heading":"Your capture is ready.","export.preparing":"Preparing local file…","export.nav":"Export","export.download":"Download {format}","export.convert":"Convert to MP4","export.cancel":"Cancel conversion","export.progress":"Conversion progress","export.note":"The file is prepared on this computer. Closing this page releases temporary files.","export.alt":"Capture of the selected screen","export.ready":"File ready to download.","export.noMP4":"MP4 conversion is unavailable in this browser; WebM remains available.","export.converting":"Converting on this computer. Conversion takes about as long as the video.","export.converted":"MP4 ready. The original WebM remains available.","export.original":"The original WebM remains available.","error.native":"Could not complete: {detail}","error.options":"Invalid preferences.","error.settings":"Invalid settings.","error.dimensions":"Invalid dimensions or appearance.","error.name":"Use a name of 1 to 48 characters without control characters.","error.id":"Invalid identifier.","error.deviceCount":"Keep between 1 and 4 devices open.","error.device":"Invalid device.","error.selection":"Invalid device selection or identifiers.","error.deviceMissing":"Device not found.","error.library":"Invalid library.","error.profile":"Invalid custom profile.","error.favorites":"Invalid favorites or profiles.","error.duplicateSets":"Duplicate sets.","error.http":"Open an HTTP or HTTPS page to simulate.","error.protected":"Chrome does not allow simulating this protected page.","error.visible":"The entire screen must be visible. Reduce the zoom and try again.","error.noImage":"The capture contains no image.","error.resized":"The tab size changed during capture. Try again.","error.mp4":"MP4 is unavailable in this browser. Choose WebM.","error.codec":"No encoder is available for the selected format.","error.service":"The media service did not respond.","error.focus":"Return to the simulator tab before capturing.","error.mode":"Invalid capture type.","error.format":"Invalid video format.","error.previous":"Finish or discard the previous capture before starting another.","error.permissionHint":"The recording permission is outdated. Reload the extension at chrome://extensions and refresh this page.","error.prepare":"Could not prepare the screen.","error.moved":"The screen position changed. Try capturing again.","error.noRecording":"This tab has no recording in progress.","error.event":"Unauthorized media event.","error.export":"Export is unauthorized or expired.","error.exportOperation":"Unknown export operation.","error.sessionVersion":"Invalid session version.","error.message":"Unauthorized message.","error.origin":"Invalid message origin.","error.tab":"Invalid tab.","error.session":"Session ended.","error.preview":"Capture is only available in the extension loaded in Chrome.","error.mediaOperation":"Unknown media operation.","error.context":"Operation unavailable in this context.","error.openFirst":"Open the simulator before recording.","error.operation":"Unknown operation.","error.mount":"The interface did not confirm opening.","error.customLimit":"The limit is 20 custom profiles.","error.customMissing":"Custom profile not found.","error.profileMissing":"Profile not found.","error.profileRefresh":"Profile not found. Refresh the library.","error.setLimit":"The limit is 16 sets.","error.setMissing":"Set not found.","error.libraryOperation":"Unknown library operation.","error.noData":"Recording ended without data.","error.size":"The file exceeded the 64 MiB limit.","error.notRecording":"There is no recording in progress.","error.stopTimeout":"The browser did not finalize the recording.","error.prepareTimeout":"Capture preparation timed out.","error.image":"Invalid capture image.","error.recordingSize":"Recording exceeded the 64 MiB limit and was discarded.","error.encoder":"The encoder failed.","error.artifact":"The capture is no longer available.","error.canvas":"Canvas is unavailable.","error.png":"Failed to generate PNG.","error.videoTimeout":"The tab did not provide an image for recording.","error.video":"Could not read the tab video.","error.cancelConversion":"Conversion cancelled.","error.openVideo":"Could not open the video for conversion.","error.decode":"This video cannot be converted by the browser.","error.convertSize":"Dimensions unavailable or too large for conversion.","error.convertCanvas":"Canvas unavailable for conversion.","error.mp4Size":"The MP4 exceeded the 64 MiB limit.","error.mp4Encoder":"The MP4 encoder failed.","error.convertEmpty":"Conversion ended without data.","error.playback":"Playback was interrupted during conversion.","error.convertTimeout":"Conversion timed out.","error.expired":"The capture expired.","error.file":"Could not retrieve the local file.","error.emptyFile":"The file is empty or exceeds the size limit.","error.extension":"The extension did not respond. Reload this page.","error.popupExtension":"Could not reach the extension. Reload the page.","error.permission":"Recording permission was not granted.","error.prepareFocus":"Return to the simulator tab to prepare capture.","error.inputDimensions":"Use the dimensions indicated in the fields.","header.devices":"Devices","header.capture":"Capture","header.settings":"Settings","header.stop":"Stop","header.cancel":"Cancel","header.recording":"Recording","settings.device":"Selected screen","settings.dimensions":"Dimensions","settings.rotate":"Rotate","settings.reload":"Reload","settings.appearance":"Preferences","settings.scale":"Preview scale","settings.record":"Record this screen","settings.videoHint":"No audio · up to 2 minutes","settings.about":"About this preview","screen.mode":"Screen mode","screen.browser":"Browser","screen.pwa":"PWA","screen.fullscreen":"Fullscreen","screen.hint":"Browser shows navigation bars. PWA keeps the status bar. Fullscreen uses the entire screen for content.","error.screenMode":"Invalid screen mode.","capture.description":"Take a screenshot or record a video of the selected device.","capture.image":"Capture screen","capture.imageHint":"Save an image as PNG.","capture.videoHint":"No audio · up to 2 minutes","capture.ready":"Capture ready","capture.transparent":"PNG · Transparent background","capture.videoShort":"Record video","capture.imageShort":"Capture screen","capture.video":"Video","capture.format":"Format","capture.fullPage":"Capture full page","capture.fullPageHint":"From top to bottom, in a single PNG.","capture.scrolling":"Capturing page · {progress}%","capture.fullPageReady":"PNG · Full page"},"es":{"app.name":"Mockaí","app.description":"Prueba tus sitios en móviles, tablets y portátiles lado a lado, con scroll sincronizado, capturas de pantalla y grabación de video.","app.open":"Abrir Mockaí","app.workspace":"ÁREA DE PRUEBAS","app.dialog":"Simulador Mockaí","common.close":"Cerrar","common.name":"Nombre","common.delete":"Eliminar","common.add":"Añadir","common.remove":"Quitar","common.open":"Abrir","common.language":"Idioma","common.auto":"Automático","common.wait":"Espera…","workspace.library":"Dispositivos y conjuntos","workspace.light":"Tema claro","workspace.screen":"Pantalla","workspace.selected":"Dispositivo seleccionado","workspace.width":"Ancho","workspace.height":"Alto","workspace.rotate":"Girar seleccionado","workspace.zoom":"Zoom","workspace.reload":"Recargar seleccionado","workspace.notice":"Vista previa adaptable · algunos sitios bloquean marcos. El navegador y el agente de usuario siguen siendo los del ordenador.","workspace.screens":"Pantallas en prueba","workspace.hint":"Haz clic en un mockup para seleccionarlo y ajustar sus dimensiones.","workspace.count":"{count}/{limit} pantallas · {zoom}%","workspace.removeName":"Quitar {name}","workspace.frameTitle":"{name} — página en prueba","library.title":"Tus pantallas","library.search":"Buscar perfiles","library.searchHint":"Nombre o tamaño","library.favorites":"Favoritos ({count})","library.favorite":"Añadir {name} a favoritos","library.unfavorite":"Quitar {name} de favoritos","library.addName":"Añadir {name}","library.deleteProfile":"Eliminar perfil {name}","library.empty":"No se encontraron perfiles.","library.emptyFavorites":"No se encontraron favoritos.","library.custom":"Perfil personalizado","library.customHint":"Guarda las dimensiones de la pantalla seleccionada.","library.saveProfile":"Guardar perfil","library.sets":"Conjuntos guardados","library.setName":"Nombre del conjunto","library.saveSet":"Guardar pantallas actuales","library.emptySets":"Guarda las pantallas actuales para abrirlas después.","library.setCount":"{count} dispositivo(s)","library.openSet":"Abrir conjunto {name}","library.deleteSet":"Eliminar conjunto {name}","library.updated":"Biblioteca actualizada.","library.opened":"Conjunto «{name}» abierto.","profile.compact":"Compacto","profile.wide":"Amplio","profile.tablet":"Tableta","sync.label":"Sincronizar desplazamiento","sync.off":"Desplazamiento independiente","sync.status":"Desplazamiento vinculado: {linked}/{total} pantallas","sync.unavailable":"La sincronización requiere dos pantallas accesibles del mismo origen.","sync.hint":"Sincroniza el progreso de desplazamiento del documento. Los marcos de otro origen y los paneles internos no se vinculan.","options.saved":"Preferencias guardadas.","media.png":"Capturar PNG","media.video":"Vídeo","media.record":"Grabar seleccionado","media.stop":"Detener y exportar","media.cancel":"Cancelar captura","media.recording":"Grabando · sin audio · hasta 2 min","media.preparing":"Preparando captura…","media.stopping":"Finalizando…","media.finished":"Grabación finalizada.","media.cancelled":"Captura cancelada.","media.revoked":"Se retiró el permiso de grabación.","media.interrupted":"El navegador interrumpió la captura. Se conservaron los datos disponibles.","media.duration":"La grabación alcanzó el límite de dos minutos.","popup.intro":"Prueba tu página en una pantalla con las dimensiones que elijas.","popup.open":"Abrir simulador","popup.close":"Cerrar simulador","popup.format":"Formato de vídeo","popup.record":"Grabar pantalla seleccionada","popup.note":"Vista previa independiente · hasta cuatro dispositivos","popup.blocked":"Algunos sitios impiden la carga en marcos.","popup.opened":"Simulador abierto en esta pestaña.","popup.closed":"Simulador cerrado.","popup.preparing":"Preparando grabación…","popup.recording":"Grabación en curso. También puedes detenerla o cancelarla en la página.","popup.unavailable":"Página no disponible","export.title":"Exportar · Mockaí","export.heading":"Tu captura está lista.","export.preparing":"Preparando archivo local…","export.nav":"Exportar","export.download":"Descargar {format}","export.convert":"Convertir a MP4","export.cancel":"Cancelar conversión","export.progress":"Progreso de conversión","export.note":"El archivo se prepara en este ordenador. Al cerrar esta página se liberan los archivos temporales.","export.alt":"Captura de la pantalla seleccionada","export.ready":"Archivo listo para descargar.","export.noMP4":"La conversión a MP4 no está disponible en este navegador; el WebM sigue disponible.","export.converting":"Convirtiendo en este ordenador. La conversión tarda aproximadamente lo que dura el vídeo.","export.converted":"MP4 listo. El WebM original sigue disponible.","export.original":"El WebM original sigue disponible.","error.native":"No se pudo completar: {detail}","error.options":"Preferencias no válidas.","error.settings":"Ajustes no válidos.","error.dimensions":"Dimensiones o apariencia no válidas.","error.name":"Usa un nombre de 1 a 48 caracteres sin caracteres de control.","error.id":"Identificador no válido.","error.deviceCount":"Mantén entre 1 y 4 dispositivos abiertos.","error.device":"Dispositivo no válido.","error.selection":"Selección o identificadores de dispositivos no válidos.","error.deviceMissing":"Dispositivo no encontrado.","error.library":"Biblioteca no válida.","error.profile":"Perfil personalizado no válido.","error.favorites":"Favoritos o perfiles no válidos.","error.duplicateSets":"Conjuntos duplicados.","error.http":"Abre una página HTTP o HTTPS para simular.","error.protected":"Chrome no permite simular esta página protegida.","error.visible":"La pantalla debe estar completamente visible. Reduce el zoom e inténtalo de nuevo.","error.noImage":"La captura no contiene imagen.","error.resized":"El tamaño de la pestaña cambió durante la captura. Inténtalo de nuevo.","error.mp4":"MP4 no está disponible en este navegador. Elige WebM.","error.codec":"No hay un codificador disponible para el formato elegido.","error.service":"El servicio de medios no respondió.","error.focus":"Vuelve a la pestaña del simulador antes de capturar.","error.mode":"Tipo de captura no válido.","error.format":"Formato de vídeo no válido.","error.previous":"Finaliza o descarta la captura anterior antes de iniciar otra.","error.permissionHint":"El permiso de grabación está desactualizado. Recarga la extensión en chrome://extensions y actualiza esta página.","error.prepare":"No se pudo preparar la pantalla.","error.moved":"La posición de la pantalla cambió. Intenta capturar de nuevo.","error.noRecording":"Esta pestaña no tiene una grabación en curso.","error.event":"Evento de medios no autorizado.","error.export":"La exportación no está autorizada o ha caducado.","error.exportOperation":"Operación de exportación desconocida.","error.sessionVersion":"Versión de sesión no válida.","error.message":"Mensaje no autorizado.","error.origin":"Origen del mensaje no válido.","error.tab":"Pestaña no válida.","error.session":"Sesión finalizada.","error.preview":"La captura solo está disponible en la extensión cargada en Chrome.","error.mediaOperation":"Operación de medios desconocida.","error.context":"Operación no disponible en este contexto.","error.openFirst":"Abre el simulador antes de grabar.","error.operation":"Operación desconocida.","error.mount":"La interfaz no confirmó la apertura.","error.customLimit":"El límite es de 20 perfiles personalizados.","error.customMissing":"Perfil personalizado no encontrado.","error.profileMissing":"Perfil no encontrado.","error.profileRefresh":"Perfil no encontrado. Actualiza la biblioteca.","error.setLimit":"El límite es de 16 conjuntos.","error.setMissing":"Conjunto no encontrado.","error.libraryOperation":"Operación de biblioteca desconocida.","error.noData":"La grabación terminó sin datos.","error.size":"El archivo superó el límite de 64 MiB.","error.notRecording":"No hay una grabación en curso.","error.stopTimeout":"El navegador no finalizó la grabación.","error.prepareTimeout":"La preparación de la captura excedió el tiempo permitido.","error.image":"Imagen de captura no válida.","error.recordingSize":"La grabación superó el límite de 64 MiB y se descartó.","error.encoder":"El codificador falló.","error.artifact":"La captura ya no está disponible.","error.canvas":"Canvas no está disponible.","error.png":"Error al generar el PNG.","error.videoTimeout":"La pestaña no proporcionó imagen para grabar.","error.video":"No se pudo leer el vídeo de la pestaña.","error.cancelConversion":"Conversión cancelada.","error.openVideo":"No se pudo abrir el vídeo para convertirlo.","error.decode":"El navegador no puede convertir este vídeo.","error.convertSize":"Dimensiones no disponibles o demasiado grandes para la conversión.","error.convertCanvas":"Canvas no disponible para la conversión.","error.mp4Size":"El MP4 superó el límite de 64 MiB.","error.mp4Encoder":"El codificador MP4 falló.","error.convertEmpty":"La conversión terminó sin datos.","error.playback":"La reproducción se interrumpió durante la conversión.","error.convertTimeout":"La conversión excedió el tiempo permitido.","error.expired":"La captura ha caducado.","error.file":"No se pudo recuperar el archivo local.","error.emptyFile":"El archivo está vacío o supera el límite de tamaño.","error.extension":"La extensión no respondió. Recarga esta página.","error.popupExtension":"No se pudo contactar con la extensión. Recarga la página.","error.permission":"No se concedió el permiso de grabación.","error.prepareFocus":"Vuelve a la pestaña del simulador para preparar la captura.","error.inputDimensions":"Usa las dimensiones indicadas en los campos.","header.devices":"Dispositivos","header.capture":"Capturar","header.settings":"Ajustes","header.stop":"Detener","header.cancel":"Cancelar","header.recording":"Grabando","settings.device":"Pantalla seleccionada","settings.dimensions":"Dimensiones","settings.rotate":"Girar","settings.reload":"Recargar","settings.appearance":"Preferencias","settings.scale":"Escala de visualización","settings.record":"Grabar esta pantalla","settings.videoHint":"Sin audio · hasta 2 minutos","settings.about":"Acerca de esta vista previa","screen.mode":"Modo de pantalla","screen.browser":"Navegador","screen.pwa":"PWA","screen.fullscreen":"Pantalla completa","screen.hint":"Navegador muestra las barras de navegación. PWA mantiene la barra de estado. Pantalla completa usa toda la pantalla para el contenido.","error.screenMode":"Modo de pantalla no válido.","capture.description":"Captura una imagen o graba un vídeo de la pantalla seleccionada.","capture.image":"Capturar pantalla","capture.imageHint":"Guardar imagen en PNG.","capture.videoHint":"Sin audio · hasta 2 minutos","capture.ready":"Captura lista","capture.transparent":"PNG · Fondo transparente","capture.videoShort":"Grabar vídeo","capture.imageShort":"Capturar pantalla","capture.video":"Vídeo","capture.format":"Formato","capture.fullPage":"Capturar página completa","capture.fullPageHint":"De principio a fin, en un solo PNG.","capture.scrolling":"Capturando página · {progress}%","capture.fullPageReady":"PNG · Página completa"}};
 // Catálogo de mockups locais. As imagens usam nomes únicos por modelo.
 const MOCKUPS = Object.freeze([
   {
@@ -1277,7 +1277,8 @@ function validateCaptureGeometry(value) {
       !Number.isInteger(output.width) || !Number.isInteger(output.height) ||
       output.width < 240 || output.height < 240 || output.width > 2400 || output.height > 2400 ||
       output.width * output.height > 3840000) throw new Error('A tela precisa estar inteira visível. Reduza o zoom e tente novamente.');
-  return { rect: { x: rect.x, y: rect.y, width: rect.width, height: rect.height },
+  const composition = value.composition === undefined ? undefined : validateComposition(value.composition);
+  return { ...(composition ? { composition } : {}), rect: { x: rect.x, y: rect.y, width: rect.width, height: rect.height },
     viewport: { width: viewport.width, height: viewport.height }, output: { width: output.width, height: output.height } };
 }
 function cropGeometry(value, sourceWidth, sourceHeight) {
@@ -1300,7 +1301,33 @@ function chooseVideoType(format, supports) {
 
 function sameCaptureGeometry(first, second) {
   const a = validateCaptureGeometry(first), b = validateCaptureGeometry(second);
-  return ['rect', 'viewport', 'output'].every(group => Object.keys(a[group]).every(key => Math.abs(a[group][key] - b[group][key]) <= 0.5));
+  return JSON.stringify(a.composition) === JSON.stringify(b.composition) && ['rect', 'viewport', 'output'].every(group => Object.keys(a[group]).every(key => Math.abs(a[group][key] - b[group][key]) <= 0.5));
+}
+
+function validateComposition(value) {
+  const { width, height, screen, frame, imageWidth, imageHeight, rotated, mask, matrix } = value ?? {};
+  const finite = n => typeof n === 'number' && Number.isFinite(n);
+  if (![width, height, screen?.x, screen?.y, screen?.width, screen?.height].every(finite) ||
+      width < 1 || height < 1 || width > 6000 || height > 6000 ||
+      screen.x < 0 || screen.y < 0 || screen.width < 1 || screen.height < 1 ||
+      screen.x + screen.width > width + .5 || screen.y + screen.height > height + .5 ||
+      (frame !== null && (typeof frame !== 'string' || !/^mockups\/[a-z0-9-]+\.avif$/.test(frame))) ||
+      (frame !== null && (![imageWidth, imageHeight].every(finite) || imageWidth < 1 || imageHeight < 1 || imageWidth > 6000 || imageHeight > 6000 || typeof rotated !== 'boolean' ||
+        typeof mask !== 'string' || mask.length > 40000 || !/^[MmLlHhVvCcSsQqTtAaZz0-9.,+eE\s-]+$/.test(mask) ||
+        !Array.isArray(matrix) || matrix.length !== 6 || !matrix.every(finite)))) throw new Error('Composição do mockup inválida.');
+  return { width, height, screen: { x: screen.x, y: screen.y, width: screen.width, height: screen.height }, frame,
+    ...(frame ? { imageWidth, imageHeight, rotated, mask, matrix: [...matrix] } : {}) };
+}
+
+// O stream de vídeo pode incluir faixas laterais para manter a proporção da aba.
+function videoCropGeometry(value, sourceWidth, sourceHeight) {
+  const geometry = validateCaptureGeometry(value);
+  if (!Number.isFinite(sourceWidth) || !Number.isFinite(sourceHeight) || sourceWidth < 1 || sourceHeight < 1) throw new Error('A captura não contém imagem.');
+  const { rect, viewport, output } = geometry;
+  const scale = Math.min(sourceWidth / viewport.width, sourceHeight / viewport.height);
+  const offsetX = (sourceWidth - viewport.width * scale) / 2;
+  const offsetY = (sourceHeight - viewport.height * scale) / 2;
+  return { x: offsetX + rect.x * scale, y: offsetY + rect.y * scale, width: rect.width * scale, height: rect.height * scale, output };
 }
 
 const SUPPORTED_LANGUAGES = Object.freeze(['pt-BR', 'en', 'es']);
@@ -1359,7 +1386,10 @@ function watchOptions(api, callback) {
     catch { callback({ ...DEFAULT_OPTIONS }); }
   };
   api.storage.onChanged.addListener(listener);
-  return () => api.storage.onChanged.removeListener(listener);
+  return () => {
+    try { api.storage.onChanged.removeListener(listener); }
+    catch { /* O contexto pode ter sido invalidado ao recarregar a extensão. */ }
+  };
 }
 
 // Escala visual compartilhada: dimensões reais dos iframes permanecem intactas.
@@ -1389,9 +1419,30 @@ function fitMockups(sizes, { width, height, zoom = 1, gap = 24 } = {}) {
   return { columns: best.columns, scale: Math.max(0.001, Math.floor(best.scale * 1000) / 1000) };
 }
 
-return { MESSAGES, MOCKUPS, PROFILES, PROFILE, SCREEN_MODES, screenLayout, mockupLayout, MAX_DEVICES, MAX_CUSTOM_PROFILES, MAX_SETS, PROTOCOL, DEFAULT_VIEW, validateView, validateName, validateId, createDevice, defaultWorkspace, migrateView, validateWorkspace, addDevice, removeDevice, emptyLibrary, validateLibrary, pageURL, MEDIA_LIMITS, validateCaptureGeometry, cropGeometry, chooseVideoType, sameCaptureGeometry, SUPPORTED_LANGUAGES, resolveLanguage, createI18n, OPTIONS_KEY, DEFAULT_OPTIONS, validateOptions, watchOptions, fitMockups };
+// Limites de canvas para manter a captura local dentro de um orçamento previsível.
+const PAGE_LIMITS = Object.freeze({ width: 2400, height: 32760, pixels: 32000000, slices: 160 });
+function pageDimensions(width, height) {
+  if (!Number.isInteger(width) || !Number.isInteger(height) || width < 1 || height < 1 ||
+      width > PAGE_LIMITS.width || height > PAGE_LIMITS.height || width * height > PAGE_LIMITS.pixels) {
+    throw new Error('A página é grande demais para uma única imagem.');
+  }
+  return { width, height };
+}
+function pageSlicePlacement({ width, height, offset, viewportHeight, covered }) {
+  pageDimensions(width, height);
+  if (![offset, viewportHeight, covered].every(Number.isFinite) || offset < 0 || viewportHeight < 1 ||
+      covered < 0 || offset > covered + 0.5 || covered > height || offset > height) {
+    throw new Error('A página mudou durante a captura. Tente novamente.');
+  }
+  const skip = Math.max(0, covered - offset);
+  const rows = Math.min(viewportHeight - skip, height - covered);
+  if (rows < 0.5) throw new Error('Não foi possível avançar a rolagem da página.');
+  return { skip, rows, y: covered, end: Math.min(height, covered + rows) };
+}
+
+return { PAGE_LIMITS, pageDimensions, pageSlicePlacement, MESSAGES, MOCKUPS, PROFILES, PROFILE, SCREEN_MODES, screenLayout, mockupLayout, MAX_DEVICES, MAX_CUSTOM_PROFILES, MAX_SETS, PROTOCOL, DEFAULT_VIEW, validateView, validateName, validateId, createDevice, defaultWorkspace, migrateView, validateWorkspace, addDevice, removeDevice, emptyLibrary, validateLibrary, pageURL, MEDIA_LIMITS, validateCaptureGeometry, cropGeometry, chooseVideoType, sameCaptureGeometry, validateComposition, videoCropGeometry, SUPPORTED_LANGUAGES, resolveLanguage, createI18n, OPTIONS_KEY, DEFAULT_OPTIONS, validateOptions, watchOptions, fitMockups };
 })();
-const STYLES = ":host { all: initial; color-scheme: dark; font: 14px/1.4 system-ui, sans-serif; }\n* { box-sizing: border-box; }\n[hidden] { display: none !important; }\n.workspace {\n  --bg: #071A13; --panel: #102B20; --ink: #F4F7F2; --muted: #A8BDB0;\n  --line: #28503B; --accent: #FFD600; --accent-ink: #071A13; --green: #22C55E; --focus: #60A5FA;\n  position: absolute; inset: 0; display: flex; flex-direction: column;\n  background: var(--bg); color: var(--ink); font: 14px/1.4 system-ui, sans-serif;\n  text-align: left; overflow: hidden;\n}\n.workspace[data-theme=light] {\n  --bg: #EDF5EF; --panel: #F4F7F2; --ink: #071A13; --muted: #526F5E;\n  --line: #CBDFD1; --accent: #FFD600; --accent-ink: #071A13; --green: #345C46; --focus: #2563EB; color-scheme: light;\n}\nbutton, input, select { font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; }\nbutton { cursor: pointer; padding: 9px 12px; white-space: nowrap; }\nbutton:hover:not(:disabled), button[aria-pressed=true], button[aria-expanded=true] { border-color: var(--green); background: var(--panel); }\nbutton:disabled { cursor: default; opacity: .4; }\nbutton:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }\ninput, select { padding: 9px 10px; min-width: 0; }\ninput { width: 78px; }\nlabel { color: var(--muted); font-size: 12px; }\n.icon { width: 18px; height: 18px; display: block; flex: 0 0 auto; }\n.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }\n\n/* Uma única linha de ações; controles secundários vivem no painel lateral. */\n.app-header { flex: 0 0 auto; min-height: 68px; display: flex; align-items: center; gap: 24px; padding: 12px 24px; border-bottom: 1px solid var(--line); background: var(--panel); }\n.brand { display: flex; align-items: center; justify-content: center; flex: 0 0 auto; padding: 2px 8px; }\n.brand-name { display: block; width: 108px; height: 38px; object-fit: contain; }\n.brand-symbol { display: none; width: 28px; height: 28px; object-fit: contain; border-radius: 5px; }\n.header-context, .header-actions { display: flex; align-items: center; gap: 8px; min-width: 0; }\n.header-context { border-left: 1px solid var(--line); padding-left: 20px; }\n.header-actions { margin-left: auto; flex-shrink: 0; }\n.header-button, .primary-button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 36px; padding: 8px 11px; font-size: 12px; font-weight: 550; }\n.header-button { border-color: transparent; background: transparent; color: var(--muted); }\n.header-button:hover:not(:disabled), .header-button[aria-expanded=true] { color: var(--ink); border-color: var(--line); background: var(--bg); }\n.icon-button { display: inline-flex; justify-content: center; align-items: center; width: 34px; height: 34px; padding: 7px; flex: 0 0 auto; }\n.primary-button { background: var(--accent); color: var(--accent-ink); border-color: transparent; padding-inline: 14px; }\n.primary-button:hover:not(:disabled) { background: var(--accent); border-color: var(--accent); filter: brightness(1.06); }\n.header-divider { width: 1px; height: 18px; background: var(--line); margin-inline: 4px; }\n.screen-picker { display: flex; align-items: center; gap: 6px; border: 1px solid var(--line); border-radius: 8px; padding-left: 10px; min-width: 0; color: var(--muted); }\n.screen-picker .icon { width: 15px; height: 15px; }\n.screen-picker select { border: 0; border-radius: 8px; background: transparent; max-width: 180px; width: 150px; height: 34px; padding: 5px 8px 5px 0; font-size: 12px; color: var(--ink); text-overflow: ellipsis; }\n.media-label { display: inline-flex; align-items: center; gap: 7px; max-width: 170px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; color: var(--muted); padding-right: 8px; }\n.media-label::before { content: ''; flex: 0 0 auto; width: 6px; height: 6px; border-radius: 50%; background: #FF6A4D; }\n.recording-stop .icon { width: 14px; height: 14px; }\n\n.body { position: relative; display: flex; flex: 1; min-height: 0; }\n.library, .settings-panel { flex: 0 0 324px; width: 324px; min-width: 0; overflow-y: auto; padding: 20px; background: var(--panel); }\n.library { border-right: 1px solid var(--line); }\n.settings-panel { border-left: 1px solid var(--line); }\n.panel-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 20px; }\nh2 { font-size: 16px; font-weight: 650; margin: 0; letter-spacing: -.3px; }\nh3 { font-size: 12px; font-weight: 600; margin: 0; color: var(--ink); }\n.panel-dismiss { color: var(--muted); border: 0; background: transparent; }\n.panel-dismiss .icon { width: 16px; height: 16px; }\n.search { display: grid; gap: 7px; margin-bottom: 12px; }\n.search input { width: 100%; }\n.library button { padding: 7px 8px; font-size: 11px; }\n.library-row { display: flex; gap: 6px; align-items: center; padding: 13px 0; border-bottom: 1px solid var(--line); }\n.profile-preview { width: 42px; height: 54px; flex: 0 0 42px; object-fit: contain; }\n.row-info { display: grid; gap: 4px; flex: 1; min-width: 0; }\n.row-info strong { font-size: 12px; font-weight: 600; overflow-wrap: anywhere; }\n.row-info small, .empty, form p { color: var(--muted); font-size: 11px; }\nform { display: grid; gap: 10px; padding: 20px 0; }\nform label { display: grid; gap: 6px; }\nform input { width: 100%; }\nform p { margin: 0; }\n.settings-group { display: grid; gap: 14px; padding-bottom: 22px; margin-bottom: 22px; border-bottom: 1px solid var(--line); }\n.screen-modes { display: flex; gap: 3px; padding: 3px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); }\n.screen-modes button { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 7px; min-width: 0; padding: 10px 4px; border: 1px solid transparent; background: transparent; font-size: 11px; color: var(--muted); }\n.screen-modes button[aria-pressed=true] { border-color: var(--green); background: var(--panel); color: var(--ink); }\n.dimension-fields { display: flex; align-items: end; gap: 10px; }\n.dimension-fields label { display: grid; gap: 7px; flex: 1; min-width: 0; }\n.dimension-fields input { width: 100%; font-variant-numeric: tabular-nums; }\n.dimension-times { color: var(--muted); padding-bottom: 10px; }\n.paired-actions { display: flex; gap: 8px; }\n.paired-actions button { flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-size: 12px; }\n.paired-actions .icon { width: 16px; height: 16px; }\n.setting-row, .toggle-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; min-height: 36px; }\n.setting-row select { max-width: 138px; font-size: 12px; }\n.toggle-row { padding: 0; border: 0; background: transparent; color: var(--muted); font-size: 12px; font-weight: 400; }\n.toggle-track { position: relative; width: 30px; height: 18px; border-radius: 10px; background: var(--line); flex-shrink: 0; }\n.toggle-track::after { content: ''; position: absolute; top: 3px; left: 3px; width: 12px; height: 12px; border-radius: 50%; background: var(--muted); }\n.toggle-row[aria-pressed=true] .toggle-track { background: var(--green); }\n.toggle-row[aria-pressed=true] .toggle-track::after { left: 15px; background: var(--accent-ink); }\n.check input { width: 16px; height: 16px; margin: 0; accent-color: var(--green); }\n.sync-status, .setting-hint { margin: -4px 0 0; color: var(--muted); font-size: 11px; line-height: 1.6; }\n.record-button { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; font-size: 12px; }\n.settings-help { font-size: 11px; line-height: 1.7; color: var(--muted); }\n.settings-help summary { cursor: pointer; }\n.notice { margin: 12px 0 0; color: var(--muted); font-size: 11px; line-height: 1.7; }\n\n.stage { flex: 1; min-width: 0; min-height: 0; overflow-x: hidden; overflow-y: auto; scrollbar-gutter: stable; padding: 24px; display: grid; grid-template-columns: minmax(0, 1fr); grid-auto-rows: max-content; align-content: start; align-items: start; justify-items: center; gap: 24px; }\n.device-card { position: relative; display: flex; flex-direction: column; align-items: center; flex: 0 0 auto; padding: 10px; border: 1px solid transparent; border-radius: 12px; }\n.device-card[data-selected=true] { border-color: var(--green); }\n.device-heading { display: flex; justify-content: center; width: 0; min-width: 100%; margin-top: 4px; }\n.device-select { max-width: 100%; overflow: hidden; text-overflow: ellipsis; padding: 4px 6px; border: 0; background: transparent; color: var(--muted); font-size: 10px; line-height: 16px; font-weight: 400; text-align: center; }\n.device-select:hover:not(:disabled), .device-select[aria-pressed=true] { background: transparent; color: var(--ink); }\n.device-remove { position: absolute; top: 2px; right: 2px; z-index: 1; display: grid; place-items: center; width: 24px; height: 24px; padding: 4px; border: 0; border-radius: 50%; background: var(--panel); color: var(--muted); }\n.device-remove .icon { width: 14px; height: 14px; }\n.device-remove:hover:not(:disabled) { background: var(--panel); color: #FF6A4D; }\n.footprint { position: relative; }\n.device { position: absolute; top: 12px; left: 12px; transform-origin: top left; box-shadow: 0 0 0 9px #38493c, 0 16px 50px #0005; border-radius: 14px; background: white; overflow: hidden; }\n.device[data-mockup=true] { box-shadow: none; border-radius: 0; background: transparent; overflow: visible; }\n.device-bezel { position: absolute; inset: 0 auto auto 0; max-width: none; transform-origin: top left; pointer-events: none; user-select: none; }\n.device-screen { position: absolute; overflow: hidden; border-radius: 14px; background: white; }\n.screen-status, .screen-browser, .screen-navigation { position: absolute; left: 0; width: 100%; background: #F4F7F2; color: #102B20; font-family: system-ui, sans-serif; }\n.screen-status { top: 0; display: flex; align-items: center; justify-content: space-between; padding: 0 26px; font-size: 14px; font-weight: 600; }\n.screen-clock { min-width: 40px; text-align: center; }\n.screen-indicators svg { display: block; width: 62px; height: 16px; }\n.screen-browser { display: flex; flex-direction: column; justify-content: center; padding: 5px 12px; border-block: 1px solid #DCEBDF; }\n.screen-address-row { display: flex; align-items: center; gap: 8px; min-height: 32px; padding: 0 10px; background: #E5F0E8; border-radius: 9px; font-size: 13px; }\n.screen-address { flex: 1; min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-align: center; }\n.screen-lock, .screen-refresh { font-size: 18px; opacity: .65; }\n.screen-tab { display: none; }\n.device-screen[data-family=desktop] .screen-tab { display: block; width: 55%; max-width: 220px; height: 22px; margin: -4px 0 3px; padding: 3px 12px; border-radius: 7px 7px 0 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 11px; background: #E5F0E8; }\n.device-screen[data-family=desktop] .screen-address-row { min-height: 30px; }\n.screen-navigation { bottom: 0; display: flex; justify-content: space-around; align-items: center; font-size: 24px; }\n.device-screen[data-family=android] .screen-navigation span, .device-screen[data-family=ios] .screen-navigation span { display: none; }\n.device-screen[data-family=ios] .screen-navigation { border-top: 1px solid #DCEBDF; }\n.device-screen[data-family=ios] .screen-navigation span { display: block; font-size: 21px; }\n.device-screen[data-family=android] .screen-navigation::after { content: ''; width: 80px; height: 4px; border-radius: 3px; background: currentColor; }\n.device-mask { position: absolute; width: 0; height: 0; pointer-events: none; }\n.device[data-mockup=true] iframe { border-radius: 0; }\niframe { display: block; border: 0; border-radius: 14px; background: white; }\n.workspace-error { position: absolute; bottom: 16px; left: 50%; z-index: 3; transform: translateX(-50%); width: max-content; max-width: calc(100% - 32px); margin: 0; padding: 10px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); color: var(--ink); font-size: 12px; overflow-wrap: anywhere; }\n@media (max-width: 1000px) {\n  .library, .settings-panel { position: absolute; z-index: 2; inset-block: 0; width: min(324px, 100%); box-shadow: 0 16px 40px #0005; }\n  .library { left: 0; }\n  .settings-panel { right: 0; }\n}\n@media (max-width: 760px) {\n  .app-header { min-height: 60px; padding: 10px 14px; gap: 14px; }\n  .header-context { padding-left: 12px; gap: 6px; }\n  .header-button .button-label, .primary-button .button-label { display: none; }\n  .header-button, .primary-button { padding-inline: 9px; }\n  .screen-picker select { width: 125px; }\n  .header-actions { gap: 4px; }\n  .stage { padding: 20px; }\n}\n@media (max-width: 520px) {\n  .app-header { gap: 8px; padding-inline: 10px; }\n  .brand-name, .header-divider { display: none; }\n  .header-context { border: 0; padding: 0; flex: 1; }\n  .screen-picker { flex: 1; }\n  .screen-picker select { width: 100%; max-width: 135px; }\n  .screen-picker .icon { display: none; }\n  .brand { padding: 2px; }\n  .brand-symbol { display: block; }\n  .header-actions { gap: 3px; }\n  .workspace[data-capturing=true] .header-context, .workspace[data-capturing=true] .brand { display: none; }\n  .media-label { max-width: 100px; font-size: 11px; }\n  .stage { padding: 14px; }\n}\n@media (max-width: 380px) {\n  .workspace[data-capturing=true] [data-action=settings] { display: none; }\n  .media-label { max-width: 80px; }\n  .screen-picker select { max-width: 105px; }\n}\n@media (max-height: 550px) { .app-header { min-height: 54px; padding-block: 8px; } }\n";
+const STYLES = ":host { all: initial; color-scheme: dark; font: 14px/1.4 system-ui, sans-serif; }\n* { box-sizing: border-box; }\n[hidden] { display: none !important; }\n.workspace {\n  --bg: #071A13; --panel: #102B20; --ink: #F4F7F2; --muted: #A8BDB0;\n  --line: #28503B; --accent: #FFD600; --accent-ink: #071A13; --green: #22C55E; --focus: #60A5FA;\n  position: absolute; inset: 0; display: flex; flex-direction: column;\n  background: var(--bg); color: var(--ink); font: 14px/1.4 system-ui, sans-serif;\n  text-align: left; overflow: hidden;\n}\n.workspace[data-theme=light] {\n  --bg: #EDF5EF; --panel: #F4F7F2; --ink: #071A13; --muted: #526F5E;\n  --line: #CBDFD1; --accent: #FFD600; --accent-ink: #071A13; --green: #345C46; --focus: #2563EB; color-scheme: light;\n}\nbutton, input, select { font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; }\nbutton { cursor: pointer; padding: 9px 12px; white-space: nowrap; }\nbutton:hover:not(:disabled), button[aria-pressed=true], button[aria-expanded=true] { border-color: var(--green); background: var(--panel); }\nbutton:disabled { cursor: default; opacity: .4; }\nbutton:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }\ninput, select { padding: 9px 10px; min-width: 0; }\ninput { width: 78px; }\nlabel { color: var(--muted); font-size: 12px; }\n.icon { width: 18px; height: 18px; display: block; flex: 0 0 auto; }\n.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }\n\n/* Uma única linha de ações; controles secundários vivem no painel lateral. */\n.app-header { flex: 0 0 auto; min-height: 68px; display: flex; align-items: center; gap: 24px; padding: 12px 24px; border-bottom: 1px solid var(--line); background: var(--panel); }\n.brand { display: flex; align-items: center; justify-content: center; flex: 0 0 auto; padding: 2px 8px; }\n.brand-name { display: block; width: 108px; height: 38px; object-fit: contain; }\n.brand-symbol { display: none; width: 28px; height: 28px; object-fit: contain; border-radius: 5px; }\n.header-context, .header-actions { display: flex; align-items: center; gap: 8px; min-width: 0; }\n.header-context { border-left: 1px solid var(--line); padding-left: 20px; }\n.header-actions { margin-left: auto; flex-shrink: 0; }\n.header-button, .primary-button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 36px; padding: 8px 11px; font-size: 12px; font-weight: 550; }\n.header-button { border-color: transparent; background: transparent; color: var(--muted); }\n.header-button:hover:not(:disabled), .header-button[aria-expanded=true] { color: var(--ink); border-color: var(--line); background: var(--bg); }\n.icon-button { display: inline-flex; justify-content: center; align-items: center; width: 34px; height: 34px; padding: 7px; flex: 0 0 auto; }\n.primary-button { background: var(--accent); color: var(--accent-ink); border-color: transparent; padding-inline: 14px; }\n.primary-button:hover:not(:disabled) { background: var(--accent); border-color: var(--accent); filter: brightness(1.06); }\n.header-divider { width: 1px; height: 18px; background: var(--line); margin-inline: 4px; }\n.media-label { display: inline-flex; align-items: center; gap: 7px; max-width: 170px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; color: var(--muted); padding-right: 8px; }\n.media-label::before { content: ''; flex: 0 0 auto; width: 6px; height: 6px; border-radius: 50%; background: #FF6A4D; }\n.recording-stop .icon { width: 14px; height: 14px; }\n\n.body { position: relative; display: flex; flex: 1; min-height: 0; }\n.library, .settings-panel { flex: 0 0 324px; width: 324px; min-width: 0; overflow-y: auto; padding: 20px; background: var(--panel); }\n.library { border-right: 1px solid var(--line); }\n.settings-panel { border-left: 1px solid var(--line); }\n.panel-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 20px; }\nh2 { font-size: 16px; font-weight: 650; margin: 0; letter-spacing: -.3px; }\nh3 { font-size: 12px; font-weight: 600; margin: 0; color: var(--ink); }\n.panel-dismiss { color: var(--muted); border: 0; background: transparent; }\n.panel-dismiss .icon { width: 16px; height: 16px; }\n.search { display: grid; gap: 7px; margin-bottom: 12px; }\n.search input { width: 100%; }\n.library button { padding: 7px 8px; font-size: 11px; }\n.library-row { display: flex; gap: 6px; align-items: center; padding: 13px 0; border-bottom: 1px solid var(--line); }\n.profile-preview { width: 42px; height: 54px; flex: 0 0 42px; object-fit: contain; }\n.row-info { display: grid; gap: 4px; flex: 1; min-width: 0; }\n.row-info strong { font-size: 12px; font-weight: 600; overflow-wrap: anywhere; }\n.row-info small, .empty, form p { color: var(--muted); font-size: 11px; }\nform { display: grid; gap: 10px; padding: 20px 0; }\nform label { display: grid; gap: 6px; }\nform input { width: 100%; }\nform p { margin: 0; }\n.settings-group { display: grid; gap: 14px; padding-bottom: 22px; margin-bottom: 22px; border-bottom: 1px solid var(--line); }\n.screen-modes { display: flex; gap: 3px; padding: 3px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); }\n.screen-modes button { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 7px; min-width: 0; padding: 10px 4px; border: 1px solid transparent; background: transparent; font-size: 11px; color: var(--muted); }\n.screen-modes button[aria-pressed=true] { border-color: var(--green); background: var(--panel); color: var(--ink); }\n.dimension-fields { display: flex; align-items: end; gap: 10px; }\n.dimension-fields label { display: grid; gap: 7px; flex: 1; min-width: 0; }\n.dimension-fields input { width: 100%; font-variant-numeric: tabular-nums; }\n.dimension-times { color: var(--muted); padding-bottom: 10px; }\n.paired-actions { display: flex; gap: 8px; }\n.paired-actions button { flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-size: 12px; }\n.paired-actions .icon { width: 16px; height: 16px; }\n.setting-row, .toggle-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; min-height: 36px; }\n.setting-row select { max-width: 138px; font-size: 12px; }\n.toggle-row { padding: 0; border: 0; background: transparent; color: var(--muted); font-size: 12px; font-weight: 400; }\n.toggle-track { position: relative; width: 30px; height: 18px; border-radius: 10px; background: var(--line); flex-shrink: 0; }\n.toggle-track::after { content: ''; position: absolute; top: 3px; left: 3px; width: 12px; height: 12px; border-radius: 50%; background: var(--muted); }\n.toggle-row[aria-pressed=true] .toggle-track { background: var(--green); }\n.toggle-row[aria-pressed=true] .toggle-track::after { left: 15px; background: var(--accent-ink); }\n.check input { width: 16px; height: 16px; margin: 0; accent-color: var(--green); }\n.sync-status, .setting-hint { margin: -4px 0 0; color: var(--muted); font-size: 11px; line-height: 1.6; }\n.record-button { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; font-size: 12px; }\n.settings-help { font-size: 11px; line-height: 1.7; color: var(--muted); }\n.settings-help summary { cursor: pointer; }\n.notice { margin: 12px 0 0; color: var(--muted); font-size: 11px; line-height: 1.7; }\n\n.stage { flex: 1; min-width: 0; min-height: 0; overflow-x: hidden; overflow-y: auto; scrollbar-gutter: stable; padding: 24px; display: grid; grid-template-columns: minmax(0, 1fr); grid-auto-rows: max-content; align-content: start; align-items: start; justify-items: center; gap: 24px; }\n.device-card { position: relative; display: flex; flex-direction: column; align-items: center; flex: 0 0 auto; padding: 10px; border: 1px solid transparent; border-radius: 12px; cursor: pointer; }\n.device-card[data-selected=true] { border-color: var(--green); box-shadow: 0 0 0 1px var(--green); }\n.device-card iframe { cursor: auto; }\n.device-heading { display: flex; justify-content: center; width: 0; min-width: 100%; margin-top: 4px; }\n.device-select { max-width: 100%; overflow: hidden; text-overflow: ellipsis; padding: 4px 6px; border: 0; background: transparent; color: var(--muted); font-size: 10px; line-height: 16px; font-weight: 400; text-align: center; }\n.device-select:hover:not(:disabled), .device-select[aria-pressed=true] { background: transparent; color: var(--ink); }\n.device-remove { position: absolute; top: 2px; right: 2px; z-index: 1; display: grid; place-items: center; width: 24px; height: 24px; padding: 4px; border: 0; border-radius: 50%; background: var(--panel); color: var(--muted); }\n.device-remove .icon { width: 14px; height: 14px; }\n.device-remove:hover:not(:disabled) { background: var(--panel); color: #FF6A4D; }\n.footprint { position: relative; }\n.device { position: absolute; top: 12px; left: 12px; transform-origin: top left; box-shadow: 0 0 0 9px #38493c, 0 16px 50px #0005; border-radius: 14px; background: white; overflow: hidden; }\n.device[data-mockup=true] { box-shadow: none; border-radius: 0; background: transparent; overflow: visible; }\n.device-bezel { position: absolute; inset: 0 auto auto 0; max-width: none; transform-origin: top left; pointer-events: none; user-select: none; }\n.device-screen { position: absolute; overflow: hidden; border-radius: 14px; background: white; }\n.screen-status, .screen-browser, .screen-navigation { position: absolute; left: 0; width: 100%; background: #F4F7F2; color: #102B20; font-family: system-ui, sans-serif; }\n.screen-status { top: 0; display: flex; align-items: center; justify-content: space-between; padding: 0 26px; font-size: 14px; font-weight: 600; }\n.screen-clock { min-width: 40px; text-align: center; }\n.screen-indicators svg { display: block; width: 62px; height: 16px; }\n.screen-browser { display: flex; flex-direction: column; justify-content: center; padding: 5px 12px; border-block: 1px solid #DCEBDF; }\n.screen-address-row { display: flex; align-items: center; gap: 8px; min-height: 32px; padding: 0 10px; background: #E5F0E8; border-radius: 9px; font-size: 13px; }\n.screen-address { flex: 1; min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-align: center; }\n.screen-lock, .screen-refresh { font-size: 18px; opacity: .65; }\n.screen-tab { display: none; }\n.device-screen[data-family=desktop] .screen-tab { display: block; width: 55%; max-width: 220px; height: 22px; margin: -4px 0 3px; padding: 3px 12px; border-radius: 7px 7px 0 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 11px; background: #E5F0E8; }\n.device-screen[data-family=desktop] .screen-address-row { min-height: 30px; }\n.screen-navigation { bottom: 0; display: flex; justify-content: space-around; align-items: center; font-size: 24px; }\n.device-screen[data-family=android] .screen-navigation span, .device-screen[data-family=ios] .screen-navigation span { display: none; }\n.device-screen[data-family=ios] .screen-navigation { border-top: 1px solid #DCEBDF; }\n.device-screen[data-family=ios] .screen-navigation span { display: block; font-size: 21px; }\n.device-screen[data-family=android] .screen-navigation::after { content: ''; width: 80px; height: 4px; border-radius: 3px; background: currentColor; }\n.device-mask { position: absolute; width: 0; height: 0; pointer-events: none; }\n.device[data-mockup=true] iframe { border-radius: 0; }\niframe { display: block; border: 0; border-radius: 14px; background: white; }\n.workspace-error { position: absolute; bottom: 16px; left: 50%; z-index: 3; transform: translateX(-50%); width: max-content; max-width: calc(100% - 32px); margin: 0; padding: 10px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); color: var(--ink); font-size: 12px; overflow-wrap: anywhere; }\n@media (max-width: 1000px) {\n  .library, .settings-panel { position: absolute; z-index: 2; inset-block: 0; width: min(324px, 100%); box-shadow: 0 16px 40px #0005; }\n  .library { left: 0; }\n  .settings-panel { right: 0; }\n}\n@media (max-width: 760px) {\n  .app-header { min-height: 60px; padding: 10px 14px; gap: 14px; }\n  .header-context { padding-left: 12px; gap: 6px; }\n  .header-button .button-label, .primary-button .button-label { display: none; }\n  .header-button, .primary-button { padding-inline: 9px; }\n  .header-actions { gap: 4px; }\n  .stage { padding: 20px; }\n}\n@media (max-width: 520px) {\n  .app-header { gap: 8px; padding-inline: 10px; }\n  .brand-name, .header-divider { display: none; }\n  .header-context { border: 0; padding: 0; flex: 1; }\n  .brand { padding: 2px; }\n  .brand-symbol { display: block; }\n  .header-actions { gap: 3px; }\n  .workspace[data-capturing=true] .header-context, .workspace[data-capturing=true] .brand { display: none; }\n  .media-label { max-width: 100px; font-size: 11px; }\n  .stage { padding: 14px; }\n}\n@media (max-width: 380px) {\n  .workspace[data-capturing=true] [data-action=settings] { display: none; }\n  .media-label { max-width: 80px; }\n}\n@media (max-height: 550px) { .app-header { min-height: 54px; padding-block: 8px; } }\n\n.capture-menu { position: fixed; inset: 0; width: min(400px, calc(100vw - 32px)); max-height: calc(100dvh - 32px); margin: auto; padding: 24px; overflow: auto; border: 1px solid var(--line); border-radius: 24px; background: var(--panel); color: var(--ink); box-shadow: 0 24px 80px #0006; }\n.capture-menu::backdrop { background: #03110b99; backdrop-filter: blur(6px); }\n.capture-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }\n.capture-heading h2 { font-size: 20px; letter-spacing: -.5px; }\n.capture-device { margin: 6px 0 0; color: var(--muted); font-size: 12px; overflow-wrap: anywhere; }\n.capture-menu .capture-heading { margin-bottom: 24px; align-items: flex-start; }\n.capture-menu .panel-dismiss { border-radius: 50%; background: var(--bg); }\n.capture-screenshot { display: flex; align-items: center; gap: 14px; width: 100%; padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: var(--bg); text-align: left; white-space: normal; }\n.capture-action-icon { display: grid; place-items: center; width: 46px; height: 46px; flex: 0 0 auto; border-radius: 13px; background: var(--accent); color: var(--accent-ink); }\n.capture-action-icon .icon { width: 22px; height: 22px; }\n.capture-action-copy { display: grid; gap: 5px; }\n.capture-action-copy strong { font-size: 14px; font-weight: 600; }\n.capture-action-copy small { font-size: 12px; color: var(--muted); }\n.capture-video { margin-top: 16px; padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: var(--bg); }\n.capture-video-heading { display: flex; align-items: center; gap: 10px; }\n.capture-video-heading > .icon { color: var(--muted); width: 20px; height: 20px; }\n.capture-video-heading h3 { font-size: 14px; color: var(--ink); }\n.capture-video-hint { margin: 7px 0 20px; color: var(--muted); font-size: 12px; }\n.capture-format { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 16px; font-size: 12px; }\n.capture-format select { width: 112px; padding: 8px 10px; background: var(--panel); color: var(--ink); }\n.capture-record { width: 100%; min-height: 42px; border-radius: 10px; }\n.capture-record .icon { width: 16px; height: 16px; }\n@media (max-width: 420px) { .capture-menu { padding: 20px; border-radius: 20px; } }\n\n.capture-result { position: fixed; inset: 0; width: fit-content; min-width: min(320px, calc(100vw - 32px)); max-width: min(640px, calc(100vw - 32px)); max-height: calc(100dvh - 32px); margin: auto; overflow-y: auto; padding: 20px; border: 1px solid var(--line); border-radius: 20px; background: var(--panel); color: var(--ink); box-shadow: 0 24px 80px #0005; }\n.capture-result::backdrop { background: #03110bb3; }\n.capture-result .capture-heading h2 { font-size: 16px; }\n.result-preview { display: flex; align-items: center; justify-content: center; width: fit-content; max-width: 100%; margin: 16px auto 20px; }\n.result-preview:empty { margin: 0; }\n.result-preview img, .result-preview video { display: block; width: auto; height: auto; max-width: min(560px, calc(100vw - 74px)); max-height: min(64dvh, calc(100dvh - 220px), 640px); object-fit: contain; }\n.result-footer { display: grid; gap: 12px; }\n.result-note { margin: 0; color: var(--muted); font-size: 11px; text-align: center; }\n.result-download { width: 100%; min-height: 40px; border-radius: 10px; text-decoration: none; }\n\n.capture-fullpage { margin-top: 12px; }\n.capture-fullpage .capture-action-icon { background: var(--panel); color: var(--ink); }\n";
 // Componentes sem HTML interpolado com dados do usuário.
 const UI = (() => {
   // Família vetorial desenhada para os controles do projeto.
@@ -1404,6 +1455,7 @@ const UI = (() => {
       close: '<path d="m6 6 12 12M18 6 6 18"/>',
       rotate: '<path d="M4 9a8 8 0 0 1 14-3l2 2M20 3v5h-5"/><rect x="7" y="11" width="7" height="10" rx="1.5"/>',
       reload: '<path d="M19 8a8 8 0 1 0 1 6M20 3v6h-6"/>',
+      fullpage: '<rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 6v12m-4-4 4 4 4-4"/>',
       record: '<circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="3" fill="currentColor" stroke="none"/>',
       stop: '<rect x="6" y="6" width="12" height="12" rx="2" fill="currentColor" stroke="none"/>',
       browser: '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/>',
@@ -1727,6 +1779,11 @@ return { watchFrameBackground };
   let onlyFavorites = false;
   let saving = Promise.resolve();
   let mediaState = { state: 'idle' };
+  let recordingClock = null;
+  let mediaPoll = null;
+  let mediaRevision = 0;
+  let pageCapture = null;
+  let previewJob = null;
   let measuring = false;
   let options = { ...MODEL.DEFAULT_OPTIONS };
   const i18n = MODEL.createI18n(MODEL.MESSAGES, options.language, globalThis.navigator?.language ?? 'pt-BR');
@@ -1735,17 +1792,100 @@ return { watchFrameBackground };
   let statusMessage = { key: 'workspace.hint', values: {} };
   const mediaBusy = () => ['preparing', 'recording', 'stopping'].includes(mediaState.state);
   const cards = new Map();
-  let stageObserver, layoutFrame = null;
+  let stageObserver, layoutFrame = null, selectionTimer = null;
   const query = selector => root?.querySelector(selector);
   const panels = {
     library: { panel: '.library', trigger: '[data-action=library]', focus: '[name=search]' },
     settings: { panel: '.settings-panel', trigger: '[data-action=settings]', focus: '[name=width]' }
   };
   function closePanels() {
+    closeCapture();
     for (const value of Object.values(panels)) {
       query(value.panel).hidden = true;
       query(value.trigger).setAttribute('aria-expanded', 'false');
     }
+  }
+  function closeCapture() {
+    const dialog = query('.capture-menu');
+    if (dialog?.open) {
+      dialog.close();
+      query('[data-action=capture]')?.focus({ preventScroll: true });
+    }
+    query('[data-action=capture]')?.setAttribute('aria-expanded', 'false');
+  }
+  function closeResult() {
+    const dialog = query('.capture-result');
+    previewJob = null;
+    const video = query('.result-preview video');
+    if (video) { video.pause(); video.removeAttribute('src'); video.load(); }
+    query('.result-preview')?.replaceChildren();
+    query('.result-download')?.removeAttribute('href');
+    if (dialog?.open) dialog.close();
+    query('[data-action=capture]')?.focus({ preventScroll: true });
+  }
+  async function showResult(value) {
+    if (!root || previewJob === value.jobId) return;
+    closeCapture();
+    previewJob = value.jobId;
+    query('.result-preview').replaceChildren();
+    query('.result-download').hidden = true;
+    query('.result-note').textContent = t('export.preparing');
+    if (!query('.capture-result').open) query('.capture-result').showModal();
+    try {
+      const file = await request('media.preview', { jobId: value.jobId });
+      if (!root || previewJob !== value.jobId) return;
+      if (!file.dataUrl?.startsWith(file.mode === 'image' ? 'data:image/png;base64,' : 'data:video/')) throw new Error('A captura não está mais disponível.');
+      const preview = document.createElement(file.mode === 'image' ? 'img' : 'video');
+      if (file.mode === 'video') { preview.controls = true; preview.preload = 'metadata'; }
+      else preview.alt = t('export.alt');
+      preview.src = file.dataUrl;
+      query('.result-preview').append(preview);
+      const download = query('.result-download');
+      download.href = file.dataUrl; download.download = file.filename;
+      download.textContent = t('export.download', { format: file.mode === 'image' ? 'PNG' : file.mime.startsWith('video/mp4') ? 'MP4' : 'WebM' });
+      download.hidden = false;
+      query('.result-note').textContent = t(value.fullPage ? 'capture.fullPageReady' : file.mode === 'image' ? 'capture.transparent' : 'export.ready');
+    } catch (error) {
+      if (root && previewJob === value.jobId) query('.result-note').textContent = i18n.error(error.message);
+    } finally {
+      try { await request('media.release', { jobId: value.jobId }); }
+      catch { /* O fechamento da aba também libera o resultado. */ }
+      if (root && mediaState.jobId === value.jobId) setMedia({ state: 'idle' });
+    }
+  }
+  function openCapture() {
+    if (mediaBusy()) return;
+    closeResult();
+    closePanels();
+    query('.capture-device').textContent = i18n.profile(selected());
+    query('.capture-menu').showModal();
+    query('[data-action=capture]').setAttribute('aria-expanded', 'true');
+  }
+  function captureContext(event, id) {
+    if (!root || mediaBusy()) return;
+    event.preventDefault();
+    event.stopPropagation();
+    if (id) selectDevice(id);
+    openCapture();
+  }
+  function watchCaptureContext(frame, id) {
+    let document;
+    const handle = event => captureContext(event, id);
+    function bind() {
+      document?.removeEventListener('contextmenu', handle, true);
+      document = null;
+      try {
+        document = frame.contentDocument;
+        document?.addEventListener('contextmenu', handle, true);
+      } catch { /* O navegador protege documentos de outra origem. */ }
+    }
+    frame.addEventListener('load', bind);
+    bind();
+    return () => {
+      frame.removeEventListener('load', bind);
+      document?.removeEventListener('contextmenu', handle, true);
+      document = null;
+    };
   }
   function setPanel(name, open) {
     const value = panels[name];
@@ -1758,19 +1898,34 @@ return { watchFrameBackground };
     } else query(value.trigger).focus({ preventScroll: true });
   }
   async function request(type, data = {}) {
-    const response = await chrome.runtime.sendMessage({ protocol: MODEL.PROTOCOL, type, ...data });
-    if (!response?.ok) throw new Error(response?.error?.message ?? 'A extensão não respondeu. Recarregue esta página.');
-    return response.data;
+    try {
+      if (!chrome.runtime.id) throw new Error('Extension context invalidated.');
+      const response = await chrome.runtime.sendMessage({ protocol: MODEL.PROTOCOL, type, ...data });
+      if (!response?.ok) throw new Error(response?.error?.message ?? 'A extensão não respondeu. Recarregue esta página.');
+      return response.data;
+    } catch (error) {
+      if (/extension context invalidated/i.test(error.message)) throw new Error('A extensão não respondeu. Recarregue esta página.');
+      throw error;
+    }
   }
   function dispose() {
+    restorePage();
+    if (root) closeResult();
+    if (recordingClock !== null) clearInterval(recordingClock);
+    recordingClock = null;
+    if (mediaPoll !== null) clearTimeout(mediaPoll);
+    mediaPoll = null;
     abort?.abort();
+    if (selectionTimer !== null) clearInterval(selectionTimer);
+    selectionTimer = null;
     stageObserver?.disconnect();
     if (layoutFrame !== null) cancelAnimationFrame(layoutFrame);
     layoutFrame = null;
     stopWatching(); scrollSync?.dispose();
-    for (const entry of cards.values()) { entry.stopColor?.(); entry.frame.remove(); }
+    for (const entry of cards.values()) { entry.stopContext?.(); entry.stopColor?.(); entry.frame.remove(); }
     cards.clear(); host?.remove();
-    chrome.runtime.onMessage.removeListener(receive);
+    try { chrome.runtime.onMessage.removeListener(receive); }
+    catch { /* A desmontagem local continua após uma atualização da extensão. */ }
     delete globalThis[KEY];
     if (previousFocus?.isConnected) previousFocus.focus({ preventScroll: true });
     host = root = null;
@@ -1778,35 +1933,71 @@ return { watchFrameBackground };
   function renderMedia() {
     if (!root) return;
     const busy = mediaBusy();
-    for (const node of root.querySelectorAll('.toolbar button,.toolbar input,.toolbar select,[name=selected],[data-action=library],[data-action=settings]')) node.disabled = busy;
+    for (const node of root.querySelectorAll('.toolbar button,.toolbar input,.toolbar select,[data-action=library],[data-action=settings]')) node.disabled = busy;
     if (busy) for (const node of root.querySelectorAll('.library button,.library input,.device-card button')) node.disabled = true;
-    for (const action of ['screenshot', 'record']) query(`[data-action=${action}]`).disabled = busy;
+    for (const action of ['capture', 'screenshot', 'fullpage', 'record']) query(`[data-action=${action}]`).disabled = busy;
     query('[name=videoFormat]').disabled = busy;
-    query('[data-action=screenshot]').hidden = busy;
+    query('[data-action=capture]').hidden = busy;
     query('.workspace').dataset.capturing = String(busy);
     query('.media-label').hidden = !busy;
     query('[data-action=stop-record]').hidden = mediaState.state !== 'recording';
+    query('[data-action=stop-record]').disabled = mediaState.state !== 'recording';
     query('[data-action=cancel-media]').hidden = !busy;
+    query('[data-action=cancel-media]').disabled = !busy;
     query('.stage').style.overflow = busy ? 'hidden' : '';
-    query('.media-label').textContent = mediaState.state === 'recording' ? t('header.recording') : mediaState.state === 'preparing' ? t('media.preparing') : mediaState.state === 'stopping' ? t('media.stopping') : '';
+    const seconds = Math.max(0, Math.floor((Date.now() - (mediaState.startedAt ?? Date.now())) / 1000));
+    const elapsed = `${String(Math.floor(seconds / 60)).padStart(2, '0')}:${String(seconds % 60).padStart(2, '0')}`;
+    query('.media-label').textContent = mediaState.fullPage && mediaState.state === 'preparing' ? t('capture.scrolling', { progress: mediaState.progress ?? 0 }) : mediaState.state === 'recording' ? `${t('header.recording')} ${elapsed}` : mediaState.state === 'preparing' ? t('media.preparing') : mediaState.state === 'stopping' ? t('media.stopping') : '';
   }
   function setMedia(value) {
     mediaState = value;
+    const revision = ++mediaRevision;
+    if (mediaPoll !== null) clearTimeout(mediaPoll);
+    mediaPoll = null;
+    // As notificações podem chegar antes da resposta de início ou se perder.
+    // Consulta o gravador para manter Parar disponível e acompanhar a finalização.
+    if (root && mediaBusy()) mediaPoll = setTimeout(async () => {
+      mediaPoll = null;
+      try {
+        const latest = await request('media.status');
+        if (root && revision === mediaRevision) setMedia(latest);
+      } catch (error) {
+        if (root && revision === mediaRevision) { setMedia({ state: 'idle' }); reportError(error); }
+      }
+    }, 500);
+    if (recordingClock !== null) clearInterval(recordingClock);
+    recordingClock = value.state === 'recording' ? setInterval(() => { if (root) renderMedia(); }, 1000) : null;
     if (root) apply();
+    if (value.state === 'error') { reportError(new Error(value.reason ?? 'Não foi possível iniciar a gravação.')); return; }
+    if (value.state === 'ready') void showResult(value);
     if (value.reason) report(({ stopped: 'media.finished', 'duration-limit': 'media.duration', interrupted: 'media.interrupted' })[value.reason] ?? value.reason);
   }
   function geometry() {
-    const screen = cards.get(workspace.selectedId).screen;
-    const rect = screen.getBoundingClientRect(), stage = query('.stage').getBoundingClientRect();
+    const entry = cards.get(workspace.selectedId);
+    const rect = entry.shell.getBoundingClientRect(), stage = query('.stage').getBoundingClientRect();
     if (rect.left < stage.left - 0.5 || rect.right > stage.right + 0.5 || rect.top < stage.top - 0.5 || rect.bottom > stage.bottom + 0.5) throw new Error('A tela precisa estar inteira visível. Reduza o zoom e tente novamente.');
-    const size = MODEL.screenLayout(selected(), workspace.screenMode);
-    return MODEL.validateCaptureGeometry({ rect: { x: rect.left, y: rect.top, width: rect.width, height: rect.height }, viewport: { width: innerWidth, height: innerHeight }, output: { width: size.width, height: size.height } });
+    // A moldura inteira usa a mesma escala do conteúdo, inclusive em paisagem.
+    const { width, height } = entry.size;
+    const scale = Math.min(1, 2400 / width, 2400 / height, Math.sqrt(3840000 / (width * height)));
+    const device = selected(), layout = MODEL.mockupLayout(device);
+    const screen = { x: layout?.left ?? 0, y: layout?.top ?? 0,
+      width: device.rotated ? device.height : device.width, height: device.rotated ? device.width : device.height };
+    let artwork = {};
+    if (layout) {
+      const numbers = layout.maskTransform.match(/[-+]?(?:\d*\.?\d+)(?:e[-+]?\d+)?/gi).map(Number);
+      const matrix = layout.maskTransform.startsWith('matrix') ? numbers : [numbers[0], 0, 0, numbers[1] ?? numbers[0], 0, 0];
+      artwork = { imageWidth: layout.imageWidth, imageHeight: layout.imageHeight, rotated: device.rotated, mask: layout.mask, matrix };
+    }
+    const composition = { width, height, screen, frame: layout?.image ?? null, ...artwork };
+    return MODEL.validateCaptureGeometry({ composition, rect: { x: rect.left, y: rect.top, width: rect.width, height: rect.height }, viewport: { width: innerWidth, height: innerHeight }, output: { width: Math.round(width * scale), height: Math.round(height * scale) } });
   }
   async function prepare(mode) {
     measuring = true;
     try {
       closePanels();
       setMedia({ state: 'preparing', mode });
+      const bezel = cards.get(workspace.selectedId).bezel;
+      if (!bezel.hidden) await bezel.decode();
       cards.get(workspace.selectedId).card.scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: 'instant' });
       await new Promise((resolve, reject) => {
         const timeout = setTimeout(() => reject(new Error('Volte à aba do simulador para preparar a captura.')), 2000);
@@ -1816,8 +2007,100 @@ return { watchFrameBackground };
     } catch (error) { setMedia({ state: 'idle' }); throw error; }
     finally { measuring = false; }
   }
+  function restorePage(jobId) {
+    const capture = pageCapture;
+    if (!capture || (jobId && capture.jobId !== jobId)) return;
+    pageCapture = null;
+    capture.doc.removeEventListener('wheel', capture.blockScroll, true);
+    capture.doc.removeEventListener('touchmove', capture.blockScroll, true);
+    capture.doc.removeEventListener('keydown', capture.blockKeys, true);
+    for (const [node, value, priority] of capture.hidden) {
+      if (value) node.style.setProperty('visibility', value, priority);
+      else node.style.removeProperty('visibility');
+    }
+    try { capture.scroller.scrollTo({ left: capture.x, top: capture.y, behavior: 'instant' }); }
+    catch { /* O documento pode ter sido descartado. */ }
+    capture.style.remove();
+    scrollSync?.setEnabled(options.scrollSync);
+    if (root) apply();
+  }
+  function pageMetrics(capture) {
+    if (capture.frame.contentDocument !== capture.doc) throw new Error('A página navegou durante a captura.');
+    const width = capture.frame.contentWindow.innerWidth;
+    const viewportHeight = capture.frame.contentWindow.innerHeight;
+    const height = Math.ceil(Math.max(viewportHeight, capture.scroller.scrollHeight));
+    MODEL.pageDimensions(width, height);
+    if (width !== capture.width) throw new Error('A largura da página mudou durante a captura.');
+    const rect = capture.frame.getBoundingClientRect();
+    const geometry = MODEL.validateCaptureGeometry({
+      rect: { x: rect.left, y: rect.top, width: rect.width, height: rect.height },
+      viewport: { width: innerWidth, height: innerHeight }, output: { width: 240, height: 240 }
+    });
+    return { width, height, viewportHeight, offset: capture.scroller.scrollTop, geometry };
+  }
+  async function preparePage(jobId) {
+    if (pageCapture) throw new Error('Já existe uma captura de página em andamento.');
+    await prepare('image');
+    const frame = cards.get(workspace.selectedId).frame;
+    let doc;
+    try { doc = frame.contentDocument; }
+    catch { /* Origem protegida pelo navegador. */ }
+    if (!doc?.scrollingElement) throw new Error('Para capturar a página inteira, abra o simulador no mesmo site da página exibida.');
+    const scroller = doc.scrollingElement;
+    const style = doc.createElement('style');
+    style.textContent = 'html,body{scroll-behavior:auto!important;scroll-snap-type:none!important;overflow-anchor:none!important;scrollbar-width:none!important}::-webkit-scrollbar{display:none!important}';
+    const capture = { jobId, frame, doc, scroller, style, x: scroller.scrollLeft, y: scroller.scrollTop,
+      width: frame.contentWindow.innerWidth, hidden: [] };
+    capture.blockScroll = event => event.preventDefault();
+    capture.blockKeys = event => {
+      if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', 'Home', 'End', ' '].includes(event.key)) event.preventDefault();
+    };
+    pageCapture = capture;
+    try {
+      scrollSync?.setEnabled(false);
+      doc.documentElement.append(style);
+      doc.addEventListener('wheel', capture.blockScroll, { capture: true, passive: false });
+      doc.addEventListener('touchmove', capture.blockScroll, { capture: true, passive: false });
+      doc.addEventListener('keydown', capture.blockKeys, true);
+      apply();
+      return pageMetrics(capture);
+    } catch (error) { restorePage(jobId); throw error; }
+  }
+  async function stepPage(jobId, offset) {
+    const capture = pageCapture;
+    if (!capture || capture.jobId !== jobId || !Number.isFinite(offset) || offset < 0) throw new Error('A captura não está mais disponível.');
+    pageMetrics(capture);
+    if (offset > 0) {
+      const hidden = new Set(capture.hidden.map(([node]) => node));
+      for (const node of capture.doc.querySelectorAll('body *')) {
+        if (hidden.has(node)) continue;
+        const style = capture.frame.contentWindow.getComputedStyle(node);
+        if (style.position === 'fixed' || style.position === 'sticky') {
+          capture.hidden.push([node, node.style.getPropertyValue('visibility'), node.style.getPropertyPriority('visibility')]);
+          node.style.setProperty('visibility', 'hidden', 'important');
+        }
+      }
+    }
+    capture.scroller.scrollTo({ top: offset, left: 0, behavior: 'instant' });
+    // Dá tempo para conteúdo lazy-loaded e pintura antes de ler os pixels da aba.
+    await new Promise(resolve => setTimeout(resolve, 250));
+    const images = [...capture.doc.images].filter(image => {
+      const rect = image.getBoundingClientRect();
+      return !image.complete && rect.bottom > 0 && rect.top < capture.frame.contentWindow.innerHeight;
+    });
+    if (images.length) await Promise.race([
+      Promise.all(images.map(image => image.decode().catch(() => {}))),
+      new Promise(resolve => setTimeout(resolve, 1000))
+    ]);
+    await new Promise((resolve, reject) => {
+      const timeout = setTimeout(() => reject(new Error('Volte à aba do simulador para continuar a captura.')), 2000);
+      requestAnimationFrame(() => requestAnimationFrame(() => { clearTimeout(timeout); resolve(); }));
+    });
+    if (pageCapture !== capture) throw new Error('A captura foi cancelada.');
+    return pageMetrics(capture);
+  }
   function drawStatus() {
-    const status = query('[role=status]');
+    const status = query('.workspace > [role=status]');
     if (status) {
       status.className = statusMessage.error ? 'workspace-error' : 'sr-only';
       status.textContent = statusMessage.key ? t(statusMessage.key, statusMessage.values) : statusMessage.error ? i18n.error(statusMessage.error) : i18n.fromSource(statusMessage.source);
@@ -1827,7 +2110,11 @@ return { watchFrameBackground };
     statusMessage = Object.hasOwn(MODEL.MESSAGES['pt-BR'], message) ? { key: message, values } : { source: message };
     drawStatus();
   }
-  function reportError(error) { statusMessage = { error: error.message ?? String(error) }; drawStatus(); }
+  function reportError(error) {
+    const message = error.message ?? String(error);
+    statusMessage = { error: /extension context invalidated/i.test(message) ? 'A extensão não respondeu. Recarregue esta página.' : message };
+    drawStatus();
+  }
   function renderSync() {
     if (!root || !scrollSync) return;
     const value = scrollSync.status();
@@ -1894,12 +2181,13 @@ return { watchFrameBackground };
     const stage = query('.stage');
     const ids = new Set(workspace.devices.map(device => device.id));
     for (const [id, entry] of cards) {
-      if (!ids.has(id)) { entry.stopColor?.(); scrollSync?.remove(id); entry.frame.remove(); entry.card.remove(); cards.delete(id); }
+      if (!ids.has(id)) { entry.stopContext?.(); entry.stopColor?.(); scrollSync?.remove(id); entry.frame.remove(); entry.card.remove(); cards.delete(id); }
     }
     workspace.devices.forEach((device, index) => {
       const isNew = !cards.has(device.id);
       if (isNew) cards.set(device.id, UI.deviceCard(device, session.url, i18n));
       const entry = cards.get(device.id);
+      if (isNew) entry.stopContext = watchCaptureContext(entry.frame, device.id);
       // Não movemos quadros existentes em atualizações comuns: isso pode recarregar seu documento.
       if (stage.children[index] !== entry.card) stage.insertBefore(entry.card, stage.children[index] ?? null);
       if (isNew) scrollSync?.add(device.id, entry.frame);
@@ -1948,17 +2236,16 @@ return { watchFrameBackground };
         entry.mask.setAttribute('transform', layout.maskTransform);
       }
       entry.screen.style.cssText = `width:${width}px;height:${height}px;left:${layout?.left ?? 0}px;top:${layout?.top ?? 0}px;${layout ? `clip-path:url('#${entry.clip.id}');border-radius:0;` : ''}`;
+      // A imagem contínua usa só a página, sem recortes da moldura em cada trecho.
+      if (pageCapture?.frame === entry.frame) {
+        entry.screen.style.clipPath = 'none';
+        entry.screen.style.borderRadius = '0';
+        entry.bezel.style.visibility = 'hidden';
+      } else entry.bezel.style.visibility = '';
       entry.size = { width: outerWidth, height: outerHeight };
     });
     fitStage();
     const device = selected();
-    const select = query('[name=selected]');
-    // Mantém o foco do select; as opções contêm somente texto.
-    select.replaceChildren(...workspace.devices.map(item => {
-      const option = UI.element('option', i18n.profile(item));
-      option.value = item.id; return option;
-    }));
-    select.value = workspace.selectedId;
     const fixedSize = Boolean(MODEL.mockupLayout(device));
     for (const name of ['width', 'height']) {
       const input = query(`[name=${name}]`);
@@ -1981,20 +2268,44 @@ return { watchFrameBackground };
       return result;
     } finally { libraryBusy = false; renderLibrary(); }
   }
+  function selectDevice(id) {
+    if (!root || mediaBusy() || workspace.selectedId === id || !cards.has(id)) return;
+    update({ ...workspace, selectedId: id });
+  }
   async function click(event) {
     const button = event.target.closest('[data-action]');
     if (!button || button.disabled) return;
     const { action, id } = button.dataset;
     try {
       switch (action) {
+        case 'capture': openCapture(); return;
+        case 'dismiss-capture': closeCapture(); return;
+        case 'dismiss-result': closeResult(); return;
         case 'screenshot':
+        case 'fullpage':
         case 'record': {
+          if (mediaBusy()) return;
+          closeCapture();
+          statusMessage = { key: 'workspace.hint', values: {} };
+          setMedia({ state: 'preparing' });
           await saving;
-          const value = await request('media.start', { mode: action === 'screenshot' ? 'image' : 'video', format: query('[name=videoFormat]').value });
-          if (root) setMedia(value);
+          try {
+            const value = await request('media.start', { mode: action === 'fullpage' ? 'full-page' : action === 'screenshot' ? 'image' : 'video', format: query('[name=videoFormat]').value });
+            if (root) setMedia(value);
+          } catch (error) { setMedia({ state: 'idle' }); throw error; }
           return;
         }
-        case 'stop-record': setMedia(await request('media.stop')); return;
+        case 'stop-record': {
+          if (mediaState.state !== 'recording') return;
+          setMedia({ ...mediaState, state: 'stopping' });
+          try { setMedia(await request('media.stop')); }
+          catch (error) {
+            try { setMedia(await request('media.status')); }
+            catch { setMedia({ state: 'idle' }); }
+            throw error;
+          }
+          return;
+        }
         case 'cancel-media': setMedia(await request('media.cancel')); return;
         case 'close':
           try { await saving; await request('session.stop'); }
@@ -2009,7 +2320,7 @@ return { watchFrameBackground };
         case 'settings': setPanel('settings', query('.settings-panel').hidden); return;
         case 'dismiss-panel': setPanel(button.dataset.panel, false); return;
         case 'favorites': onlyFavorites = !onlyFavorites; renderLibrary(); return;
-        case 'select': update({ ...workspace, selectedId: id }); return;
+        case 'select': selectDevice(id); return;
         case 'screen-mode': update({ ...workspace, screenMode: button.dataset.mode }); return;
         case 'add': {
           const profile = [...MODEL.PROFILES, ...library.customProfiles].find(item => item.id === id);
@@ -2084,11 +2395,10 @@ return { watchFrameBackground };
           <div class="brand" aria-label="Mockaí"><img class="brand-name" src="${chrome.runtime.getURL('img/brand/mockai-logo.png')}" alt="Mockaí" width="108" height="38"><img class="brand-symbol" src="${chrome.runtime.getURL('img/icons/app/icon-48.png')}" alt="" width="28" height="28"></div>
           <div class="header-context">
             <button class="header-button" data-action="library" aria-expanded="false" aria-controls="mockai-library" data-i18n-title="workspace.library" data-i18n-aria="workspace.library">${UI.icon('devices')}<span class="button-label" data-i18n="header.devices"></span></button>
-            <label class="screen-picker">${UI.icon('device')}<span class="sr-only" data-i18n="workspace.selected"></span><select name="selected" data-i18n-aria="workspace.selected"></select></label>
           </div>
           <div class="header-actions">
             <span class="media-label" aria-live="polite" hidden></span>
-            <button class="primary-button" data-action="screenshot" data-i18n-title="media.png" data-i18n-aria="media.png">${UI.icon('camera')}<span class="button-label" data-i18n="header.capture"></span></button>
+            <button class="primary-button" data-action="capture" aria-haspopup="dialog" aria-expanded="false" aria-controls="mockai-capture" data-i18n-title="header.capture" data-i18n-aria="header.capture">${UI.icon('camera')}<span class="button-label" data-i18n="header.capture"></span></button>
             <button class="primary-button recording-stop" data-action="stop-record" data-i18n-title="media.stop" hidden>${UI.icon('stop')}<span data-i18n="header.stop"></span></button>
             <button class="header-button" data-action="cancel-media" data-i18n-title="media.cancel" hidden><span data-i18n="header.cancel"></span></button>
             <button class="header-button icon-button" data-action="settings" aria-expanded="false" aria-controls="mockai-settings" data-i18n-title="header.settings" data-i18n-aria="header.settings">${UI.icon('settings')}</button>
@@ -2131,21 +2441,69 @@ return { watchFrameBackground };
               </div>
               <p class="setting-hint" data-i18n="screen.hint"></p>
             </section>
-            <section class="settings-group capture-controls">
-              <h3 data-i18n="media.video"></h3>
-              <label class="setting-row"><span data-i18n="popup.format"></span><select name="videoFormat"><option value="webm">WebM</option><option value="mp4">MP4</option></select></label>
-              <button class="record-button" data-action="record">${UI.icon('record')}<span data-i18n="settings.record"></span></button>
-              <p class="setting-hint" data-i18n="settings.videoHint"></p>
-            </section>
             <details class="settings-help"><summary data-i18n="settings.about"></summary><p class="notice" data-i18n="workspace.notice"></p><p class="notice" data-i18n="sync.hint"></p></details>
           </aside>
         </div>
+        <dialog class="capture-result" aria-labelledby="result-title">
+          <div class="capture-heading"><h2 id="result-title" data-i18n="capture.ready"></h2><button class="icon-button panel-dismiss" data-action="dismiss-result" data-i18n-aria="common.close">${UI.icon('close')}</button></div>
+          <div class="result-preview"></div>
+          <div class="result-footer"><p class="result-note" role="status" aria-live="polite"></p>
+          <a class="primary-button result-download" hidden></a></div>
+        </dialog>
+        <dialog id="mockai-capture" class="capture-menu" aria-labelledby="capture-title" aria-describedby="capture-description">
+          <div class="capture-heading">
+            <div><h2 id="capture-title" data-i18n="header.capture"></h2><p class="capture-device"></p></div>
+            <button class="icon-button panel-dismiss" data-action="dismiss-capture" data-i18n-aria="common.close" data-i18n-title="common.close">${UI.icon('close')}</button>
+          </div>
+          <p id="capture-description" class="sr-only" data-i18n="capture.description"></p>
+          <button class="capture-screenshot" data-action="screenshot" autofocus>
+            <span class="capture-action-icon">${UI.icon('camera')}</span>
+            <span class="capture-action-copy"><strong data-i18n="capture.image"></strong><small data-i18n="capture.imageHint"></small></span>
+          </button>
+          <button class="capture-screenshot capture-fullpage" data-action="fullpage">
+            <span class="capture-action-icon">${UI.icon('fullpage')}</span>
+            <span class="capture-action-copy"><strong data-i18n="capture.fullPage"></strong><small data-i18n="capture.fullPageHint"></small></span>
+          </button>
+          <section class="capture-video" aria-labelledby="capture-video-title">
+            <div class="capture-video-heading">${UI.icon('record')}<h3 id="capture-video-title" data-i18n="capture.video"></h3></div>
+            <p class="capture-video-hint" data-i18n="capture.videoHint"></p>
+            <label class="capture-format"><span data-i18n="capture.format"></span><select name="videoFormat" data-i18n-aria="capture.format"><option value="webm">WebM</option><option value="mp4">MP4</option></select></label>
+            <button class="primary-button capture-record" data-action="record">${UI.icon('record')}<span data-i18n="capture.videoShort"></span></button>
+          </section>
+        </dialog>
         <p class="sr-only" role="status" aria-live="polite"></p>
       </section>`;
     scrollSync = SYNC.createScrollSync({ onStatus: renderSync });
     scrollSync.setEnabled(options.scrollSync);
     stopWatching = MODEL.watchOptions(chrome, applyOptions);
+    // O clique na moldura seleciona sem recarregar o conteúdo da tela.
+    root.addEventListener('pointerdown', event => {
+      if (event.target.closest('[data-action=remove]')) return;
+      const card = event.target.closest('.device-card');
+      if (!card || mediaBusy()) return;
+      selectDevice(card.dataset.id);
+      // O foco externo também permite detectar um novo clique dentro do mesmo iframe.
+      if (!event.target.closest('button,iframe')) cards.get(card.dataset.id)?.select.focus({ preventScroll: true });
+    }, { signal: abort.signal });
+    // Eventos de ponteiro não atravessam iframes. O foco identifica a tela clicada,
+    // inclusive em páginas de outra origem, sem interceptar links ou formulários.
+    selectionTimer = setInterval(() => {
+      if (!root || mediaBusy()) return;
+      const focused = root.activeElement;
+      for (const [id, entry] of cards) {
+        if (entry.frame === focused) { selectDevice(id); break; }
+      }
+    }, 150);
     root.addEventListener('click', click, { signal: abort.signal });
+    root.addEventListener('contextmenu', event => {
+      captureContext(event, event.target.closest('.device-card')?.dataset.id);
+    }, { signal: abort.signal });
+    query('.capture-result').addEventListener('cancel', event => { event.preventDefault(); closeResult(); }, { signal: abort.signal });
+    query('.capture-menu').addEventListener('cancel', event => { event.preventDefault(); closeCapture(); }, { signal: abort.signal });
+    query('.capture-menu').addEventListener('click', event => {
+      const dialog = event.currentTarget, rect = dialog.getBoundingClientRect();
+      if (event.target === dialog && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) closeCapture();
+    }, { signal: abort.signal });
     root.addEventListener('submit', submit, { signal: abort.signal });
     root.addEventListener('input', event => { if (event.target.name === 'search') renderLibrary(); }, { signal: abort.signal });
     root.addEventListener('change', async event => {
@@ -2158,7 +2516,6 @@ return { watchFrameBackground };
           if (root) { applyOptions(result.options); report('options.saved'); }
           return;
         }
-        if (input.name === 'selected') { update({ ...workspace, selectedId: input.value }); return; }
         if (input.name === 'zoom') { update({ ...workspace, zoom: Number(input.value) }); return; }
         if (!['width', 'height'].includes(input.name)) return;
         if (!input.checkValidity()) throw new Error('Use as dimensões indicadas nos campos.');
@@ -2168,12 +2525,15 @@ return { watchFrameBackground };
     root.addEventListener('keydown', event => {
       if (event.key === 'Escape') {
         event.preventDefault();
+        if (query('.capture-result').open) { closeResult(); return; }
+        if (query('.capture-menu').open) { closeCapture(); return; }
         const open = Object.entries(panels).find(([, value]) => !query(value.panel).hidden);
         if (open) setPanel(open[0], false);
         else query('[data-action=close]').click();
       }
       if (event.key === 'Tab') {
-        const controls = [...root.querySelectorAll('button,input,select,iframe')].filter(node => !node.disabled && node.getClientRects().length);
+        const scope = query('.capture-result').open ? query('.capture-result') : query('.capture-menu').open ? query('.capture-menu') : root;
+        const controls = [...scope.querySelectorAll('button,input,select,iframe,a[href]')].filter(node => !node.disabled && node.getClientRects().length);
         const first = controls[0], last = controls.at(-1);
         if (event.shiftKey && root.activeElement === first) { event.preventDefault(); last?.focus(); }
         else if (!event.shiftKey && root.activeElement === last) { event.preventDefault(); first?.focus(); }
@@ -2198,6 +2558,23 @@ return { watchFrameBackground };
   }
   function receive(message, sender, respond) {
     if (sender.id !== chrome.runtime.id || message?.protocol !== MODEL.PROTOCOL) return false;
+    if (message.type === 'page.prepare' || message.type === 'page.step') {
+      Promise.resolve().then(() => message.type === 'page.prepare' ? preparePage(message.jobId) : stepPage(message.jobId, message.offset))
+        .then(page => respond({ ok: true, page }), error => respond({ ok: false, error: error.message }));
+      return true;
+    }
+    if (message.type === 'page.restore') {
+      try { restorePage(message.jobId); respond({ ok: true }); }
+      catch (error) { respond({ ok: false, error: error.message }); }
+      return false;
+    }
+    if (message.type === 'page.verify') {
+      try {
+        if (!pageCapture || pageCapture.jobId !== message.jobId) throw new Error('A captura não está mais disponível.');
+        respond({ ok: true, page: pageMetrics(pageCapture) });
+      } catch (error) { respond({ ok: false, error: error.message }); }
+      return false;
+    }
     if (message.type === 'media.prepare') {
       prepare(message.mode).then(geometry => respond({ ok: true, geometry }), error => respond({ ok: false, error: error.message }));
       return true;
@@ -2206,6 +2583,11 @@ return { watchFrameBackground };
       if (message.type === 'media.verify') respond({ ok: true, geometry: geometry() });
       if (message.type === 'media.state') { setMedia(message.state); respond({ ok: true }); }
       if (message.type === 'view.mount') { mount(message.session, message.options); respond({ ok: true }); }
+      if (message.type === 'view.capture') { openCapture(); respond({ ok: true }); }
+      if (message.type === 'view.resume') {
+        if (host) session.url = message.session.url;
+        respond({ ok: true, mounted: Boolean(host) });
+      }
       if (message.type === 'view.unmount') { respond({ ok: true }); dispose(); }
     } catch (error) { respond({ ok: false, error: error.message }); if (message.type === 'view.mount') dispose(); }
     return false;

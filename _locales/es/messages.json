@@ -75,7 +75,7 @@
     "message": "Pantallas en prueba"
   },
   "workspace_hint": {
-    "message": "Selecciona una pantalla por su título para ajustar sus dimensiones."
+    "message": "Haz clic en un mockup para seleccionarlo y ajustar sus dimensiones."
   },
   "workspace_count": {
     "message": "{count}/{limit} pantallas · {zoom}%"
@@ -378,7 +378,7 @@
     "message": "Finaliza o descarta la captura anterior antes de iniciar otra."
   },
   "error_permissionHint": {
-    "message": "Abre el popup de Mockaí y pulsa «Grabar pantalla seleccionada» para permitir la grabación."
+    "message": "El permiso de grabación está desactualizado. Recarga la extensión en chrome://extensions y actualiza esta página."
   },
   "error_prepare": {
     "message": "No se pudo preparar la pantalla."
@@ -610,5 +610,44 @@
   },
   "action_title": {
     "message": "Abrir Mockaí"
+  },
+  "context_menu_open": {
+    "message": "Abrir en Mockaí"
+  },
+  "capture_description": {
+    "message": "Captura una imagen o graba un vídeo de la pantalla seleccionada."
+  },
+  "capture_image": {
+    "message": "Capturar pantalla"
+  },
+  "capture_imageShort": {
+    "message": "Capturar pantalla"
+  },
+  "capture_imageHint": {
+    "message": "Guardar imagen en PNG."
+  },
+  "capture_video": {
+    "message": "Vídeo"
+  },
+  "capture_format": {
+    "message": "Formato"
+  },
+  "capture_videoShort": {
+    "message": "Grabar vídeo"
+  },
+  "capture_videoHint": {
+    "message": "Sin audio · hasta 2 minutos"
+  },
+  "capture_fullPage": {
+    "message": "Capturar página completa"
+  },
+  "capture_fullPageHint": {
+    "message": "De principio a fin, en un solo PNG."
+  },
+  "capture_scrolling": {
+    "message": "Capturando página · {progress}%"
+  },
+  "capture_fullPageReady": {
+    "message": "PNG · Página completa"
   }
 }

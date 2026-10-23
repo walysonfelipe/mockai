@@ -18,8 +18,12 @@ function dispatch(message, respond) {
         respond({ ok: true, data: engine.status() });
         return false;
       case 'media.status': operation = engine.status(); break;
+      case 'media.page.start': operation = engine.beginPage(message); break;
+      case 'media.page.append': operation = engine.appendPage(message); break;
+      case 'media.page.finish': operation = engine.finishPage(message.jobId); break;
       case 'media.stop': operation = engine.stop(); break;
       case 'media.cancel': operation = engine.cancel(); break;
+      case 'artifact.inline': operation = engine.inlineArtifact(message.jobId); break;
       case 'artifact.get': operation = engine.artifact(message.jobId); break;
       default: throw new Error('Operação de mídia desconhecida.');
     }

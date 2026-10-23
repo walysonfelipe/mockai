@@ -49,7 +49,6 @@ button.addEventListener('click', async () => {
 record.addEventListener('click', async () => {
   busy = true; update();
   try {
-    if (!recording && !await chrome.permissions.request({ permissions: ['tabCapture'] })) throw new Error(MESSAGES['pt-BR']['error.permission']);
     const result = await request(recording ? 'media.stop' : 'media.start', { mode: 'video', format: format.value });
     mediaPhase = result.state; recording = ['preparing', 'recording', 'stopping'].includes(result.state);
     clearTimeout(pollTimer); if (recording) pollTimer = setTimeout(pollMedia, 500);

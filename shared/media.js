@@ -10,7 +10,8 @@ export function validateCaptureGeometry(value) {
       !Number.isInteger(output.width) || !Number.isInteger(output.height) ||
       output.width < 240 || output.height < 240 || output.width > 2400 || output.height > 2400 ||
       output.width * output.height > 3840000) throw new Error('A tela precisa estar inteira visível. Reduza o zoom e tente novamente.');
-  return { rect: { x: rect.x, y: rect.y, width: rect.width, height: rect.height },
+  const composition = value.composition === undefined ? undefined : validateComposition(value.composition);
+  return { ...(composition ? { composition } : {}), rect: { x: rect.x, y: rect.y, width: rect.width, height: rect.height },
     viewport: { width: viewport.width, height: viewport.height }, output: { width: output.width, height: output.height } };
 }
 export function cropGeometry(value, sourceWidth, sourceHeight) {
@@ -33,5 +34,31 @@ export function chooseVideoType(format, supports) {
 
 export function sameCaptureGeometry(first, second) {
   const a = validateCaptureGeometry(first), b = validateCaptureGeometry(second);
-  return ['rect', 'viewport', 'output'].every(group => Object.keys(a[group]).every(key => Math.abs(a[group][key] - b[group][key]) <= 0.5));
+  return JSON.stringify(a.composition) === JSON.stringify(b.composition) && ['rect', 'viewport', 'output'].every(group => Object.keys(a[group]).every(key => Math.abs(a[group][key] - b[group][key]) <= 0.5));
+}
+
+export function validateComposition(value) {
+  const { width, height, screen, frame, imageWidth, imageHeight, rotated, mask, matrix } = value ?? {};
+  const finite = n => typeof n === 'number' && Number.isFinite(n);
+  if (![width, height, screen?.x, screen?.y, screen?.width, screen?.height].every(finite) ||
+      width < 1 || height < 1 || width > 6000 || height > 6000 ||
+      screen.x < 0 || screen.y < 0 || screen.width < 1 || screen.height < 1 ||
+      screen.x + screen.width > width + .5 || screen.y + screen.height > height + .5 ||
+      (frame !== null && (typeof frame !== 'string' || !/^mockups\/[a-z0-9-]+\.avif$/.test(frame))) ||
+      (frame !== null && (![imageWidth, imageHeight].every(finite) || imageWidth < 1 || imageHeight < 1 || imageWidth > 6000 || imageHeight > 6000 || typeof rotated !== 'boolean' ||
+        typeof mask !== 'string' || mask.length > 40000 || !/^[MmLlHhVvCcSsQqTtAaZz0-9.,+eE\s-]+$/.test(mask) ||
+        !Array.isArray(matrix) || matrix.length !== 6 || !matrix.every(finite)))) throw new Error('Composição do mockup inválida.');
+  return { width, height, screen: { x: screen.x, y: screen.y, width: screen.width, height: screen.height }, frame,
+    ...(frame ? { imageWidth, imageHeight, rotated, mask, matrix: [...matrix] } : {}) };
+}
+
+// O stream de vídeo pode incluir faixas laterais para manter a proporção da aba.
+export function videoCropGeometry(value, sourceWidth, sourceHeight) {
+  const geometry = validateCaptureGeometry(value);
+  if (!Number.isFinite(sourceWidth) || !Number.isFinite(sourceHeight) || sourceWidth < 1 || sourceHeight < 1) throw new Error('A captura não contém imagem.');
+  const { rect, viewport, output } = geometry;
+  const scale = Math.min(sourceWidth / viewport.width, sourceHeight / viewport.height);
+  const offsetX = (sourceWidth - viewport.width * scale) / 2;
+  const offsetY = (sourceHeight - viewport.height * scale) / 2;
+  return { x: offsetX + rect.x * scale, y: offsetY + rect.y * scale, width: rect.width * scale, height: rect.height * scale, output };
 }

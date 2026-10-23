@@ -75,7 +75,7 @@
     "message": "Telas em teste"
   },
   "workspace_hint": {
-    "message": "Selecione uma tela pelo título para ajustar suas dimensões."
+    "message": "Clique em um mockup para selecioná-lo e ajustar suas dimensões."
   },
   "workspace_count": {
     "message": "{count}/{limit} telas · {zoom}%"
@@ -378,7 +378,7 @@
     "message": "Finalize ou descarte a captura anterior antes de iniciar outra."
   },
   "error_permissionHint": {
-    "message": "Abra o popup do Mockaí e clique em “Gravar tela selecionada” para permitir a gravação."
+    "message": "A permissão de gravação está desatualizada. Recarregue a extensão em chrome://extensions e atualize esta página."
   },
   "error_prepare": {
     "message": "Não foi possível preparar a tela."
@@ -610,5 +610,44 @@
   },
   "action_title": {
     "message": "Abrir Mockaí"
+  },
+  "context_menu_open": {
+    "message": "Abrir no Mockaí"
+  },
+  "capture_description": {
+    "message": "Capture uma imagem ou grave um vídeo da tela selecionada."
+  },
+  "capture_image": {
+    "message": "Capturar tela"
+  },
+  "capture_imageShort": {
+    "message": "Capturar tela"
+  },
+  "capture_imageHint": {
+    "message": "Salvar imagem em PNG."
+  },
+  "capture_video": {
+    "message": "Vídeo"
+  },
+  "capture_format": {
+    "message": "Formato"
+  },
+  "capture_videoShort": {
+    "message": "Gravar vídeo"
+  },
+  "capture_videoHint": {
+    "message": "Sem áudio · até 2 minutos"
+  },
+  "capture_fullPage": {
+    "message": "Capturar página inteira"
+  },
+  "capture_fullPageHint": {
+    "message": "Do início ao fim, em um único PNG."
+  },
+  "capture_scrolling": {
+    "message": "Capturando página · {progress}%"
+  },
+  "capture_fullPageReady": {
+    "message": "PNG · Página inteira"
   }
 }

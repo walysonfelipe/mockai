@@ -22,5 +22,8 @@ export function watchOptions(api, callback) {
     catch { callback({ ...DEFAULT_OPTIONS }); }
   };
   api.storage.onChanged.addListener(listener);
-  return () => api.storage.onChanged.removeListener(listener);
+  return () => {
+    try { api.storage.onChanged.removeListener(listener); }
+    catch { /* O contexto pode ter sido invalidado ao recarregar a extensão. */ }
+  };
 }

@@ -1188,7 +1188,7 @@ export function mockupLayout(device) {
     maskTransform: device.rotated ? `matrix(0 ${sx} ${-sy} 0 ${device.height} 0)` : `scale(${sx} ${sy})`
   };
 }
-export const MAX_DEVICES = 4;
+export const MAX_DEVICES = 8;
 export const MAX_CUSTOM_PROFILES = 20;
 export const MAX_SETS = 16;
 export const PROTOCOL = 'mockai/v2';

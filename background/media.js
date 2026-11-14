@@ -115,7 +115,7 @@ export function createMediaCoordinator(api) {
     if (message.mode === 'full-page') return startPage(id, session, tab);
     let prepared = false;
     try {
-      const response = await api.tabs.sendMessage(id, { protocol: PROTOCOL, type: 'media.prepare', mode: message.mode });
+      const response = await api.tabs.sendMessage(id, { protocol: PROTOCOL, type: 'media.prepare', mode: message.mode, scope: message.mode === 'image' && message.scope === 'all' ? 'all' : 'selected' });
       if (!response?.ok) throw new Error(response?.error ?? 'Não foi possível preparar a tela.');
       prepared = true;
       const geometry = validateCaptureGeometry(response.geometry);

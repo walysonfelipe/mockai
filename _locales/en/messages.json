@@ -234,7 +234,7 @@
     "message": "Record selected screen"
   },
   "popup_note": {
-    "message": "Independent preview · up to four devices"
+    "message": "Independent preview · up to eight devices"
   },
   "popup_blocked": {
     "message": "Some sites prevent loading in frames."
@@ -649,5 +649,11 @@
   },
   "capture_fullPageReady": {
     "message": "PNG · Full page"
+  },
+  "command_capture_screen": {
+    "message": "Capture the selected screen"
+  },
+  "command_capture_page": {
+    "message": "Capture the full page"
   }
 }

@@ -234,7 +234,7 @@
     "message": "Gravar tela selecionada"
   },
   "popup_note": {
-    "message": "Prévia independente · até quatro dispositivos"
+    "message": "Prévia independente · até oito dispositivos"
   },
   "popup_blocked": {
     "message": "Alguns sites impedem abertura em quadros."
@@ -649,5 +649,11 @@
   },
   "capture_fullPageReady": {
     "message": "PNG · Página inteira"
+  },
+  "command_capture_screen": {
+    "message": "Capturar a tela selecionada"
+  },
+  "command_capture_page": {
+    "message": "Capturar a página inteira"
   }
 }

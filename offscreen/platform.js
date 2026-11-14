@@ -3,7 +3,7 @@ export function browserPlatform(emit) {
     emit, supports: mime => MediaRecorder.isTypeSupported(mime),
     async decodeImage(dataUrl) { return createImageBitmap(await (await fetch(dataUrl)).blob()); },
     makeCanvas(width, height) { const canvas = document.createElement('canvas'); canvas.width = width; canvas.height = height; return canvas; },
-    resizePageCanvas(canvas, width, height) {
+    resizePageCanvas(canvas, width, height, stretch = false) {
       const copy = document.createElement('canvas'); copy.width = canvas.width; copy.height = canvas.height;
       const saved = copy.getContext('2d');
       if (!saved) throw new Error('Canvas indisponível.');
@@ -11,12 +11,15 @@ export function browserPlatform(emit) {
       canvas.width = width; canvas.height = height;
       const context = canvas.getContext('2d');
       if (!context) throw new Error('Canvas indisponível.');
-      context.drawImage(copy, 0, 0);
+      context.imageSmoothingQuality = 'high';
+      if (stretch) context.drawImage(copy, 0, 0, width, height);
+      else context.drawImage(copy, 0, 0);
       copy.width = copy.height = 1;
     },
     drawPageSlice(canvas, image, crop, destination) {
       const context = canvas.getContext('2d');
       if (!context) throw new Error('Canvas indisponível.');
+      context.imageSmoothingQuality = 'high';
       context.drawImage(image, crop.x, crop.y, crop.width, crop.height,
         destination.x, destination.y, destination.width, destination.height);
     },

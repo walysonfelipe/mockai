@@ -8,7 +8,7 @@ O Mockaí é uma extensão para Chrome que permite visualizar seus sites em celu
 
 ## Recursos
 
-- **Até quatro telas simultâneas** para comparar o mesmo site em diferentes tamanhos.
+- **Até oito telas simultâneas** para comparar o mesmo site em diferentes tamanhos.
 - **Biblioteca de mockups** com modelos de celulares, tablets, notebooks e outros dispositivos.
 - **Ajustes por tela** de largura, altura e orientação, além de escala de visualização.
 - **Favoritos, perfis personalizados e conjuntos salvos** para reutilizar suas configurações.
@@ -36,17 +36,21 @@ Requer **Google Chrome 116 ou superior**. Esta pasta contém a extensão pronta 
 ## Como usar
 
 1. Acesse o site que deseja testar em uma aba HTTP ou HTTPS.
-2. Clique no ícone do **Mockaí** e abra o simulador. Você também pode usar **Abrir no Mockaí** no menu de contexto da página.
-3. Abra **Dispositivos**, busque um modelo e clique em **Adicionar**. É possível manter até quatro telas abertas.
-4. Selecione uma tela e abra **Ajustes** para alterar dimensões, orientação e escala.
-5. Para comparar a navegação, ative **Sincronizar rolagem** em **Ajustes → Preferências**.
-6. Abra **Capturar** para salvar uma imagem, capturar a página inteira ou gravar um vídeo da tela selecionada.
+2. Clique no ícone do **Mockaí**: o simulador abre direto na página (clicar de novo fecha). Você também pode usar **Abrir no Mockaí** no menu de contexto da página.
+3. Clique em **Adicionar**, ao lado das telas, e escolha um modelo na grade (há busca, filtros, favoritos e conjuntos prontos). É possível manter até oito telas abertas.
+4. Passe o mouse sobre uma tela para girar, recarregar, capturar, mover ou remover; clique no nome para trocar o modelo. A escala e o modo da tela ficam no cabeçalho, e as dimensões personalizadas em **Ajustes**.
+5. Para comparar a navegação, ative **Sincronizar rolagem** no cabeçalho.
+6. Abra **Capturar** para salvar uma imagem da tela selecionada, de todas as telas lado a lado, da página inteira, ou gravar um vídeo. Com o simulador aberto, **Alt+Shift+S** captura a tela e **Alt+Shift+F** a página inteira (ajustáveis em `chrome://extensions/shortcuts`).
 
 Use os favoritos para encontrar seus modelos mais usados e salve conjuntos para recuperar uma combinação de telas. Os conjuntos guardam as configurações dos dispositivos; ao abri-los, o simulador usa a página da aba atual.
 
 ## Capturas e vídeos
 
 A captura da tela selecionada gera um PNG com o conteúdo e a moldura do mockup, preservando a transparência ao redor do dispositivo. Mantenha o mockup inteiro visível e ajuste a escala quando necessário.
+
+Depois de capturar, a prévia permite **baixar** o arquivo ou **copiar** a imagem para a área de transferência, e alternar entre as versões **com mockup** e **sem mockup** (somente a tela). A cópia depende de a página estar em um contexto seguro (HTTPS ou `localhost`).
+
+A captura da página inteira percorre a página antes de fotografar para carregar conteúdo sob demanda, usa a resolução real da aba (até 2x) e mantém elementos fixos do topo apenas no início e os do rodapé apenas no fim.
 
 As gravações são **sem áudio**, com limite de **dois minutos ou 64 MiB**. O formato MP4 e a conversão de WebM para MP4 dependem dos codecs disponíveis no navegador. A captura e a conversão são processadas localmente.
 

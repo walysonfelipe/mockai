@@ -234,7 +234,7 @@
     "message": "Grabar pantalla seleccionada"
   },
   "popup_note": {
-    "message": "Vista previa independiente · hasta cuatro dispositivos"
+    "message": "Vista previa independiente · hasta ocho dispositivos"
   },
   "popup_blocked": {
     "message": "Algunos sitios impiden la carga en marcos."
@@ -649,5 +649,11 @@
   },
   "capture_fullPageReady": {
     "message": "PNG · Página completa"
+  },
+  "command_capture_screen": {
+    "message": "Capturar la pantalla seleccionada"
+  },
+  "command_capture_page": {
+    "message": "Capturar la página completa"
   }
 }

@@ -1,6 +1,6 @@
 (() => {
 const MODEL = (() => {
-const MESSAGES = {"pt-BR":{"app.name":"Mockaí","app.description":"Teste seus sites em celulares, tablets e notebooks lado a lado, com rolagem sincronizada, capturas de tela e gravação de vídeo.","app.open":"Abrir Mockaí","app.workspace":"ÁREA DE TESTE","app.dialog":"Simulador Mockaí","common.close":"Fechar","common.name":"Nome","common.delete":"Excluir","common.add":"Adicionar","common.remove":"Remover","common.open":"Abrir","common.language":"Idioma","common.auto":"Automático","common.wait":"Aguarde…","workspace.library":"Dispositivos e conjuntos","workspace.light":"Tema claro","workspace.screen":"Tela","workspace.selected":"Dispositivo selecionado","workspace.width":"Largura","workspace.height":"Altura","workspace.rotate":"Girar selecionado","workspace.zoom":"Zoom","workspace.reload":"Recarregar selecionado","workspace.notice":"Prévia responsiva · alguns sites bloqueiam quadros. O navegador e o agente de usuário continuam sendo os do computador.","workspace.screens":"Telas em teste","workspace.hint":"Clique em um mockup para selecioná-lo e ajustar suas dimensões.","workspace.count":"{count}/{limit} telas · {zoom}%","workspace.removeName":"Remover {name}","workspace.frameTitle":"{name} — página em teste","library.title":"Suas telas","library.search":"Buscar perfil","library.searchHint":"Nome ou dimensão","library.favorites":"Favoritos ({count})","library.favorite":"Favoritar {name}","library.unfavorite":"Desfavoritar {name}","library.addName":"Adicionar {name}","library.deleteProfile":"Excluir perfil {name}","library.empty":"Nenhum perfil encontrado.","library.emptyFavorites":"Nenhum favorito encontrado.","library.custom":"Perfil personalizado","library.customHint":"Salva as dimensões da tela selecionada.","library.saveProfile":"Salvar perfil","library.sets":"Conjuntos salvos","library.setName":"Nome do conjunto","library.saveSet":"Salvar telas atuais","library.emptySets":"Salve as telas atuais para abrir depois.","library.setCount":"{count} dispositivo(s)","library.openSet":"Abrir conjunto {name}","library.deleteSet":"Excluir conjunto {name}","library.updated":"Biblioteca atualizada.","library.opened":"Conjunto “{name}” aberto.","profile.compact":"Compacto","profile.wide":"Amplo","profile.tablet":"Tablet","sync.label":"Sincronizar rolagem","sync.off":"Rolagem independente","sync.status":"Rolagem vinculada: {linked}/{total} telas","sync.unavailable":"Sincronização exige duas telas acessíveis na mesma origem.","sync.hint":"Sincroniza o progresso de rolagem do documento. Quadros de outra origem e painéis internos não são vinculados.","options.saved":"Preferências salvas.","media.png":"Capturar PNG","media.video":"Vídeo","media.record":"Gravar selecionado","media.stop":"Parar e exportar","media.cancel":"Cancelar captura","media.recording":"Gravando · sem áudio · até 2 min","media.preparing":"Preparando captura…","media.stopping":"Finalizando…","media.finished":"Gravação finalizada.","media.cancelled":"Captura cancelada.","media.revoked":"A permissão de gravação foi removida.","media.interrupted":"O navegador interrompeu a captura. Os dados disponíveis foram preservados.","media.duration":"A gravação atingiu o limite de dois minutos.","popup.intro":"Experimente sua página em uma tela com as dimensões que você escolher.","popup.open":"Abrir simulador","popup.close":"Fechar simulador","popup.format":"Formato de vídeo","popup.record":"Gravar tela selecionada","popup.note":"Prévia independente · até quatro dispositivos","popup.blocked":"Alguns sites impedem abertura em quadros.","popup.opened":"Simulador aberto nesta aba.","popup.closed":"Simulador encerrado.","popup.preparing":"Preparando gravação…","popup.recording":"Gravação em andamento. Você também pode parar ou cancelar na página.","popup.unavailable":"Página indisponível","export.title":"Exportar · Mockaí","export.heading":"Sua captura está pronta.","export.preparing":"Preparando arquivo local…","export.nav":"Exportar","export.download":"Baixar {format}","export.convert":"Converter para MP4","export.cancel":"Cancelar conversão","export.progress":"Progresso da conversão","export.note":"O arquivo é preparado neste computador. Ao fechar esta página, os arquivos temporários são liberados.","export.alt":"Captura da tela selecionada","export.ready":"Arquivo pronto para baixar.","export.noMP4":"Conversão MP4 indisponível neste navegador; o WebM permanece disponível.","export.converting":"Convertendo neste computador. A conversão acompanha a duração do vídeo.","export.converted":"MP4 pronto. O WebM original continua disponível.","export.original":"O WebM original continua disponível.","error.native":"Não foi possível concluir: {detail}","error.options":"Preferências inválidas.","error.settings":"Ajustes inválidos.","error.dimensions":"Dimensões ou aparência inválidas.","error.name":"Use um nome de 1 a 48 caracteres, sem caracteres de controle.","error.id":"Identificador inválido.","error.deviceCount":"Mantenha entre 1 e 4 dispositivos abertos.","error.device":"Dispositivo inválido.","error.selection":"Seleção ou identificadores de dispositivos inválidos.","error.deviceMissing":"Dispositivo não encontrado.","error.library":"Biblioteca inválida.","error.profile":"Perfil personalizado inválido.","error.favorites":"Favoritos ou perfis inválidos.","error.duplicateSets":"Conjuntos duplicados.","error.http":"Abra uma página HTTP ou HTTPS para simular.","error.protected":"O Chrome não permite simular esta página protegida.","error.visible":"A tela precisa estar inteira visível. Reduza o zoom e tente novamente.","error.noImage":"A captura não contém imagem.","error.resized":"O tamanho da aba mudou durante a captura. Tente novamente.","error.mp4":"MP4 indisponível neste navegador. Escolha WebM.","error.codec":"Não há codificador disponível para o formato escolhido.","error.service":"O serviço de mídia não respondeu.","error.focus":"Volte à aba do simulador antes de capturar.","error.mode":"Tipo de captura inválido.","error.format":"Formato de vídeo inválido.","error.previous":"Finalize ou descarte a captura anterior antes de iniciar outra.","error.permissionHint":"A permissão de gravação está desatualizada. Recarregue a extensão em chrome://extensions e atualize esta página.","error.prepare":"Não foi possível preparar a tela.","error.moved":"A posição da tela mudou. Tente capturar novamente.","error.noRecording":"Esta aba não possui gravação em andamento.","error.event":"Evento de mídia não autorizado.","error.export":"Exportação não autorizada ou expirada.","error.exportOperation":"Operação de exportação desconhecida.","error.sessionVersion":"Versão de sessão inválida.","error.message":"Mensagem não autorizada.","error.origin":"Origem da mensagem inválida.","error.tab":"Aba inválida.","error.session":"Sessão encerrada.","error.preview":"Captura disponível somente na extensão carregada no Chrome.","error.mediaOperation":"Operação de mídia desconhecida.","error.context":"Operação indisponível neste contexto.","error.openFirst":"Abra o simulador antes de gravar.","error.operation":"Operação desconhecida.","error.mount":"A interface não confirmou a abertura.","error.customLimit":"O limite é de 20 perfis personalizados.","error.customMissing":"Perfil personalizado não encontrado.","error.profileMissing":"Perfil não encontrado.","error.profileRefresh":"Perfil não encontrado. Atualize a biblioteca.","error.setLimit":"O limite é de 16 conjuntos.","error.setMissing":"Conjunto não encontrado.","error.libraryOperation":"Operação de biblioteca desconhecida.","error.noData":"A gravação terminou sem dados.","error.size":"O arquivo excedeu o limite de 64 MiB.","error.notRecording":"Não há gravação em andamento.","error.stopTimeout":"O navegador não finalizou a gravação.","error.prepareTimeout":"A preparação da captura excedeu o tempo permitido.","error.image":"Imagem de captura inválida.","error.recordingSize":"A gravação excedeu o limite de 64 MiB e foi descartada.","error.encoder":"O codificador falhou.","error.artifact":"A captura não está mais disponível.","error.canvas":"Canvas indisponível.","error.png":"Falha ao gerar PNG.","error.videoTimeout":"A aba não forneceu imagem para a gravação.","error.video":"Não foi possível ler o vídeo da aba.","error.cancelConversion":"Conversão cancelada.","error.openVideo":"Não foi possível abrir o vídeo para conversão.","error.decode":"Este vídeo não pode ser convertido pelo navegador.","error.convertSize":"Dimensões indisponíveis ou grandes demais para conversão.","error.convertCanvas":"Canvas indisponível para conversão.","error.mp4Size":"O MP4 excedeu o limite de 64 MiB.","error.mp4Encoder":"O codificador MP4 falhou.","error.convertEmpty":"A conversão terminou sem dados.","error.playback":"A reprodução foi interrompida durante a conversão.","error.convertTimeout":"A conversão excedeu o tempo permitido.","error.expired":"A captura expirou.","error.file":"Não foi possível recuperar o arquivo local.","error.emptyFile":"O arquivo está vazio ou excede o limite de tamanho.","error.extension":"A extensão não respondeu. Recarregue esta página.","error.popupExtension":"Não foi possível falar com a extensão. Recarregue a página.","error.permission":"Permissão de gravação não concedida.","error.prepareFocus":"Volte à aba do simulador para preparar a captura.","error.inputDimensions":"Use as dimensões indicadas nos campos.","header.devices":"Dispositivos","header.capture":"Capturar","header.settings":"Ajustes","header.stop":"Parar","header.cancel":"Cancelar","header.recording":"Gravando","settings.device":"Tela selecionada","settings.dimensions":"Dimensões","settings.rotate":"Girar","settings.reload":"Recarregar","settings.appearance":"Preferências","settings.scale":"Escala de visualização","settings.record":"Gravar esta tela","settings.videoHint":"Sem áudio · até 2 minutos","settings.about":"Sobre esta prévia","screen.mode":"Modo da tela","screen.browser":"Navegador","screen.pwa":"PWA","screen.fullscreen":"Tela cheia","screen.hint":"Navegador mostra as barras de navegação. PWA mantém a barra de status. Tela cheia usa toda a tela para o conteúdo.","error.screenMode":"Modo da tela inválido.","capture.description":"Capture uma imagem ou grave um vídeo da tela selecionada.","capture.image":"Capturar tela","capture.imageHint":"Salvar imagem em PNG.","capture.videoHint":"Sem áudio · até 2 minutos","capture.ready":"Captura pronta","capture.transparent":"PNG · Fundo transparente","capture.videoShort":"Gravar vídeo","capture.imageShort":"Capturar tela","capture.video":"Vídeo","capture.format":"Formato","capture.fullPage":"Capturar página inteira","capture.fullPageHint":"Do início ao fim, em um único PNG.","capture.scrolling":"Capturando página · {progress}%","capture.fullPageReady":"PNG · Página inteira"},"en":{"app.name":"Mockaí","app.description":"Test your sites on phones, tablets and laptops side by side, with synced scrolling, screenshots and video recording.","app.open":"Open Mockaí","app.workspace":"TEST WORKSPACE","app.dialog":"Mockaí simulator","common.close":"Close","common.name":"Name","common.delete":"Delete","common.add":"Add","common.remove":"Remove","common.open":"Open","common.language":"Language","common.auto":"Automatic","common.wait":"Please wait…","workspace.library":"Devices and sets","workspace.light":"Light theme","workspace.screen":"Screen","workspace.selected":"Selected device","workspace.width":"Width","workspace.height":"Height","workspace.rotate":"Rotate selected","workspace.zoom":"Zoom","workspace.reload":"Reload selected","workspace.notice":"Responsive preview · some sites block frames. The browser and user agent remain those of your computer.","workspace.screens":"Test screens","workspace.hint":"Click a mockup to select it and adjust its dimensions.","workspace.count":"{count}/{limit} screens · {zoom}%","workspace.removeName":"Remove {name}","workspace.frameTitle":"{name} — test page","library.title":"Your screens","library.search":"Search profiles","library.searchHint":"Name or size","library.favorites":"Favorites ({count})","library.favorite":"Favorite {name}","library.unfavorite":"Unfavorite {name}","library.addName":"Add {name}","library.deleteProfile":"Delete profile {name}","library.empty":"No profiles found.","library.emptyFavorites":"No favorites found.","library.custom":"Custom profile","library.customHint":"Saves the dimensions of the selected screen.","library.saveProfile":"Save profile","library.sets":"Saved sets","library.setName":"Set name","library.saveSet":"Save current screens","library.emptySets":"Save the current screens to open them later.","library.setCount":"{count} device(s)","library.openSet":"Open set {name}","library.deleteSet":"Delete set {name}","library.updated":"Library updated.","library.opened":"Set “{name}” opened.","profile.compact":"Compact","profile.wide":"Wide","profile.tablet":"Tablet","sync.label":"Sync scrolling","sync.off":"Independent scrolling","sync.status":"Linked scrolling: {linked}/{total} screens","sync.unavailable":"Sync requires two accessible screens on the same origin.","sync.hint":"Syncs document scroll progress. Cross-origin frames and nested scroll areas are not linked.","options.saved":"Preferences saved.","media.png":"Capture PNG","media.video":"Video","media.record":"Record selected","media.stop":"Stop and export","media.cancel":"Cancel capture","media.recording":"Recording · no audio · up to 2 min","media.preparing":"Preparing capture…","media.stopping":"Finishing…","media.finished":"Recording finished.","media.cancelled":"Capture cancelled.","media.revoked":"Recording permission was removed.","media.interrupted":"The browser interrupted capture. Available data was preserved.","media.duration":"Recording reached the two-minute limit.","popup.intro":"Try your page on a screen with the dimensions you choose.","popup.open":"Open simulator","popup.close":"Close simulator","popup.format":"Video format","popup.record":"Record selected screen","popup.note":"Independent preview · up to four devices","popup.blocked":"Some sites prevent loading in frames.","popup.opened":"Simulator opened in this tab.","popup.closed":"Simulator closed.","popup.preparing":"Preparing recording…","popup.recording":"Recording in progress. You can also stop or cancel on the page.","popup.unavailable":"Page unavailable","export.title":"Export · Mockaí","export.heading":"Your capture is ready.","export.preparing":"Preparing local file…","export.nav":"Export","export.download":"Download {format}","export.convert":"Convert to MP4","export.cancel":"Cancel conversion","export.progress":"Conversion progress","export.note":"The file is prepared on this computer. Closing this page releases temporary files.","export.alt":"Capture of the selected screen","export.ready":"File ready to download.","export.noMP4":"MP4 conversion is unavailable in this browser; WebM remains available.","export.converting":"Converting on this computer. Conversion takes about as long as the video.","export.converted":"MP4 ready. The original WebM remains available.","export.original":"The original WebM remains available.","error.native":"Could not complete: {detail}","error.options":"Invalid preferences.","error.settings":"Invalid settings.","error.dimensions":"Invalid dimensions or appearance.","error.name":"Use a name of 1 to 48 characters without control characters.","error.id":"Invalid identifier.","error.deviceCount":"Keep between 1 and 4 devices open.","error.device":"Invalid device.","error.selection":"Invalid device selection or identifiers.","error.deviceMissing":"Device not found.","error.library":"Invalid library.","error.profile":"Invalid custom profile.","error.favorites":"Invalid favorites or profiles.","error.duplicateSets":"Duplicate sets.","error.http":"Open an HTTP or HTTPS page to simulate.","error.protected":"Chrome does not allow simulating this protected page.","error.visible":"The entire screen must be visible. Reduce the zoom and try again.","error.noImage":"The capture contains no image.","error.resized":"The tab size changed during capture. Try again.","error.mp4":"MP4 is unavailable in this browser. Choose WebM.","error.codec":"No encoder is available for the selected format.","error.service":"The media service did not respond.","error.focus":"Return to the simulator tab before capturing.","error.mode":"Invalid capture type.","error.format":"Invalid video format.","error.previous":"Finish or discard the previous capture before starting another.","error.permissionHint":"The recording permission is outdated. Reload the extension at chrome://extensions and refresh this page.","error.prepare":"Could not prepare the screen.","error.moved":"The screen position changed. Try capturing again.","error.noRecording":"This tab has no recording in progress.","error.event":"Unauthorized media event.","error.export":"Export is unauthorized or expired.","error.exportOperation":"Unknown export operation.","error.sessionVersion":"Invalid session version.","error.message":"Unauthorized message.","error.origin":"Invalid message origin.","error.tab":"Invalid tab.","error.session":"Session ended.","error.preview":"Capture is only available in the extension loaded in Chrome.","error.mediaOperation":"Unknown media operation.","error.context":"Operation unavailable in this context.","error.openFirst":"Open the simulator before recording.","error.operation":"Unknown operation.","error.mount":"The interface did not confirm opening.","error.customLimit":"The limit is 20 custom profiles.","error.customMissing":"Custom profile not found.","error.profileMissing":"Profile not found.","error.profileRefresh":"Profile not found. Refresh the library.","error.setLimit":"The limit is 16 sets.","error.setMissing":"Set not found.","error.libraryOperation":"Unknown library operation.","error.noData":"Recording ended without data.","error.size":"The file exceeded the 64 MiB limit.","error.notRecording":"There is no recording in progress.","error.stopTimeout":"The browser did not finalize the recording.","error.prepareTimeout":"Capture preparation timed out.","error.image":"Invalid capture image.","error.recordingSize":"Recording exceeded the 64 MiB limit and was discarded.","error.encoder":"The encoder failed.","error.artifact":"The capture is no longer available.","error.canvas":"Canvas is unavailable.","error.png":"Failed to generate PNG.","error.videoTimeout":"The tab did not provide an image for recording.","error.video":"Could not read the tab video.","error.cancelConversion":"Conversion cancelled.","error.openVideo":"Could not open the video for conversion.","error.decode":"This video cannot be converted by the browser.","error.convertSize":"Dimensions unavailable or too large for conversion.","error.convertCanvas":"Canvas unavailable for conversion.","error.mp4Size":"The MP4 exceeded the 64 MiB limit.","error.mp4Encoder":"The MP4 encoder failed.","error.convertEmpty":"Conversion ended without data.","error.playback":"Playback was interrupted during conversion.","error.convertTimeout":"Conversion timed out.","error.expired":"The capture expired.","error.file":"Could not retrieve the local file.","error.emptyFile":"The file is empty or exceeds the size limit.","error.extension":"The extension did not respond. Reload this page.","error.popupExtension":"Could not reach the extension. Reload the page.","error.permission":"Recording permission was not granted.","error.prepareFocus":"Return to the simulator tab to prepare capture.","error.inputDimensions":"Use the dimensions indicated in the fields.","header.devices":"Devices","header.capture":"Capture","header.settings":"Settings","header.stop":"Stop","header.cancel":"Cancel","header.recording":"Recording","settings.device":"Selected screen","settings.dimensions":"Dimensions","settings.rotate":"Rotate","settings.reload":"Reload","settings.appearance":"Preferences","settings.scale":"Preview scale","settings.record":"Record this screen","settings.videoHint":"No audio · up to 2 minutes","settings.about":"About this preview","screen.mode":"Screen mode","screen.browser":"Browser","screen.pwa":"PWA","screen.fullscreen":"Fullscreen","screen.hint":"Browser shows navigation bars. PWA keeps the status bar. Fullscreen uses the entire screen for content.","error.screenMode":"Invalid screen mode.","capture.description":"Take a screenshot or record a video of the selected device.","capture.image":"Capture screen","capture.imageHint":"Save an image as PNG.","capture.videoHint":"No audio · up to 2 minutes","capture.ready":"Capture ready","capture.transparent":"PNG · Transparent background","capture.videoShort":"Record video","capture.imageShort":"Capture screen","capture.video":"Video","capture.format":"Format","capture.fullPage":"Capture full page","capture.fullPageHint":"From top to bottom, in a single PNG.","capture.scrolling":"Capturing page · {progress}%","capture.fullPageReady":"PNG · Full page"},"es":{"app.name":"Mockaí","app.description":"Prueba tus sitios en móviles, tablets y portátiles lado a lado, con scroll sincronizado, capturas de pantalla y grabación de video.","app.open":"Abrir Mockaí","app.workspace":"ÁREA DE PRUEBAS","app.dialog":"Simulador Mockaí","common.close":"Cerrar","common.name":"Nombre","common.delete":"Eliminar","common.add":"Añadir","common.remove":"Quitar","common.open":"Abrir","common.language":"Idioma","common.auto":"Automático","common.wait":"Espera…","workspace.library":"Dispositivos y conjuntos","workspace.light":"Tema claro","workspace.screen":"Pantalla","workspace.selected":"Dispositivo seleccionado","workspace.width":"Ancho","workspace.height":"Alto","workspace.rotate":"Girar seleccionado","workspace.zoom":"Zoom","workspace.reload":"Recargar seleccionado","workspace.notice":"Vista previa adaptable · algunos sitios bloquean marcos. El navegador y el agente de usuario siguen siendo los del ordenador.","workspace.screens":"Pantallas en prueba","workspace.hint":"Haz clic en un mockup para seleccionarlo y ajustar sus dimensiones.","workspace.count":"{count}/{limit} pantallas · {zoom}%","workspace.removeName":"Quitar {name}","workspace.frameTitle":"{name} — página en prueba","library.title":"Tus pantallas","library.search":"Buscar perfiles","library.searchHint":"Nombre o tamaño","library.favorites":"Favoritos ({count})","library.favorite":"Añadir {name} a favoritos","library.unfavorite":"Quitar {name} de favoritos","library.addName":"Añadir {name}","library.deleteProfile":"Eliminar perfil {name}","library.empty":"No se encontraron perfiles.","library.emptyFavorites":"No se encontraron favoritos.","library.custom":"Perfil personalizado","library.customHint":"Guarda las dimensiones de la pantalla seleccionada.","library.saveProfile":"Guardar perfil","library.sets":"Conjuntos guardados","library.setName":"Nombre del conjunto","library.saveSet":"Guardar pantallas actuales","library.emptySets":"Guarda las pantallas actuales para abrirlas después.","library.setCount":"{count} dispositivo(s)","library.openSet":"Abrir conjunto {name}","library.deleteSet":"Eliminar conjunto {name}","library.updated":"Biblioteca actualizada.","library.opened":"Conjunto «{name}» abierto.","profile.compact":"Compacto","profile.wide":"Amplio","profile.tablet":"Tableta","sync.label":"Sincronizar desplazamiento","sync.off":"Desplazamiento independiente","sync.status":"Desplazamiento vinculado: {linked}/{total} pantallas","sync.unavailable":"La sincronización requiere dos pantallas accesibles del mismo origen.","sync.hint":"Sincroniza el progreso de desplazamiento del documento. Los marcos de otro origen y los paneles internos no se vinculan.","options.saved":"Preferencias guardadas.","media.png":"Capturar PNG","media.video":"Vídeo","media.record":"Grabar seleccionado","media.stop":"Detener y exportar","media.cancel":"Cancelar captura","media.recording":"Grabando · sin audio · hasta 2 min","media.preparing":"Preparando captura…","media.stopping":"Finalizando…","media.finished":"Grabación finalizada.","media.cancelled":"Captura cancelada.","media.revoked":"Se retiró el permiso de grabación.","media.interrupted":"El navegador interrumpió la captura. Se conservaron los datos disponibles.","media.duration":"La grabación alcanzó el límite de dos minutos.","popup.intro":"Prueba tu página en una pantalla con las dimensiones que elijas.","popup.open":"Abrir simulador","popup.close":"Cerrar simulador","popup.format":"Formato de vídeo","popup.record":"Grabar pantalla seleccionada","popup.note":"Vista previa independiente · hasta cuatro dispositivos","popup.blocked":"Algunos sitios impiden la carga en marcos.","popup.opened":"Simulador abierto en esta pestaña.","popup.closed":"Simulador cerrado.","popup.preparing":"Preparando grabación…","popup.recording":"Grabación en curso. También puedes detenerla o cancelarla en la página.","popup.unavailable":"Página no disponible","export.title":"Exportar · Mockaí","export.heading":"Tu captura está lista.","export.preparing":"Preparando archivo local…","export.nav":"Exportar","export.download":"Descargar {format}","export.convert":"Convertir a MP4","export.cancel":"Cancelar conversión","export.progress":"Progreso de conversión","export.note":"El archivo se prepara en este ordenador. Al cerrar esta página se liberan los archivos temporales.","export.alt":"Captura de la pantalla seleccionada","export.ready":"Archivo listo para descargar.","export.noMP4":"La conversión a MP4 no está disponible en este navegador; el WebM sigue disponible.","export.converting":"Convirtiendo en este ordenador. La conversión tarda aproximadamente lo que dura el vídeo.","export.converted":"MP4 listo. El WebM original sigue disponible.","export.original":"El WebM original sigue disponible.","error.native":"No se pudo completar: {detail}","error.options":"Preferencias no válidas.","error.settings":"Ajustes no válidos.","error.dimensions":"Dimensiones o apariencia no válidas.","error.name":"Usa un nombre de 1 a 48 caracteres sin caracteres de control.","error.id":"Identificador no válido.","error.deviceCount":"Mantén entre 1 y 4 dispositivos abiertos.","error.device":"Dispositivo no válido.","error.selection":"Selección o identificadores de dispositivos no válidos.","error.deviceMissing":"Dispositivo no encontrado.","error.library":"Biblioteca no válida.","error.profile":"Perfil personalizado no válido.","error.favorites":"Favoritos o perfiles no válidos.","error.duplicateSets":"Conjuntos duplicados.","error.http":"Abre una página HTTP o HTTPS para simular.","error.protected":"Chrome no permite simular esta página protegida.","error.visible":"La pantalla debe estar completamente visible. Reduce el zoom e inténtalo de nuevo.","error.noImage":"La captura no contiene imagen.","error.resized":"El tamaño de la pestaña cambió durante la captura. Inténtalo de nuevo.","error.mp4":"MP4 no está disponible en este navegador. Elige WebM.","error.codec":"No hay un codificador disponible para el formato elegido.","error.service":"El servicio de medios no respondió.","error.focus":"Vuelve a la pestaña del simulador antes de capturar.","error.mode":"Tipo de captura no válido.","error.format":"Formato de vídeo no válido.","error.previous":"Finaliza o descarta la captura anterior antes de iniciar otra.","error.permissionHint":"El permiso de grabación está desactualizado. Recarga la extensión en chrome://extensions y actualiza esta página.","error.prepare":"No se pudo preparar la pantalla.","error.moved":"La posición de la pantalla cambió. Intenta capturar de nuevo.","error.noRecording":"Esta pestaña no tiene una grabación en curso.","error.event":"Evento de medios no autorizado.","error.export":"La exportación no está autorizada o ha caducado.","error.exportOperation":"Operación de exportación desconocida.","error.sessionVersion":"Versión de sesión no válida.","error.message":"Mensaje no autorizado.","error.origin":"Origen del mensaje no válido.","error.tab":"Pestaña no válida.","error.session":"Sesión finalizada.","error.preview":"La captura solo está disponible en la extensión cargada en Chrome.","error.mediaOperation":"Operación de medios desconocida.","error.context":"Operación no disponible en este contexto.","error.openFirst":"Abre el simulador antes de grabar.","error.operation":"Operación desconocida.","error.mount":"La interfaz no confirmó la apertura.","error.customLimit":"El límite es de 20 perfiles personalizados.","error.customMissing":"Perfil personalizado no encontrado.","error.profileMissing":"Perfil no encontrado.","error.profileRefresh":"Perfil no encontrado. Actualiza la biblioteca.","error.setLimit":"El límite es de 16 conjuntos.","error.setMissing":"Conjunto no encontrado.","error.libraryOperation":"Operación de biblioteca desconocida.","error.noData":"La grabación terminó sin datos.","error.size":"El archivo superó el límite de 64 MiB.","error.notRecording":"No hay una grabación en curso.","error.stopTimeout":"El navegador no finalizó la grabación.","error.prepareTimeout":"La preparación de la captura excedió el tiempo permitido.","error.image":"Imagen de captura no válida.","error.recordingSize":"La grabación superó el límite de 64 MiB y se descartó.","error.encoder":"El codificador falló.","error.artifact":"La captura ya no está disponible.","error.canvas":"Canvas no está disponible.","error.png":"Error al generar el PNG.","error.videoTimeout":"La pestaña no proporcionó imagen para grabar.","error.video":"No se pudo leer el vídeo de la pestaña.","error.cancelConversion":"Conversión cancelada.","error.openVideo":"No se pudo abrir el vídeo para convertirlo.","error.decode":"El navegador no puede convertir este vídeo.","error.convertSize":"Dimensiones no disponibles o demasiado grandes para la conversión.","error.convertCanvas":"Canvas no disponible para la conversión.","error.mp4Size":"El MP4 superó el límite de 64 MiB.","error.mp4Encoder":"El codificador MP4 falló.","error.convertEmpty":"La conversión terminó sin datos.","error.playback":"La reproducción se interrumpió durante la conversión.","error.convertTimeout":"La conversión excedió el tiempo permitido.","error.expired":"La captura ha caducado.","error.file":"No se pudo recuperar el archivo local.","error.emptyFile":"El archivo está vacío o supera el límite de tamaño.","error.extension":"La extensión no respondió. Recarga esta página.","error.popupExtension":"No se pudo contactar con la extensión. Recarga la página.","error.permission":"No se concedió el permiso de grabación.","error.prepareFocus":"Vuelve a la pestaña del simulador para preparar la captura.","error.inputDimensions":"Usa las dimensiones indicadas en los campos.","header.devices":"Dispositivos","header.capture":"Capturar","header.settings":"Ajustes","header.stop":"Detener","header.cancel":"Cancelar","header.recording":"Grabando","settings.device":"Pantalla seleccionada","settings.dimensions":"Dimensiones","settings.rotate":"Girar","settings.reload":"Recargar","settings.appearance":"Preferencias","settings.scale":"Escala de visualización","settings.record":"Grabar esta pantalla","settings.videoHint":"Sin audio · hasta 2 minutos","settings.about":"Acerca de esta vista previa","screen.mode":"Modo de pantalla","screen.browser":"Navegador","screen.pwa":"PWA","screen.fullscreen":"Pantalla completa","screen.hint":"Navegador muestra las barras de navegación. PWA mantiene la barra de estado. Pantalla completa usa toda la pantalla para el contenido.","error.screenMode":"Modo de pantalla no válido.","capture.description":"Captura una imagen o graba un vídeo de la pantalla seleccionada.","capture.image":"Capturar pantalla","capture.imageHint":"Guardar imagen en PNG.","capture.videoHint":"Sin audio · hasta 2 minutos","capture.ready":"Captura lista","capture.transparent":"PNG · Fondo transparente","capture.videoShort":"Grabar vídeo","capture.imageShort":"Capturar pantalla","capture.video":"Vídeo","capture.format":"Formato","capture.fullPage":"Capturar página completa","capture.fullPageHint":"De principio a fin, en un solo PNG.","capture.scrolling":"Capturando página · {progress}%","capture.fullPageReady":"PNG · Página completa"}};
+const MESSAGES = {"pt-BR":{"app.name":"Mockaí","app.description":"Teste seus sites em celulares, tablets e notebooks lado a lado, com rolagem sincronizada, capturas de tela e gravação de vídeo.","app.open":"Abrir Mockaí","app.workspace":"ÁREA DE TESTE","app.dialog":"Simulador Mockaí","common.close":"Fechar","common.name":"Nome","common.delete":"Excluir","common.add":"Adicionar","common.remove":"Remover","common.open":"Abrir","common.language":"Idioma","common.auto":"Automático","common.wait":"Aguarde…","workspace.library":"Dispositivos e conjuntos","workspace.light":"Tema claro","workspace.screen":"Tela","workspace.selected":"Dispositivo selecionado","workspace.width":"Largura","workspace.height":"Altura","workspace.rotate":"Girar selecionado","workspace.zoom":"Zoom","workspace.reload":"Recarregar selecionado","workspace.notice":"Prévia responsiva · alguns sites bloqueiam quadros. O navegador e o agente de usuário continuam sendo os do computador.","workspace.screens":"Telas em teste","workspace.hint":"Clique em um mockup para selecioná-lo e ajustar suas dimensões.","workspace.count":"{count}/{limit} telas · {zoom}%","workspace.removeName":"Remover {name}","workspace.frameTitle":"{name} — página em teste","library.title":"Suas telas","library.search":"Buscar perfil","library.searchHint":"Nome ou dimensão","library.favorites":"Favoritos ({count})","library.favorite":"Favoritar {name}","library.unfavorite":"Desfavoritar {name}","library.addName":"Adicionar {name}","library.deleteProfile":"Excluir perfil {name}","library.empty":"Nenhum perfil encontrado.","library.emptyFavorites":"Nenhum favorito encontrado.","library.custom":"Perfil personalizado","library.customHint":"Salva as dimensões da tela selecionada.","library.saveProfile":"Salvar perfil","library.sets":"Conjuntos salvos","library.setName":"Nome do conjunto","library.saveSet":"Salvar telas atuais","library.emptySets":"Salve as telas atuais para abrir depois.","library.setCount":"{count} dispositivo(s)","library.openSet":"Abrir conjunto {name}","library.deleteSet":"Excluir conjunto {name}","library.updated":"Biblioteca atualizada.","library.opened":"Conjunto “{name}” aberto.","profile.compact":"Compacto","profile.wide":"Amplo","profile.tablet":"Tablet","sync.label":"Sincronizar rolagem","sync.off":"Rolagem independente","sync.status":"Rolagem vinculada: {linked}/{total} telas","sync.unavailable":"Sincronização exige duas telas acessíveis na mesma origem.","sync.hint":"Sincroniza o progresso de rolagem do documento. Quadros de outra origem e painéis internos não são vinculados.","options.saved":"Preferências salvas.","media.png":"Capturar PNG","media.video":"Vídeo","media.record":"Gravar selecionado","media.stop":"Parar e exportar","media.cancel":"Cancelar captura","media.recording":"Gravando · sem áudio · até 2 min","media.preparing":"Preparando captura…","media.stopping":"Finalizando…","media.finished":"Gravação finalizada.","media.cancelled":"Captura cancelada.","media.revoked":"A permissão de gravação foi removida.","media.interrupted":"O navegador interrompeu a captura. Os dados disponíveis foram preservados.","media.duration":"A gravação atingiu o limite de dois minutos.","popup.intro":"Experimente sua página em uma tela com as dimensões que você escolher.","popup.open":"Abrir simulador","popup.close":"Fechar simulador","popup.format":"Formato de vídeo","popup.record":"Gravar tela selecionada","popup.note":"Prévia independente · até oito dispositivos","popup.blocked":"Alguns sites impedem abertura em quadros.","popup.opened":"Simulador aberto nesta aba.","popup.closed":"Simulador encerrado.","popup.preparing":"Preparando gravação…","popup.recording":"Gravação em andamento. Você também pode parar ou cancelar na página.","popup.unavailable":"Página indisponível","export.title":"Exportar · Mockaí","export.heading":"Sua captura está pronta.","export.preparing":"Preparando arquivo local…","export.nav":"Exportar","export.download":"Baixar {format}","export.convert":"Converter para MP4","export.cancel":"Cancelar conversão","export.progress":"Progresso da conversão","export.note":"O arquivo é preparado neste computador. Ao fechar esta página, os arquivos temporários são liberados.","export.alt":"Captura da tela selecionada","export.ready":"Arquivo pronto para baixar.","export.noMP4":"Conversão MP4 indisponível neste navegador; o WebM permanece disponível.","export.converting":"Convertendo neste computador. A conversão acompanha a duração do vídeo.","export.converted":"MP4 pronto. O WebM original continua disponível.","export.original":"O WebM original continua disponível.","error.native":"Não foi possível concluir: {detail}","error.options":"Preferências inválidas.","error.settings":"Ajustes inválidos.","error.dimensions":"Dimensões ou aparência inválidas.","error.name":"Use um nome de 1 a 48 caracteres, sem caracteres de controle.","error.id":"Identificador inválido.","error.deviceCount":"Mantenha entre 1 e 4 dispositivos abertos.","error.device":"Dispositivo inválido.","error.selection":"Seleção ou identificadores de dispositivos inválidos.","error.deviceMissing":"Dispositivo não encontrado.","error.library":"Biblioteca inválida.","error.profile":"Perfil personalizado inválido.","error.favorites":"Favoritos ou perfis inválidos.","error.duplicateSets":"Conjuntos duplicados.","error.http":"Abra uma página HTTP ou HTTPS para simular.","error.protected":"O Chrome não permite simular esta página protegida.","error.visible":"A tela precisa estar inteira visível. Reduza o zoom e tente novamente.","error.noImage":"A captura não contém imagem.","error.resized":"O tamanho da aba mudou durante a captura. Tente novamente.","error.mp4":"MP4 indisponível neste navegador. Escolha WebM.","error.codec":"Não há codificador disponível para o formato escolhido.","error.service":"O serviço de mídia não respondeu.","error.focus":"Volte à aba do simulador antes de capturar.","error.mode":"Tipo de captura inválido.","error.format":"Formato de vídeo inválido.","error.previous":"Finalize ou descarte a captura anterior antes de iniciar outra.","error.permissionHint":"A permissão de gravação está desatualizada. Recarregue a extensão em chrome://extensions e atualize esta página.","error.prepare":"Não foi possível preparar a tela.","error.moved":"A posição da tela mudou. Tente capturar novamente.","error.noRecording":"Esta aba não possui gravação em andamento.","error.event":"Evento de mídia não autorizado.","error.export":"Exportação não autorizada ou expirada.","error.exportOperation":"Operação de exportação desconhecida.","error.sessionVersion":"Versão de sessão inválida.","error.message":"Mensagem não autorizada.","error.origin":"Origem da mensagem inválida.","error.tab":"Aba inválida.","error.session":"Sessão encerrada.","error.preview":"Captura disponível somente na extensão carregada no Chrome.","error.mediaOperation":"Operação de mídia desconhecida.","error.context":"Operação indisponível neste contexto.","error.openFirst":"Abra o simulador antes de gravar.","error.operation":"Operação desconhecida.","error.mount":"A interface não confirmou a abertura.","error.customLimit":"O limite é de 20 perfis personalizados.","error.customMissing":"Perfil personalizado não encontrado.","error.profileMissing":"Perfil não encontrado.","error.profileRefresh":"Perfil não encontrado. Atualize a biblioteca.","error.setLimit":"O limite é de 16 conjuntos.","error.setMissing":"Conjunto não encontrado.","error.libraryOperation":"Operação de biblioteca desconhecida.","error.noData":"A gravação terminou sem dados.","error.size":"O arquivo excedeu o limite de 64 MiB.","error.notRecording":"Não há gravação em andamento.","error.stopTimeout":"O navegador não finalizou a gravação.","error.prepareTimeout":"A preparação da captura excedeu o tempo permitido.","error.image":"Imagem de captura inválida.","error.recordingSize":"A gravação excedeu o limite de 64 MiB e foi descartada.","error.encoder":"O codificador falhou.","error.artifact":"A captura não está mais disponível.","error.canvas":"Canvas indisponível.","error.png":"Falha ao gerar PNG.","error.videoTimeout":"A aba não forneceu imagem para a gravação.","error.video":"Não foi possível ler o vídeo da aba.","error.cancelConversion":"Conversão cancelada.","error.openVideo":"Não foi possível abrir o vídeo para conversão.","error.decode":"Este vídeo não pode ser convertido pelo navegador.","error.convertSize":"Dimensões indisponíveis ou grandes demais para conversão.","error.convertCanvas":"Canvas indisponível para conversão.","error.mp4Size":"O MP4 excedeu o limite de 64 MiB.","error.mp4Encoder":"O codificador MP4 falhou.","error.convertEmpty":"A conversão terminou sem dados.","error.playback":"A reprodução foi interrompida durante a conversão.","error.convertTimeout":"A conversão excedeu o tempo permitido.","error.expired":"A captura expirou.","error.file":"Não foi possível recuperar o arquivo local.","error.emptyFile":"O arquivo está vazio ou excede o limite de tamanho.","error.extension":"A extensão não respondeu. Recarregue esta página.","error.popupExtension":"Não foi possível falar com a extensão. Recarregue a página.","error.permission":"Permissão de gravação não concedida.","error.prepareFocus":"Volte à aba do simulador para preparar a captura.","error.inputDimensions":"Use as dimensões indicadas nos campos.","header.devices":"Conjuntos","header.capture":"Capturar","header.settings":"Ajustes","header.stop":"Parar","header.cancel":"Cancelar","header.recording":"Gravando","settings.device":"Tela selecionada","settings.dimensions":"Dimensões","settings.rotate":"Girar","settings.reload":"Recarregar","settings.appearance":"Preferências","settings.scale":"Escala de visualização","settings.record":"Gravar esta tela","settings.videoHint":"Sem áudio · até 2 minutos","settings.about":"Sobre esta prévia","screen.mode":"Modo da tela","screen.browser":"Navegador","screen.pwa":"PWA","screen.fullscreen":"Tela cheia","screen.hint":"Navegador mostra as barras de navegação. PWA mantém a barra de status. Tela cheia usa toda a tela para o conteúdo.","error.screenMode":"Modo da tela inválido.","capture.description":"Capture uma imagem ou grave um vídeo da tela selecionada.","capture.image":"Capturar tela","capture.imageHint":"Baixe ou copie em PNG, com ou sem mockup.","capture.videoHint":"Sem áudio · até 2 minutos","capture.ready":"Captura pronta","capture.transparent":"PNG · Fundo transparente","capture.videoShort":"Gravar vídeo","capture.imageShort":"Capturar tela","capture.video":"Vídeo","capture.format":"Formato","capture.fullPage":"Capturar página inteira","capture.fullPageHint":"Do início ao fim, em um único PNG.","capture.scrolling":"Capturando página · {progress}%","capture.fullPageReady":"PNG · Página inteira","capture.plain":"PNG · Somente a tela","result.copy":"Copiar","result.copied":"Imagem copiada para a área de transferência.","result.copyFailed":"Não foi possível copiar nesta página. Baixe o arquivo.","result.mockup":"Moldura do dispositivo","result.withMockup":"Com mockup","result.withoutMockup":"Sem mockup","loader.photo":"Fotografando a tela…","loader.prepare":"Preparando a página…","loader.page":"Capturando a página…","loader.build":"Montando a imagem…","loader.hint":"Mantenha esta aba aberta até terminar.","quick.title":"Adicionar tela","quick.rail":"Adicionar","quick.search":"Buscar modelo ou dimensão","quick.all":"Todos","quick.favorites":"Favoritos","quick.phones":"Celulares","quick.tablets":"Tablets","quick.laptops":"Notebooks","quick.open":"Aberto","quick.swap":"Trocar modelo","card.swap":"Trocar o modelo de {name}","card.rotate":"Girar {name}","card.reload":"Recarregar {name}","card.capture":"Capturar {name}","card.left":"Mover {name} para a esquerda","card.right":"Mover {name} para a direita","header.zoom":"Escala das telas","header.reloadAll":"Recarregar todas as telas","header.count":"{count}/{limit} telas","sync.short":"Sincronizar rolagem","sync.toggle":"Sincronizar","stage.up":"Fileira de cima","stage.down":"Fileira de baixo","quick.presets":"Conjuntos prontos","preset.trio":"Celular + Tablet + Notebook","preset.phones":"iPhone + Android","preset.apple":"iPhone + iPad","capture.all":"Capturar todas as telas","capture.allHint":"As telas abertas, lado a lado, em um único PNG.","capture.allReady":"PNG · Todas as telas","loader.all":"Fotografando as telas…","notice.blocked":"Este site não permitiu abrir a prévia aqui.","notice.blockedHint":"Alguns sites bloqueiam a exibição em quadros ou redirecionam para outro endereço.","notice.retry":"Tentar de novo","notice.hide":"Ocultar aviso","status.dismiss":"Clique para dispensar","capture.shortcuts":"Atalhos: Alt+Shift+S captura a tela · Alt+Shift+F a página inteira","library.profiles":"Perfis personalizados","library.emptyProfiles":"Ajuste a largura e a altura acima e salve aqui para reutilizar.","library.panel":"Conjuntos e perfis","quick.hint":"Clique em um modelo para abrir ao lado. Até {count} telas."},"en":{"app.name":"Mockaí","app.description":"Test your sites on phones, tablets and laptops side by side, with synced scrolling, screenshots and video recording.","app.open":"Open Mockaí","app.workspace":"TEST WORKSPACE","app.dialog":"Mockaí simulator","common.close":"Close","common.name":"Name","common.delete":"Delete","common.add":"Add","common.remove":"Remove","common.open":"Open","common.language":"Language","common.auto":"Automatic","common.wait":"Please wait…","workspace.library":"Devices and sets","workspace.light":"Light theme","workspace.screen":"Screen","workspace.selected":"Selected device","workspace.width":"Width","workspace.height":"Height","workspace.rotate":"Rotate selected","workspace.zoom":"Zoom","workspace.reload":"Reload selected","workspace.notice":"Responsive preview · some sites block frames. The browser and user agent remain those of your computer.","workspace.screens":"Test screens","workspace.hint":"Click a mockup to select it and adjust its dimensions.","workspace.count":"{count}/{limit} screens · {zoom}%","workspace.removeName":"Remove {name}","workspace.frameTitle":"{name} — test page","library.title":"Your screens","library.search":"Search profiles","library.searchHint":"Name or size","library.favorites":"Favorites ({count})","library.favorite":"Favorite {name}","library.unfavorite":"Unfavorite {name}","library.addName":"Add {name}","library.deleteProfile":"Delete profile {name}","library.empty":"No profiles found.","library.emptyFavorites":"No favorites found.","library.custom":"Custom profile","library.customHint":"Saves the dimensions of the selected screen.","library.saveProfile":"Save profile","library.sets":"Saved sets","library.setName":"Set name","library.saveSet":"Save current screens","library.emptySets":"Save the current screens to open them later.","library.setCount":"{count} device(s)","library.openSet":"Open set {name}","library.deleteSet":"Delete set {name}","library.updated":"Library updated.","library.opened":"Set “{name}” opened.","profile.compact":"Compact","profile.wide":"Wide","profile.tablet":"Tablet","sync.label":"Sync scrolling","sync.off":"Independent scrolling","sync.status":"Linked scrolling: {linked}/{total} screens","sync.unavailable":"Sync requires two accessible screens on the same origin.","sync.hint":"Syncs document scroll progress. Cross-origin frames and nested scroll areas are not linked.","options.saved":"Preferences saved.","media.png":"Capture PNG","media.video":"Video","media.record":"Record selected","media.stop":"Stop and export","media.cancel":"Cancel capture","media.recording":"Recording · no audio · up to 2 min","media.preparing":"Preparing capture…","media.stopping":"Finishing…","media.finished":"Recording finished.","media.cancelled":"Capture cancelled.","media.revoked":"Recording permission was removed.","media.interrupted":"The browser interrupted capture. Available data was preserved.","media.duration":"Recording reached the two-minute limit.","popup.intro":"Try your page on a screen with the dimensions you choose.","popup.open":"Open simulator","popup.close":"Close simulator","popup.format":"Video format","popup.record":"Record selected screen","popup.note":"Independent preview · up to eight devices","popup.blocked":"Some sites prevent loading in frames.","popup.opened":"Simulator opened in this tab.","popup.closed":"Simulator closed.","popup.preparing":"Preparing recording…","popup.recording":"Recording in progress. You can also stop or cancel on the page.","popup.unavailable":"Page unavailable","export.title":"Export · Mockaí","export.heading":"Your capture is ready.","export.preparing":"Preparing local file…","export.nav":"Export","export.download":"Download {format}","export.convert":"Convert to MP4","export.cancel":"Cancel conversion","export.progress":"Conversion progress","export.note":"The file is prepared on this computer. Closing this page releases temporary files.","export.alt":"Capture of the selected screen","export.ready":"File ready to download.","export.noMP4":"MP4 conversion is unavailable in this browser; WebM remains available.","export.converting":"Converting on this computer. Conversion takes about as long as the video.","export.converted":"MP4 ready. The original WebM remains available.","export.original":"The original WebM remains available.","error.native":"Could not complete: {detail}","error.options":"Invalid preferences.","error.settings":"Invalid settings.","error.dimensions":"Invalid dimensions or appearance.","error.name":"Use a name of 1 to 48 characters without control characters.","error.id":"Invalid identifier.","error.deviceCount":"Keep between 1 and 4 devices open.","error.device":"Invalid device.","error.selection":"Invalid device selection or identifiers.","error.deviceMissing":"Device not found.","error.library":"Invalid library.","error.profile":"Invalid custom profile.","error.favorites":"Invalid favorites or profiles.","error.duplicateSets":"Duplicate sets.","error.http":"Open an HTTP or HTTPS page to simulate.","error.protected":"Chrome does not allow simulating this protected page.","error.visible":"The entire screen must be visible. Reduce the zoom and try again.","error.noImage":"The capture contains no image.","error.resized":"The tab size changed during capture. Try again.","error.mp4":"MP4 is unavailable in this browser. Choose WebM.","error.codec":"No encoder is available for the selected format.","error.service":"The media service did not respond.","error.focus":"Return to the simulator tab before capturing.","error.mode":"Invalid capture type.","error.format":"Invalid video format.","error.previous":"Finish or discard the previous capture before starting another.","error.permissionHint":"The recording permission is outdated. Reload the extension at chrome://extensions and refresh this page.","error.prepare":"Could not prepare the screen.","error.moved":"The screen position changed. Try capturing again.","error.noRecording":"This tab has no recording in progress.","error.event":"Unauthorized media event.","error.export":"Export is unauthorized or expired.","error.exportOperation":"Unknown export operation.","error.sessionVersion":"Invalid session version.","error.message":"Unauthorized message.","error.origin":"Invalid message origin.","error.tab":"Invalid tab.","error.session":"Session ended.","error.preview":"Capture is only available in the extension loaded in Chrome.","error.mediaOperation":"Unknown media operation.","error.context":"Operation unavailable in this context.","error.openFirst":"Open the simulator before recording.","error.operation":"Unknown operation.","error.mount":"The interface did not confirm opening.","error.customLimit":"The limit is 20 custom profiles.","error.customMissing":"Custom profile not found.","error.profileMissing":"Profile not found.","error.profileRefresh":"Profile not found. Refresh the library.","error.setLimit":"The limit is 16 sets.","error.setMissing":"Set not found.","error.libraryOperation":"Unknown library operation.","error.noData":"Recording ended without data.","error.size":"The file exceeded the 64 MiB limit.","error.notRecording":"There is no recording in progress.","error.stopTimeout":"The browser did not finalize the recording.","error.prepareTimeout":"Capture preparation timed out.","error.image":"Invalid capture image.","error.recordingSize":"Recording exceeded the 64 MiB limit and was discarded.","error.encoder":"The encoder failed.","error.artifact":"The capture is no longer available.","error.canvas":"Canvas is unavailable.","error.png":"Failed to generate PNG.","error.videoTimeout":"The tab did not provide an image for recording.","error.video":"Could not read the tab video.","error.cancelConversion":"Conversion cancelled.","error.openVideo":"Could not open the video for conversion.","error.decode":"This video cannot be converted by the browser.","error.convertSize":"Dimensions unavailable or too large for conversion.","error.convertCanvas":"Canvas unavailable for conversion.","error.mp4Size":"The MP4 exceeded the 64 MiB limit.","error.mp4Encoder":"The MP4 encoder failed.","error.convertEmpty":"Conversion ended without data.","error.playback":"Playback was interrupted during conversion.","error.convertTimeout":"Conversion timed out.","error.expired":"The capture expired.","error.file":"Could not retrieve the local file.","error.emptyFile":"The file is empty or exceeds the size limit.","error.extension":"The extension did not respond. Reload this page.","error.popupExtension":"Could not reach the extension. Reload the page.","error.permission":"Recording permission was not granted.","error.prepareFocus":"Return to the simulator tab to prepare capture.","error.inputDimensions":"Use the dimensions indicated in the fields.","header.devices":"Sets","header.capture":"Capture","header.settings":"Settings","header.stop":"Stop","header.cancel":"Cancel","header.recording":"Recording","settings.device":"Selected screen","settings.dimensions":"Dimensions","settings.rotate":"Rotate","settings.reload":"Reload","settings.appearance":"Preferences","settings.scale":"Preview scale","settings.record":"Record this screen","settings.videoHint":"No audio · up to 2 minutes","settings.about":"About this preview","screen.mode":"Screen mode","screen.browser":"Browser","screen.pwa":"PWA","screen.fullscreen":"Fullscreen","screen.hint":"Browser shows navigation bars. PWA keeps the status bar. Fullscreen uses the entire screen for content.","error.screenMode":"Invalid screen mode.","capture.description":"Take a screenshot or record a video of the selected device.","capture.image":"Capture screen","capture.imageHint":"Download or copy as PNG, with or without the mockup.","capture.videoHint":"No audio · up to 2 minutes","capture.ready":"Capture ready","capture.transparent":"PNG · Transparent background","capture.videoShort":"Record video","capture.imageShort":"Capture screen","capture.video":"Video","capture.format":"Format","capture.fullPage":"Capture full page","capture.fullPageHint":"From top to bottom, in a single PNG.","capture.scrolling":"Capturing page · {progress}%","capture.fullPageReady":"PNG · Full page","capture.plain":"PNG · Screen only","result.copy":"Copy","result.copied":"Image copied to the clipboard.","result.copyFailed":"Could not copy on this page. Download the file instead.","result.mockup":"Device frame","result.withMockup":"With mockup","result.withoutMockup":"Without mockup","loader.photo":"Capturing the screen…","loader.prepare":"Preparing the page…","loader.page":"Capturing the page…","loader.build":"Building the image…","loader.hint":"Keep this tab open until it finishes.","quick.title":"Add screen","quick.rail":"Add","quick.search":"Search model or size","quick.all":"All","quick.favorites":"Favorites","quick.phones":"Phones","quick.tablets":"Tablets","quick.laptops":"Laptops","quick.open":"Open","quick.swap":"Change model","card.swap":"Change the model of {name}","card.rotate":"Rotate {name}","card.reload":"Reload {name}","card.capture":"Capture {name}","card.left":"Move {name} left","card.right":"Move {name} right","header.zoom":"Screen scale","header.reloadAll":"Reload all screens","header.count":"{count}/{limit} screens","sync.short":"Sync scrolling","sync.toggle":"Sync","stage.up":"Row above","stage.down":"Row below","quick.presets":"Ready-made sets","preset.trio":"Phone + Tablet + Laptop","preset.phones":"iPhone + Android","preset.apple":"iPhone + iPad","capture.all":"Capture all screens","capture.allHint":"Every open screen, side by side, in a single PNG.","capture.allReady":"PNG · All screens","loader.all":"Capturing the screens…","notice.blocked":"This site did not allow the preview to open here.","notice.blockedHint":"Some sites block being shown in frames or redirect to another address.","notice.retry":"Try again","notice.hide":"Hide notice","status.dismiss":"Click to dismiss","capture.shortcuts":"Shortcuts: Alt+Shift+S captures the screen · Alt+Shift+F the full page","library.profiles":"Custom profiles","library.emptyProfiles":"Set the width and height above and save here to reuse.","library.panel":"Sets and profiles","quick.hint":"Click a model to open it side by side. Up to {count} screens."},"es":{"app.name":"Mockaí","app.description":"Prueba tus sitios en móviles, tablets y portátiles lado a lado, con scroll sincronizado, capturas de pantalla y grabación de video.","app.open":"Abrir Mockaí","app.workspace":"ÁREA DE PRUEBAS","app.dialog":"Simulador Mockaí","common.close":"Cerrar","common.name":"Nombre","common.delete":"Eliminar","common.add":"Añadir","common.remove":"Quitar","common.open":"Abrir","common.language":"Idioma","common.auto":"Automático","common.wait":"Espera…","workspace.library":"Dispositivos y conjuntos","workspace.light":"Tema claro","workspace.screen":"Pantalla","workspace.selected":"Dispositivo seleccionado","workspace.width":"Ancho","workspace.height":"Alto","workspace.rotate":"Girar seleccionado","workspace.zoom":"Zoom","workspace.reload":"Recargar seleccionado","workspace.notice":"Vista previa adaptable · algunos sitios bloquean marcos. El navegador y el agente de usuario siguen siendo los del ordenador.","workspace.screens":"Pantallas en prueba","workspace.hint":"Haz clic en un mockup para seleccionarlo y ajustar sus dimensiones.","workspace.count":"{count}/{limit} pantallas · {zoom}%","workspace.removeName":"Quitar {name}","workspace.frameTitle":"{name} — página en prueba","library.title":"Tus pantallas","library.search":"Buscar perfiles","library.searchHint":"Nombre o tamaño","library.favorites":"Favoritos ({count})","library.favorite":"Añadir {name} a favoritos","library.unfavorite":"Quitar {name} de favoritos","library.addName":"Añadir {name}","library.deleteProfile":"Eliminar perfil {name}","library.empty":"No se encontraron perfiles.","library.emptyFavorites":"No se encontraron favoritos.","library.custom":"Perfil personalizado","library.customHint":"Guarda las dimensiones de la pantalla seleccionada.","library.saveProfile":"Guardar perfil","library.sets":"Conjuntos guardados","library.setName":"Nombre del conjunto","library.saveSet":"Guardar pantallas actuales","library.emptySets":"Guarda las pantallas actuales para abrirlas después.","library.setCount":"{count} dispositivo(s)","library.openSet":"Abrir conjunto {name}","library.deleteSet":"Eliminar conjunto {name}","library.updated":"Biblioteca actualizada.","library.opened":"Conjunto «{name}» abierto.","profile.compact":"Compacto","profile.wide":"Amplio","profile.tablet":"Tableta","sync.label":"Sincronizar desplazamiento","sync.off":"Desplazamiento independiente","sync.status":"Desplazamiento vinculado: {linked}/{total} pantallas","sync.unavailable":"La sincronización requiere dos pantallas accesibles del mismo origen.","sync.hint":"Sincroniza el progreso de desplazamiento del documento. Los marcos de otro origen y los paneles internos no se vinculan.","options.saved":"Preferencias guardadas.","media.png":"Capturar PNG","media.video":"Vídeo","media.record":"Grabar seleccionado","media.stop":"Detener y exportar","media.cancel":"Cancelar captura","media.recording":"Grabando · sin audio · hasta 2 min","media.preparing":"Preparando captura…","media.stopping":"Finalizando…","media.finished":"Grabación finalizada.","media.cancelled":"Captura cancelada.","media.revoked":"Se retiró el permiso de grabación.","media.interrupted":"El navegador interrumpió la captura. Se conservaron los datos disponibles.","media.duration":"La grabación alcanzó el límite de dos minutos.","popup.intro":"Prueba tu página en una pantalla con las dimensiones que elijas.","popup.open":"Abrir simulador","popup.close":"Cerrar simulador","popup.format":"Formato de vídeo","popup.record":"Grabar pantalla seleccionada","popup.note":"Vista previa independiente · hasta ocho dispositivos","popup.blocked":"Algunos sitios impiden la carga en marcos.","popup.opened":"Simulador abierto en esta pestaña.","popup.closed":"Simulador cerrado.","popup.preparing":"Preparando grabación…","popup.recording":"Grabación en curso. También puedes detenerla o cancelarla en la página.","popup.unavailable":"Página no disponible","export.title":"Exportar · Mockaí","export.heading":"Tu captura está lista.","export.preparing":"Preparando archivo local…","export.nav":"Exportar","export.download":"Descargar {format}","export.convert":"Convertir a MP4","export.cancel":"Cancelar conversión","export.progress":"Progreso de conversión","export.note":"El archivo se prepara en este ordenador. Al cerrar esta página se liberan los archivos temporales.","export.alt":"Captura de la pantalla seleccionada","export.ready":"Archivo listo para descargar.","export.noMP4":"La conversión a MP4 no está disponible en este navegador; el WebM sigue disponible.","export.converting":"Convirtiendo en este ordenador. La conversión tarda aproximadamente lo que dura el vídeo.","export.converted":"MP4 listo. El WebM original sigue disponible.","export.original":"El WebM original sigue disponible.","error.native":"No se pudo completar: {detail}","error.options":"Preferencias no válidas.","error.settings":"Ajustes no válidos.","error.dimensions":"Dimensiones o apariencia no válidas.","error.name":"Usa un nombre de 1 a 48 caracteres sin caracteres de control.","error.id":"Identificador no válido.","error.deviceCount":"Mantén entre 1 y 4 dispositivos abiertos.","error.device":"Dispositivo no válido.","error.selection":"Selección o identificadores de dispositivos no válidos.","error.deviceMissing":"Dispositivo no encontrado.","error.library":"Biblioteca no válida.","error.profile":"Perfil personalizado no válido.","error.favorites":"Favoritos o perfiles no válidos.","error.duplicateSets":"Conjuntos duplicados.","error.http":"Abre una página HTTP o HTTPS para simular.","error.protected":"Chrome no permite simular esta página protegida.","error.visible":"La pantalla debe estar completamente visible. Reduce el zoom e inténtalo de nuevo.","error.noImage":"La captura no contiene imagen.","error.resized":"El tamaño de la pestaña cambió durante la captura. Inténtalo de nuevo.","error.mp4":"MP4 no está disponible en este navegador. Elige WebM.","error.codec":"No hay un codificador disponible para el formato elegido.","error.service":"El servicio de medios no respondió.","error.focus":"Vuelve a la pestaña del simulador antes de capturar.","error.mode":"Tipo de captura no válido.","error.format":"Formato de vídeo no válido.","error.previous":"Finaliza o descarta la captura anterior antes de iniciar otra.","error.permissionHint":"El permiso de grabación está desactualizado. Recarga la extensión en chrome://extensions y actualiza esta página.","error.prepare":"No se pudo preparar la pantalla.","error.moved":"La posición de la pantalla cambió. Intenta capturar de nuevo.","error.noRecording":"Esta pestaña no tiene una grabación en curso.","error.event":"Evento de medios no autorizado.","error.export":"La exportación no está autorizada o ha caducado.","error.exportOperation":"Operación de exportación desconocida.","error.sessionVersion":"Versión de sesión no válida.","error.message":"Mensaje no autorizado.","error.origin":"Origen del mensaje no válido.","error.tab":"Pestaña no válida.","error.session":"Sesión finalizada.","error.preview":"La captura solo está disponible en la extensión cargada en Chrome.","error.mediaOperation":"Operación de medios desconocida.","error.context":"Operación no disponible en este contexto.","error.openFirst":"Abre el simulador antes de grabar.","error.operation":"Operación desconocida.","error.mount":"La interfaz no confirmó la apertura.","error.customLimit":"El límite es de 20 perfiles personalizados.","error.customMissing":"Perfil personalizado no encontrado.","error.profileMissing":"Perfil no encontrado.","error.profileRefresh":"Perfil no encontrado. Actualiza la biblioteca.","error.setLimit":"El límite es de 16 conjuntos.","error.setMissing":"Conjunto no encontrado.","error.libraryOperation":"Operación de biblioteca desconocida.","error.noData":"La grabación terminó sin datos.","error.size":"El archivo superó el límite de 64 MiB.","error.notRecording":"No hay una grabación en curso.","error.stopTimeout":"El navegador no finalizó la grabación.","error.prepareTimeout":"La preparación de la captura excedió el tiempo permitido.","error.image":"Imagen de captura no válida.","error.recordingSize":"La grabación superó el límite de 64 MiB y se descartó.","error.encoder":"El codificador falló.","error.artifact":"La captura ya no está disponible.","error.canvas":"Canvas no está disponible.","error.png":"Error al generar el PNG.","error.videoTimeout":"La pestaña no proporcionó imagen para grabar.","error.video":"No se pudo leer el vídeo de la pestaña.","error.cancelConversion":"Conversión cancelada.","error.openVideo":"No se pudo abrir el vídeo para convertirlo.","error.decode":"El navegador no puede convertir este vídeo.","error.convertSize":"Dimensiones no disponibles o demasiado grandes para la conversión.","error.convertCanvas":"Canvas no disponible para la conversión.","error.mp4Size":"El MP4 superó el límite de 64 MiB.","error.mp4Encoder":"El codificador MP4 falló.","error.convertEmpty":"La conversión terminó sin datos.","error.playback":"La reproducción se interrumpió durante la conversión.","error.convertTimeout":"La conversión excedió el tiempo permitido.","error.expired":"La captura ha caducado.","error.file":"No se pudo recuperar el archivo local.","error.emptyFile":"El archivo está vacío o supera el límite de tamaño.","error.extension":"La extensión no respondió. Recarga esta página.","error.popupExtension":"No se pudo contactar con la extensión. Recarga la página.","error.permission":"No se concedió el permiso de grabación.","error.prepareFocus":"Vuelve a la pestaña del simulador para preparar la captura.","error.inputDimensions":"Usa las dimensiones indicadas en los campos.","header.devices":"Conjuntos","header.capture":"Capturar","header.settings":"Ajustes","header.stop":"Detener","header.cancel":"Cancelar","header.recording":"Grabando","settings.device":"Pantalla seleccionada","settings.dimensions":"Dimensiones","settings.rotate":"Girar","settings.reload":"Recargar","settings.appearance":"Preferencias","settings.scale":"Escala de visualización","settings.record":"Grabar esta pantalla","settings.videoHint":"Sin audio · hasta 2 minutos","settings.about":"Acerca de esta vista previa","screen.mode":"Modo de pantalla","screen.browser":"Navegador","screen.pwa":"PWA","screen.fullscreen":"Pantalla completa","screen.hint":"Navegador muestra las barras de navegación. PWA mantiene la barra de estado. Pantalla completa usa toda la pantalla para el contenido.","error.screenMode":"Modo de pantalla no válido.","capture.description":"Captura una imagen o graba un vídeo de la pantalla seleccionada.","capture.image":"Capturar pantalla","capture.imageHint":"Descarga o copia en PNG, con o sin mockup.","capture.videoHint":"Sin audio · hasta 2 minutos","capture.ready":"Captura lista","capture.transparent":"PNG · Fondo transparente","capture.videoShort":"Grabar vídeo","capture.imageShort":"Capturar pantalla","capture.video":"Vídeo","capture.format":"Formato","capture.fullPage":"Capturar página completa","capture.fullPageHint":"De principio a fin, en un solo PNG.","capture.scrolling":"Capturando página · {progress}%","capture.fullPageReady":"PNG · Página completa","capture.plain":"PNG · Solo la pantalla","result.copy":"Copiar","result.copied":"Imagen copiada al portapapeles.","result.copyFailed":"No se pudo copiar en esta página. Descarga el archivo.","result.mockup":"Marco del dispositivo","result.withMockup":"Con mockup","result.withoutMockup":"Sin mockup","loader.photo":"Capturando la pantalla…","loader.prepare":"Preparando la página…","loader.page":"Capturando la página…","loader.build":"Generando la imagen…","loader.hint":"Mantén esta pestaña abierta hasta terminar.","quick.title":"Añadir pantalla","quick.rail":"Añadir","quick.search":"Buscar modelo o dimensión","quick.all":"Todos","quick.favorites":"Favoritos","quick.phones":"Móviles","quick.tablets":"Tablets","quick.laptops":"Portátiles","quick.open":"Abierto","quick.swap":"Cambiar modelo","card.swap":"Cambiar el modelo de {name}","card.rotate":"Girar {name}","card.reload":"Recargar {name}","card.capture":"Capturar {name}","card.left":"Mover {name} a la izquierda","card.right":"Mover {name} a la derecha","header.zoom":"Escala de las pantallas","header.reloadAll":"Recargar todas las pantallas","header.count":"{count}/{limit} pantallas","sync.short":"Sincronizar desplazamiento","sync.toggle":"Sincronizar","stage.up":"Fila de arriba","stage.down":"Fila de abajo","quick.presets":"Conjuntos listos","preset.trio":"Móvil + Tablet + Portátil","preset.phones":"iPhone + Android","preset.apple":"iPhone + iPad","capture.all":"Capturar todas las pantallas","capture.allHint":"Las pantallas abiertas, una junto a otra, en un único PNG.","capture.allReady":"PNG · Todas las pantallas","loader.all":"Capturando las pantallas…","notice.blocked":"Este sitio no permitió abrir la vista previa aquí.","notice.blockedHint":"Algunos sitios bloquean la visualización en marcos o redirigen a otra dirección.","notice.retry":"Reintentar","notice.hide":"Ocultar aviso","status.dismiss":"Haz clic para descartar","capture.shortcuts":"Atajos: Alt+Shift+S captura la pantalla · Alt+Shift+F la página completa","library.profiles":"Perfiles personalizados","library.emptyProfiles":"Ajusta el ancho y el alto arriba y guárdalo aquí para reutilizarlo.","library.panel":"Conjuntos y perfiles","quick.hint":"Haz clic en un modelo para abrirlo al lado. Hasta {count} pantallas."}};
 // Catálogo de mockups locais. As imagens usam nomes únicos por modelo.
 const MOCKUPS = Object.freeze([
   {
@@ -1191,7 +1191,7 @@ function mockupLayout(device) {
     maskTransform: device.rotated ? `matrix(0 ${sx} ${-sy} 0 ${device.height} 0)` : `scale(${sx} ${sy})`
   };
 }
-const MAX_DEVICES = 4;
+const MAX_DEVICES = 8;
 const MAX_CUSTOM_PROFILES = 20;
 const MAX_SETS = 16;
 const PROTOCOL = 'mockai/v2';
@@ -1463,7 +1463,7 @@ function pageSlicePlacement({ width, height, offset, viewportHeight, covered }) 
 
 return { PAGE_LIMITS, pageDimensions, pageSlicePlacement, MESSAGES, MOCKUPS, PROFILES, PROFILE, SCREEN_MODES, screenLayout, mockupLayout, MAX_DEVICES, MAX_CUSTOM_PROFILES, MAX_SETS, PROTOCOL, DEFAULT_VIEW, validateView, validateName, validateId, createDevice, defaultWorkspace, migrateView, validateWorkspace, addDevice, removeDevice, emptyLibrary, validateLibrary, pageURL, MEDIA_LIMITS, validateCaptureGeometry, cropGeometry, chooseVideoType, sameCaptureGeometry, validateComposition, videoCropGeometry, SUPPORTED_LANGUAGES, resolveLanguage, createI18n, OPTIONS_KEY, DEFAULT_OPTIONS, validateOptions, watchOptions, fitMockups };
 })();
-const STYLES = ":host { all: initial; color-scheme: dark; font: 14px/1.4 system-ui, sans-serif; }\n* { box-sizing: border-box; }\n[hidden] { display: none !important; }\n.workspace {\n  --bg: #071A13; --panel: #102B20; --ink: #F4F7F2; --muted: #A8BDB0;\n  --line: #28503B; --accent: #FFD600; --accent-ink: #071A13; --green: #22C55E; --focus: #60A5FA;\n  position: absolute; inset: 0; display: flex; flex-direction: column;\n  background: var(--bg); color: var(--ink); font: 14px/1.4 system-ui, sans-serif;\n  text-align: left; overflow: hidden;\n}\n.workspace[data-theme=light] {\n  --bg: #EDF5EF; --panel: #F4F7F2; --ink: #071A13; --muted: #526F5E;\n  --line: #CBDFD1; --accent: #FFD600; --accent-ink: #071A13; --green: #345C46; --focus: #2563EB; color-scheme: light;\n}\nbutton, input, select { font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; }\nbutton { cursor: pointer; padding: 9px 12px; white-space: nowrap; }\nbutton:hover:not(:disabled), button[aria-pressed=true], button[aria-expanded=true] { border-color: var(--green); background: var(--panel); }\nbutton:disabled { cursor: default; opacity: .4; }\nbutton:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }\ninput, select { padding: 9px 10px; min-width: 0; }\ninput { width: 78px; }\nlabel { color: var(--muted); font-size: 12px; }\n.icon { width: 18px; height: 18px; display: block; flex: 0 0 auto; }\n.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }\n\n/* Uma única linha de ações; controles secundários vivem no painel lateral. */\n.app-header { flex: 0 0 auto; min-height: 68px; display: flex; align-items: center; gap: 24px; padding: 12px 24px; border-bottom: 1px solid var(--line); background: var(--panel); }\n.brand { display: flex; align-items: center; justify-content: center; flex: 0 0 auto; padding: 2px 8px; }\n.brand-name { display: block; width: 108px; height: 38px; object-fit: contain; }\n.brand-symbol { display: none; width: 28px; height: 28px; object-fit: contain; border-radius: 5px; }\n.header-context, .header-actions { display: flex; align-items: center; gap: 8px; min-width: 0; }\n.header-context { border-left: 1px solid var(--line); padding-left: 20px; }\n.header-actions { margin-left: auto; flex-shrink: 0; }\n.header-button, .primary-button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 36px; padding: 8px 11px; font-size: 12px; font-weight: 550; }\n.header-button { border-color: transparent; background: transparent; color: var(--muted); }\n.header-button:hover:not(:disabled), .header-button[aria-expanded=true] { color: var(--ink); border-color: var(--line); background: var(--bg); }\n.icon-button { display: inline-flex; justify-content: center; align-items: center; width: 34px; height: 34px; padding: 7px; flex: 0 0 auto; }\n.primary-button { background: var(--accent); color: var(--accent-ink); border-color: transparent; padding-inline: 14px; }\n.primary-button:hover:not(:disabled) { background: var(--accent); border-color: var(--accent); filter: brightness(1.06); }\n.header-divider { width: 1px; height: 18px; background: var(--line); margin-inline: 4px; }\n.media-label { display: inline-flex; align-items: center; gap: 7px; max-width: 170px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; color: var(--muted); padding-right: 8px; }\n.media-label::before { content: ''; flex: 0 0 auto; width: 6px; height: 6px; border-radius: 50%; background: #FF6A4D; }\n.recording-stop .icon { width: 14px; height: 14px; }\n\n.body { position: relative; display: flex; flex: 1; min-height: 0; }\n.library, .settings-panel { flex: 0 0 324px; width: 324px; min-width: 0; overflow-y: auto; padding: 20px; background: var(--panel); }\n.library { border-right: 1px solid var(--line); }\n.settings-panel { border-left: 1px solid var(--line); }\n.panel-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 20px; }\nh2 { font-size: 16px; font-weight: 650; margin: 0; letter-spacing: -.3px; }\nh3 { font-size: 12px; font-weight: 600; margin: 0; color: var(--ink); }\n.panel-dismiss { color: var(--muted); border: 0; background: transparent; }\n.panel-dismiss .icon { width: 16px; height: 16px; }\n.search { display: grid; gap: 7px; margin-bottom: 12px; }\n.search input { width: 100%; }\n.library button { padding: 7px 8px; font-size: 11px; }\n.library-row { display: flex; gap: 6px; align-items: center; padding: 13px 0; border-bottom: 1px solid var(--line); }\n.profile-preview { width: 42px; height: 54px; flex: 0 0 42px; object-fit: contain; }\n.row-info { display: grid; gap: 4px; flex: 1; min-width: 0; }\n.row-info strong { font-size: 12px; font-weight: 600; overflow-wrap: anywhere; }\n.row-info small, .empty, form p { color: var(--muted); font-size: 11px; }\nform { display: grid; gap: 10px; padding: 20px 0; }\nform label { display: grid; gap: 6px; }\nform input { width: 100%; }\nform p { margin: 0; }\n.settings-group { display: grid; gap: 14px; padding-bottom: 22px; margin-bottom: 22px; border-bottom: 1px solid var(--line); }\n.screen-modes { display: flex; gap: 3px; padding: 3px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); }\n.screen-modes button { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 7px; min-width: 0; padding: 10px 4px; border: 1px solid transparent; background: transparent; font-size: 11px; color: var(--muted); }\n.screen-modes button[aria-pressed=true] { border-color: var(--green); background: var(--panel); color: var(--ink); }\n.dimension-fields { display: flex; align-items: end; gap: 10px; }\n.dimension-fields label { display: grid; gap: 7px; flex: 1; min-width: 0; }\n.dimension-fields input { width: 100%; font-variant-numeric: tabular-nums; }\n.dimension-times { color: var(--muted); padding-bottom: 10px; }\n.paired-actions { display: flex; gap: 8px; }\n.paired-actions button { flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-size: 12px; }\n.paired-actions .icon { width: 16px; height: 16px; }\n.setting-row, .toggle-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; min-height: 36px; }\n.setting-row select { max-width: 138px; font-size: 12px; }\n.toggle-row { padding: 0; border: 0; background: transparent; color: var(--muted); font-size: 12px; font-weight: 400; }\n.toggle-track { position: relative; width: 30px; height: 18px; border-radius: 10px; background: var(--line); flex-shrink: 0; }\n.toggle-track::after { content: ''; position: absolute; top: 3px; left: 3px; width: 12px; height: 12px; border-radius: 50%; background: var(--muted); }\n.toggle-row[aria-pressed=true] .toggle-track { background: var(--green); }\n.toggle-row[aria-pressed=true] .toggle-track::after { left: 15px; background: var(--accent-ink); }\n.check input { width: 16px; height: 16px; margin: 0; accent-color: var(--green); }\n.sync-status, .setting-hint { margin: -4px 0 0; color: var(--muted); font-size: 11px; line-height: 1.6; }\n.record-button { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; font-size: 12px; }\n.settings-help { font-size: 11px; line-height: 1.7; color: var(--muted); }\n.settings-help summary { cursor: pointer; }\n.notice { margin: 12px 0 0; color: var(--muted); font-size: 11px; line-height: 1.7; }\n\n.stage { flex: 1; min-width: 0; min-height: 0; overflow-x: hidden; overflow-y: auto; scrollbar-gutter: stable; padding: 24px; display: grid; grid-template-columns: minmax(0, 1fr); grid-auto-rows: max-content; align-content: start; align-items: start; justify-items: center; gap: 24px; }\n.device-card { position: relative; display: flex; flex-direction: column; align-items: center; flex: 0 0 auto; padding: 10px; border: 1px solid transparent; border-radius: 12px; cursor: pointer; }\n.device-card[data-selected=true] { border-color: var(--green); box-shadow: 0 0 0 1px var(--green); }\n.device-card iframe { cursor: auto; }\n.device-heading { display: flex; justify-content: center; width: 0; min-width: 100%; margin-top: 4px; }\n.device-select { max-width: 100%; overflow: hidden; text-overflow: ellipsis; padding: 4px 6px; border: 0; background: transparent; color: var(--muted); font-size: 10px; line-height: 16px; font-weight: 400; text-align: center; }\n.device-select:hover:not(:disabled), .device-select[aria-pressed=true] { background: transparent; color: var(--ink); }\n.device-remove { position: absolute; top: 2px; right: 2px; z-index: 1; display: grid; place-items: center; width: 24px; height: 24px; padding: 4px; border: 0; border-radius: 50%; background: var(--panel); color: var(--muted); }\n.device-remove .icon { width: 14px; height: 14px; }\n.device-remove:hover:not(:disabled) { background: var(--panel); color: #FF6A4D; }\n.footprint { position: relative; }\n.device { position: absolute; top: 12px; left: 12px; transform-origin: top left; box-shadow: 0 0 0 9px #38493c, 0 16px 50px #0005; border-radius: 14px; background: white; overflow: hidden; }\n.device[data-mockup=true] { box-shadow: none; border-radius: 0; background: transparent; overflow: visible; }\n.device-bezel { position: absolute; inset: 0 auto auto 0; max-width: none; transform-origin: top left; pointer-events: none; user-select: none; }\n.device-screen { position: absolute; overflow: hidden; border-radius: 14px; background: white; }\n.screen-status, .screen-browser, .screen-navigation { position: absolute; left: 0; width: 100%; background: #F4F7F2; color: #102B20; font-family: system-ui, sans-serif; }\n.screen-status { top: 0; display: flex; align-items: center; justify-content: space-between; padding: 0 26px; font-size: 14px; font-weight: 600; }\n.screen-clock { min-width: 40px; text-align: center; }\n.screen-indicators svg { display: block; width: 62px; height: 16px; }\n.screen-browser { display: flex; flex-direction: column; justify-content: center; padding: 5px 12px; border-block: 1px solid #DCEBDF; }\n.screen-address-row { display: flex; align-items: center; gap: 8px; min-height: 32px; padding: 0 10px; background: #E5F0E8; border-radius: 9px; font-size: 13px; }\n.screen-address { flex: 1; min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-align: center; }\n.screen-lock, .screen-refresh { font-size: 18px; opacity: .65; }\n.screen-tab { display: none; }\n.device-screen[data-family=desktop] .screen-tab { display: block; width: 55%; max-width: 220px; height: 22px; margin: -4px 0 3px; padding: 3px 12px; border-radius: 7px 7px 0 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 11px; background: #E5F0E8; }\n.device-screen[data-family=desktop] .screen-address-row { min-height: 30px; }\n.screen-navigation { bottom: 0; display: flex; justify-content: space-around; align-items: center; font-size: 24px; }\n.device-screen[data-family=android] .screen-navigation span, .device-screen[data-family=ios] .screen-navigation span { display: none; }\n.device-screen[data-family=ios] .screen-navigation { border-top: 1px solid #DCEBDF; }\n.device-screen[data-family=ios] .screen-navigation span { display: block; font-size: 21px; }\n.device-screen[data-family=android] .screen-navigation::after { content: ''; width: 80px; height: 4px; border-radius: 3px; background: currentColor; }\n.device-mask { position: absolute; width: 0; height: 0; pointer-events: none; }\n.device[data-mockup=true] iframe { border-radius: 0; }\niframe { display: block; border: 0; border-radius: 14px; background: white; }\n.workspace-error { position: absolute; bottom: 16px; left: 50%; z-index: 3; transform: translateX(-50%); width: max-content; max-width: calc(100% - 32px); margin: 0; padding: 10px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); color: var(--ink); font-size: 12px; overflow-wrap: anywhere; }\n@media (max-width: 1000px) {\n  .library, .settings-panel { position: absolute; z-index: 2; inset-block: 0; width: min(324px, 100%); box-shadow: 0 16px 40px #0005; }\n  .library { left: 0; }\n  .settings-panel { right: 0; }\n}\n@media (max-width: 760px) {\n  .app-header { min-height: 60px; padding: 10px 14px; gap: 14px; }\n  .header-context { padding-left: 12px; gap: 6px; }\n  .header-button .button-label, .primary-button .button-label { display: none; }\n  .header-button, .primary-button { padding-inline: 9px; }\n  .header-actions { gap: 4px; }\n  .stage { padding: 20px; }\n}\n@media (max-width: 520px) {\n  .app-header { gap: 8px; padding-inline: 10px; }\n  .brand-name, .header-divider { display: none; }\n  .header-context { border: 0; padding: 0; flex: 1; }\n  .brand { padding: 2px; }\n  .brand-symbol { display: block; }\n  .header-actions { gap: 3px; }\n  .workspace[data-capturing=true] .header-context, .workspace[data-capturing=true] .brand { display: none; }\n  .media-label { max-width: 100px; font-size: 11px; }\n  .stage { padding: 14px; }\n}\n@media (max-width: 380px) {\n  .workspace[data-capturing=true] [data-action=settings] { display: none; }\n  .media-label { max-width: 80px; }\n}\n@media (max-height: 550px) { .app-header { min-height: 54px; padding-block: 8px; } }\n\n.capture-menu { position: fixed; inset: 0; width: min(400px, calc(100vw - 32px)); max-height: calc(100dvh - 32px); margin: auto; padding: 24px; overflow: auto; border: 1px solid var(--line); border-radius: 24px; background: var(--panel); color: var(--ink); box-shadow: 0 24px 80px #0006; }\n.capture-menu::backdrop { background: #03110b99; backdrop-filter: blur(6px); }\n.capture-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }\n.capture-heading h2 { font-size: 20px; letter-spacing: -.5px; }\n.capture-device { margin: 6px 0 0; color: var(--muted); font-size: 12px; overflow-wrap: anywhere; }\n.capture-menu .capture-heading { margin-bottom: 24px; align-items: flex-start; }\n.capture-menu .panel-dismiss { border-radius: 50%; background: var(--bg); }\n.capture-screenshot { display: flex; align-items: center; gap: 14px; width: 100%; padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: var(--bg); text-align: left; white-space: normal; }\n.capture-action-icon { display: grid; place-items: center; width: 46px; height: 46px; flex: 0 0 auto; border-radius: 13px; background: var(--accent); color: var(--accent-ink); }\n.capture-action-icon .icon { width: 22px; height: 22px; }\n.capture-action-copy { display: grid; gap: 5px; }\n.capture-action-copy strong { font-size: 14px; font-weight: 600; }\n.capture-action-copy small { font-size: 12px; color: var(--muted); }\n.capture-video { margin-top: 16px; padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: var(--bg); }\n.capture-video-heading { display: flex; align-items: center; gap: 10px; }\n.capture-video-heading > .icon { color: var(--muted); width: 20px; height: 20px; }\n.capture-video-heading h3 { font-size: 14px; color: var(--ink); }\n.capture-video-hint { margin: 7px 0 20px; color: var(--muted); font-size: 12px; }\n.capture-format { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 16px; font-size: 12px; }\n.capture-format select { width: 112px; padding: 8px 10px; background: var(--panel); color: var(--ink); }\n.capture-record { width: 100%; min-height: 42px; border-radius: 10px; }\n.capture-record .icon { width: 16px; height: 16px; }\n@media (max-width: 420px) { .capture-menu { padding: 20px; border-radius: 20px; } }\n\n.capture-result { position: fixed; inset: 0; width: fit-content; min-width: min(320px, calc(100vw - 32px)); max-width: min(640px, calc(100vw - 32px)); max-height: calc(100dvh - 32px); margin: auto; overflow-y: auto; padding: 20px; border: 1px solid var(--line); border-radius: 20px; background: var(--panel); color: var(--ink); box-shadow: 0 24px 80px #0005; }\n.capture-result::backdrop { background: #03110bb3; }\n.capture-result .capture-heading h2 { font-size: 16px; }\n.result-preview { display: flex; align-items: center; justify-content: center; width: fit-content; max-width: 100%; margin: 16px auto 20px; }\n.result-preview:empty { margin: 0; }\n.result-preview img, .result-preview video { display: block; width: auto; height: auto; max-width: min(560px, calc(100vw - 74px)); max-height: min(64dvh, calc(100dvh - 220px), 640px); object-fit: contain; }\n.result-footer { display: grid; gap: 12px; }\n.result-note { margin: 0; color: var(--muted); font-size: 11px; text-align: center; }\n.result-download { width: 100%; min-height: 40px; border-radius: 10px; text-decoration: none; }\n\n.capture-fullpage { margin-top: 12px; }\n.capture-fullpage .capture-action-icon { background: var(--panel); color: var(--ink); }\n";
+const STYLES = ":host { all: initial; color-scheme: dark; font: 14px/1.4 system-ui, sans-serif; }\n* { box-sizing: border-box; }\n[hidden] { display: none !important; }\n.workspace {\n  --bg: #071A13; --panel: #102B20; --ink: #F4F7F2; --muted: #A8BDB0;\n  --line: #28503B; --accent: #FFD600; --accent-ink: #071A13; --green: #22C55E; --focus: #60A5FA;\n  position: absolute; inset: 0; display: flex; flex-direction: column;\n  background: var(--bg); color: var(--ink); font: 14px/1.4 system-ui, sans-serif;\n  text-align: left; overflow: hidden;\n}\n.workspace[data-theme=light] {\n  --bg: #EDF5EF; --panel: #F4F7F2; --ink: #071A13; --muted: #526F5E;\n  --line: #CBDFD1; --accent: #FFD600; --accent-ink: #071A13; --green: #345C46; --focus: #2563EB; color-scheme: light;\n}\nbutton, input, select { font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; }\nbutton { cursor: pointer; padding: 9px 12px; white-space: nowrap; }\nbutton:hover:not(:disabled), button[aria-pressed=true], button[aria-expanded=true] { border-color: var(--green); background: var(--panel); }\nbutton:disabled { cursor: default; opacity: .4; }\nbutton:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }\ninput, select { padding: 9px 10px; min-width: 0; }\ninput { width: 78px; }\nlabel { color: var(--muted); font-size: 12px; }\n.icon { width: 18px; height: 18px; display: block; flex: 0 0 auto; }\n.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }\n\n/* Uma única linha de ações; controles secundários vivem no painel lateral. */\n.app-header { flex: 0 0 auto; min-height: 68px; display: flex; align-items: center; gap: 24px; padding: 12px 24px; border-bottom: 1px solid var(--line); background: var(--panel); }\n.brand { display: flex; align-items: center; justify-content: center; flex: 0 0 auto; padding: 2px 8px; }\n.brand-name { display: block; width: 108px; height: 38px; object-fit: contain; }\n.brand-symbol { display: none; width: 28px; height: 28px; object-fit: contain; border-radius: 5px; }\n.header-context, .header-actions { display: flex; align-items: center; gap: 8px; min-width: 0; }\n.header-context { border-left: 1px solid var(--line); padding-left: 20px; }\n.header-actions { margin-left: auto; flex-shrink: 0; }\n.header-button, .primary-button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 36px; padding: 8px 11px; font-size: 12px; font-weight: 550; }\n.header-button { border-color: transparent; background: transparent; color: var(--muted); }\n.header-button:hover:not(:disabled), .header-button[aria-expanded=true] { color: var(--ink); border-color: var(--line); background: var(--bg); }\n.icon-button { display: inline-flex; justify-content: center; align-items: center; width: 34px; height: 34px; padding: 7px; flex: 0 0 auto; }\n.primary-button { background: var(--accent); color: var(--accent-ink); border-color: transparent; padding-inline: 14px; }\n.primary-button:hover:not(:disabled) { background: var(--accent); border-color: var(--accent); filter: brightness(1.06); }\n.header-divider { width: 1px; height: 18px; background: var(--line); margin-inline: 4px; }\n.media-label { display: inline-flex; align-items: center; gap: 7px; max-width: 170px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; color: var(--muted); padding-right: 8px; }\n.media-label::before { content: ''; flex: 0 0 auto; width: 6px; height: 6px; border-radius: 50%; background: #FF6A4D; }\n.recording-stop .icon { width: 14px; height: 14px; }\n\n.body { position: relative; display: flex; flex: 1; min-height: 0; }\n.library, .settings-panel { flex: 0 0 324px; width: 324px; min-width: 0; overflow-y: auto; padding: 20px; background: var(--panel); }\n.library { border-right: 1px solid var(--line); }\n.settings-panel { border-left: 1px solid var(--line); }\n.panel-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 20px; }\nh2 { font-size: 16px; font-weight: 650; margin: 0; letter-spacing: -.3px; }\nh3 { font-size: 12px; font-weight: 600; margin: 0; color: var(--ink); }\n.panel-dismiss { color: var(--muted); border: 0; background: transparent; }\n.panel-dismiss .icon { width: 16px; height: 16px; }\n.search { display: grid; gap: 7px; margin-bottom: 12px; }\n.search input { width: 100%; }\n.library button { padding: 7px 8px; font-size: 11px; }\n.library-row { display: flex; gap: 6px; align-items: center; padding: 13px 0; border-bottom: 1px solid var(--line); }\n.profile-preview { width: 42px; height: 54px; flex: 0 0 42px; object-fit: contain; }\n.row-info { display: grid; gap: 4px; flex: 1; min-width: 0; }\n.row-info strong { font-size: 12px; font-weight: 600; overflow-wrap: anywhere; }\n.row-info small, .empty, form p { color: var(--muted); font-size: 11px; }\nform { display: grid; gap: 10px; padding: 20px 0; }\nform label { display: grid; gap: 6px; }\nform input { width: 100%; }\nform p { margin: 0; }\n.settings-group { display: grid; gap: 14px; padding-bottom: 22px; margin-bottom: 22px; border-bottom: 1px solid var(--line); }\n.screen-modes { display: flex; gap: 3px; padding: 3px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); }\n.screen-modes button { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 7px; min-width: 0; padding: 10px 4px; border: 1px solid transparent; background: transparent; font-size: 11px; color: var(--muted); }\n.screen-modes button[aria-pressed=true] { border-color: var(--green); background: var(--panel); color: var(--ink); }\n.dimension-fields { display: flex; align-items: end; gap: 10px; }\n.dimension-fields label { display: grid; gap: 7px; flex: 1; min-width: 0; }\n.dimension-fields input { width: 100%; font-variant-numeric: tabular-nums; }\n.dimension-times { color: var(--muted); padding-bottom: 10px; }\n.paired-actions { display: flex; gap: 8px; }\n.paired-actions button { flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-size: 12px; }\n.paired-actions .icon { width: 16px; height: 16px; }\n.setting-row, .toggle-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; min-height: 36px; }\n.setting-row select { max-width: 138px; font-size: 12px; }\n.toggle-row { padding: 0; border: 0; background: transparent; color: var(--muted); font-size: 12px; font-weight: 400; }\n.toggle-track { position: relative; width: 30px; height: 18px; border-radius: 10px; background: var(--line); flex-shrink: 0; }\n.toggle-track::after { content: ''; position: absolute; top: 3px; left: 3px; width: 12px; height: 12px; border-radius: 50%; background: var(--muted); }\n.toggle-row[aria-pressed=true] .toggle-track { background: var(--green); }\n.toggle-row[aria-pressed=true] .toggle-track::after { left: 15px; background: var(--accent-ink); }\n.check input { width: 16px; height: 16px; margin: 0; accent-color: var(--green); }\n.sync-status, .setting-hint { margin: -4px 0 0; color: var(--muted); font-size: 11px; line-height: 1.6; }\n.record-button { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; font-size: 12px; }\n.settings-help { font-size: 11px; line-height: 1.7; color: var(--muted); }\n.settings-help summary { cursor: pointer; }\n.notice { margin: 12px 0 0; color: var(--muted); font-size: 11px; line-height: 1.7; }\n\n.stage { flex: 1; min-width: 0; min-height: 0; overflow-x: hidden; overflow-y: auto; scrollbar-gutter: stable; padding: 24px; display: grid; grid-template-columns: minmax(0, 1fr); grid-auto-rows: max-content; align-content: start; align-items: start; justify-items: center; gap: 24px; }\n.device-card { position: relative; display: flex; flex-direction: column; align-items: center; flex: 0 0 auto; padding: 10px; border: 1px solid transparent; border-radius: 12px; cursor: pointer; }\n.device-card[data-selected=true] { border-color: var(--green); box-shadow: 0 0 0 1px var(--green); }\n.device-card iframe { cursor: auto; }\n.device-heading { display: flex; justify-content: center; align-items: center; width: 0; min-width: 100%; margin-top: 4px; }\n.device-select { min-width: 0; overflow: hidden; text-overflow: ellipsis; padding: 4px 6px; border: 0; background: transparent; color: var(--ink); font-size: 11px; line-height: 16px; font-weight: 400; text-align: center; }\n.device-select:hover:not(:disabled) { background: transparent; text-decoration: underline; }\n.device-select[aria-pressed=true] { background: transparent; }\n.footprint { position: relative; }\n.device { position: absolute; top: 12px; left: 12px; transform-origin: top left; box-shadow: 0 0 0 9px #38493c, 0 16px 50px #0005; border-radius: 14px; background: white; overflow: hidden; }\n.device[data-mockup=true] { box-shadow: none; border-radius: 0; background: transparent; overflow: visible; }\n.device-bezel { position: absolute; inset: 0 auto auto 0; max-width: none; transform-origin: top left; pointer-events: none; user-select: none; }\n.device-screen { position: absolute; overflow: hidden; border-radius: 14px; background: white; }\n.screen-status, .screen-browser, .screen-navigation { position: absolute; left: 0; width: 100%; background: #F4F7F2; color: #102B20; font-family: system-ui, sans-serif; }\n.screen-status { top: 0; display: flex; align-items: center; justify-content: space-between; padding: 0 26px; font-size: 14px; font-weight: 600; }\n.screen-clock { min-width: 40px; text-align: center; }\n.screen-indicators svg { display: block; width: 62px; height: 16px; }\n.screen-browser { display: flex; flex-direction: column; justify-content: center; padding: 5px 12px; border-block: 1px solid #DCEBDF; }\n.screen-address-row { display: flex; align-items: center; gap: 8px; min-height: 32px; padding: 0 10px; background: #E5F0E8; border-radius: 9px; font-size: 13px; }\n.screen-address { flex: 1; min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-align: center; }\n.screen-lock, .screen-refresh { font-size: 18px; opacity: .65; }\n.screen-tab { display: none; }\n.device-screen[data-family=desktop] .screen-tab { display: block; width: 55%; max-width: 220px; height: 22px; margin: -4px 0 3px; padding: 3px 12px; border-radius: 7px 7px 0 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 11px; background: #E5F0E8; }\n.device-screen[data-family=desktop] .screen-address-row { min-height: 30px; }\n.screen-navigation { bottom: 0; display: flex; justify-content: space-around; align-items: center; font-size: 24px; }\n.device-screen[data-family=android] .screen-navigation span, .device-screen[data-family=ios] .screen-navigation span { display: none; }\n.device-screen[data-family=ios] .screen-navigation { border-top: 1px solid #DCEBDF; }\n.device-screen[data-family=ios] .screen-navigation span { display: block; font-size: 21px; }\n.device-screen[data-family=android] .screen-navigation::after { content: ''; width: 80px; height: 4px; border-radius: 3px; background: currentColor; }\n.device-mask { position: absolute; width: 0; height: 0; pointer-events: none; }\n.device[data-mockup=true] iframe { border-radius: 0; }\niframe { display: block; border: 0; border-radius: 14px; background: white; }\n.workspace-error { position: absolute; bottom: 16px; left: 50%; z-index: 3; transform: translateX(-50%); width: max-content; max-width: calc(100% - 32px); margin: 0; padding: 10px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); color: var(--ink); font-size: 12px; overflow-wrap: anywhere; }\n@media (max-width: 1000px) {\n  .library, .settings-panel { position: absolute; z-index: 2; inset-block: 0; width: min(324px, 100%); box-shadow: 0 16px 40px #0005; }\n  .library { left: 0; }\n  .settings-panel { right: 0; }\n}\n@media (max-width: 760px) {\n  .app-header { min-height: 60px; padding: 10px 14px; gap: 14px; }\n  .header-context { padding-left: 12px; gap: 6px; }\n  .header-button .button-label, .primary-button .button-label { display: none; }\n  .header-button, .primary-button { padding-inline: 9px; }\n  .header-actions { gap: 4px; }\n  .stage { padding: 20px; }\n}\n@media (max-width: 520px) {\n  .app-header { gap: 8px; padding-inline: 10px; }\n  .brand-name, .header-divider { display: none; }\n  .header-context { border: 0; padding: 0; flex: 1; }\n  .brand { padding: 2px; }\n  .brand-symbol { display: block; }\n  .header-actions { gap: 3px; }\n  .workspace[data-capturing=true] .header-context, .workspace[data-capturing=true] .brand { display: none; }\n  .media-label { max-width: 100px; font-size: 11px; }\n  .stage { padding: 14px; }\n}\n@media (max-width: 380px) {\n  .workspace[data-capturing=true] [data-action=settings] { display: none; }\n  .media-label { max-width: 80px; }\n}\n@media (max-height: 550px) { .app-header { min-height: 54px; padding-block: 8px; } }\n\n.capture-menu { position: fixed; inset: 0; width: min(400px, calc(100vw - 32px)); max-height: calc(100dvh - 32px); margin: auto; padding: 24px; overflow: auto; border: 1px solid var(--line); border-radius: 24px; background: var(--panel); color: var(--ink); box-shadow: 0 24px 80px #0006; }\n.capture-menu::backdrop { background: #03110b99; backdrop-filter: blur(6px); }\n.capture-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }\n.capture-heading h2 { font-size: 20px; letter-spacing: -.5px; }\n.capture-device { margin: 6px 0 0; color: var(--muted); font-size: 12px; overflow-wrap: anywhere; }\n.capture-menu .capture-heading { margin-bottom: 24px; align-items: flex-start; }\n.capture-menu .panel-dismiss { border-radius: 50%; background: var(--bg); }\n.capture-screenshot { display: flex; align-items: center; gap: 14px; width: 100%; padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: var(--bg); text-align: left; white-space: normal; }\n.capture-action-icon { display: grid; place-items: center; width: 46px; height: 46px; flex: 0 0 auto; border-radius: 13px; background: var(--accent); color: var(--accent-ink); }\n.capture-action-icon .icon { width: 22px; height: 22px; }\n.capture-action-copy { display: grid; gap: 5px; }\n.capture-action-copy strong { font-size: 14px; font-weight: 600; }\n.capture-action-copy small { font-size: 12px; color: var(--muted); }\n.capture-video { margin-top: 16px; padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: var(--bg); }\n.capture-video-heading { display: flex; align-items: center; gap: 10px; }\n.capture-video-heading > .icon { color: var(--muted); width: 20px; height: 20px; }\n.capture-video-heading h3 { font-size: 14px; color: var(--ink); }\n.capture-video-hint { margin: 7px 0 20px; color: var(--muted); font-size: 12px; }\n.capture-format { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 16px; font-size: 12px; }\n.capture-format select { width: 112px; padding: 8px 10px; background: var(--panel); color: var(--ink); }\n.capture-record { width: 100%; min-height: 42px; border-radius: 10px; }\n.capture-record .icon { width: 16px; height: 16px; }\n@media (max-width: 420px) { .capture-menu { padding: 20px; border-radius: 20px; } }\n\n.capture-result { position: fixed; inset: 0; width: fit-content; min-width: min(320px, calc(100vw - 32px)); max-width: min(640px, calc(100vw - 32px)); max-height: calc(100dvh - 32px); margin: auto; overflow-y: auto; padding: 20px; border: 1px solid var(--line); border-radius: 20px; background: var(--panel); color: var(--ink); box-shadow: 0 24px 80px #0005; }\n.capture-result::backdrop { background: #03110bb3; }\n.capture-result .capture-heading h2 { font-size: 16px; }\n.result-preview { display: flex; align-items: center; justify-content: center; width: fit-content; max-width: 100%; margin: 16px auto 20px; }\n.result-preview:empty { margin: 0; }\n.result-preview img, .result-preview video { display: block; width: auto; height: auto; max-width: min(560px, calc(100vw - 74px)); max-height: min(64dvh, calc(100dvh - 220px), 640px); object-fit: contain; }\n.result-footer { display: grid; gap: 12px; }\n.result-note { margin: 0; color: var(--muted); font-size: 11px; text-align: center; }\n.result-actions { display: flex; gap: 8px; }\n\n\n\n\n\n\n.device-tools { position: absolute; top: -8px; left: 50%; z-index: 1; display: flex; gap: 2px; padding: 2px; translate: -50% 0; border: 1px solid var(--line); border-radius: 999px; background: var(--panel); opacity: 0; transition: opacity .12s; }\n.device-card:hover .device-tools, .device-card:focus-within .device-tools, .device-card[data-selected=true] .device-tools { opacity: 1; }\n.device-tools button { display: grid; place-items: center; width: 22px; height: 22px; padding: 4px; border: 0; border-radius: 50%; background: transparent; color: var(--muted); }\n.device-tools button .icon { width: 14px; height: 14px; }\n.device-tools button:hover:not(:disabled), .device-tools button[aria-pressed=true] { background: var(--bg); color: var(--ink); }\n.device-tools .device-remove:hover:not(:disabled) { color: #FF6A4D; }\n.workspace[data-capturing=true] .device-tools { visibility: hidden; }\n.device-dims { flex: 0 0 auto; padding: 4px 6px 4px 0; color: var(--muted); font-size: 10px; line-height: 16px; font-variant-numeric: tabular-nums; opacity: .75; }\n.header-tools { display: flex; align-items: center; gap: 10px; min-width: 0; }\n.header-tools select { padding: 7px 8px; font-size: 12px; }\n.header-modes { padding: 2px; border-radius: 9px; }\n.header-modes button { flex: 0 0 auto; flex-direction: row; gap: 0; padding: 6px 9px; }\n.header-modes button span { display: none; }\n.header-modes .icon { width: 16px; height: 16px; }\n.header-sync { display: inline-flex; align-items: center; gap: 7px; color: var(--muted); font-size: 12px; white-space: nowrap; cursor: pointer; }\n.header-sync input { width: 15px; height: 15px; margin: 0; accent-color: var(--green); }\n.header-page { display: flex; align-items: center; gap: 4px; min-width: 0; flex: 0 1 300px; margin-left: 4px; padding: 2px 2px 2px 12px; border: 1px solid var(--line); border-radius: 9px; background: var(--bg); }\n.header-address { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--muted); font-size: 12px; }\n.header-page .icon-button { width: 28px; height: 28px; padding: 6px; }\n.header-count { color: var(--muted); font-size: 11px; white-space: nowrap; font-variant-numeric: tabular-nums; }\n\n.add-rail { flex: 0 0 auto; display: flex; align-items: center; padding-right: 16px; }\n.add-rail button { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; width: 48px; height: 148px; padding: 0; border: 1px dashed var(--line); border-radius: 14px; background: transparent; color: var(--muted); font-size: 11px; font-weight: 550; }\n.add-rail button span { writing-mode: vertical-rl; rotate: 180deg; }\n.add-rail button:hover:not(:disabled) { border-style: solid; border-color: var(--green); background: var(--panel); color: var(--ink); }\n.workspace[data-capturing=true] .add-rail { visibility: hidden; }\n.quick-add { position: fixed; inset: 0; width: min(760px, calc(100vw - 32px)); height: min(660px, calc(100dvh - 32px)); margin: auto; padding: 20px; border: 1px solid var(--line); border-radius: 20px; background: var(--panel); color: var(--ink); box-shadow: 0 24px 80px #0006; }\n.quick-add[open] { display: flex; flex-direction: column; gap: 14px; }\n.quick-add::backdrop { background: #03110b99; backdrop-filter: blur(6px); }\n.quick-add .panel-dismiss { border-radius: 50%; background: var(--bg); }\n.quick-add input { width: 100%; padding: 10px 12px; }\n.quick-filters { display: flex; flex-wrap: wrap; gap: 6px; }\n.quick-filters button { padding: 6px 12px; border-radius: 999px; font-size: 11px; color: var(--muted); }\n.quick-filters button[aria-pressed=true] { color: var(--ink); }\n.quick-grid { flex: 1; min-height: 0; overflow-y: auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(128px, 1fr)); grid-auto-rows: max-content; gap: 8px; padding: 2px; }\n.quick-tile { position: relative; display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 14px 8px 12px; border-radius: 12px; white-space: normal; text-align: center; }\n.quick-tile img { width: 64px; height: 84px; object-fit: contain; }\n.quick-tile .quick-blank { display: grid; place-items: center; width: 64px; height: 84px; color: var(--muted); }\n.quick-tile strong { font-size: 12px; font-weight: 600; overflow-wrap: anywhere; }\n.quick-tile small { color: var(--muted); font-size: 11px; }\n.quick-tile em { position: absolute; top: 6px; right: 6px; padding: 2px 6px; border-radius: 999px; background: var(--green); color: var(--bg); font-size: 9px; font-style: normal; font-weight: 600; }\n.quick-grid .empty { grid-column: 1 / -1; margin: 24px 0; text-align: center; }\n.quick-hint { margin: 0; color: var(--muted); font-size: 11px; }\n@media (max-width: 620px) { .add-rail { position: absolute; right: 12px; bottom: 12px; z-index: 1; padding: 0; } .add-rail button { width: 48px; height: 48px; border-style: solid; border-radius: 50%; background: var(--panel); box-shadow: 0 8px 24px #0005; } .add-rail button span { display: none; } }\n\n.capture-loader { position: absolute; inset: 0; z-index: 20; overflow: hidden; color: var(--ink); }\n.loader-backdrop { position: absolute; inset: 0; background: var(--bg); }\n.loader-frame { position: absolute; border: 1px solid var(--line); border-radius: 6px; pointer-events: none; transition: opacity .2s; }\n.capture-loader[data-closed=true] .loader-frame { opacity: 0; }\n.loader-card { position: absolute; display: grid; justify-items: center; gap: 14px; width: 210px; padding: 22px 18px 16px; border: 1px solid var(--line); border-radius: 20px; background: var(--panel); box-shadow: 0 24px 80px #0005; text-align: center; }\n.loader-card[data-layout=center] { left: 50%; top: 50%; translate: -50% -50%; }\n.loader-card[data-layout=side] { top: 50%; translate: 0 -50%; }\n.loader-card[data-layout=bar] { left: 50%; translate: -50% 0; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; justify-items: start; column-gap: 12px; row-gap: 0; width: min(420px, calc(100% - 24px)); height: 60px; padding: 8px 12px 11px 14px; border-radius: 16px; text-align: left; overflow: hidden; }\n.loader-logo { display: block; width: 108px; height: 38px; object-fit: contain; }\n.loader-symbol { display: none; width: 28px; height: 28px; object-fit: contain; border-radius: 5px; }\n.loader-card[data-layout=bar] .loader-logo, .loader-card[data-layout=bar] .loader-hint { display: none; }\n.loader-card[data-layout=bar] .loader-symbol { display: block; }\n.loader-card[data-layout=bar] .loader-bar { position: absolute; inset: auto 0 0 0; border-radius: 0; }\n.loader-copy { display: grid; gap: 4px; min-width: 0; max-width: 100%; }\n.loader-title { font-size: 13px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }\n.loader-device, .loader-hint { color: var(--muted); font-size: 11px; overflow: hidden; text-overflow: ellipsis; }\n.loader-device { white-space: nowrap; font-variant-numeric: tabular-nums; }\n.loader-hint { margin: 0; }\n.loader-bar { position: relative; width: 100%; height: 3px; border-radius: 3px; background: var(--line); overflow: hidden; }\n.loader-bar i { position: absolute; inset: 0 auto 0 0; width: 0; background: var(--accent); transition: width .4s ease; }\n.loader-bar[data-indeterminate=true] i { width: 35%; transition: none; animation: loader-slide 1.2s ease-in-out infinite; }\n.loader-cancel { min-height: 32px; padding: 6px 14px; border-color: var(--line); color: var(--ink); }\n@keyframes loader-slide { from { left: -35%; } to { left: 100%; } }\n@media (prefers-reduced-motion: reduce) { .capture-loader * { animation: none !important; transition: none !important; } }\n\n.result-actions > * { flex: 1; min-width: 0; min-height: 40px; border-radius: 10px; }\n.result-copy { border-color: var(--line); background: var(--bg); color: var(--ink); }\n.result-download { text-decoration: none; }\n.result-mockup { display: flex; gap: 3px; padding: 3px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); }\n.result-mockup button { flex: 1; min-width: 0; padding: 8px 6px; border: 1px solid transparent; background: transparent; font-size: 12px; color: var(--muted); }\n.result-mockup button[aria-pressed=true] { border-color: var(--green); background: var(--panel); color: var(--ink); }\n.capture-result[data-fullpage=true] .result-preview { display: block; max-height: min(60dvh, calc(100dvh - 250px), 640px); overflow-y: auto; border: 1px solid var(--line); border-radius: 10px; }\n.capture-result[data-fullpage=true] .result-preview img { width: min(420px, calc(100vw - 76px)); max-width: none; max-height: none; }\n\n.capture-fullpage { margin-top: 12px; }\n.capture-fullpage .capture-action-icon { background: var(--panel); color: var(--ink); }\n.workspace[data-capturing=true] .device-card[data-selected=true] { border-color: transparent; box-shadow: none; }\n.workspace[data-capturing=true] .device-heading { visibility: hidden; }\n.capture-all { margin-top: 12px; }\n.capture-shortcuts { margin: 14px 0 0; color: var(--muted); font-size: 11px; text-align: center; }\n.quick-tile { display: block; padding: 0; border: 0; background: transparent; }\n.quick-pick { display: flex; flex-direction: column; align-items: center; gap: 6px; width: 100%; height: 100%; padding: 14px 8px 12px; border-radius: 12px; white-space: normal; text-align: center; }\n.quick-star { position: absolute; top: 5px; left: 5px; width: 24px; height: 24px; padding: 0; border: 0; border-radius: 50%; background: transparent; color: var(--muted); font-size: 14px; line-height: 1; }\n.quick-star[aria-pressed=true] { background: transparent; color: var(--accent); }\n.quick-presets { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; color: var(--muted); font-size: 11px; }\n.quick-presets button { padding: 6px 12px; border-radius: 999px; border-style: dashed; font-size: 11px; }\n.library h3 { margin: 0 0 4px; font-size: 13px; }\n.device-heading[data-loading=true]::before { content: ''; flex: 0 0 auto; width: 9px; height: 9px; margin-right: 2px; border: 1.5px solid var(--line); border-top-color: var(--accent); border-radius: 50%; animation: frame-spin .8s linear infinite; }\n@keyframes frame-spin { to { rotate: 360deg; } }\n.screen-notice { position: absolute; inset: 0; z-index: 2; display: grid; place-content: center; justify-items: center; gap: 10px; padding: 24px; background: #F4F7F2; color: #102B20; font: 14px/1.45 system-ui, sans-serif; text-align: center; }\n.screen-notice strong { font-size: 15px; font-weight: 600; }\n.screen-notice p { margin: 0; max-width: 300px; font-size: 13px; opacity: .75; }\n.screen-notice div { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 6px; }\n.screen-notice button { padding: 8px 14px; border: 1px solid #102B2033; border-radius: 8px; background: #fff; color: #102B20; font-size: 13px; }\n.screen-notice button:first-child { border-color: transparent; background: #102B20; color: #F4F7F2; }\n.screen-notice button:hover:not(:disabled) { border-color: #102B20; background: #E5F0E8; color: #102B20; }\n.workspace-error { cursor: pointer; }\n@media (max-width: 1240px) { .header-page { display: none; } }\n@media (max-width: 1040px) { .header-sync span, .header-count { display: none; } .header-tools { gap: 6px; } }\n@media (max-width: 760px) {\n  .app-header { flex-wrap: wrap; row-gap: 8px; }\n  .header-context { order: 3; flex: 1 0 100%; border: 0; padding: 0; overflow-x: auto; scrollbar-width: none; }\n  .header-tools { flex: 0 0 auto; margin-left: auto; }\n  .header-sync span { display: inline; }\n  .device-tools { opacity: 1; }\n}\n@media (max-width: 420px) { .header-sync span { display: none; } }\n/* Cabeçalho: grupos com largura própria; nada encolhe por cima do vizinho. */\n.app-header { gap: 16px; }\n.header-context { flex: 1; gap: 12px; padding-left: 16px; }\n.header-context > * { flex: 0 0 auto; }\n.header-tools { gap: 8px; }\n.header-tools select { flex: 0 0 auto; width: 76px; height: 36px; padding: 0 8px; font-size: 12px; }\n.header-modes { flex: 0 0 auto; height: 36px; align-items: center; }\n.header-modes button { height: 28px; padding: 0 9px; }\n.header-sync { position: relative; flex: 0 0 auto; height: 36px; gap: 7px; padding: 0 11px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); font-weight: 550; }\n.header-sync input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }\n.header-sync .icon { width: 16px; height: 16px; }\n.header-sync:hover { color: var(--ink); border-color: var(--green); }\n.header-sync:has(input:checked) { color: var(--ink); border-color: var(--green); background: var(--panel); }\n.header-sync:has(input:focus-visible) { outline: 2px solid var(--focus); outline-offset: 3px; }\n.header-sync:has(input:disabled) { opacity: .4; }\n.header-context > .header-page { flex: 0 1 300px; min-width: 150px; height: 36px; margin-left: auto; margin-right: auto; padding: 0 3px 0 12px; }\n@media (max-width: 1360px) { .header-context > .header-page { display: none; } }\n@media (max-width: 1080px) { .header-sync span { display: none; } .header-sync { padding: 0 10px; } .header-context > .header-divider { display: none; } }\n@media (max-width: 900px) { .header-context .button-label { display: none; } }\n@media (max-width: 760px) { .header-context { flex: 1 0 100%; padding: 0; gap: 8px; } .header-tools { margin-left: auto; } }\n/* Conjuntos e perfis dentro de Ajustes. */\n.settings-panel .library { position: static; display: grid; gap: 10px; flex: none; width: auto; padding: 0 0 22px; margin-bottom: 22px; overflow: visible; border: 0; border-bottom: 1px solid var(--line); background: none; box-shadow: none; }\n.settings-panel .library h3 { margin: 0; }\n.settings-panel .library h3:not(:first-child) { margin-top: 14px; }\n.settings-panel .library form { display: flex; align-items: flex-end; gap: 8px; margin: 0; padding: 0; border: 0; }\n.settings-panel .library form label { display: grid; gap: 6px; flex: 1; min-width: 0; font-size: 11px; color: var(--muted); }\n.settings-panel .library form input { width: 100%; }\n.settings-panel .library form h3, .settings-panel .library form p { display: none; }\n.settings-panel .library form button { flex: 0 0 auto; padding: 9px 10px; }\n.settings-panel .library .empty { margin: 0; }\n/* Com muitas telas o nome tem prioridade; a dimensão cede espaço. */\n.device-select { flex: 0 1 auto; }\n.device-dims { flex: 0 10000 auto; min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }\n/* Sem barra de rolagem na área de teste: a navegação por fileiras fica na faixa lateral. */\n.stage { scrollbar-width: none; scrollbar-gutter: auto; scroll-behavior: smooth; }\n.stage::-webkit-scrollbar { display: none; }\n.add-rail { flex-direction: column; justify-content: center; gap: 12px; }\n.stage-nav { display: flex; flex-direction: column; align-items: center; gap: 6px; width: 48px; padding: 6px 0; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); }\n.add-rail .stage-nav button { display: grid; place-items: center; width: 36px; height: 36px; padding: 0; border: 0; border-radius: 10px; background: transparent; color: var(--ink); }\n.add-rail .stage-nav button:hover:not(:disabled) { background: var(--bg); }\n.stage-page { color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }\n@media (max-width: 620px) { .add-rail { align-items: flex-end; } .add-rail .stage-nav button { width: 36px; height: 36px; border-radius: 10px; box-shadow: none; } .stage-nav { box-shadow: 0 8px 24px #0005; } }\n";
 // Componentes sem HTML interpolado com dados do usuário.
 const UI = (() => {
   // Família vetorial desenhada para os controles do projeto.
@@ -1472,10 +1472,19 @@ const UI = (() => {
       device: '<rect x="7" y="3" width="10" height="18" rx="2.5"/><path d="M10 6h4M11 18h2"/>',
       devices: '<rect x="3" y="4" width="11" height="16" rx="2"/><rect x="17" y="8" width="4" height="12" rx="1.5"/><path d="M7 17h3"/>',
       camera: '<path d="m8 6 1.5-2h5L16 6h3a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z"/><circle cx="12" cy="13" r="3.5"/>',
+      all: '<rect x="3" y="5" width="7" height="14" rx="1.5"/><rect x="13" y="7" width="8" height="10" rx="1.5"/>',
+      copy: '<rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/>',
+      download: '<path d="M12 4v11m-4-4 4 4 4-4M5 20h14"/>',
       settings: '<path d="M3 6h7m5 0h6M3 12h3m5 0h10M3 18h11m5 0h2"/><circle cx="12.5" cy="6" r="2.5"/><circle cx="8.5" cy="12" r="2.5"/><circle cx="16.5" cy="18" r="2.5"/>',
       close: '<path d="m6 6 12 12M18 6 6 18"/>',
       rotate: '<path d="M4 9a8 8 0 0 1 14-3l2 2M20 3v5h-5"/><rect x="7" y="11" width="7" height="10" rx="1.5"/>',
       reload: '<path d="M19 8a8 8 0 1 0 1 6M20 3v6h-6"/>',
+      plus: '<path d="M12 5v14M5 12h14"/>',
+      sync: '<path d="M8 4v16m-3-3 3 3 3-3M16 20V4m-3 3 3-3 3 3"/>',
+      left: '<path d="m14 6-6 6 6 6"/>',
+      up: '<path d="m6 14 6-6 6 6"/>',
+      down: '<path d="m6 10 6 6 6-6"/>',
+      right: '<path d="m10 6 6 6-6 6"/>',
       fullpage: '<rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 6v12m-4-4 4 4 4-4"/>',
       record: '<circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="3" fill="currentColor" stroke="none"/>',
       stop: '<rect x="6" y="6" width="12" height="12" rx="2" fill="currentColor" stroke="none"/>',
@@ -1503,13 +1512,21 @@ const UI = (() => {
     card.dataset.id = device.id;
     const heading = element('div', undefined, 'device-heading');
     const name = i18n.profile(device);
-    const select = button(name, 'select', device.id);
+    const select = button(name, 'swap', device.id);
     select.className = 'device-select';
-    const remove = button(undefined, 'remove', device.id);
+    const dims = element('span', undefined, 'device-dims');
+    const tools = element('div', undefined, 'device-tools');
+    const tool = (action, symbol) => {
+      const node = button(undefined, action, device.id);
+      node.innerHTML = icon(symbol);
+      tools.append(node);
+      return node;
+    };
+    const moveLeft = tool('move-left', 'left'), moveRight = tool('move-right', 'right');
+    const rotate = tool('card-rotate', 'rotate'), reload = tool('card-reload', 'reload'), capture = tool('card-capture', 'camera');
+    const remove = tool('remove', 'close');
     remove.className = 'device-remove';
-    remove.innerHTML = icon('close');
-    remove.setAttribute('aria-label', i18n.t('workspace.removeName', { name }));
-    heading.append(select);
+    heading.append(select, dims);
     const footprint = element('div', undefined, 'footprint');
     const shell = element('div', undefined, 'device');
     const bezel = element('img', undefined, 'device-bezel');
@@ -1548,8 +1565,13 @@ const UI = (() => {
     // Mantém scripts e origem; não é uma fronteira de segurança contra o próprio site.
     frame.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-forms allow-modals');
     frame.src = url;
-    screen.append(status, browser, frame, navigation); shell.append(bezel, svg, screen); footprint.append(shell); card.append(remove, footprint, heading);
-    return { card, select, remove, footprint, shell, frame, bezel, screen, mask, clip, status, browser, navigation };
+    const notice = element('div', undefined, 'screen-notice');
+    notice.hidden = true;
+    const noticeActions = element('div');
+    noticeActions.append(button(i18n.t('notice.retry'), 'card-reload', device.id), button(i18n.t('notice.hide'), 'hide-notice', device.id));
+    notice.append(element('strong', i18n.t('notice.blocked')), element('p', i18n.t('notice.blockedHint')), noticeActions);
+    screen.append(status, browser, frame, navigation, notice); shell.append(bezel, svg, screen); footprint.append(shell); card.append(tools, footprint, heading);
+    return { card, select, remove, dims, heading, notice, tools: { moveLeft, moveRight, rotate, reload, capture }, footprint, shell, frame, bezel, screen, mask, clip, status, browser, navigation };
   }
   function profiles(container, profiles, library, workspace, onlyFavorites, i18n) {
     const fragment = document.createDocumentFragment();
@@ -1805,6 +1827,14 @@ return { watchFrameBackground };
   let mediaRevision = 0;
   let pageCapture = null;
   let previewJob = null;
+  let result = null;
+  let plainPreferred = false;
+  let rawFrame = null;
+  let captureKind = null;
+  let captureAll = false;
+  let quickFilter = 'all';
+  let quickTarget = null;
+  let loaderClosed = false;
   let measuring = false;
   let options = { ...MODEL.DEFAULT_OPTIONS };
   const i18n = MODEL.createI18n(MODEL.MESSAGES, options.language, globalThis.navigator?.language ?? 'pt-BR');
@@ -1816,7 +1846,6 @@ return { watchFrameBackground };
   let stageObserver, layoutFrame = null, selectionTimer = null;
   const query = selector => root?.querySelector(selector);
   const panels = {
-    library: { panel: '.library', trigger: '[data-action=library]', focus: '[name=search]' },
     settings: { panel: '.settings-panel', trigger: '[data-action=settings]', focus: '[name=width]' }
   };
   function closePanels() {
@@ -1825,6 +1854,68 @@ return { watchFrameBackground };
       query(value.panel).hidden = true;
       query(value.trigger).setAttribute('aria-expanded', 'false');
     }
+  }
+  function closeQuick() {
+    const dialog = query('.quick-add');
+    quickTarget = null;
+    if (dialog?.open) dialog.close();
+  }
+  function renderQuick() {
+    const dialog = query('.quick-add');
+    if (!dialog?.open) return;
+    const search = query('[name=quick]').value.trim().toLocaleLowerCase();
+    const kind = profile => profile.id.startsWith('mockup-laptops-') ? 'laptops' : /ipad|\btab\b|\bpad\b/i.test(profile.label) ? 'tablets' : /^mockup-(apple|android)-/.test(profile.id) ? 'phones' : 'other';
+    const opened = new Set(workspace.devices.map(device => device.profileId));
+    const full = !quickTarget && workspace.devices.length >= MODEL.MAX_DEVICES;
+    query('#quick-title').dataset.i18n = quickTarget ? 'quick.swap' : 'quick.title';
+    query('#quick-title').textContent = t(quickTarget ? 'quick.swap' : 'quick.title');
+    const list = [...MODEL.PROFILES, ...library.customProfiles].filter(profile =>
+      (quickFilter === 'all' || (quickFilter === 'favorites' ? library.favorites.includes(profile.id) : kind(profile) === quickFilter)) &&
+      `${i18n.profile(profile)} ${profile.label} ${profile.width} ${profile.height}`.toLocaleLowerCase().includes(search));
+    const fragment = document.createDocumentFragment();
+    for (const profile of list) {
+      const name = i18n.profile(profile);
+      const cell = UI.element('div', undefined, 'quick-tile');
+      const tile = UI.element('button', undefined, 'quick-pick');
+      tile.type = 'button'; tile.dataset.action = 'add'; tile.dataset.id = profile.id; tile.disabled = full;
+      tile.setAttribute('aria-label', t('library.addName', { name }));
+      const favorite = library.favorites.includes(profile.id);
+      const star = UI.element('button', favorite ? '★' : '☆', 'quick-star');
+      star.type = 'button'; star.dataset.action = 'favorite'; star.dataset.id = profile.id; star.disabled = libraryBusy;
+      star.setAttribute('aria-pressed', String(favorite));
+      star.title = t(favorite ? 'library.unfavorite' : 'library.favorite', { name });
+      star.setAttribute('aria-label', star.title);
+      if (profile.mockup) {
+        const image = UI.element('img');
+        image.src = chrome.runtime.getURL(profile.mockup.thumbnail); image.alt = ''; image.loading = 'lazy'; image.width = 64; image.height = 84;
+        tile.append(image);
+      } else {
+        const blank = UI.element('span', undefined, 'quick-blank');
+        blank.innerHTML = UI.icon('device');
+        tile.append(blank);
+      }
+      tile.append(UI.element('strong', name), UI.element('small', `${profile.width} × ${profile.height}`));
+      cell.append(tile, star);
+      if (opened.has(profile.id)) cell.append(UI.element('em', t('quick.open')));
+      fragment.append(cell);
+    }
+    if (!list.length) fragment.append(UI.element('p', t(quickFilter === 'favorites' ? 'library.emptyFavorites' : 'library.empty'), 'empty'));
+    query('.quick-grid').replaceChildren(fragment);
+    for (const button of dialog.querySelectorAll('[data-action=quick-filter]')) button.setAttribute('aria-pressed', String(button.dataset.filter === quickFilter));
+    query('.quick-hint').textContent = t('quick.hint', { count: MODEL.MAX_DEVICES });
+    query('.quick-presets').hidden = Boolean(quickTarget);
+  }
+  function openQuick(target = null) {
+    if (mediaBusy() || (!target && workspace.devices.length >= MODEL.MAX_DEVICES)) return;
+    closeResult();
+    closePanels();
+    quickTarget = target;
+    const dialog = query('.quick-add');
+    query('[name=quick]').value = '';
+    if (!dialog.open) dialog.showModal();
+    renderQuick();
+    query('.quick-grid').scrollTop = 0;
+    query('[name=quick]').focus({ preventScroll: true });
   }
   function closeCapture() {
     const dialog = query('.capture-menu');
@@ -1837,6 +1928,8 @@ return { watchFrameBackground };
   function closeResult() {
     const dialog = query('.capture-result');
     previewJob = null;
+    for (const file of Object.values(result?.files ?? {})) URL.revokeObjectURL(file.url);
+    result = null;
     const video = query('.result-preview video');
     if (video) { video.pause(); video.removeAttribute('src'); video.load(); }
     query('.result-preview')?.replaceChildren();
@@ -1844,28 +1937,84 @@ return { watchFrameBackground };
     if (dialog?.open) dialog.close();
     query('[data-action=capture]')?.focus({ preventScroll: true });
   }
-  async function showResult(value) {
+  function dataBlob(dataUrl) {
+    // Sem fetch: a política de segurança da página não interfere na leitura.
+    const bytes = atob(dataUrl.slice(dataUrl.indexOf(',') + 1));
+    const buffer = new Uint8Array(bytes.length);
+    for (let index = 0; index < bytes.length; index++) buffer[index] = bytes.charCodeAt(index);
+    return new Blob([buffer], { type: dataUrl.slice(5, dataUrl.indexOf(';')) });
+  }
+  function resultFile(dataUrl, filename) {
+    const blob = dataBlob(dataUrl);
+    return { dataUrl, blob, filename, url: URL.createObjectURL(blob) };
+  }
+  function currentResult() {
+    return result && (plainPreferred && result.files.plain ? result.files.plain : result.files.framed);
+  }
+  function renderResult() {
+    const file = currentResult();
+    if (!root || !file) return;
+    const holder = query('.result-preview');
+    let preview = holder.firstElementChild;
+    if (!preview) {
+      preview = document.createElement(result.image ? 'img' : 'video');
+      if (result.image) preview.alt = t('export.alt');
+      else { preview.controls = true; preview.preload = 'metadata'; }
+      holder.append(preview);
+    }
+    if (preview.dataset.source !== file.filename) { preview.dataset.source = file.filename; preview.src = file.dataUrl; }
+    const plain = file === result.files.plain;
+    query('.result-mockup').hidden = !result.files.plain;
+    for (const button of root.querySelectorAll('[data-action=result-mockup]')) button.setAttribute('aria-pressed', String((button.dataset.plain === 'true') === plain));
+    query('.result-copy').hidden = !result.image;
+    const download = query('.result-download');
+    download.href = file.url; download.download = file.filename;
+    download.replaceChildren(document.createRange().createContextualFragment(UI.icon('download')), UI.element('span', t('export.download', { format: result.format })));
+    download.hidden = false;
+    query('.result-note').textContent = result.note ? t(result.note) : t(result.fullPage ? 'capture.fullPageReady' : result.all ? 'capture.allReady' : !result.image ? 'export.ready' : plain ? 'capture.plain' : 'capture.transparent');
+  }
+  async function copyResult() {
+    const file = currentResult();
+    if (!file || !result.image) return;
+    const current = result;
+    try {
+      await navigator.clipboard.write([new ClipboardItem({ 'image/png': file.blob })]);
+      current.note = 'result.copied';
+    } catch { current.note = 'result.copyFailed'; }
+    if (result === current) renderResult();
+  }
+  async function showResult(value, kind) {
     if (!root || previewJob === value.jobId) return;
     closeCapture();
     previewJob = value.jobId;
+    for (const file of Object.values(result?.files ?? {})) URL.revokeObjectURL(file.url);
+    result = null;
     query('.result-preview').replaceChildren();
     query('.result-download').hidden = true;
+    query('.result-copy').hidden = true;
+    query('.result-mockup').hidden = true;
+    query('.capture-result').dataset.fullpage = String(Boolean(value.fullPage));
     query('.result-note').textContent = t('export.preparing');
     if (!query('.capture-result').open) query('.capture-result').showModal();
     try {
       const file = await request('media.preview', { jobId: value.jobId });
       if (!root || previewJob !== value.jobId) return;
       if (!file.dataUrl?.startsWith(file.mode === 'image' ? 'data:image/png;base64,' : 'data:video/')) throw new Error('A captura não está mais disponível.');
-      const preview = document.createElement(file.mode === 'image' ? 'img' : 'video');
-      if (file.mode === 'video') { preview.controls = true; preview.preload = 'metadata'; }
-      else preview.alt = t('export.alt');
-      preview.src = file.dataUrl;
-      query('.result-preview').append(preview);
-      const download = query('.result-download');
-      download.href = file.dataUrl; download.download = file.filename;
-      download.textContent = t('export.download', { format: file.mode === 'image' ? 'PNG' : file.mime.startsWith('video/mp4') ? 'MP4' : 'WebM' });
-      download.hidden = false;
-      query('.result-note').textContent = t(value.fullPage ? 'capture.fullPageReady' : file.mode === 'image' ? 'capture.transparent' : 'export.ready');
+      if (file.plainDataUrl && !file.plainDataUrl.startsWith('data:image/png;base64,')) throw new Error('A captura não está mais disponível.');
+      const image = file.mode === 'image';
+      const extension = image ? 'png' : file.mime.startsWith('video/mp4') ? 'mp4' : 'webm';
+      const moment = new Date(), pad = number => String(number).padStart(2, '0');
+      const device = i18n.profile(selected()).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 40);
+      const all = kind === 'screenshot-all';
+      const name = `mockai${all ? '-todas' : device ? `-${device}` : ''}-${moment.getFullYear()}${pad(moment.getMonth() + 1)}${pad(moment.getDate())}-${pad(moment.getHours())}${pad(moment.getMinutes())}${pad(moment.getSeconds())}`;
+      result = {
+        image, all, fullPage: Boolean(value.fullPage), note: null, format: extension === 'webm' ? 'WebM' : extension.toUpperCase(),
+        files: {
+          framed: resultFile(file.dataUrl, `${name}${value.fullPage ? '-pagina' : ''}.${extension}`),
+          ...(file.plainDataUrl ? { plain: resultFile(file.plainDataUrl, `${name}-tela.png`) } : {})
+        }
+      };
+      renderResult();
     } catch (error) {
       if (root && previewJob === value.jobId) query('.result-note').textContent = i18n.error(error.message);
     } finally {
@@ -1879,6 +2028,7 @@ return { watchFrameBackground };
     closeResult();
     closePanels();
     query('.capture-device').textContent = i18n.profile(selected());
+    query('.capture-all').hidden = workspace.devices.length < 2;
     query('.capture-menu').showModal();
     query('[data-action=capture]').setAttribute('aria-expanded', 'true');
   }
@@ -1954,7 +2104,7 @@ return { watchFrameBackground };
   function renderMedia() {
     if (!root) return;
     const busy = mediaBusy();
-    for (const node of root.querySelectorAll('.toolbar button,.toolbar input,.toolbar select,[data-action=library],[data-action=settings]')) node.disabled = busy;
+    for (const node of root.querySelectorAll('.toolbar button:not(.library *),.toolbar input:not(.library *),.toolbar select,[data-action=settings]')) node.disabled = busy;
     if (busy) for (const node of root.querySelectorAll('.library button,.library input,.device-card button')) node.disabled = true;
     for (const action of ['capture', 'screenshot', 'fullpage', 'record']) query(`[data-action=${action}]`).disabled = busy;
     query('[name=videoFormat]').disabled = busy;
@@ -1966,12 +2116,57 @@ return { watchFrameBackground };
     query('[data-action=cancel-media]').hidden = !busy;
     query('[data-action=cancel-media]').disabled = !busy;
     query('.stage').style.overflow = busy ? 'hidden' : '';
+    renderLoader();
     const seconds = Math.max(0, Math.floor((Date.now() - (mediaState.startedAt ?? Date.now())) / 1000));
     const elapsed = `${String(Math.floor(seconds / 60)).padStart(2, '0')}:${String(seconds % 60).padStart(2, '0')}`;
     query('.media-label').textContent = mediaState.fullPage && mediaState.state === 'preparing' ? t('capture.scrolling', { progress: mediaState.progress ?? 0 }) : mediaState.state === 'recording' ? `${t('header.recording')} ${elapsed}` : mediaState.state === 'preparing' ? t('media.preparing') : mediaState.state === 'stopping' ? t('media.stopping') : '';
   }
+  // Cobre toda a área de trabalho durante a captura. O Chrome fotografa o que está visível,
+  // então só o retângulo fotografado fica aberto; ele se fecha assim que a última foto é tirada.
+  function renderLoader() {
+    const loader = query('.capture-loader');
+    if (!loader) return;
+    const entry = cards.get(workspace.selectedId);
+    const active = Boolean(entry) && mediaState.state === 'preparing' && ['screenshot', 'screenshot-all', 'fullpage'].includes(captureKind);
+    loader.hidden = !active;
+    if (!active) return;
+    const page = captureKind === 'fullpage', closed = loaderClosed, margin = 3;
+    const area = query('.workspace').getBoundingClientRect();
+    const target = captureKind === 'screenshot-all' ? allRect() : (page ? entry.frame : entry.shell).getBoundingClientRect();
+    const x1 = target.left - area.left - margin, y1 = target.top - area.top - margin;
+    const x2 = target.right - area.left + margin, y2 = target.bottom - area.top + margin;
+    const hole = closed ? [(x1 + x2) / 2, (y1 + y2) / 2, (x1 + x2) / 2, (y1 + y2) / 2] : [x1, y1, x2, y2];
+    const backdrop = query('.loader-backdrop');
+    // A transição só existe ao fechar: enquanto há fotos, o recorte nunca passa por cima da tela.
+    backdrop.style.transition = closed ? 'clip-path .3s cubic-bezier(.4, 0, .2, 1)' : 'none';
+    backdrop.style.clipPath = `polygon(evenodd, 0 0, 100% 0, 100% 100%, 0 100%, 0 0, ${hole[0]}px ${hole[1]}px, ${hole[0]}px ${hole[3]}px, ${hole[2]}px ${hole[3]}px, ${hole[2]}px ${hole[1]}px, ${hole[0]}px ${hole[1]}px)`;
+    loader.dataset.closed = String(closed);
+    query('.loader-frame').style.cssText = `left:${x1 - 1}px;top:${y1 - 1}px;width:${x2 - x1 + 2}px;height:${y2 - y1 + 2}px`;
+    // O cartão só ocupa o espaço livre ao redor do recorte; sem espaço, some em vez de sair na foto.
+    const card = query('.loader-card');
+    const room = { right: area.width - x2, left: x1, bottom: area.height - y2, top: y1 };
+    let layout = null, position = '';
+    if (closed) layout = 'center';
+    else if (Math.max(room.right, room.left) >= 250) {
+      layout = 'side';
+      position = `left:${room.right >= room.left ? x2 + (room.right - 210) / 2 : (room.left - 210) / 2}px`;
+    } else if (Math.max(room.bottom, room.top) >= 84) {
+      layout = 'bar';
+      position = `top:${room.bottom >= room.top ? y2 + (room.bottom - 60) / 2 : (room.top - 60) / 2}px`;
+    }
+    card.hidden = !layout;
+    if (layout) { card.dataset.layout = layout; card.style.cssText = position; }
+    const progress = Math.max(0, Math.min(100, mediaState.progress ?? 0));
+    const measured = page && !closed && mediaState.fullPage;
+    query('.loader-bar').dataset.indeterminate = String(!measured);
+    query('.loader-bar i').style.width = measured ? `${progress}%` : '';
+    query('.loader-title').textContent = t(closed ? 'loader.build' : captureKind === 'screenshot-all' ? 'loader.all' : !page ? 'loader.photo' : mediaState.fullPage ? 'loader.page' : 'loader.prepare');
+    query('.loader-device').textContent = captureKind === 'screenshot-all' ? t('header.count', { count: workspace.devices.length, limit: MODEL.MAX_DEVICES }) : measured ? `${i18n.profile(selected())} · ${progress}%` : i18n.profile(selected());
+  }
   function setMedia(value) {
     mediaState = value;
+    const kind = captureKind;
+    if (!mediaBusy()) { rawFrame = null; captureKind = null; captureAll = false; loaderClosed = false; }
     const revision = ++mediaRevision;
     if (mediaPoll !== null) clearTimeout(mediaPoll);
     mediaPoll = null;
@@ -1990,10 +2185,26 @@ return { watchFrameBackground };
     recordingClock = value.state === 'recording' ? setInterval(() => { if (root) renderMedia(); }, 1000) : null;
     if (root) apply();
     if (value.state === 'error') { reportError(new Error(value.reason ?? 'Não foi possível iniciar a gravação.')); return; }
-    if (value.state === 'ready') void showResult(value);
+    if (value.state === 'ready') void showResult(value, kind);
     if (value.reason) report(({ stopped: 'media.finished', 'duration-limit': 'media.duration', interrupted: 'media.interrupted' })[value.reason] ?? value.reason);
   }
+  function allRect() {
+    let left = Infinity, top = Infinity, right = -Infinity, bottom = -Infinity;
+    for (const entry of cards.values()) {
+      const rect = entry.shell.getBoundingClientRect();
+      left = Math.min(left, rect.left); top = Math.min(top, rect.top); right = Math.max(right, rect.right); bottom = Math.max(bottom, rect.bottom);
+    }
+    return { left, top, right, bottom, width: right - left, height: bottom - top };
+  }
   function geometry() {
+    if (captureAll) {
+      // Todas as telas, como aparecem na aba: um recorte único, sem recompor molduras.
+      const rect = allRect(), stage = query('.stage').getBoundingClientRect();
+      if (rect.left < stage.left - 0.5 || rect.right > stage.right + 0.5 || rect.top < stage.top - 0.5 || rect.bottom > stage.bottom + 0.5) throw new Error('A tela precisa estar inteira visível. Reduza o zoom e tente novamente.');
+      const scale = Math.min(Math.max(1, devicePixelRatio), 2400 / rect.width, 2400 / rect.height, Math.sqrt(3840000 / (rect.width * rect.height)));
+      return MODEL.validateCaptureGeometry({ rect: { x: rect.left, y: rect.top, width: rect.width, height: rect.height }, viewport: { width: innerWidth, height: innerHeight },
+        output: { width: Math.max(240, Math.round(rect.width * scale)), height: Math.max(240, Math.round(rect.height * scale)) } });
+    }
     const entry = cards.get(workspace.selectedId);
     const rect = entry.shell.getBoundingClientRect(), stage = query('.stage').getBoundingClientRect();
     if (rect.left < stage.left - 0.5 || rect.right > stage.right + 0.5 || rect.top < stage.top - 0.5 || rect.bottom > stage.bottom + 0.5) throw new Error('A tela precisa estar inteira visível. Reduza o zoom e tente novamente.');
@@ -2013,14 +2224,24 @@ return { watchFrameBackground };
     const composition = { width, height, screen, frame: layout?.image ?? null, ...artwork };
     return MODEL.validateCaptureGeometry({ composition, rect: { x: rect.left, y: rect.top, width: rect.width, height: rect.height }, viewport: { width: innerWidth, height: innerHeight }, output: { width: Math.round(width * scale), height: Math.round(height * scale) } });
   }
-  async function prepare(mode) {
+  async function prepare(mode, scope) {
     measuring = true;
     try {
       closePanels();
+      rawFrame = null;
+      captureAll = mode === 'image' && scope === 'all';
       setMedia({ state: 'preparing', mode });
-      const bezel = cards.get(workspace.selectedId).bezel;
-      if (!bezel.hidden) await bezel.decode();
-      cards.get(workspace.selectedId).card.scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: 'instant' });
+      if (captureAll) {
+        await Promise.all([...cards.values()].map(entry => entry.bezel.hidden ? null : entry.bezel.decode().catch(() => {})));
+        query('.stage').scrollTo({ top: 0, behavior: 'instant' });
+      } else {
+        const bezel = cards.get(workspace.selectedId).bezel;
+        if (!bezel.hidden) await bezel.decode();
+        cards.get(workspace.selectedId).card.scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: 'instant' });
+        // A tela só fica retangular nos poucos quadros em que a aba é fotografada.
+        if (mode === 'image') { rawFrame = cards.get(workspace.selectedId).frame; apply(); }
+      }
+      renderLoader();
       await new Promise((resolve, reject) => {
         const timeout = setTimeout(() => reject(new Error('Volte à aba do simulador para preparar a captura.')), 2000);
         requestAnimationFrame(() => requestAnimationFrame(() => { clearTimeout(timeout); resolve(); }));
@@ -2036,9 +2257,9 @@ return { watchFrameBackground };
     capture.doc.removeEventListener('wheel', capture.blockScroll, true);
     capture.doc.removeEventListener('touchmove', capture.blockScroll, true);
     capture.doc.removeEventListener('keydown', capture.blockKeys, true);
-    for (const [node, value, priority] of capture.hidden) {
-      if (value) node.style.setProperty('visibility', value, priority);
-      else node.style.removeProperty('visibility');
+    for (const [node, style] of capture.touched) {
+      if (style === null) node.removeAttribute('style');
+      else node.setAttribute('style', style);
     }
     try { capture.scroller.scrollTo({ left: capture.x, top: capture.y, behavior: 'instant' }); }
     catch { /* O documento pode ter sido descartado. */ }
@@ -2070,9 +2291,10 @@ return { watchFrameBackground };
     if (!doc?.scrollingElement) throw new Error('Para capturar a página inteira, abra o simulador no mesmo site da página exibida.');
     const scroller = doc.scrollingElement;
     const style = doc.createElement('style');
-    style.textContent = 'html,body{scroll-behavior:auto!important;scroll-snap-type:none!important;overflow-anchor:none!important;scrollbar-width:none!important}::-webkit-scrollbar{display:none!important}';
+    // Transições instantâneas: conteúdo revelado pela rolagem já aparece no estado final.
+    style.textContent = 'html,body{scroll-behavior:auto!important;scroll-snap-type:none!important;overflow-anchor:none!important;scrollbar-width:none!important}::-webkit-scrollbar{display:none!important}*,*::before,*::after{transition-duration:0s!important;transition-delay:0s!important}';
     const capture = { jobId, frame, doc, scroller, style, x: scroller.scrollLeft, y: scroller.scrollTop,
-      width: frame.contentWindow.innerWidth, hidden: [] };
+      width: frame.contentWindow.innerWidth, touched: new Map(), top: [], bottom: [] };
     capture.blockScroll = event => event.preventDefault();
     capture.blockKeys = event => {
       if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', 'Home', 'End', ' '].includes(event.key)) event.preventDefault();
@@ -2085,6 +2307,17 @@ return { watchFrameBackground };
       doc.addEventListener('touchmove', capture.blockScroll, { capture: true, passive: false });
       doc.addEventListener('keydown', capture.blockKeys, true);
       apply();
+      // Percorre a página antes de fotografar: carrega o conteúdo sob demanda e estabiliza a altura.
+      const view = frame.contentWindow, pause = time => new Promise(resolve => setTimeout(resolve, time));
+      for (let step = 0, top = 0; step < 60 && top < scroller.scrollHeight - view.innerHeight - 0.5; step++) {
+        top = Math.min(top + view.innerHeight, scroller.scrollHeight - view.innerHeight);
+        scroller.scrollTo({ top, left: 0, behavior: 'instant' });
+        await pause(70);
+        if (pageCapture !== capture) throw new Error('A captura foi cancelada.');
+      }
+      scroller.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+      await pause(120);
+      if (pageCapture !== capture) throw new Error('A captura foi cancelada.');
       return pageMetrics(capture);
     } catch (error) { restorePage(jobId); throw error; }
   }
@@ -2092,20 +2325,60 @@ return { watchFrameBackground };
     const capture = pageCapture;
     if (!capture || capture.jobId !== jobId || !Number.isFinite(offset) || offset < 0) throw new Error('A captura não está mais disponível.');
     pageMetrics(capture);
-    if (offset > 0) {
-      const hidden = new Set(capture.hidden.map(([node]) => node));
-      for (const node of capture.doc.querySelectorAll('body *')) {
-        if (hidden.has(node)) continue;
-        const style = capture.frame.contentWindow.getComputedStyle(node);
-        if (style.position === 'fixed' || style.position === 'sticky') {
-          capture.hidden.push([node, node.style.getPropertyValue('visibility'), node.style.getPropertyPriority('visibility')]);
-          node.style.setProperty('visibility', 'hidden', 'important');
-        }
+    renderLoader();
+    const view = capture.frame.contentWindow;
+    const frames = () => new Promise((resolve, reject) => {
+      const timeout = setTimeout(() => reject(new Error('Volte à aba do simulador para continuar a captura.')), 2000);
+      requestAnimationFrame(() => requestAnimationFrame(() => { clearTimeout(timeout); resolve(); }));
+    });
+    capture.scroller.scrollTo({ top: offset, left: 0, behavior: 'instant' });
+    // Cabeçalhos que só ficam fixos depois da rolagem precisam de um quadro para mudar de estado.
+    await frames();
+    if (pageCapture !== capture) throw new Error('A captura foi cancelada.');
+    for (const node of capture.doc.querySelectorAll('body *')) {
+      if (capture.touched.has(node)) continue;
+      const position = view.getComputedStyle(node).position;
+      if (position !== 'fixed' && position !== 'sticky') continue;
+      // Cena presa à tela (seção alta que anima enquanto a página desce): fica como está,
+      // senão o espaço reservado para a rolagem vira um buraco em branco na imagem.
+      if (position === 'sticky' && node.getBoundingClientRect().height >= view.innerHeight * 0.5) continue;
+      capture.touched.set(node, node.getAttribute('style'));
+      if (position === 'sticky') {
+        // Volta ao lugar natural na página e aparece uma única vez, em vez de se repetir a cada trecho.
+        for (const side of ['top', 'right', 'bottom', 'left']) node.style.setProperty(side, 'auto', 'important');
+        node.style.setProperty('position', 'relative', 'important');
+      } else (node.getBoundingClientRect().top >= view.innerHeight / 2 ? capture.bottom : capture.top).push(node);
+    }
+    // Fixos do topo entram só no primeiro trecho; os do rodapé (barras, avisos), só no último.
+    const first = capture.scroller.scrollTop <= 0.5;
+    const last = capture.scroller.scrollTop + view.innerHeight >= capture.scroller.scrollHeight - 1;
+    for (const [nodes, visible] of [[capture.top, first], [capture.bottom, last]]) {
+      for (const node of nodes) {
+        if (visible) node.style.removeProperty('visibility');
+        else node.style.setProperty('visibility', 'hidden', 'important');
       }
     }
-    capture.scroller.scrollTo({ top: offset, left: 0, behavior: 'instant' });
-    // Dá tempo para conteúdo lazy-loaded e pintura antes de ler os pixels da aba.
-    await new Promise(resolve => setTimeout(resolve, 250));
+    // Conteúdo que "abre" ao entrar na tela: adianta as animações até o fim e espera a página
+    // assentar, para o trecho não ser fotografado vazio ou pela metade.
+    const settle = () => {
+      let running = 0;
+      for (const animation of capture.doc.getAnimations?.() ?? []) {
+        try {
+          const end = animation.effect?.getComputedTiming().endTime;
+          if (animation.playState !== 'running' && animation.playState !== 'pending') continue;
+          if (animation.timeline && animation.timeline !== capture.doc.timeline) continue; // guiada pela rolagem
+          if (!Number.isFinite(Number(end))) continue; // repetição infinita
+          running++;
+          animation.finish();
+        } catch { /* A animação pode ter sido removida. */ }
+      }
+      return running;
+    };
+    for (let elapsed = 0, calm = 0; elapsed < 1500 && calm < 2; elapsed += 150) {
+      calm = settle() ? 0 : calm + 1;
+      await new Promise(resolve => setTimeout(resolve, 150));
+      if (pageCapture !== capture) throw new Error('A captura foi cancelada.');
+    }
     const images = [...capture.doc.images].filter(image => {
       const rect = image.getBoundingClientRect();
       return !image.complete && rect.bottom > 0 && rect.top < capture.frame.contentWindow.innerHeight;
@@ -2114,10 +2387,7 @@ return { watchFrameBackground };
       Promise.all(images.map(image => image.decode().catch(() => {}))),
       new Promise(resolve => setTimeout(resolve, 1000))
     ]);
-    await new Promise((resolve, reject) => {
-      const timeout = setTimeout(() => reject(new Error('Volte à aba do simulador para continuar a captura.')), 2000);
-      requestAnimationFrame(() => requestAnimationFrame(() => { clearTimeout(timeout); resolve(); }));
-    });
+    await frames();
     if (pageCapture !== capture) throw new Error('A captura foi cancelada.');
     return pageMetrics(capture);
   }
@@ -2132,10 +2402,15 @@ return { watchFrameBackground };
     statusMessage = Object.hasOwn(MODEL.MESSAGES['pt-BR'], message) ? { key: message, values } : { source: message };
     drawStatus();
   }
+  function dismissStatus() {
+    statusMessage = { key: 'workspace.hint', values: {} };
+    drawStatus();
+  }
   function reportError(error) {
     const message = error.message ?? String(error);
-    statusMessage = { error: /extension context invalidated/i.test(message) ? 'A extensão não respondeu. Recarregue esta página.' : message };
+    const shown = statusMessage = { error: /extension context invalidated/i.test(message) ? 'A extensão não respondeu. Recarregue esta página.' : message };
     drawStatus();
+    setTimeout(() => { if (root && statusMessage === shown) dismissStatus(); }, 9000);
   }
   function renderSync() {
     if (!root || !scrollSync) return;
@@ -2162,14 +2437,11 @@ return { watchFrameBackground };
   function renderLibrary() {
     if (!root) return;
     for (const node of query('.library').querySelectorAll('button,input')) node.disabled = false;
-    const search = query('[name=search]').value.trim().toLocaleLowerCase();
-    const profiles = [...MODEL.PROFILES, ...library.customProfiles].filter(profile =>
-      (!onlyFavorites || library.favorites.includes(profile.id)) &&
-      `${i18n.profile(profile)} ${profile.label} ${profile.width} ${profile.height}`.toLocaleLowerCase().includes(search));
-    UI.profiles(query('.profiles'), profiles, library, workspace, onlyFavorites, i18n);
+    // Os modelos prontos vivem no seletor rápido; aqui ficam só os perfis criados pelo usuário.
+    UI.profiles(query('.profiles'), library.customProfiles, library, workspace, false, i18n);
+    if (!library.customProfiles.length) query('.profiles').replaceChildren(UI.element('p', t('library.emptyProfiles'), 'empty'));
     UI.sets(query('.saved-sets'), library, i18n);
-    query('[data-action=favorites]').setAttribute('aria-pressed', String(onlyFavorites));
-    query('[data-action=favorites]').textContent = t('library.favorites', { count: library.favorites.length });
+    renderQuick();
     query('.library').setAttribute('aria-busy', String(libraryBusy));
     if (libraryBusy) {
       for (const node of query('.library').querySelectorAll('button,input:not([name=search])')) node.disabled = true;
@@ -2192,10 +2464,39 @@ return { watchFrameBackground };
       entry.footprint.style.cssText = `width:${outerWidth * layout.scale + 24}px;height:${outerHeight * layout.scale + 24}px`;
       entry.card.style.width = `${outerWidth * layout.scale + 46}px`;
     }
+    renderLoader();
+    renderStageNav();
+  }
+  // Com mais telas do que cabem, a área de teste desce por fileiras, sem barra de rolagem.
+  function renderStageNav() {
+    const stage = query('.stage'), nav = query('.stage-nav');
+    if (!stage || !nav) return;
+    const view = stage.clientHeight, extra = stage.scrollHeight - view;
+    nav.hidden = extra <= 4;
+    query('.add-rail').hidden = nav.hidden && query('.rail-add').hidden;
+    if (nav.hidden) return;
+    const pages = Math.max(2, Math.ceil(stage.scrollHeight / view - 0.05));
+    const page = Math.min(pages, Math.round(stage.scrollTop / extra * (pages - 1)) + 1);
+    query('.stage-page').textContent = `${page}/${pages}`;
+    query('[data-action=stage-up]').disabled = mediaBusy() || stage.scrollTop <= 1;
+    query('[data-action=stage-down]').disabled = mediaBusy() || stage.scrollTop >= extra - 1;
+  }
+  function scrollStage(direction) {
+    const stage = query('.stage');
+    // Para na borda da fileira mais próxima, em vez de cortar um dispositivo ao meio.
+    const tops = [...new Set([...cards.values()].map(entry => entry.card.offsetTop))].sort((a, b) => a - b);
+    const current = stage.scrollTop, inset = parseFloat(getComputedStyle(stage).paddingTop) || 0;
+    const targets = tops.map(top => Math.max(0, top - inset));
+    const next = direction > 0 ? targets.find(top => top > current + 8) : [...targets].reverse().find(top => top < current - 8);
+    stage.scrollTo({ top: next ?? (direction > 0 ? stage.scrollHeight : 0), behavior: 'smooth' });
   }
   function apply() {
     if (!root) return;
     i18n.apply(root);
+    renderResult();
+    query('.rail-add').hidden = workspace.devices.length >= MODEL.MAX_DEVICES;
+    query('.header-count').textContent = t('header.count', { count: workspace.devices.length, limit: MODEL.MAX_DEVICES });
+    renderQuick();
     query('.workspace').lang = i18n.language;
     query('[name=language]').value = options.language;
     query('[name=scrollSync]').checked = options.scrollSync;
@@ -2209,7 +2510,11 @@ return { watchFrameBackground };
       const isNew = !cards.has(device.id);
       if (isNew) cards.set(device.id, UI.deviceCard(device, session.url, i18n));
       const entry = cards.get(device.id);
-      if (isNew) entry.stopContext = watchCaptureContext(entry.frame, device.id);
+      if (isNew) { entry.stopContext = watchCaptureContext(entry.frame, device.id); watchFrame(entry); }
+      const [noticeTitle, noticeHint, noticeActions] = entry.notice.children;
+      noticeTitle.textContent = t('notice.blocked'); noticeHint.textContent = t('notice.blockedHint');
+      noticeActions.children[0].textContent = t('notice.retry'); noticeActions.children[1].textContent = t('notice.hide');
+      for (const node of noticeActions.children) node.disabled = false;
       // Não movemos quadros existentes em atualizações comuns: isso pode recarregar seu documento.
       if (stage.children[index] !== entry.card) stage.insertBefore(entry.card, stage.children[index] ?? null);
       if (isNew) scrollSync?.add(device.id, entry.frame);
@@ -2217,12 +2522,21 @@ return { watchFrameBackground };
       entry.frame.title = t('workspace.frameTitle', { name });
       entry.remove.setAttribute('aria-label', t('workspace.removeName', { name }));
       entry.remove.title = t('workspace.removeName', { name });
+      for (const [key, label] of [['moveLeft', 'card.left'], ['moveRight', 'card.right'], ['rotate', 'card.rotate'], ['reload', 'card.reload'], ['capture', 'card.capture']]) {
+        const node = entry.tools[key];
+        node.title = t(label, { name }); node.setAttribute('aria-label', node.title); node.disabled = false;
+      }
+      entry.tools.moveLeft.hidden = entry.tools.moveRight.hidden = workspace.devices.length < 2;
+      entry.tools.moveLeft.disabled = index === 0;
+      entry.tools.moveRight.disabled = index === workspace.devices.length - 1;
+      entry.tools.rotate.setAttribute('aria-pressed', String(device.rotated));
       const width = device.rotated ? device.height : device.width;
       const height = device.rotated ? device.width : device.height;
       const active = device.id === workspace.selectedId;
       entry.card.dataset.selected = String(active);
       entry.select.textContent = name;
-      entry.select.title = `${name} · ${width} × ${height}`;
+      entry.select.title = t('card.swap', { name });
+      entry.dims.textContent = `${width} × ${height}`;
       entry.select.setAttribute('aria-pressed', String(active));
       entry.select.disabled = false;
       entry.remove.disabled = workspace.devices.length === 1;
@@ -2263,7 +2577,11 @@ return { watchFrameBackground };
         entry.screen.style.clipPath = 'none';
         entry.screen.style.borderRadius = '0';
         entry.bezel.style.visibility = 'hidden';
-      } else entry.bezel.style.visibility = '';
+      } else {
+        entry.bezel.style.visibility = '';
+        // A moldura é recomposta a partir do arquivo; a aba só precisa entregar a tela inteira.
+        if (layout && rawFrame === entry.frame) entry.screen.style.clipPath = 'none';
+      }
       entry.size = { width: outerWidth, height: outerHeight };
     });
     fitStage();
@@ -2290,11 +2608,47 @@ return { watchFrameBackground };
       return result;
     } finally { libraryBusy = false; renderLibrary(); }
   }
+  function reloadFrame(entry) {
+    entry.expecting = true;
+    entry.notice.hidden = true;
+    entry.heading.dataset.loading = 'true';
+    entry.frame.src = session.url;
+  }
+  function watchFrame(entry) {
+    entry.expecting = true;
+    entry.heading.dataset.loading = 'true';
+    entry.frame.addEventListener('load', () => {
+      entry.heading.dataset.loading = 'false';
+      if (!entry.expecting) return;
+      entry.expecting = false;
+      // A página da aba é da mesma origem: se o documento ficou inacessível logo na abertura,
+      // o site bloqueou o quadro ou redirecionou para outro endereço.
+      let reachable = false;
+      try { reachable = Boolean(entry.frame.contentDocument); } catch { /* Origem protegida. */ }
+      entry.notice.hidden = reachable;
+    });
+  }
   function selectDevice(id) {
     if (!root || mediaBusy() || workspace.selectedId === id || !cards.has(id)) return;
     update({ ...workspace, selectedId: id });
   }
+  async function startCapture(action) {
+    if (mediaBusy()) return;
+    closeCapture(); closeQuick(); closeResult();
+    statusMessage = { key: 'workspace.hint', values: {} };
+    captureKind = action; loaderClosed = false;
+    setMedia({ state: 'preparing' });
+    await saving;
+    try {
+      const value = await request('media.start', {
+        mode: action === 'fullpage' ? 'full-page' : action === 'record' ? 'video' : 'image',
+        scope: action === 'screenshot-all' ? 'all' : 'selected', format: query('[name=videoFormat]').value
+      });
+      if (root) setMedia(value);
+    } catch (error) { setMedia({ state: 'idle' }); throw error; }
+  }
   async function click(event) {
+    if (event.target.closest?.('.workspace-error')) { dismissStatus(); return; }
     const button = event.target.closest('[data-action]');
     if (!button || button.disabled) return;
     const { action, id } = button.dataset;
@@ -2302,21 +2656,31 @@ return { watchFrameBackground };
       switch (action) {
         case 'capture': openCapture(); return;
         case 'dismiss-capture': closeCapture(); return;
-        case 'dismiss-result': closeResult(); return;
-        case 'screenshot':
-        case 'fullpage':
-        case 'record': {
-          if (mediaBusy()) return;
-          closeCapture();
-          statusMessage = { key: 'workspace.hint', values: {} };
-          setMedia({ state: 'preparing' });
-          await saving;
-          try {
-            const value = await request('media.start', { mode: action === 'fullpage' ? 'full-page' : action === 'screenshot' ? 'image' : 'video', format: query('[name=videoFormat]').value });
-            if (root) setMedia(value);
-          } catch (error) { setMedia({ state: 'idle' }); throw error; }
+        case 'quick-add': openQuick(); return;
+        case 'stage-up': scrollStage(-1); return;
+        case 'stage-down': scrollStage(1); return;
+        case 'preset': {
+          const chosen = button.dataset.preset.split(',').map(value => MODEL.PROFILES.find(profile => profile.id === value)).filter(Boolean);
+          if (!chosen.length) return;
+          const devices = chosen.map(profile => MODEL.createDevice(profile));
+          update({ ...workspace, devices, selectedId: devices[0].id });
+          closeQuick();
           return;
         }
+        case 'dismiss-quick': closeQuick(); return;
+        case 'quick-filter': quickFilter = button.dataset.filter; renderQuick(); return;
+        case 'dismiss-result': closeResult(); return;
+        case 'copy-result': await copyResult(); return;
+        case 'result-mockup':
+          if (!result) return;
+          plainPreferred = button.dataset.plain === 'true';
+          result.note = null;
+          renderResult();
+          return;
+        case 'screenshot':
+        case 'screenshot-all':
+        case 'fullpage':
+        case 'record': await startCapture(action); return;
         case 'stop-record': {
           if (mediaState.state !== 'recording') return;
           setMedia({ ...mediaState, state: 'stopping' });
@@ -2333,21 +2697,39 @@ return { watchFrameBackground };
           try { await saving; await request('session.stop'); }
           catch (error) { reportError(error); dispose(); }
           return;
-        case 'library': {
-          const open = query('.library').hidden;
-          setPanel('library', open);
+        case 'settings': {
+          const open = query('.settings-panel').hidden;
+          setPanel('settings', open);
+          // Conjuntos e perfis podem ter mudado em outra aba.
           if (open) await libraryOperation('library.get');
           return;
         }
-        case 'settings': setPanel('settings', query('.settings-panel').hidden); return;
         case 'dismiss-panel': setPanel(button.dataset.panel, false); return;
-        case 'favorites': onlyFavorites = !onlyFavorites; renderLibrary(); return;
         case 'select': selectDevice(id); return;
+        case 'swap': selectDevice(id); openQuick(id); return;
+        case 'card-rotate': update({ ...workspace, selectedId: id, devices: workspace.devices.map(device => device.id === id ? { ...device, rotated: !device.rotated } : device) }); return;
+        case 'card-reload': if (cards.has(id)) reloadFrame(cards.get(id)); return;
+        case 'hide-notice': if (cards.has(id)) cards.get(id).notice.hidden = true; return;
+        case 'card-capture': selectDevice(id); openCapture(); return;
+        case 'reload-all': for (const entry of cards.values()) reloadFrame(entry); return;
+        case 'move-left':
+        case 'move-right': {
+          const from = workspace.devices.findIndex(device => device.id === id), to = from + (action === 'move-left' ? -1 : 1);
+          if (from < 0 || to < 0 || to >= workspace.devices.length) return;
+          const devices = [...workspace.devices];
+          [devices[from], devices[to]] = [devices[to], devices[from]];
+          update({ ...workspace, devices, selectedId: id });
+          return;
+        }
         case 'screen-mode': update({ ...workspace, screenMode: button.dataset.mode }); return;
         case 'add': {
           const profile = [...MODEL.PROFILES, ...library.customProfiles].find(item => item.id === id);
           if (!profile) throw new Error('Perfil não encontrado. Atualize a biblioteca.');
-          update(MODEL.addDevice(workspace, profile));
+          const target = quickTarget;
+          // Trocar mantém o identificador: o quadro continua aberto, só muda o modelo.
+          if (target && cards.has(target)) update({ ...workspace, selectedId: target, devices: workspace.devices.map(device => device.id === target ? MODEL.createDevice(profile, target) : device) });
+          else update(MODEL.addDevice(workspace, profile));
+          closeQuick();
           cards.get(workspace.selectedId).select.focus();
           return;
         }
@@ -2358,7 +2740,7 @@ return { watchFrameBackground };
         }
         case 'rotate': update({ ...workspace, devices: workspace.devices.map(device => device.id === workspace.selectedId ? { ...device, rotated: !device.rotated } : device) }); return;
         case 'theme': update({ ...workspace, theme: workspace.theme === 'dark' ? 'light' : 'dark' }); return;
-        case 'retry': cards.get(workspace.selectedId).frame.src = session.url; return;
+        case 'retry': reloadFrame(cards.get(workspace.selectedId)); return;
         case 'favorite': await libraryOperation('favorite.toggle', { id }); break;
         case 'delete-profile': await libraryOperation('profile.delete', { id }); break;
         case 'delete-set': await libraryOperation('set.delete', { id }); break;
@@ -2416,7 +2798,18 @@ return { watchFrameBackground };
         <header class="app-header">
           <div class="brand" aria-label="Mockaí"><img class="brand-name" src="${chrome.runtime.getURL('img/brand/mockai-logo.png')}" alt="Mockaí" width="108" height="38"><img class="brand-symbol" src="${chrome.runtime.getURL('img/icons/app/icon-48.png')}" alt="" width="28" height="28"></div>
           <div class="header-context">
-            <button class="header-button" data-action="library" aria-expanded="false" aria-controls="mockai-library" data-i18n-title="workspace.library" data-i18n-aria="workspace.library">${UI.icon('devices')}<span class="button-label" data-i18n="header.devices"></span></button>
+            
+            <span class="header-count sr-only"></span>
+            <div class="header-tools toolbar">
+              <select name="zoom" data-i18n-title="header.zoom" data-i18n-aria="header.zoom"><option value="0.25">25%</option><option value="0.5">50%</option><option value="0.75">75%</option><option value="1">100%</option></select>
+              <div class="screen-modes header-modes" role="group" data-i18n-aria="screen.mode">
+                <button type="button" data-action="screen-mode" data-mode="browser" aria-pressed="true" data-i18n-title="screen.browser">${UI.icon('browser')}<span data-i18n="screen.browser"></span></button>
+                <button type="button" data-action="screen-mode" data-mode="pwa" aria-pressed="false" data-i18n-title="screen.pwa">${UI.icon('pwa')}<span data-i18n="screen.pwa"></span></button>
+                <button type="button" data-action="screen-mode" data-mode="fullscreen" aria-pressed="false" data-i18n-title="screen.fullscreen">${UI.icon('fullscreen')}<span data-i18n="screen.fullscreen"></span></button>
+              </div>
+              <label class="header-sync" data-i18n-title="sync.short"><input name="scrollSync" type="checkbox" data-i18n-aria="sync.short">${UI.icon('sync')}<span data-i18n="sync.short"></span></label>
+              <button class="header-button icon-button header-reload" data-action="reload-all" data-i18n-title="header.reloadAll" data-i18n-aria="header.reloadAll">${UI.icon('reload')}</button>
+            </div>
           </div>
           <div class="header-actions">
             <span class="media-label" aria-live="polite" hidden></span>
@@ -2429,48 +2822,82 @@ return { watchFrameBackground };
           </div>
         </header>
         <div class="body">
-          <aside id="mockai-library" class="library" data-i18n-aria="workspace.library" hidden>
-            <div class="panel-heading"><h2 data-i18n="library.title"></h2><button class="icon-button panel-dismiss" data-action="dismiss-panel" data-panel="library" data-i18n-aria="common.close" data-i18n-title="common.close">${UI.icon('close')}</button></div>
-            <label class="search"><span data-i18n="library.search"></span><input name="search" type="search" data-i18n-placeholder="library.searchHint"></label>
-            <button data-action="favorites" aria-pressed="false"></button>
-            <div class="profiles"></div>
-            <form data-form="profile"><h3 data-i18n="library.custom"></h3><p data-i18n="library.customHint"></p><label><span data-i18n="common.name"></span><input name="profileName" maxlength="48" required></label><button type="submit" data-i18n="library.saveProfile"></button></form>
-            <h2 data-i18n="library.sets"></h2><div class="saved-sets"></div>
-            <form data-form="set"><label><span data-i18n="library.setName"></span><input name="setName" maxlength="48" required></label><button type="submit" data-i18n="library.saveSet"></button></form>
-          </aside>
           <main class="stage" data-i18n-aria="workspace.screens"></main>
+          <div class="add-rail">
+            <button type="button" class="rail-add" data-action="quick-add" data-i18n-title="quick.title" data-i18n-aria="quick.title">${UI.icon('plus')}<span data-i18n="quick.rail"></span></button>
+            <div class="stage-nav" hidden>
+              <button type="button" data-action="stage-up" data-i18n-title="stage.up" data-i18n-aria="stage.up">${UI.icon('up')}</button>
+              <span class="stage-page" aria-live="polite"></span>
+              <button type="button" data-action="stage-down" data-i18n-title="stage.down" data-i18n-aria="stage.down">${UI.icon('down')}</button>
+            </div>
+          </div>
           <aside id="mockai-settings" class="settings-panel toolbar" data-i18n-aria="header.settings" hidden>
             <div class="panel-heading"><h2 data-i18n="header.settings"></h2><button class="icon-button panel-dismiss" data-action="dismiss-panel" data-panel="settings" data-i18n-aria="common.close" data-i18n-title="common.close">${UI.icon('close')}</button></div>
             <section class="settings-group">
               <h3 data-i18n="settings.device"></h3>
               <div class="dimension-fields"><label><span data-i18n="workspace.width"></span><input name="width" type="number" min="240" max="2400" step="1" required></label><span class="dimension-times" aria-hidden="true">×</span><label><span data-i18n="workspace.height"></span><input name="height" type="number" min="240" max="2400" step="1" required></label></div>
               <div class="paired-actions"><button data-action="rotate" aria-pressed="false" data-i18n-title="workspace.rotate">${UI.icon('rotate')}<span data-i18n="settings.rotate"></span></button><button data-action="retry" data-i18n-title="workspace.reload">${UI.icon('reload')}<span data-i18n="settings.reload"></span></button></div>
-              <label class="setting-row"><span data-i18n="settings.scale"></span><select name="zoom"><option value="0.25">25%</option><option value="0.5">50%</option><option value="0.75">75%</option><option value="1">100%</option></select></label>
             </section>
             <section class="settings-group">
               <h3 data-i18n="settings.appearance"></h3>
               <label class="setting-row"><span data-i18n="common.language"></span><select name="language"><option value="auto" data-i18n="common.auto"></option><option value="pt-BR">Português</option><option value="en">English</option><option value="es">Español</option></select></label>
               <button class="toggle-row" data-action="theme" aria-pressed="false"><span data-i18n="workspace.light"></span><span class="toggle-track" aria-hidden="true"></span></button>
-              <label class="check setting-row"><span data-i18n="sync.label"></span><input name="scrollSync" type="checkbox"></label>
-              <p class="sync-status" aria-live="polite"></p>
+              <p class="sync-status sr-only" aria-live="polite"></p>
             </section>
-            <section class="settings-group">
-              <h3 id="screen-mode-label" data-i18n="screen.mode"></h3>
-              <div class="screen-modes" role="group" aria-labelledby="screen-mode-label">
-                <button type="button" data-action="screen-mode" data-mode="browser" aria-pressed="true">${UI.icon('browser')}<span data-i18n="screen.browser"></span></button>
-                <button type="button" data-action="screen-mode" data-mode="pwa" aria-pressed="false">${UI.icon('pwa')}<span data-i18n="screen.pwa"></span></button>
-                <button type="button" data-action="screen-mode" data-mode="fullscreen" aria-pressed="false">${UI.icon('fullscreen')}<span data-i18n="screen.fullscreen"></span></button>
-              </div>
-              <p class="setting-hint" data-i18n="screen.hint"></p>
+            <section class="library">
+              <h3 data-i18n="library.sets"></h3>
+              <div class="saved-sets"></div>
+              <form data-form="set"><label><span data-i18n="library.setName"></span><input name="setName" maxlength="48" required></label><button type="submit" data-i18n="library.saveSet"></button></form>
+              <h3 data-i18n="library.profiles"></h3>
+              <div class="profiles"></div>
+              <form data-form="profile"><h3 data-i18n="library.custom"></h3><p data-i18n="library.customHint"></p><label><span data-i18n="common.name"></span><input name="profileName" maxlength="48" required></label><button type="submit" data-i18n="library.saveProfile"></button></form>
             </section>
-            <details class="settings-help"><summary data-i18n="settings.about"></summary><p class="notice" data-i18n="workspace.notice"></p><p class="notice" data-i18n="sync.hint"></p></details>
+            <details class="settings-help"><summary data-i18n="settings.about"></summary><p class="notice" data-i18n="workspace.notice"></p><p class="notice" data-i18n="screen.hint"></p><p class="notice" data-i18n="sync.hint"></p></details>
           </aside>
+        </div>
+        <dialog class="quick-add" aria-labelledby="quick-title">
+          <div class="capture-heading"><h2 id="quick-title" data-i18n="quick.title"></h2><button class="icon-button panel-dismiss" data-action="dismiss-quick" data-i18n-aria="common.close" data-i18n-title="common.close">${UI.icon('close')}</button></div>
+          <input name="quick" type="search" autocomplete="off" data-i18n-placeholder="quick.search" data-i18n-aria="quick.search">
+          <div class="quick-filters" role="group">
+            <button type="button" data-action="quick-filter" data-filter="all" data-i18n="quick.all"></button>
+            <button type="button" data-action="quick-filter" data-filter="favorites" data-i18n="quick.favorites"></button>
+            <button type="button" data-action="quick-filter" data-filter="phones" data-i18n="quick.phones"></button>
+            <button type="button" data-action="quick-filter" data-filter="tablets" data-i18n="quick.tablets"></button>
+            <button type="button" data-action="quick-filter" data-filter="laptops" data-i18n="quick.laptops"></button>
+          </div>
+          <div class="quick-presets"><span data-i18n="quick.presets"></span>
+            <button type="button" data-action="preset" data-preset="mockup-apple-iphone-18-pro,mockup-apple-ipad-air,mockup-laptops-apple-macbook-air-m5-13" data-i18n="preset.trio"></button>
+            <button type="button" data-action="preset" data-preset="mockup-apple-iphone-18-pro,mockup-android-samsung-galaxy-s26" data-i18n="preset.phones"></button>
+            <button type="button" data-action="preset" data-preset="mockup-apple-iphone-18-pro,mockup-apple-ipad-air" data-i18n="preset.apple"></button>
+          </div>
+          <div class="quick-grid"></div>
+          <p class="quick-hint"></p>
+        </dialog>
+        <div class="capture-loader" hidden>
+          <div class="loader-backdrop"></div>
+          <div class="loader-frame"></div>
+          <div class="loader-card">
+            <img class="loader-logo" src="${chrome.runtime.getURL('img/brand/mockai-logo.png')}" alt="Mockaí" width="108" height="38"><img class="loader-symbol" src="${chrome.runtime.getURL('img/icons/app/icon-48.png')}" alt="" width="28" height="28">
+            <div class="loader-copy"><strong class="loader-title" role="status"></strong><small class="loader-device"></small></div>
+            <div class="loader-bar"><i></i></div>
+            <p class="loader-hint" data-i18n="loader.hint"></p>
+            <button type="button" class="header-button loader-cancel" data-action="cancel-media" data-i18n="header.cancel"></button>
+          </div>
         </div>
         <dialog class="capture-result" aria-labelledby="result-title">
           <div class="capture-heading"><h2 id="result-title" data-i18n="capture.ready"></h2><button class="icon-button panel-dismiss" data-action="dismiss-result" data-i18n-aria="common.close">${UI.icon('close')}</button></div>
           <div class="result-preview"></div>
-          <div class="result-footer"><p class="result-note" role="status" aria-live="polite"></p>
-          <a class="primary-button result-download" hidden></a></div>
+          <div class="result-footer">
+            <div class="result-mockup" role="group" data-i18n-aria="result.mockup" hidden>
+              <button type="button" data-action="result-mockup" data-plain="false" aria-pressed="true" data-i18n="result.withMockup"></button>
+              <button type="button" data-action="result-mockup" data-plain="true" aria-pressed="false" data-i18n="result.withoutMockup"></button>
+            </div>
+            <p class="result-note" role="status" aria-live="polite"></p>
+            <div class="result-actions">
+              <button type="button" class="header-button result-copy" data-action="copy-result" hidden>${UI.icon('copy')}<span data-i18n="result.copy"></span></button>
+              <a class="primary-button result-download" hidden></a>
+            </div>
+          </div>
         </dialog>
         <dialog id="mockai-capture" class="capture-menu" aria-labelledby="capture-title" aria-describedby="capture-description">
           <div class="capture-heading">
@@ -2486,12 +2913,17 @@ return { watchFrameBackground };
             <span class="capture-action-icon">${UI.icon('fullpage')}</span>
             <span class="capture-action-copy"><strong data-i18n="capture.fullPage"></strong><small data-i18n="capture.fullPageHint"></small></span>
           </button>
+          <button class="capture-screenshot capture-all" data-action="screenshot-all">
+            <span class="capture-action-icon">${UI.icon('all')}</span>
+            <span class="capture-action-copy"><strong data-i18n="capture.all"></strong><small data-i18n="capture.allHint"></small></span>
+          </button>
           <section class="capture-video" aria-labelledby="capture-video-title">
             <div class="capture-video-heading">${UI.icon('record')}<h3 id="capture-video-title" data-i18n="capture.video"></h3></div>
             <p class="capture-video-hint" data-i18n="capture.videoHint"></p>
             <label class="capture-format"><span data-i18n="capture.format"></span><select name="videoFormat" data-i18n-aria="capture.format"><option value="webm">WebM</option><option value="mp4">MP4</option></select></label>
             <button class="primary-button capture-record" data-action="record">${UI.icon('record')}<span data-i18n="capture.videoShort"></span></button>
           </section>
+          <p class="capture-shortcuts" data-i18n="capture.shortcuts"></p>
         </dialog>
         <p class="sr-only" role="status" aria-live="polite"></p>
       </section>`;
@@ -2527,7 +2959,18 @@ return { watchFrameBackground };
       if (event.target === dialog && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) closeCapture();
     }, { signal: abort.signal });
     root.addEventListener('submit', submit, { signal: abort.signal });
-    root.addEventListener('input', event => { if (event.target.name === 'search') renderLibrary(); }, { signal: abort.signal });
+    root.addEventListener('input', event => {
+      if (event.target.name === 'quick') renderQuick();
+    }, { signal: abort.signal });
+    query('.quick-add').addEventListener('cancel', event => { event.preventDefault(); closeQuick(); }, { signal: abort.signal });
+    query('.quick-add').addEventListener('click', event => {
+      const dialog = event.currentTarget, rect = dialog.getBoundingClientRect();
+      if (event.target === dialog && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) closeQuick();
+    }, { signal: abort.signal });
+    query('[name=quick]').addEventListener('keydown', event => {
+      // Enter abre o primeiro resultado da busca.
+      if (event.key === 'Enter') { event.preventDefault(); query('.quick-pick:not(:disabled)')?.click(); }
+    }, { signal: abort.signal });
     root.addEventListener('change', async event => {
       const input = event.target;
       try {
@@ -2547,6 +2990,7 @@ return { watchFrameBackground };
     root.addEventListener('keydown', event => {
       if (event.key === 'Escape') {
         event.preventDefault();
+        if (query('.quick-add').open) { closeQuick(); return; }
         if (query('.capture-result').open) { closeResult(); return; }
         if (query('.capture-menu').open) { closeCapture(); return; }
         const open = Object.entries(panels).find(([, value]) => !query(value.panel).hidden);
@@ -2554,7 +2998,7 @@ return { watchFrameBackground };
         else query('[data-action=close]').click();
       }
       if (event.key === 'Tab') {
-        const scope = query('.capture-result').open ? query('.capture-result') : query('.capture-menu').open ? query('.capture-menu') : root;
+        const scope = query('.quick-add').open ? query('.quick-add') : query('.capture-result').open ? query('.capture-result') : query('.capture-menu').open ? query('.capture-menu') : root;
         const controls = [...scope.querySelectorAll('button,input,select,iframe,a[href]')].filter(node => !node.disabled && node.getClientRects().length);
         const first = controls[0], last = controls.at(-1);
         if (event.shiftKey && root.activeElement === first) { event.preventDefault(); last?.focus(); }
@@ -2567,6 +3011,7 @@ return { watchFrameBackground };
     };
     window.addEventListener('resize', cancelChangedGeometry, { signal: abort.signal });
     query('.stage').addEventListener('scroll', cancelChangedGeometry, { signal: abort.signal });
+    query('.stage').addEventListener('scroll', renderStageNav, { signal: abort.signal, passive: true });
     document.documentElement.append(host);
     apply();
     stageObserver = new ResizeObserver(() => {
@@ -2586,7 +3031,10 @@ return { watchFrameBackground };
       return true;
     }
     if (message.type === 'page.restore') {
-      try { restorePage(message.jobId); respond({ ok: true }); }
+      try {
+        if (pageCapture && pageCapture.jobId === message.jobId) loaderClosed = true;
+        restorePage(message.jobId); renderLoader(); respond({ ok: true });
+      }
       catch (error) { respond({ ok: false, error: error.message }); }
       return false;
     }
@@ -2598,14 +3046,24 @@ return { watchFrameBackground };
       return false;
     }
     if (message.type === 'media.prepare') {
-      prepare(message.mode).then(geometry => respond({ ok: true, geometry }), error => respond({ ok: false, error: error.message }));
+      prepare(message.mode, message.scope).then(geometry => respond({ ok: true, geometry }), error => respond({ ok: false, error: error.message }));
       return true;
     }
     try {
-      if (message.type === 'media.verify') respond({ ok: true, geometry: geometry() });
+      if (message.type === 'media.verify') {
+        respond({ ok: true, geometry: geometry() });
+        // A foto já foi tirada: devolve o recorte da moldura imediatamente.
+        if (captureKind === 'screenshot' || captureKind === 'screenshot-all') loaderClosed = true;
+        if (rawFrame && !pageCapture) { rawFrame = null; apply(); }
+        else renderLoader();
+      }
       if (message.type === 'media.state') { setMedia(message.state); respond({ ok: true }); }
       if (message.type === 'view.mount') { mount(message.session, message.options); respond({ ok: true }); }
-      if (message.type === 'view.capture') { openCapture(); respond({ ok: true }); }
+      if (message.type === 'view.capture') {
+        if (message.mode === 'screenshot' || message.mode === 'fullpage') void startCapture(message.mode).catch(reportError);
+        else openCapture();
+        respond({ ok: true });
+      }
       if (message.type === 'view.resume') {
         if (host) session.url = message.session.url;
         respond({ ok: true, mounted: Boolean(host) });

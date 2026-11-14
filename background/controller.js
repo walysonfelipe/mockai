@@ -111,6 +111,20 @@ export function createController(api, media = null, compatibility = null) {
     return { active: true, session: next };
   }
   return {
+    // Atalhos de teclado: só agem com o simulador já aberto na aba.
+    command: (id, mode) => serial(async () => {
+      if (!await session(id)) return { active: false };
+      const result = await api.tabs.sendMessage(id, { protocol: PROTOCOL, type: 'view.capture', mode });
+      if (!result?.ok) throw new Error(result?.error ?? 'A interface não confirmou a captura.');
+      return { active: true };
+    }),
+    // Clique no ícone: abre o simulador direto; com ele aberto, fecha.
+    toggle: id => serial(async () => {
+      if (await session(id)) { await stop(id); return { active: false }; }
+      return dispatch({ protocol: PROTOCOL, type: 'session.start', tabId: id }, {
+        id: api.runtime.id, url: api.runtime.getURL('popup/index.html')
+      });
+    }),
     contextMenu: id => serial(async () => {
       if (await session(id)) {
         const result = await api.tabs.sendMessage(id, { protocol: PROTOCOL, type: 'view.capture' });

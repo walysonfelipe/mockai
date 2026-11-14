@@ -7,6 +7,13 @@ export function pageDimensions(width, height) {
   }
   return { width, height };
 }
+// Densidade da imagem final: usa os pixels reais da aba (até 2x) sem estourar os limites do canvas.
+export function pageScale(width, height, density) {
+  pageDimensions(width, height);
+  const wanted = Number.isFinite(density) ? Math.min(2, Math.max(1, density)) : 1;
+  const room = height * 1.1; // folga para conteúdo que cresce durante a captura
+  return Math.max(1, Math.min(wanted, PAGE_LIMITS.width / width, PAGE_LIMITS.height / room, Math.sqrt(PAGE_LIMITS.pixels / (width * room))));
+}
 export function pageSlicePlacement({ width, height, offset, viewportHeight, covered }) {
   pageDimensions(width, height);
   if (![offset, viewportHeight, covered].every(Number.isFinite) || offset < 0 || viewportHeight < 1 ||

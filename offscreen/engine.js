@@ -1,5 +1,7 @@
 import { MEDIA_LIMITS, validateCaptureGeometry, cropGeometry, videoCropGeometry, chooseVideoType } from '../shared/media.js';
-import { PAGE_LIMITS, pageDimensions, pageSlicePlacement } from '../shared/full-page.js';
+import { PAGE_LIMITS, pageDimensions, pageScale, pageSlicePlacement } from '../shared/full-page.js';
+// Acima disso a imagem não cabe na mensagem que leva o arquivo até a aba.
+const PAGE_BYTES = 40 * 1024 * 1024;
 
 // A plataforma contém somente as operações de mídia/DOM; permite testar ciclo e falhas sem navegador.
 export function createMediaEngine(platform) {
@@ -36,14 +38,15 @@ export function createMediaEngine(platform) {
     if (current.recorder?.state !== 'inactive') { try { current.recorder?.stop(); } catch {} }
     releaseResources(current);
     if (current.url) platform.revokeURL(current.url);
-    current.blob = null;
+    current.blob = current.plain = null;
     return status();
   }
-  function ready(current, blob) {
+  function ready(current, blob, plain = null) {
     if (job !== current || current.state === 'cancelled' || current.state === 'error') return;
     if (!blob.size) { fail(current, new Error('A gravação terminou sem dados.')); return; }
-    if (blob.size > MEDIA_LIMITS.bytes) { fail(current, new Error('O arquivo excedeu o limite de 64 MiB.')); return; }
+    if (blob.size + (plain?.size ?? 0) > MEDIA_LIMITS.bytes) { fail(current, new Error('O arquivo excedeu o limite de 64 MiB.')); return; }
     current.blob = blob;
+    current.plain = plain?.size ? plain : null;
     current.mime = blob.type;
     current.url = platform.blobURL(blob);
     current.state = 'ready';
@@ -84,7 +87,24 @@ export function createMediaEngine(platform) {
           else platform.draw(current.canvas, image, crop);
           if (job !== current || current.state === 'error') return status();
           const blob = await platform.png(current.canvas);
-          ready(current, blob);
+          // Segunda versão só com a tela, para o usuário escolher depois se quer a moldura.
+          let plain = null;
+          const composition = geometry.composition;
+          if (composition?.frame) {
+            const { width, height, screen } = composition;
+            const canvas = platform.makeCanvas(
+              Math.max(1, Math.round(screen.width / width * geometry.output.width)),
+              Math.max(1, Math.round(screen.height / height * geometry.output.height)));
+            try {
+              platform.draw(canvas, image, {
+                x: crop.x + screen.x / width * crop.width, y: crop.y + screen.y / height * crop.height,
+                width: screen.width / width * crop.width, height: screen.height / height * crop.height
+              });
+              plain = await platform.png(canvas);
+            } finally { canvas.width = 1; canvas.height = 1; }
+            if (job !== current || current.state === 'error') return status();
+          }
+          ready(current, blob, plain);
         } finally { image.close?.(); }
       } else {
         const mime = chooseVideoType(format, platform.supports);
@@ -160,14 +180,24 @@ export function createMediaEngine(platform) {
       try {
         if (job !== current || current.state !== 'preparing') throw new Error('A captura foi cancelada.');
         const crop = cropGeometry(geometry, image.width, image.height);
-        if (height !== current.height) {
-          platform.resizePageCanvas(current.canvas, width, height);
+        if (!current.scale) {
+          // O primeiro trecho revela quantos pixels reais a aba entrega por pixel de página.
+          current.scale = pageScale(width, height, crop.width / width);
+          current.canvas.width = Math.round(width * current.scale);
+          current.canvas.height = Math.ceil(height * current.scale);
+          current.height = height;
+        } else if (height !== current.height) {
+          const grown = Math.ceil(height * current.scale);
+          if (grown > PAGE_LIMITS.height || current.canvas.width * grown > PAGE_LIMITS.pixels) throw new Error('A página é grande demais para uma única imagem.');
+          platform.resizePageCanvas(current.canvas, current.canvas.width, grown);
           current.height = height;
         }
+        // Linhas inteiras no destino evitam emendas visíveis entre os trechos.
+        const top = Math.round(placement.y * current.scale), bottom = Math.round(placement.end * current.scale);
         platform.drawPageSlice(current.canvas, image, {
           x: crop.x, y: crop.y + placement.skip / viewportHeight * crop.height,
           width: crop.width, height: placement.rows / viewportHeight * crop.height
-        }, { x: 0, y: placement.y, width, height: placement.rows });
+        }, { x: 0, y: top, width: current.canvas.width, height: bottom - top });
         current.covered = placement.end;
         notify();
         return status();
@@ -178,15 +208,21 @@ export function createMediaEngine(platform) {
       if (!current?.fullPage || current.id !== jobId || current.state !== 'preparing' || current.covered < current.height - 0.5) {
         throw new Error('A captura da página está incompleta.');
       }
-      const blob = await platform.png(current.canvas);
+      let blob = await platform.png(current.canvas);
+      if (blob.size > PAGE_BYTES && current.scale > 1 && job === current && current.state === 'preparing') {
+        platform.resizePageCanvas(current.canvas, current.width, current.height, true);
+        current.scale = 1;
+        blob = await platform.png(current.canvas);
+      }
       ready(current, blob);
       return status();
     },
     async inlineArtifact(jobId) {
       const artifact = this.artifact(jobId), current = job;
       const dataUrl = await platform.dataURL(current.blob);
+      const plainDataUrl = current.plain ? await platform.dataURL(current.plain) : null;
       if (job !== current || current.state !== 'ready') throw new Error('A captura não está mais disponível.');
-      return { ...artifact, dataUrl };
+      return { ...artifact, dataUrl, ...(plainDataUrl ? { plainDataUrl } : {}) };
     },
     artifact(jobId) {
       if (job?.id !== jobId || job.state !== 'ready') throw new Error('A captura não está mais disponível.');

@@ -13,6 +13,13 @@ chrome.runtime.onMessage.addListener((message, sender, respond) => {
   );
   return true;
 });
+chrome.action.onClicked.addListener(tab => {
+  if (Number.isInteger(tab?.id) && tab.id >= 0) void controller.toggle(tab.id).catch(console.error);
+});
+chrome.commands?.onCommand.addListener((command, tab) => {
+  const mode = { 'capture-screen': 'screenshot', 'capture-page': 'fullpage' }[command];
+  if (mode && Number.isInteger(tab?.id)) void controller.command(tab.id, mode).catch(console.error);
+});
 chrome.tabs.onRemoved.addListener(id => { void controller.forget(id).catch(console.error); });
 // Carregamentos de subquadros também podem alterar o status da aba.
 // Só reconciliamos a sessão quando há uma URL nova ou o carregamento termina.
